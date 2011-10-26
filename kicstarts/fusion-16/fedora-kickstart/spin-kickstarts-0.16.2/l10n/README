@@ -1,0 +1,6 @@
+== NOTICE ==
+
+These kickstarts are localized versions of the custom or official Fedora
+Spins.
+
+Kickstarts in this directory need to %include ../*.ks, or ../custom/*.ks

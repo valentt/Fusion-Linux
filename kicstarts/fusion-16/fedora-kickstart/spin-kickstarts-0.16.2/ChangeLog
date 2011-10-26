@@ -1,0 +1,5444 @@
+commit 67226df489e111ed762c70fd5e5bccd61cbfa0ca
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Aug 6 11:54:27 2011 -0500
+
+    Rebuild for F16 branch.
+
+commit 5f363b1baab79d87ba2cc744e30b4857f007e283
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Aug 6 11:13:32 2011 -0500
+
+    Switch from using rawhide to release repos.
+
+commit a8fede4a0bfb9d4c8e17db7ad635d552b1487d76
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Aug 6 10:55:11 2011 -0500
+
+    Replace cvs commands with git commands in the instructions.
+
+commit 87acaf1a7b312f06421dce84c45454e2cc93be55
+Author: Kevin Fenzi <kevin@scrye.com>
+Date:   Tue Aug 2 14:16:42 2011 -0600
+
+    Remove cnetworkmanager, it no longer exists.
+    https://bugzilla.redhat.com/show_bug.cgi?id=727645
+
+commit a8a75a55b4f25b561912f642b6af2a97349daac2
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Tue Aug 2 15:42:21 2011 +0200
+
+    fedora-livecd-kde.ks: Also omit kipi-plugins because of https://bugzilla.redhat.com/show_bug.cgi?id=727570
+
+commit 8086a52c0f21f5b90ab2aa8b6e6aacf6d3180fca
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Tue Jul 26 18:07:10 2011 +0200
+
+    fedora-livecd-kde.ks: Disable digikam (size issues).
+
+commit 5b034583bb5507480f23da9a8b36abff2a58abf0
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Thu Jul 14 07:28:23 2011 -0500
+
+    nss_db is depreciated in F16.
+
+commit 12577839dde7bc43507e44cb376be62fb0887702
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun Jun 12 19:01:09 2011 +0100
+
+    SoaS: updating SoaS names
+
+commit ff0315f0178d44b372ab4c6732afd5f7803a4642
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun Jun 12 18:41:33 2011 +0100
+
+    SoaS: merge fixes from branch
+
+commit c3a1adefdc8c2df94d8a41db3c580d32d7fb4201
+Merge: 776275a 38cf085
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun Jun 12 12:12:27 2011 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 776275a4e262fa5b3bc68b903e2a34841ee3b799
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun Jun 12 12:11:59 2011 +0100
+
+    SoaS: further live image startup fixes
+
+commit 38cf085584c7be5af26835ff8ed84f972cb6b3d4
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Mon Jun 6 00:20:22 2011 +0200
+
+    Xfce: xfce4-cddrive-plugin is dead, remove it completely
+
+commit e89b41a9f0eed579647599745f9b42879c08489b
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Mon Jun 6 00:19:15 2011 +0200
+
+    Xfce: Remove orphaned parole-mozplugin
+
+commit 1a21086dbe5cc848e34e46a332b5390f22a4c666
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat May 21 00:27:52 2011 -0500
+
+    Remove references to hal-storage-addon.
+    
+    hal-storage-addon has been retired for F16.
+
+commit cf02434d190aab6aeeb74a2a99384d8a7aaeb770
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Fri May 20 07:12:46 2011 -0500
+
+    Do initial F16 build.
+
+commit 5e3c998ac1542a295d9d54dae392c02fb89ec74c
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Tue May 17 21:53:29 2011 +0200
+
+    LXDE: Add xscreensaver-extras (#705217)
+
+commit 25122844450e3cfa150f580676a9a54e4e42c970
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sun May 8 22:35:49 2011 +0200
+
+    Design Suite: Fixes for F15 / GNOME 3
+
+commit 8203f7b391b8bb06be791ad5e05ce6e0acd07a4a
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun May 8 15:37:35 2011 +0100
+
+    SoaS: further fixes for Sugar live image startup
+
+commit d41b9ca2c9df4375b71f4bd4f17989ebd3e932a9
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun May 8 13:24:16 2011 +0100
+
+    SoaS: futher live image fixes
+
+commit 9365e03f28aaa6a87e857302b48bb73ae557eb7d
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sat May 7 16:13:14 2011 +0100
+
+    SoaS: change the default browser to one that works
+
+commit ff93306010900d02872ee71ee216165bfb5bd9eb
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat May 7 14:02:42 2011 +0200
+
+    Security: Final fixes for F15
+
+commit bc9564a6d39fb73bed2294d16a05d236eab748e3
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat May 7 13:40:02 2011 +0200
+
+    LXDE: java-1.6.0-openjdk-plugin -> icedtea-web
+
+commit c3d4faa52f291762825720037753d91bf0c98bdd
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat May 7 00:20:10 2011 +0200
+
+    Xfce: Use auto-login instead of timed-login (#702749)
+
+commit fe7fed09fa0e10fd8692b0a82bb46945030b108e
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Fri May 6 11:04:53 2011 +0200
+
+    LXDE: Fix pcmanfm autostart call to show the wallpaper
+
+commit a69e5d7eb363a4838efddecbe06f15953d2c9415
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon May 2 23:56:35 2011 -0500
+
+    Set version for master branch to 0.16.0.
+    
+    Don't want to forget this later.
+
+commit 89f75cfc5c14a83f3c1c2254ee004937f9967d10
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon May 2 23:54:45 2011 -0500
+
+    Add security and kde-base ks files.
+
+commit 9d7a7ac145ba69bdcd313f5c95651416430147c3
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon May 2 23:53:16 2011 -0500
+
+    Broffice spin is no longer needed.
+
+commit 7ce33d2aedef5289983dfdab66ca313718cc1108
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon May 2 23:11:40 2011 -0500
+
+    Master branch is now following rawhide.
+
+commit c4346cc171bc4f81be11c4364d84a064a21a8323
+Author: Bill Nottingham <notting@redhat.com>
+Date:   Mon Apr 18 11:00:02 2011 -0400
+
+    Replace obsolete java-1.6.0-openjdk-plugin with current icedtea-web.
+
+commit 024cf2aa7e16e3c4f6d46855827684f5f55be191
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Apr 16 18:07:07 2011 +0200
+
+    Xfce: remove hal-storage-addon, it's no longer needed
+
+commit 90b9d8498119209118619ac830551495a0ba69e6
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Apr 16 18:05:08 2011 +0200
+
+    Xfce: Clean-up and cosmetic fixes
+
+commit 4e6a805d075699db5666d4effd3bf3ab3624f263
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Apr 16 17:36:26 2011 +0200
+
+    Xfce: java-1.6.0-openjdk-plugin -> icedtea-web
+
+commit 9a3d0a49235d6fb6c12e802b5ad63122b06b8b9e
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Apr 16 17:35:22 2011 +0200
+
+    Xfce: Drop gtk-theme-engine-clearlooks
+
+commit d986597f72e7dc65b300dce8a3cf7538dc869858
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Fri Apr 15 17:59:26 2011 +0100
+
+    SoaS: numerous fixes to the SoaS live image ks
+
+commit 59231b8360f655efe2e4722051880359d1f1cf5c
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Thu Apr 14 23:11:22 2011 +0100
+
+    SoaS: explicitly provide firstboot(windowmanager)
+
+commit 1938cc03c6b032a97aa44e5b3d6d5cdc628d3e0a
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Mon Apr 11 15:48:19 2011 +0100
+
+    SoaS: Create a default gnome keyring - should fix RHBZ # 649013
+
+commit 34d89406d7160d63684f69abf0af470cc9eb37f5
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Mon Apr 11 15:46:57 2011 +0100
+
+    SoaS: enable new Activities in the home view
+
+commit 8eb4d52259dc96db067a83c3941aea9eb2483964
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Apr 10 16:27:52 2011 -0500
+
+    qa-testday: Resolve overriding of favorite-apps issue
+    
+    favorite-apps was set in persistant config for qa-testday, but only for
+    the live enviroment in live-desktop. The latter happens later since it
+    happens at run time, not build time. So a new section was added to
+    do a runtime override as well so the the qa-testday favorites are used
+    both in the live environment and after a test install.
+
+commit df72cdca24cde78e00290f3b8bd52e33a7a4ea6b
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Apr 10 10:39:47 2011 -0500
+
+    qa-testday: %post sections are not run in the order I expected.
+    
+    Both qa-testday.ks and fedora-live-desktop.ks were trying to modify
+    /usr/share/glib-2.0/schemas/org.gnome.shell.qa-testday.gschema.override
+    by appending to the end of it. However, even though fedora-live-desktop.ks
+    was %included at the start of qa-testday.ks, the %post section from
+    fedora-live-desktop.ks was run second, so that its favorite-apps setting
+    was taking prference.
+    
+    So I am going back to including a vender string in the name of the
+    override file. This seems to result in the config from qa-testday.ks
+    taking precedence. But I don't know if this is based on alphabetic
+    ordering by filename or just random happenstance. I have a question
+    pending on the kickstart list to see if I can get more information
+    on %post ordering.
+
+commit 9a9545c41fe8f0aad1cd8374bcfb75c54f032251
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Apr 10 08:39:47 2011 -0500
+
+    qa-testday: Add favorites to the same override file desktop uses.
+    
+    It looks like the override for favorites working depending on the
+    override file from qa-testday being processed after that from
+    live-desktop. It worked in testing, but might not work later.
+    So instead use append and the same name. This will put the qa-testday
+    definition after the live-desktop one in the same file.
+
+commit 72f0d81e1a60240b988a349e22572021279f9eb2
+Merge: cbc726f ae3d381
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Apr 10 00:03:02 2011 -0500
+
+    Merge branch 'qa'
+
+commit ae3d38155c59fe1a135f04e0a5c5c486b57467a7
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 21:00:05 2011 -0500
+
+    qa-testday: Make a local liveinst.desktop
+    
+    For some reason I don't know right now, the installed liveinst.desktop
+    gets renamed to anaconda.desktop in live-base. So until I know if that
+    should really be done differently, I'm adding a local one.
+
+commit 056803cac58f98c809425cd111616e58339c3b16
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 20:57:02 2011 -0500
+
+    Add missing line to testday-wiki favorite.
+
+commit ea3c728d69964b8d9985b58922f277abe2aed4a6
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 19:42:01 2011 -0500
+
+    Adjust tweaking prerequisites to include zip and unzip.
+
+commit ccb24e2e7b43c5ae2a4b0a9fe6d1e309ed61bc1e
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 19:01:49 2011 -0500
+
+    qa-testday: Need to override welcome page a different way.
+
+commit ae20b8bcfbc68ce3d73d3fe99c63e72c7ddbfcb8
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 18:55:29 2011 -0500
+
+    qa-testday: Remove unneeded encoding definition.
+
+commit 974c944b2f72b0d6d36720a65e5fa849c39d1248
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 18:54:01 2011 -0500
+
+    qa-testday: Add back install to hard drive favorite
+
+commit 21a1ab03f13eacdbabea59e3f7d872685d19ae1f
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 18:49:13 2011 -0500
+
+    qa-testday: Make comment reflect favorite instead of link.
+
+commit d3a88a6af5615893877ea9a371b90e7ccc40453e
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 18:48:09 2011 -0500
+
+    qa-testday: Link desktop entries don't work, use app entry instead.
+
+commit 54f86c48a775ad598e82a811db071bf18ac8349a
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 18:46:43 2011 -0500
+
+    qa-testday: Replace firefox favorite with test day wiki favorite.
+
+commit 998da55f54aa642f9a2c6a396829a40fca9be6bd
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 17:02:03 2011 -0500
+
+    qa-test-day: override urls don't stick, try to ignore them instead.
+
+commit 008df75ef7414ce696faf5e66f60dc8260b2a21e
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 16:45:40 2011 -0500
+
+    qa-test-day: skel is in /etc not /usr.
+
+commit 07e93683474b62450ecd36e76d1ea7aa0398eef0
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 16:10:18 2011 -0500
+
+    qa-test-day: Remove reference to deleted favorite.
+
+commit 0b9063fdada5d173ee86c3ade3e35a2d38fe8eea
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 15:28:12 2011 -0500
+
+    qa-test-day: The new directory for favorites needs to be created.
+
+commit 1ce7a7bfadb11ebb78ff91f75505cfcce1166071
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 15:26:40 2011 -0500
+
+    qa-test-day: Remove redundant firefox favorite
+
+commit f5653f7bb23d7add8db971ec1da7302ddad0951c
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 15:24:35 2011 -0500
+
+    qa-test-day: Account for favorites search path
+
+commit 3b1b41ea36eaee81bdc0f3f2bcc1e21271db5948
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 15:17:00 2011 -0500
+
+    qa-test-day: It looks like empty urls need to be quoted.
+
+commit cbc726f13b16057165cae2fea188b51fa6d1b02c
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Apr 9 21:52:22 2011 +0200
+
+    Xfce: It's epdfview, not epdf
+
+commit 54d16acb6ec0c033a19c3c9124274cb1c30ed555
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Apr 9 21:51:23 2011 +0200
+
+    Xfce: Add gnumeric again, switch from evince to epdf and from gcalctool to galculator
+
+commit e46a627ceb1426f45664ac3aa5f4cde66920993f
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Apr 9 21:49:04 2011 +0200
+
+    Xfce: Switch back to GDM
+
+commit ba70d3bcfb5b7b6d2222d158ca69c7c104487df8
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Apr 9 21:43:32 2011 +0200
+
+    Xfce: Don't configure settings for root as login is disabled anyway
+
+commit f3a46f063181786e5c254e06ecf1b2be4730df64
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 13:43:21 2011 -0500
+
+    Fix up the key value favorites override file.
+
+commit fd0752d245daf381ab447dbf519362f4c5ac74c4
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 13:35:03 2011 -0500
+
+    Suppress first run pages for firefox.
+
+commit f32212bb3e8520429868415154ab181ed0899586
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 11:41:54 2011 -0500
+
+    The startup page should be changed in the branding area.
+
+commit 6308e3e455c65a0fe3da7607e2d5464545da5f62
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 09:52:02 2011 -0500
+
+    glib-compile-schemas doesn't have a default.
+    
+    I incorrectly assumed glib-compile-schemas would default to the system
+    schemas, but it turns out I need to explicitly name the directory.
+
+commit 7020ce3cacbf33cf79adf97c18ad8df4407b964f
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 08:42:53 2011 -0500
+
+    Remove unzip option included by mistake.
+
+commit 7003848a4bd27ca47d111a4089c47e02dca89e9c
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 02:06:32 2011 -0500
+
+    Change how the startup page is modified.
+    
+    Recent firefox versions keep the properties in a zip archive.
+    So the appropriate file needs to be extracted, modified and
+    put back into the archive.
+
+commit 6d5907d4d44d729ed6e0e6c49d6e68e3bbbb5243
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Apr 9 01:09:15 2011 -0500
+
+    Add qa desktop entries to favorites.
+
+commit 27027824b93e2bdb70f1c214979e2e2764892883
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Fri Apr 8 23:51:35 2011 +0200
+
+    Xfce: Remove orphaned xfce4-xfapplet-plugin
+
+commit a8b8d94cf205aaf617eb202ecef454e2dc26d7ac
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Fri Apr 8 22:39:18 2011 +0200
+
+    Xfce: Remove orphaned xfce4-stopwatch-plugin
+
+commit a79a7c6a40e068efc8c187d2588625bebe2d44d8
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Fri Apr 8 22:38:41 2011 +0200
+
+    Xfce: Deactivate xfce4-panel first-run dialog (#693569)
+
+commit 2c5051ad29af8c10905c3d45678c6b8316152e95
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Fri Apr 8 10:25:14 2011 -0500
+
+    Install image: Fix issue with missing dep xfwm4.
+    
+    Some xfce stuff was manually removed to resolve a split media issue for
+    F14, that is no longer needed since we aren't doing split media for F15.
+    Since this exclusion is causing a dependency to be missing from the install
+    image these excludes are being dropped.
+
+commit 596ef8e70cb7369826e8b9d45a0c56e2cc39ddd0
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Thu Apr 7 09:58:07 2011 +0200
+
+    fedora-live-mini.ks: Don't prelink this either.
+    The mini images are even less likely to want that kind of a size increase.
+
+commit 36271446ffc9384263e4ba9c9a4881521014b4b0
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Thu Apr 7 09:56:14 2011 +0200
+
+    fedora-live-base.ks: Don't prelink the live images.
+    This unacceptably increases the size of the images by several MiB.
+    The KDE image grew by 17 to 24 MiB, making it go oversized.
+    See https://bugzilla.redhat.com/show_bug.cgi?id=679880#c13 and followups.
+
+commit df3c8607e77ea5a8a33f17d3e0840d69243c99c2
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Wed Apr 6 00:22:05 2011 +0200
+
+    fedora-live-kde-base.ks: pull in adwaita-gtk3-theme as long as we don't have native GTK+ 3 theming
+    This will actually be useful now that #683855 is fixed.
+
+commit 91c50587e0a9f4f328cf1f1c15335423c81ecf72
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Tue Apr 5 14:58:01 2011 +0100
+
+    SoaS: explicitly remove sugar-read due to dep issues
+
+commit c21ed23db43b57a6cd194a651b81c4b4be10dfe5
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Tue Apr 5 09:05:16 2011 +0100
+
+    SoaS: fix the live image
+
+commit 69579db943b80b4b6af5ea5b7929988bf63a5158
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Apr 4 23:20:01 2011 -0400
+
+    Desktop: disable lock-screen menu option
+    
+    Screen locking is disabled anyway.
+
+commit 02d9311192fa1339d807fbbc82729be1ef4323ff
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Tue Apr 5 01:29:11 2011 +0200
+
+    Xfce: Deactivate xfconf-migration on the livecd (#683161)
+
+commit 7e89f896a6a82393100397f2f8844cd63b906530
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Tue Apr 5 01:21:48 2011 +0200
+
+    Xfce: Set Thunar as default file manager on the livecd (#693538)
+
+commit 5e183ad23f8e7a305dc370151b5906c0ecbb2997
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Tue Apr 5 01:07:41 2011 +0200
+
+    LXDE: Add adwaita theme for consistent look **cough** in for GTK2 and GTK3
+
+commit 6030aec92df15471c5254a4ced059356dbafaf9f
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Tue Apr 5 01:03:53 2011 +0200
+
+    Xfce: Add adwaita theme for consistent look **cough** in for GTK2 and GTK3
+
+commit fc56888436cb0af4edcea719cef013222b5a547b
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Apr 3 08:41:31 2011 -0500
+
+    Fix don't run prelink patch.
+    
+    I accidentally stuck it in the wrong place on the last commit, and forgot to
+    do both live-base and live-mini.
+
+commit 34c07aa4fa20eff29616a85b4c6aae7e8de01097
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Apr 3 08:35:36 2011 -0500
+
+    Don't run prelink on a running live image.
+
+commit e095d42c59f18a9745880e6538d9e172175d0e0c
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Apr 3 08:28:34 2011 -0500
+
+    Match updated prelink requirements.
+    
+    The m option is used so that this will work in some i686 cases where it
+    wouldn't before.
+    
+    prelink is optional, so handle it not being available.
+
+commit 45ad6629a171668343fe04f31b3f1f8543232f53
+Author: Kevin Fenzi <kevin@tummy.com>
+Date:   Sat Apr 2 18:41:38 2011 -0600
+
+    Add prelink in. See bug: 679880
+
+commit 81d962bdc9cf7232f7b834cfa14f833ce9ec919d
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Fri Apr 1 20:28:46 2011 -0500
+
+    Get an up to date version for the beta release.
+
+commit d935d49b26109e2ba70b797de5407758224aa646
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Mar 30 23:00:32 2011 -0500
+
+    Prevent reseting the clock when shutting down.
+    
+    With systemd the old method of preventing the hardware clock from
+    getting reset no longer works and we need to do it a bit differently.
+
+commit f97756babbccc68da1e46ff9ed77bf966d065ead
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Mar 30 22:56:30 2011 -0500
+
+    live desktop: The patition image size needs to be bumped.
+    
+    The 1 GB version of live desktop was using the default image size for
+    CD sized images of 3 GB. This was no longer enough space to do the
+    build.
+
+commit 907f463ac07125cf3c22a19ff27619eb79d6f71d
+Author: Ray Strode <rstrode@redhat.com>
+Date:   Tue Mar 29 01:47:04 2011 -0400
+
+    desktop: fix installer extension
+    
+    We were using the wrong api so it didn't work.
+
+commit eda88e846ac0623341c42a068b79a57d1c818f77
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Mar 29 00:11:54 2011 -0400
+
+    Desktop: Make AutomaticLogin understood by accounts service
+    
+    gdm doesn't care for upper- or lowercase, but the accountsservice
+    currently only accepts 'True'. The upshot is that the liveuser does
+    not appear to have autologin enabled in the user accounts panel
+    in GNOME, when it really should.
+
+commit 41b77453d5385f0eca291dcde5bcca6a5b2518c1
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Fri Mar 25 12:14:54 2011 +0900
+
+    [FEL] openoffice.org renamed to libreoffice
+
+commit 94408125e71bc90eb2f1d9d0d51b2d7b2bb1eead
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Wed Mar 23 20:37:47 2011 -0400
+
+    desktop: actually disable the updates plugin
+    
+    We don't need updates to be installed on the live image.  The
+    method used in the live base doesn't work.
+
+commit 8141a790b574b7a352da54459e6f31081299dab3
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Mar 23 11:58:48 2011 -0400
+
+    desktop: prevent unintended failures in the livesys initscript
+    
+    Some of the tweaks we do there may fail if the packages containing
+    the touched files are not present. Better be careful.
+
+commit 47eaac1dc1f15de620d5409ee817de8fdf30d133
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Mar 23 11:56:47 2011 -0400
+
+    base: prevent unintended failures in the livesys initscript
+    
+    Some of the tweaks we do there may fail if the packages containing
+    the touched files are not present. Better be careful.
+
+commit 9a222daf121e1265a859850e2b064b61a929ca44
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Tue Mar 22 16:20:52 2011 +0100
+
+    fedora-live-kde-base.ks: create /root/.gtkrc-2.0 directly in the image (#689070)
+    This needs to be done directly in the file system image, not in the livesys
+    initscript, because it should persist on liveinst.
+
+commit 750658b18a603d9cac34a64ef6e1618450ec8430
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Mar 16 23:59:54 2011 -0400
+
+    Desktop: Don't use spawnDesktop in the shell extension
+    
+    Its future is mirky
+
+commit abe9a5fcb29edaf4f8735fb4b89086509b151fed
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Mar 16 19:56:51 2011 -0500
+
+    New build for testing
+
+commit ede41e8a50c1c8e42c7acd4c8dfb093fa788a9f8
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Mar 16 19:53:19 2011 -0500
+
+    Add alternate kde ks file to the package.
+
+commit 7613ad6ba1cea604d302c6d6596e1ceeb459e7ba
+Author: Ray Strode <rstrode@redhat.com>
+Date:   Tue Mar 15 13:55:56 2011 -0400
+
+    change desktop file in menu to anaconda too
+    
+    This is like the previous commit but for the menu,
+    not the dash.
+
+commit 5d5d8fe116cde005abe361aa41467293adf8a094
+Author: Ray Strode <rstrode@redhat.com>
+Date:   Tue Mar 15 12:52:57 2011 -0400
+
+    change favorite in dash to be anaconda.desktop not liveinst.desktop
+    
+    This is to compensate for commit
+    fb696616b70e3145f1a02a7c081244cd20c8cfe9
+
+commit ddba2be8e208111b7f61b4c58d97fff01280c43b
+Author: Ray Strode <rstrode@redhat.com>
+Date:   Tue Mar 15 12:35:08 2011 -0400
+
+    rename liveinst.desktop to anaconda.desktop
+    
+    The shell requires the name to be the same as the wmclass
+    of the initial window.
+
+commit f36ebea234c204d29d2b8e6fa2f55fd2906b08cb
+Author: Ray Strode <rstrode@redhat.com>
+Date:   Tue Mar 15 11:16:53 2011 -0400
+
+    Add live installer menu item to user menu
+    
+    In the mockups here:
+    
+    https://live.gnome.org/GnomeShell/Design/Whiteboards/SystemStopRestart
+    
+    there is a way to install updates right above the suspend item.  For
+    an uninstalled livecd, installation is sort of analagous to updates on
+    an installed system.
+    
+    This commit adds the installer to the user menu.
+
+commit 9f2b1803d12e625c596bf34a465d80c8a6e4b4e7
+Author: Ray Strode <rstrode@redhat.com>
+Date:   Tue Mar 15 09:35:01 2011 -0400
+
+    Move live install launcher from desktop to dash
+    
+    Since we don't show the desktop anymore, it doesn't
+    make sense to put the livecd installer there.  For
+    now, put it as a favorite on the dash.
+
+commit f5983ccb6eced795800a7d63123a8a6c2f0eb2b2
+Author: Ray Strode <rstrode@redhat.com>
+Date:   Tue Mar 15 09:28:16 2011 -0400
+
+    Change screensaver configuration
+    
+    It uses gsettings now instead of gconf
+
+commit 693aa30db2ba6eaa8a9da067657156846fc89ed7
+Author: Ray Strode <rstrode@redhat.com>
+Date:   Tue Mar 15 09:19:22 2011 -0400
+
+    Switch from timed to automatic login in desktop spin
+    
+    Now that GDM no longer has language selection, there's
+    little reason to use timed login.
+    
+    This commit changes the default config to use automatic
+    login instead.
+
+commit f186f0b37ae773e3b55ee0d672e76ec4531785a1
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Tue Mar 15 12:04:56 2011 +0100
+
+    fedora-live-kde.ks (2G): Add support for the Cantor R, Maxima and Octave backends.
+    Ship only minimal R and Octave support for now, we'll see where we are size-wise.
+
+commit 645070105af7039cb21bd063ef8f601f9bfa6157
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Mar 15 01:16:30 2011 -0500
+
+    Games: add two games
+    
+    Add knights as a chess replacement.
+    
+    Add lordsawar as a moderately sized strategy game.
+
+commit 7109194f37fbe2956e3fea1dc168ae166e906248
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Mon Mar 14 23:44:40 2011 +0100
+
+    fedora-live-kde.ks (2G): Include:
+    * full kdegames
+    * most of kdeedu (omit Cantor R backend and optional Cantor runtime dep Maxima for now)
+    * full KOffice (including langpacks)
+
+commit 027bb084334562e8548d35e3a80f072893a8c6a2
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Sun Mar 13 05:39:50 2011 +0100
+
+    fedora-live-kde.ks: Bump uncompressed size of the file system.
+    The default size is targeted for CDs and doesn't fit the added packages.
+
+commit b470d922df440cabe18a462608e5fb7edfda6e98
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Sat Mar 12 04:03:50 2011 +0100
+
+    fedora-live-kde.ks: Don't bother omitting make and nss_db.
+    Their size is negligible compared to the 2G target size.
+
+commit 210456f31d529b31bffbec2b5951746eeb8f35d0
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Sat Mar 12 04:01:21 2011 +0100
+
+    fedora-live*-kde.ks: Move some common fixes to fedora-live-kde-base.ks.
+
+commit c36c851be69578c29c204ceb41ed788fbbfc48d4
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Sat Mar 12 03:55:17 2011 +0100
+
+    fedora-live-kde.ks: Full l10n support for the 2 GiB ISO:
+    - Ship kde-l10n-*.
+    - Ship the default CJK and Cyrillic fonts.
+    - Ship input methods.
+
+commit a3d976eb44a934a7937305def3c5d65372d3c4d3
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Sat Mar 12 03:51:33 2011 +0100
+
+    fedora-live-kde.ks: Target 2 GiB instead of 1 GiB for the alternate kickstart.
+    As agreed on at the KDE SIG meeting.
+    The default ISO to be mirrored is still the CD, this is just an alternative.
+
+commit 479be30ee106e3489112b0434d65ed53a0a9f0a6
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Thu Mar 10 15:35:18 2011 -0600
+
+    kde: missing '>' redirect from previous commit
+
+commit fd58dea6da1587754e7a6b3a2aeb3c6b86f78101
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Thu Mar 10 15:33:20 2011 -0600
+
+    hack around https://bugzilla.redhat.com/683855 by explictly using
+    oxygen-gtk for root user
+
+commit 3398cbfffe12e4a943eddac8e2e382065cf0e77c
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Mar 9 16:55:34 2011 -0600
+
+    Games: Needed to remove vdrift
+    
+    It turns out that xz didn't save enough space to add vdrift to the spin.
+
+commit 733e7a9f70d16534f409a945c115e4f56d957c98
+Merge: 6e18af0 39dce77
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Wed Mar 9 14:54:23 2011 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 6e18af0f8158e50cc36ee0cbf2767cb1a267c0b0
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Wed Mar 9 14:53:17 2011 +0100
+
+    FSL temp removal of honeyd - broken dep to libevent
+
+commit 39dce7754e32872921dcab7d5c702eb52edc1cfb
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Mon Mar 7 16:23:13 2011 +0100
+
+    fedora-live*-kde.ks: Better comments for font tweaks.
+
+commit 1d4afcace68e03b874912d1cba48b42a256f83e8
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Mon Mar 7 16:18:15 2011 +0100
+
+    fedora-live*-kde.ks: Remove commented-out kacst*fonts* blacklist.
+    They're not installed by default anymore anyway.
+
+commit 8d89e2ff0c0db5202152e80bb3886a9b2fc97f0f
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Mon Mar 7 09:40:02 2011 +0100
+
+    fedora-livecd-kde.ks: Ship ktorrent.
+
+commit 950b54128c2af766e076e78d2baa74d6f0b6faa6
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Mon Mar 7 09:30:53 2011 +0100
+
+    fedora-live*-kde.ks: Update the comment for pavucontrol.
+    GStreamer isn't the issue anymore, other gnome deps and duplicate functionality are.
+    The size estimate is also probably wrong now, so remove it.
+
+commit 613fa5bdfc571deabff57ee8e45c52c026a4bb0f
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Mon Mar 7 09:29:04 2011 +0100
+
+    fedora-live*-kde.ks: Kaffeine is no longer default in F15.
+    Therefore, it's no use minusing it out.
+    List it (commented out) as nice to have instead.
+
+commit f66450ce01a821d6553e506fab7a682934d88554
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Mon Mar 7 09:25:33 2011 +0100
+
+    fedora-livecd-kde.ks: Update size estimate for Digikam. (Yes, it fits!)
+
+commit d18252ea60cb3b0d1b83ca57a8b3c93ebf018f80
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Sun Mar 6 07:36:36 2011 +0100
+
+    fedora-livecd-kde.ks: Try adding digikam, we have some more space left with #678909 fixed.
+
+commit 7dad4c4b8d0dd1e25bb7a4b009c5fec86230af45
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Mar 5 16:54:51 2011 +0100
+
+    LXDE: use pidgin instead of lostirc
+
+commit 0d7ea78efc51647572330a07ba935381844ee941
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Mar 5 16:54:28 2011 +0100
+
+    LXDE: clean up
+
+commit 0c35f6d1cc2aa31a980dec1b076ba62c3db61376
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Mar 5 16:49:15 2011 +0100
+
+    LXDE: Use yumex instead of packagekit
+
+commit 790a5067906d5aecf53fde4010a2d2daa0eef318
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Mar 5 16:47:28 2011 +0100
+
+    LXDE: Add default artwork
+
+commit da0dbc38d14949f047cfd7bf8946a5f891f083b0
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Mar 3 22:59:21 2011 -0700
+
+    Remove blank --exclude option. (#682230)
+
+commit 5c7b8e15891180f09163b4177fcda532bae62d9a
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Fri Mar 4 17:38:59 2011 +0100
+
+    fedora-livecd-kde.ks: Update size estimate for Amarok.
+
+commit 496c29970046ab785c602cbcf4bd0f2d23ff3255
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Thu Mar 3 10:20:40 2011 +0100
+
+    fedora-live-kde.ks: Add krusader to the 1G spin as agreed in a KDE SIG meeting.
+
+commit 6edd100839bbfc93f41701e59f9850991928b438
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Thu Mar 3 09:35:40 2011 +0100
+
+    fedora-livecd-kde.ks: Try including amarok for F15 Beta.
+
+commit eccde60155930316ea1cf1e44187ead4a35d65ef
+Merge: ab98498 83d81ed
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Wed Mar 2 09:07:25 2011 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit ab98498dfa41f4604d4efc58ce24b6e81424c891
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Wed Mar 2 09:05:22 2011 +0100
+
+    Security Lab temp takeout scanssh - added vlock
+
+commit 83d81edc57b33fda7d2b3e7e5ca5d869e9fa7202
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Mar 1 11:07:30 2011 -0500
+
+    Don't set no-longer-existing nautilus GConf keys
+    
+    nautilus is no longer showing desktop icons anyway...
+
+commit fae7f280dfbd346627b2882bcb3d5a01de406b29
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Mar 1 11:04:34 2011 -0500
+
+    Update the gnome-packagekit tweaks
+    
+    gnome-packagekit is no longer using GConf, so tweaking GConf keys
+    has little effect. Instead disable the gnome-settings-daemon updates
+    plugin.
+
+commit 5cdace94d6cb83696f9e080bd7878be91ee48ada
+Author: Bill Nottingham <notting@redhat.com>
+Date:   Tue Mar 1 10:40:02 2011 -0500
+
+    Remove some chkconfig calls that are disabling things that don't exist.
+
+commit 3f52cb4fbdf718de843a53eb0e8ddf6ff4205b8a
+Author: Jeroen van Meeuwen (Ergo Project) <jeroen.van.meeuwen@ergo-project.org>
+Date:   Tue Mar 1 01:32:08 2011 +0000
+
+    Remove unacceptable, unreviewed Fedora-15-ec2.ks;
+    
+      From a short review;
+    
+        - Not compliant with Spin Guidelines,
+        - Not including common base kickstart,
+        - Illegal disabling of SELinux,
+        - No Spins page,
+        - Too late for proposed inclusion (2011-02-08 was Feature Freeze)
+
+commit e6f64a9f0571e46dcf5ebd2fb9d4d6c992a2557a
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Mon Feb 28 14:45:40 2011 +0100
+
+    removed gmixer - caused build error
+
+commit 87ed33f5a948a2f0ccce3774088f24358dfbf21e
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sun Feb 27 17:15:32 2011 +0100
+
+    Xfce: permanently drop xfce4-volstatus-icon (orphaned)
+
+commit ae41d6b1935105f9fd7ec567581cb863cf87cfdf
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sun Feb 27 17:14:21 2011 +0100
+
+    LXDE: Don't install gnome-disk-utility (default in @admin-tools now)
+
+commit 5e8a2e426853991df39bd5d3013e02cd1d75ad95
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sun Feb 27 17:11:43 2011 +0100
+
+    Xfce: Don't install gnome-disk-utility (default in @admin-tools now)
+
+commit 445c746f68fafc1693c7c3ee62f1686554277bd4
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Feb 26 09:32:27 2011 +0100
+
+    LXDE: gmixer was orphaned, use pavucontrol instead
+
+commit 513737f702097eeda95158cbf38517b65f1ec79b
+Author: Dennis Gilmore <dennis@ausil.us>
+Date:   Fri Feb 25 20:06:35 2011 -0600
+
+    add ec2 kickstart
+
+commit fed4bb8fe293bae04051c45d1b25cd1dc0947e5f
+Author: Adam Williamson <awilliam@redhat.com>
+Date:   Thu Feb 17 15:53:21 2011 -0800
+
+    patch for spin-kickstarts: switch xfce to lxdm
+    
+    here's the patch.
+    --
+    Adam Williamson
+    Fedora QA Community Monkey
+    IRC: adamw | Fedora Talk: adamwill AT fedoraproject DOT org
+    http://www.happyassassin.net
+    
+    >From e06893a9ba90aba1eb31d58a0eae3d12867565c9 Mon Sep 17 00:00:00 2001
+    From: Adam Williamson <awilliam@redhat.com>
+    Date: Thu, 17 Feb 2011 15:49:55 -0800
+    Subject: [PATCH] switch Xfce to lxdm (temporary probably, working around bug in gdm for alpha)
+
+commit a3384c162353ff14f60d6a04d07b75fc05036d43
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Feb 14 21:52:07 2011 -0600
+
+    Rebuild to point to branched release instead of rawhide.
+
+commit 5e844cdf055868f2dd23f4448b06fa56867e1a05
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Feb 12 11:29:02 2011 -0600
+
+    chess is currently broken.
+    
+    The ogre (and related projects) upgrade broke chess and without any active
+    upstream, I might not be able to get it working again by the F15 release.
+
+commit 9813b2f4ebbf29c08844b3babf74bd34beb20e1c
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Feb 12 11:28:02 2011 -0600
+
+    With the xz size savings, it looks like we can try to add vdrift back.
+
+commit 004b1bfceb9d16c7e4f9cdab259e63e932f6ae08
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Fri Feb 11 22:24:46 2011 +0100
+
+    Xfce: Add gtk-theme-engine-clearlooks and fedora-icon-theme
+
+commit dc62a3e5d70ca7ade95bde900ad0741d6477dd50
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Fri Feb 11 10:12:59 2011 -0600
+
+    Undo removal of kernel-PAE.
+    
+    This was a bit of an emergency hack done before the last least for split
+    media. We want to at least start out not doing this.
+
+commit a878b281e49bd8bee5e08b01ffdbb9174d7ef696
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Fri Feb 11 10:08:02 2011 -0600
+
+    Switch default repos now that F15 has branched.
+
+commit ed00e34b0b602d9649663671f06adb282ae3c9d7
+Author: Kevin Fenzi <kevin@tummy.com>
+Date:   Wed Feb 9 08:53:07 2011 -0700
+
+    Move fpaste to the base ks. It's small, doesn't have many deps and very
+    useful for debugging problems.
+
+commit bd151ed17386b11f953e0946d3bca53235a39891
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Feb 8 21:32:20 2011 -0600
+
+    Prepare for pre-alpha rebuild.
+
+commit b34d4223958eeae1a0c9dc3c1655da1c5cbef6af
+Author: Kevin Fenzi <kevin@tummy.com>
+Date:   Tue Feb 8 14:36:55 2011 -0700
+
+    Add @lxde and @xfce per last rel-eng meeting.
+
+commit bb1e6ffe7758b75655737e80961b2d7fc4802f8d
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Thu Feb 3 22:51:51 2011 +0100
+
+    fedora-livecd-kde.ks: Readd kipi-plugins too.
+
+commit 48f92b30138591c7703d08ffe58665092e692262
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Thu Feb 3 22:50:34 2011 +0100
+
+    fedora-live*-kde.ks: Really readd k3b (was missing even on the 1G spin).
+
+commit 18d70001ec5321f25827d1ec5f9ee6a1ef9cd465
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Thu Feb 3 22:48:06 2011 +0100
+
+    fedora-live*-kde.ks: Remove duplicated %post, already in fedora-live-kde-base.ks
+
+commit 8c9df1271ec4f6e65164b4a061a8e5f568a35421
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Thu Feb 3 22:46:32 2011 +0100
+
+    fedora-live*-kde.ks: Comment consistency fixes.
+
+commit b20a608b89606ca863b15b5a8a2d6968275e4a84
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Fri Feb 4 00:17:29 2011 +0100
+
+    Revert "spin-kickstarts patches"
+    
+    This reverts commit 9d9f616744e86268c69b767993c242c8c5442055.
+    I will apply the changes in 4 separate patches with correct comments.
+
+commit 9d9f616744e86268c69b767993c242c8c5442055
+Author: Kevin Kofler <kevin.kofler@chello.at>
+Date:   Thu Feb 3 22:57:21 2011 +0100
+
+    spin-kickstarts patches
+    
+    Wie im IRC besprochen,
+            Kevin Kofler
+    
+    >From c45e26cb8d7f3d1d511f6a93f143f79b1cc927da Mon Sep 17 00:00:00 2001
+    Message-Id: <c45e26cb8d7f3d1d511f6a93f143f79b1cc927da.1296770126.git.Kevin@tigcc.ticalc.org>
+    From: Kevin Kofler <Kevin@tigcc.ticalc.org>
+    Date: Thu, 3 Feb 2011 22:46:32 +0100
+    Subject: [PATCH 1/4] fedora-live*-kde.ks: Comment consistency fixes.
+
+commit e81373e7aca37fce1913a34a2363305be7ce0c43
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Wed Feb 2 22:46:03 2011 +0100
+
+    Xfce: completely disable screensaving (#674410)
+
+commit ac4bd049b0d6816fc6dfbd5a15d0d277dc369d8b
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Wed Feb 2 22:34:19 2011 +0100
+
+    Desktop: Fix maintainer's email address
+
+commit 7cd290393d967e7beee983af92660dd84d112060
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Tue Feb 1 23:19:45 2011 +0100
+
+    fedora-live*-kde.ks: Readd stix-fonts for glyph coverage (should fit now).
+
+commit 1b343959352f6ed4e0855aaadac7e8aacb96296c
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Tue Feb 1 23:18:32 2011 +0100
+
+    fedora-livecd-kde.ks: Readd konq-plugins, kdeplasma-addons, k3b*.
+
+commit 8569a6cee124039e49f548f608d55d1221a675bc
+Author: Kevin Kofler <Kevin@tigcc.ticalc.org>
+Date:   Tue Feb 1 23:14:10 2011 +0100
+
+    fedora-live-kde.ks (1 GiB KDE spin): replace desktop-backgrounds-basic with kdebase-workspace-wallpapers
+
+commit 43ad7e5d43662aa7c464d9cbf7f82aebf078286c
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sat Jan 29 18:17:11 2011 +0000
+
+    meego: drop mesa experimental
+
+commit 9c6bf5bdaf181b8bc655892ff03aa6a27a4ba514
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Thu Jan 27 11:37:01 2011 -0600
+
+    Use $releasever instead of hard coded release.
+    
+    livecd-creator supports $releasever, so we can remove hard coded release names
+    (other than rawhide) from the repo commands. Even though these are currently
+    comments, I wanted to get a head start on getting these ready for the F15
+    branch.
+
+commit 60096ceccebe4542e972dbbf877427a850ba3268
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Jan 26 00:51:41 2011 -0600
+
+    Need to remove rpm db files after running rpm in the post section.
+
+commit c1b6a08450cb40e96bdc7825213162e82f9157c4
+Merge: 43e5e09 410b038
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Tue Jan 25 10:11:14 2011 -0600
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 43e5e0913a56ffa0d051134307173a7cf179b56f
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Tue Jan 25 10:10:19 2011 -0600
+
+    refactor bits for both a smaller livecd and bigger live image
+
+commit 410b0384c30a5eb8a7c9205ed332bc529cc675b6
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Jan 22 19:12:05 2011 +0100
+
+    Add remmina-plugins vor RDP and VNC
+
+commit f4b3bc9acb6af12edf79411fd403b1e302d8d80d
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Sat Jan 22 18:34:38 2011 +0100
+
+    Permanently remove xfce4-remmina-plugin (retired)
+
+commit ec96faa04efd08b2a55e50313a03ff9751921da8
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sun Jan 16 22:03:09 2011 -0500
+
+    Add some more exclusions
+
+commit 9f50732543a3aa0cf442a3c3d111a2591c6a345a
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sun Jan 16 18:20:39 2011 -0500
+
+    Rythmbox dependency issues cleared
+    
+    ...nevermind it still doesn't run.
+
+commit b3cc5899b8eb8368779fcb18125986067f84a19a
+Author: Kevin Fenzi <kevin@tummy.com>
+Date:   Sat Jan 15 11:55:49 2011 -0700
+
+    Disable xfce4-remmina-plugin as well for now.
+
+commit a9bc262c603a2d3f6f3675470582f068ac026047
+Author: Kevin Fenzi <kevin@tummy.com>
+Date:   Fri Jan 14 14:59:32 2011 -0700
+
+    Disable some plugins for now that don't build/work against 4.8
+
+commit 28001c1e296523c77f5ed3ab92905ba1744f8221
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Thu Jan 13 18:25:24 2011 -0500
+
+    As goes libreoffice, so goes planner
+
+commit 11da7b3a259783351febe49f8aeeded102c23282
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Jan 11 22:13:34 2011 -0500
+
+    Desktop spin de-bloating
+    
+    Adjust our exclusions for the ooo->libreoffice rename.
+    Also remove rhythmbox temporarily, since it causes
+    dependency problems.
+
+commit b5f8de26e2db9fb28a98beb54d4c6ce272e0daf0
+Author: Kevin Fenzi <kevin@tummy.com>
+Date:   Mon Jan 10 11:49:02 2011 -0700
+
+    Remove ccid, it no longer exists. Bug: 668361
+
+commit 4af94adf17f9b060231619c1ce9d281312d3583e
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jan 10 08:14:48 2011 -0600
+
+    arch=i386 changed back to arch=$basearch.
+
+commit bdef79ebcb81e3d07106cc8c2de9da7522339025
+Merge: be1da47 b2dff71
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jan 10 08:10:29 2011 -0600
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit b2dff71e45ece91e336bc0253621c898e30de7f2
+Author: Dennis Gilmore <dennis@ausil.us>
+Date:   Thu Jan 6 12:21:49 2011 -0600
+
+    make the disk 1GiB aext4 for aos appliance
+
+commit 7501bde2c3532809ae00e08b3ff3e9885969bbdb
+Author: Adam Miller <maxamillion@fedoraproject.org>
+Date:   Fri Jan 7 10:40:57 2011 -0600
+
+    Fixed my email address since I no longer distribute the old one and I will be
+    involved in the Xfce Spin again in the F15 cycle, if someone needs to email
+    me I'd like them to have the correct info.
+
+commit be1da472b9ba9f070f534070be500794fe0cf6fd
+Merge: ef5a216 d7b6995
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Nov 10 21:56:56 2010 -0600
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit d7b69952b08e1f538dd00ed59be84a640565682e
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Wed Nov 10 10:08:23 2010 -0600
+
+    fprintd bug (reportedly) fixed, yay.
+
+commit ef5a2160501e31ce415e3fb529b442c01f79688b
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Oct 31 08:37:29 2010 -0500
+
+    Build a new package for rawhide now that F14 is gold.
+
+commit fda5000b76afba3f09d2abfb2b519a25b03ab498
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Thu Oct 28 21:31:50 2010 +0200
+
+    little fix - backgroundimage was not working
+
+commit 9f842088de814e35b6dfd21cc99e408b14471247
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Wed Oct 27 15:43:07 2010 +0200
+
+    modified to work well with F14
+
+commit b83a8b871d9edc16e18f951da557a5b9681cdcb6
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Wed Oct 27 13:44:57 2010 +1000
+
+    include fedora-livecd-desktop.ks and update haskell packages
+    
+    Add emacs-haskell-mode and xmobar.  ghc-*-doc are gone.
+
+commit 37cfe1190c73a38fed557e126746df175b13b208
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Tue Oct 26 17:40:57 2010 +0200
+
+    LXDE: include gnome-keyring-pam (#643435)
+
+commit c5d32129f7789be52b7ff330cd5e8c75e3f5ffe8
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Sun Oct 24 17:39:45 2010 -0500
+
+    -fprintd-pam , until related crashes in kdm are fixed (http://bugzilla.redhat.com/605156)
+
+commit 0fa07e73697cb5887dade22147b6ed8c0fb74ff1
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Oct 21 11:04:28 2010 -0700
+
+    Exclude all of btanks
+    
+    When mapping binary to source, we find btanks-data and try to map it
+    back to btanks and fail.  So, much, fail.
+
+commit 09248faa40eaa2d07fbabf7cef7bd7db05c6e478
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Wed Oct 20 16:12:04 2010 -0700
+
+    Keep xfce stuff off the media
+
+commit 6b1bb145d8b380d66c41fd60862e26f8d8a7c68f
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Oct 19 22:20:38 2010 -0700
+
+    Whack all of kernel-PAE stuff.
+
+commit 651b59e29d0823c88a8e770b19c0b63e5e0edfa9
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Oct 19 13:59:50 2010 -0700
+
+    Scrub kernel-PAE from the install media.
+    
+    This makes i386 split CD1 installs work again.  Too many kernels.
+    
+    Also duplicate the excludes for the source repo
+
+commit 28b18fe0a2e571f61bba1d6ba9d9f803a0e46001
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Oct 19 13:58:18 2010 -0700
+
+    Revert "One more repo command needed to use absolute releasever and basearch."
+    
+    This reverts commit aba41e889debaea897e74be44ef0107f24e7d8d0.
+    
+    Pungi, the user of fedora-install-fedora.ks, understands $releasever and
+    $basearch quite well.  Please don't change it.
+
+commit 09cf4d7c1c62105158576903ee2cd4f777f22f8e
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Tue Oct 19 03:19:59 2010 +0200
+
+    LXDE: make sure xfwm4 is not pulled in for firstboot
+
+commit c5bb8a2f42901e5d1de5cfd6f7bc587651197190
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Oct 12 22:27:31 2010 -0500
+
+    Set master version to 15.
+
+commit 86477b4fbd3ca8e4d30b5060bc8b8709c10ec5b9
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Oct 12 22:22:49 2010 -0500
+
+    The master branch is back to using rawhide for a while.
+
+commit aba41e889debaea897e74be44ef0107f24e7d8d0
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Oct 12 22:20:02 2010 -0500
+
+    One more repo command needed to use absolute releasever and basearch.
+
+commit 7e737f095e843ad26f1b45b443dcfd1320f2808f
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Oct 12 21:40:00 2010 -0500
+
+    kickstart files need to use absolute basearch and releasever.
+    
+    The mirrorlist url used yum variables ($basearch and $releasever) which don't
+    work in pykickstart. I changed them to i386 and 14.
+
+commit 39b016f7f5698145f970737f1080a24915fbd232
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun Oct 10 22:46:58 2010 +0100
+
+    soas: drop speak
+
+commit 0d3922fb267054bdf451ece3a48187c469d806bb
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun Oct 10 21:33:16 2010 +0100
+
+    meego: spin updates
+
+commit 0aa9b4d0ecac1786dd035da8c3cce15d39aab37b
+Author: Chitlesh Goorah <chitlesh@fedoraproject.org>
+Date:   Sun Oct 10 22:27:47 2010 +0200
+
+    Added Milkymist toolchain in FEL LiveDVD
+
+commit 5c97f8028e994a024816d7f43990a94e29f25115
+Author: Igor Pires Soares <igorsoares@gmail.com>
+Date:   Wed Oct 6 02:32:11 2010 -0300
+
+    Include gimp and gnome-games again
+
+commit f3b0a89834b5fde77079550e32e2cac8eb5283f6
+Author: Kevin Fenzi <kevin@tummy.com>
+Date:   Wed Sep 29 17:22:53 2010 -0600
+
+    Remove gnumeric and gimp and aspell. Add fpaste.
+    Gets us back under size again.
+
+commit b8756f86c237d4f48f99586a1248cd8b5429eecc
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Wed Sep 22 20:58:03 2010 +0100
+
+    SoaS: make new Activities favourite
+
+commit 30ee391a1289650657f493ade05688d1c5448467
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Wed Sep 22 15:06:02 2010 +0100
+
+    SoaS: Add a few more Activities
+
+commit f022c498ec33ff8d1a53befc6ca3776c78ae8fd0
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Sep 21 18:16:43 2010 +0200
+
+    space saving: remove k3b for now; k3b-common will be splitted into subpkgs in the future
+
+commit 8e0eed7655d4872911bbfab4e378a5cbc8c4519b
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Sun Sep 19 21:31:26 2010 -0500
+
+    -stix-fonts
+
+commit e5f0b5ef60169d77492a39dce466da15f8d848ed
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Sun Sep 19 21:23:21 2010 -0500
+
+    more space-saving:
+    * additional input method removal (borrowed from broffice)
+    * -paratype font
+
+commit f2574457673b6a7bd419a527ce803e17240be23b
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Sun Sep 19 17:36:18 2010 -0500
+
+    autofs already in -minimization
+
+commit 9031e7e9d7c46eab13fa0f758cf22f890e63b3ec
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Sep 18 09:24:59 2010 -0500
+
+    Don't try to copy over documentation that isn't there any more.
+    
+    A similar fix had been applied to live base a while ago. We really want
+    live base inheriting from mini so that we don't end up having to fix
+    things twice.
+
+commit a2856a707133fdee7ba51eded142304a3a698163
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Sep 15 07:49:33 2010 +0200
+
+    -kdeaccessibility; -konq-plugins (space issues)
+
+commit fa62f4e7d6aa7cb1d88719b2f75099b2c4169d86
+Author: Igor Pires Soares <igor@fedoraproject.org>
+Date:   Mon Sep 13 14:59:00 2010 -0300
+
+    Include OpenJDK and remove other packages for downsizing.
+    
+    Include OpenJDK, remove gimp and gnome-games
+
+commit 6d038ff92144a313927386d5cb4ae54072693474
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Sep 7 08:09:24 2010 -0400
+
+    Follow the other spins in kicking out acpid
+
+commit 0eaeb677cd3a1bfd0703b482030bb67f6af80d0b
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Sep 6 11:15:10 2010 -0500
+
+    Update version and spec file for beta.
+
+commit 6b46a15fd30e1dd6a1925d530632964d504482c0
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Tue Aug 31 22:31:42 2010 +0100
+
+    mini: some minor fixes and cleanups
+
+commit ccbd53091df8fbe8c7a6472778dea99cdc565d13
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Aug 30 21:58:46 2010 -0500
+
+    Update repo definitions
+    
+    At this point in the release cycle the fedora and updates repos should
+    be enabled.
+    The ks files for live spins that define these should be consistent with
+    each other.
+
+commit df4008fb39f738ee3d9ad3215609dc6af689e9e9
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Aug 28 15:13:55 2010 -0500
+
+    tremulous has been tentatively added back. Size is still very close.
+
+commit 55f2af225f051d65d426c2a04add03ef1536cd5b
+Merge: e2dce6a d1338e6
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Sat Aug 28 19:09:42 2010 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit e2dce6a8c68750b35a9237cf2bb449cea0f5997a
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Sat Aug 28 19:06:22 2010 +0200
+
+    changed for downsizing to comply to the 700 mb limit
+
+commit d1338e6645927114dd49c3092f0293471c2f9fff
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Aug 28 12:00:55 2010 -0500
+
+    poker2d was dropped from F14 for being orphaned.
+
+commit 890d943e057a29135b04e42e765128afd8426ab3
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Sat Aug 28 18:57:35 2010 +0200
+
+    changed for downsizing to comply to the 700 MB limitation
+
+commit 7e7518d45a0dabef7caeded882c56d4ec190f0b7
+Author: Joerg (kital) Simon <jsimon@fedoraproject.org>
+Date:   Fri Aug 27 23:16:44 2010 +0200
+
+    added new apps and parser marker for the security lab menu
+
+commit d960b06282b5a5eb2285f6351ec93001f690686a
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Thu Aug 26 09:39:34 2010 -0400
+
+    Remove removals that are already in fedora-livecd-minimization.ks
+
+commit e9152aa14378645e1d4113f38a1c4d907f16ce8e
+Author: Kevin Fenzi <kevin@tummy.com>
+Date:   Wed Aug 25 15:46:50 2010 -0600
+
+    Remove Ugly hack for XO laptops from bug 460581. It's no longer needed
+    and causing problems with some other Geode devices.
+
+commit db7aa8d97ef8ebe83916b254f82f86744e4ddfcd
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Aug 23 07:45:42 2010 -0500
+
+    unix2dos removal needs to be removed from the mini ks file as well.
+
+commit 81758bf99b255a851c6d5726f0d4edac0510fe32
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Fri Aug 20 20:43:42 2010 -0400
+
+    Don't try to remove a package that doesn't exist anymore
+    
+    Seems like unix2dos has bitten the dust...
+
+commit 457efefa521cbcbfce79ea9889458190c48330e4
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Fri Aug 20 19:58:44 2010 -0400
+
+    Start size reduction
+    
+    Drop things that pull in perl. We still need to drop the perl
+    dependency from syslinux for this to have the desired effect.
+
+commit c977a972ff5b0c27361ab414bd320960a5afecd6
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Thu Aug 12 20:12:40 2010 +0200
+
+    LXDE: fix pcmanfm invocation
+
+commit b500cb3bb951565ae27b461f7664fcaf86aa91b6
+Author: kevin <kevin@tummy.com>
+Date:   Thu Aug 12 09:43:00 2010 -0600
+
+    Fix xdriver= passing. Patch from Adam Williamson <awilliam@redhat.com>
+
+commit 6e1f23814506c3105878d7d33125910efbebf25f
+Author: kevin <kevin@tummy.com>
+Date:   Tue Aug 10 10:54:52 2010 -0600
+
+    Fix firstboot for f14alpha
+
+commit 5170738dfcececf3843ab0fb139375c0ef56830b
+Author: Christoph Wickert <cwickert@fedoraproject.org>
+Date:   Mon Aug 9 21:14:38 2010 +0200
+
+    LXDE: Make sure polkit-gnome doesn't end up in the LXDE spin
+
+commit 8659a4dd34453540d0bdab87beedb23b491328cd
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Thu Aug 5 16:14:01 2010 +0200
+
+    soas: adjust soas codename for v4 release
+
+commit dedc97f491185ac8f0da7492668fcd5c08d3c84c
+Author: kevin <kevin@tummy.com>
+Date:   Wed Aug 4 09:58:13 2010 -0600
+
+    Replace makewhatis with mandb
+
+commit e3840e66ba692643366738e9405a5a9850cfb157
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Aug 3 10:53:29 2010 -0500
+
+    Typo fix reported in spin-kikstarts ticket 38
+
+commit e5451ac0ce6daec29b4cb489553b49ad2a0cf3c2
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Jul 27 06:16:57 2010 -0500
+
+    Modify git clean recommendation.
+
+commit 97943f960e7e1ca03ec8a259061d68fcea34fb2d
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Jul 27 06:13:40 2010 -0500
+
+    Get ready for 0.14.1
+    Renamed moblin to meego
+
+commit 4fc5daba585c7e036aabc4684e9cc527c1b08626
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Jul 24 07:54:55 2010 -0500
+
+    yum in post of livecd-desktop removed.
+    
+    Packages should not be removed in post. For the nightly composes the yum remove
+    is failing in any case. If it were to start working, it could potentially
+    break several spins that include the livecd-desktop as a base ks.
+    The syslinux dependency is expected to be fixed the GA release, so this
+    isn't going to be needed to keep perl out of the livecd-desktop spin.
+    Oversized CD images can still easily have their functionallity tested.
+
+commit 4db905c7a4c0960b68b73d306bbab04f9b846439
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Wed Jul 21 07:42:47 2010 -0500
+
+    revert addition of nm-applet
+
+commit 16de2c50970e2deae98751e0af642264773dcae8
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Sun Jul 18 14:52:39 2010 -0500
+
+    +nm-applet
+
+commit cee37bedd17faf271a0daee7454116fedf48ffe4
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Jul 11 23:37:01 2010 -0500
+
+    tremulous has been dropped.
+    
+    The package is orphaned and might drop out of the distro for F14.
+
+commit ec998bc2ce7e48a1a9853eb70b495ceaa97d7c3c
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun Jul 11 14:31:58 2010 +0100
+
+    MeeGo: rename Moblin ks file to MeeGo
+
+commit 8e5255483a11c1a7b07b7cb28e0d584ff593b614
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Tue Jul 6 20:04:08 2010 +0200
+
+    design: oups. we missed networkmanager-gnome. fix that.
+
+commit d675105f43a16d563a2f85a593f511153236da8b
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Fri Jul 2 15:20:13 2010 +0100
+
+    moblin: remove data/contacts/tasks due to issues with evo atm
+
+commit ff092a909ebcb3b5ae199f63583854f3bb616f00
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Thu Jul 1 17:46:36 2010 +0200
+
+    soas: add pygame (sugar platform) and decrease part size
+
+commit e6ac5e284666522b21a4de7bf8241fc7e4bcaade
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Jun 23 18:34:29 2010 -0400
+
+    foomatic-filters is now in comps
+
+commit b824bd6d0a68f658bd57adf0c6b6652b4723056d
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sat Jun 19 11:21:13 2010 -0400
+
+    Fix the syntax
+
+commit 75bb91317e9c404a06c17057d08724df55b52c6a
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sat Jun 19 11:08:22 2010 -0400
+
+    Don't install foomatic, just foomatic-filters
+    
+    This brings the list of things pulling perl onto the image down to
+    just syslinux.
+
+commit d85a5ed75d64726005c7f84d412c9b0f17bc0204
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Thu Jun 10 19:24:14 2010 +0100
+
+    mini: add some bits extra bits
+
+commit 475e4745783ecd6e71ee8d67dec74b4da74175fe
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 02:06:11 2010 -0500
+
+    Note one more substep in the package build process.
+
+commit 73405b1cb6aca6ab16f861a83e1e6b3dd3c9d5bb
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 01:34:39 2010 -0500
+
+    Add some reminders about how to do the package update on the Fedora side.
+
+commit 73ae813d3589ede02ee7ed6497c98e1f168b7318
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 01:10:47 2010 -0500
+
+    The example install commands shouldn't set execute bits.
+
+commit ef6ca3858ce348f83eeadc66adf0cbece7bc42ac
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 01:07:46 2010 -0500
+
+    custom-kickstarts needs fedora-kickstarts if we aren't going to package dupes.
+
+commit da407432cd8d8290610203fd051dec4e23b58bd1
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 01:05:54 2010 -0500
+
+    The README files for custom and l10n should be in %doc sections.
+
+commit d836f1b7c08e2c87106708ccf212bbdf7dcb10be
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 00:24:13 2010 -0500
+
+    Fix example rpmbuild command.
+
+commit b4659098a441da788b19884ff05448e8fa55db45
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 00:19:47 2010 -0500
+
+    Add running configure to the instructions
+
+commit 907bcf70e037b7edddabde6d99567958f7025ebe
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 00:18:25 2010 -0500
+
+    Missed a \ when removing sym linked files.
+
+commit e74698336f1d86ba734cd39bfdb555cac02c0326
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 00:17:19 2010 -0500
+
+    Tweak documentation
+
+commit dc84eda507bfa6a4bf76d8392ca92ff50c53fefb
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jun 7 00:02:00 2010 -0500
+
+    Get rid of the sym linked files.
+    
+    The building block spins were getting included twice. But rather than change
+    them to sym links have the ks files use ../ so they can just be dropped.
+
+commit 01689a4bec6b859b2d5ef81a5a07d46d38e42ae8
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Jun 6 23:46:26 2010 -0500
+
+    Remove duplicate docs.
+    
+    Since the various subpackages require spin-kickstarts, there is no need to
+    have them all own the doc files. Just once in spin-kickstarts will do.
+
+commit c488a9529c6032ba880a149f7fa3ac30c9e83898
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Jun 2 23:53:53 2010 -0500
+
+    Remove attempt to copy over documentation file that doesn't exist.
+    I checked with docs and that file isn't packaged any more, because it was
+    felt to be something that you wouldn't need once you made the live image.
+    That stance is negotiable if someone thinks it is worth including.
+
+commit 0c9733724df37904b78f3db0bf4d82297cc12045
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Jun 1 23:43:11 2010 -0500
+
+    Switch to using rawhide repo.
+
+commit 528bd003669a7b96dad4418a8060f39a2d42cac1
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Jun 1 23:42:53 2010 -0500
+
+    Tweak instructions
+
+commit b0449a43b690767444009122397d0fe946a55bb1
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Fri May 21 17:44:40 2010 +1000
+
+    use small ibus-pinyin-db-android for live
+    
+    ibus-pinyin-open-phrase is now ibus-pinyin-db-open-phrase
+
+commit 9230da3c0c5a99318746f3e866629047ec1b8275
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue May 11 10:01:01 2010 -0500
+
+    Move master on to version 14
+
+commit e40d2ef4e14f1e8a833c3b5045a04aa176bc2871
+Merge: f435370 c4001ba
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sun May 9 23:25:37 2010 +0200
+
+    Merge branch 'master' of ssh://git.fedoraproject.org/git/hosted/spin-kickstarts
+
+commit f435370753fa3db7ce95eaad174b3977774ef4cd
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sun May 9 23:23:15 2010 +0200
+
+    Security: Don't install fprintd-pam as it crashes LXDM
+
+commit 9c9586b309e16fed32f0fb892487c7d01045f337
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sun May 9 23:22:44 2010 +0200
+
+    LXDE: Don't install fprintd-pam as it crashes LXDM
+
+commit e1d0f02c0d5d96149ddfbbbf4e4eaa60aa6f7a9c
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sun May 9 23:20:24 2010 +0200
+
+    Base: Fix disabling of update checks for gnome-packagekit 2.30
+
+commit c4001bacdc785badd2186f73165e4bc68b5dbc7a
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Sun May 9 22:05:22 2010 +0100
+
+    moblin: fix setting the favourite apps
+
+commit 5e662c34bc80e77a5bc63c6d298bfa94ec594c4c
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sun May 9 18:53:49 2010 +0200
+
+    soas (for F13!): remove 'read' for final as it breaks in its current state
+
+commit c4f94fd3089a44e884b014baec0af68c35a05310
+Author: Igor Pires Soares <igor@fedoraproject.org>
+Date:   Sat May 8 13:25:51 2010 -0300
+
+    Remove inkscape inclusion, keep BrOffice.org Draw
+    
+    This is a minor change in order to downsize the spin for final release.
+
+commit f7826f1b3066e9b91759f4b8b818878005fb316e
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Fri May 7 07:30:39 2010 -0500
+
+    -desktop-backgrounds-basic
+    
+    plus some other cosmetics
+
+commit b149f8ccd8503f9f80b35ffe31414b458981e83c
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri May 7 13:57:42 2010 +0200
+
+    Prepare for release and bump version number
+
+commit 8ee89e03868ccec9af896e6987d6a1e28190cc27
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Thu May 6 17:44:37 2010 +0100
+
+    mini: remove old package
+
+commit 460babc98284bba4bb59da9fd1ffa13ffcf0ae5e
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Thu May 6 16:41:57 2010 +0100
+
+    moblin: set the theme correctly
+
+commit 408e21241d56c0fb22ce109ae230d405058477df
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Thu May 6 16:40:26 2010 +0200
+
+    mini: pull only the fonts we need and fix package name typo
+
+commit d439e3e03203f2fdc7c2c7aec0f1b71a004bf418
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Tue May 4 23:24:36 2010 +0100
+
+    mini: cleanup font inclusion/exclusions
+
+commit 21a2114571e945d6009b9ce50eb36f3e9f36b033
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Tue May 4 12:58:54 2010 +0100
+
+    moblin: remove bluetooth applet while it crashes X
+
+commit 8638255f200ff6c1f52597edb116d9827b51f384
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Tue May 4 11:39:58 2010 +0100
+
+    moblin: add the gnome-bluetooth applet
+
+commit dcd68e0622114925e4832c249a7745b6e01be15c
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Mon May 3 14:49:29 2010 +0100
+
+    mini: remove ghostscript and some more fonts
+
+commit 3775a6c19065a039d4a07d436a74a37937b8405b
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Mon May 3 14:31:17 2010 +0100
+
+    moblin: ks updates to improve livecd experience
+
+commit 850f5f67b76ef9ad9b38881271d99529e6d6bbd0
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Mon May 3 13:43:27 2010 +0100
+
+    moblin: add tasks too
+
+commit a1d7a5181a9209599b343082b8d4d9bda59f2d94
+Author: Peter Robinson <pbrobinson@gmail.com>
+Date:   Mon May 3 13:39:07 2010 +0100
+
+    moblin: add contacts as well
+
+commit a80def958695698abfad31f05a2c58dff2fb63a0
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Mon May 3 13:22:11 2010 +0100
+
+    This is not really useful, and has been complained about in bug 583706. As per fix for base.ks
+
+commit 87e9dfe929fe063b843e8e58b779757d7acb2988
+Merge: 49dcc86 c07914e
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Mon May 3 13:18:05 2010 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 49dcc8637a71bcf9bb2ad5c34f9a39aafad12afe
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Mon May 3 13:17:49 2010 +0100
+
+    - Add dates to make the calendar useful
+
+commit c07914e6e9727359ff1a496dabfc5e3d7334015e
+Author: Igor Pires Soares <igor@fedoraproject.org>
+Date:   Sat May 1 17:06:48 2010 -0300
+
+    Remove vino and sil-padauk-fonts
+
+commit 3ac2f93c83332dc6e5691e2718b8b622e3733401
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Fri Apr 30 09:30:01 2010 -0500
+
+    step1 trying to get cd-sized again,
+    trim some fonts (pending feedback from -fonts list)
+
+commit 34c27a76cb8bd63548da651fc108767b4101bc2b
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Fri Apr 30 07:50:27 2010 -0400
+
+    Prevent readahead-collect during live boot
+    
+    This is not really useful, and has been complained about in bug 583706.
+
+commit a6ca581f1037adc0cdfb67a3644bb04d2ce2b7c0
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Fri Apr 30 01:03:43 2010 +0200
+
+    design: move font removal to mini and take postr out (size concerns)
+
+commit e85d279c483b3aae95a27bb76a2708a7b2363d6c
+Merge: a3db96b e4f9eaa
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Wed Apr 28 22:54:38 2010 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit a3db96b0d9fa305b44b17ce7689f42a0f8a3b17d
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Wed Apr 28 22:54:19 2010 +0100
+
+    mini: fix anaconda liveinst installs
+
+commit e4f9eaa8e69d743b845f53ce24e75ecb3ffbc3cd
+Author: Rex Dieter <rdieter@fedoraproject.org>
+Date:   Wed Apr 28 07:14:07 2010 -0500
+
+    live image optimization: disable kres-migrator
+
+commit 9410f3d71803cbc4a15ded38f2fcf6cb4f411707
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Wed Apr 28 10:29:34 2010 +0100
+
+    mini: add avahi for link local services
+
+commit 9b50b2ba8f0d0ba5493dfb444b3f7ceac7a3757b
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Wed Apr 28 07:31:21 2010 +0100
+
+    moblin: add some telepathy bits
+
+commit df99adb4d56979bed6e8fc6372cfd748d6dba315
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Mon Apr 26 23:36:15 2010 +0100
+
+    soas: add a few deps for various tools
+
+commit e7833d6a0b2e70bbc11fbe370cbcee08a97ad5bb
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Mon Apr 26 21:05:52 2010 +0100
+
+    soas: small cleanup
+
+commit 7bf6b4f9553fb7b4be49e916b7c2f45d4df1a7b9
+Merge: 3afd54a fc38e2b
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Mon Apr 26 20:27:35 2010 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 3afd54af719412ecb59b67c98c70fa5d048f198f
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Mon Apr 26 20:27:04 2010 +0100
+
+    Moblin: hornsey is now fixed
+
+commit fc38e2b6962946cda9ce6219c3af68bd00496c89
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Apr 26 21:24:43 2010 +0200
+
+    soas: add rp-pppoe
+
+commit ff1ad4fb5cb73e037842c3e7c578f13258ac332f
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Apr 26 21:07:24 2010 +0200
+
+    soas: get proper release naming in the panel
+
+commit b58d0913c53ad4fb7fa9e24f17b457ea102cff73
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Apr 26 21:00:20 2010 +0200
+
+    soas: include record activity again
+
+commit 9868ecd7fa13a4016eb52fb7a3f9d54b0797b191
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Apr 26 20:58:17 2010 +0200
+
+    mini: remove input-methods
+
+commit a789d34c2cded7032a9a9adec3ba9e3816f32596
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Apr 26 20:03:36 2010 +0200
+
+    fix plymouth theme & write and some typos
+
+commit 5f346cceb3d733c68358c554872d0f867840e36d
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Mon Apr 26 18:50:46 2010 +0200
+
+    fix #583495; copy system-config-software icons
+
+commit 2e7b9058d0dc60919c629f84e37f2ecd0ef508f8
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Thu Apr 22 11:03:47 2010 +0200
+
+    Security: sync with LXDE
+
+commit a8e87c18806c4fd04fbdea0adfa1ff75245c3a51
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Wed Apr 21 12:31:30 2010 +0100
+
+    A few minor mini kickstart cleanups
+
+commit e348d9581c186213bffddf2b9074cef6b6f2897b
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Wed Apr 21 10:52:43 2010 +0100
+
+    Moblin: temporarily remove hornsey until new build hits stable
+
+commit 495ebd109ebcd08858de41962cfc510308035a81
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Wed Apr 21 10:45:38 2010 +0100
+
+    Moblin: clean up dependencies
+
+commit c2016a8820660c76ddbdadbe105c2dc016b45ea5
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Apr 13 21:15:59 2010 +0200
+
+    LXDE: add hal-storage-addon
+
+commit 9380fff9c9901f84358ed00335710e11ac2c708e
+Author: kevin <kevin@tummy.com>
+Date:   Mon Apr 12 09:26:05 2010 -0600
+
+    Add hal-storage-addon
+
+commit 3ec5dd8e48d92c3089f3d51b0b9b326bf57c0b95
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Apr 12 01:26:37 2010 +0200
+
+    design-suite: we can haz entangle now
+
+commit f786a65a188b9e296a38994369421303de3e0a42
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sat Apr 10 01:22:26 2010 +0200
+
+    LXDE: changes for polkit
+
+commit 6027533b45bbabcb020be4eeb68a375f57a08384
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sat Apr 10 01:19:05 2010 +0200
+
+    LXDE: Switch to Firefox, include Java plugin, add some fixes
+
+commit 2e7ab7cb7a598b4e42da89881f9e5952c0b3101b
+Author: Colin Walters <walters@verbum.org>
+Date:   Thu Apr 8 23:18:18 2010 -0400
+
+    [liveimage-diff] Sort output
+
+commit 0303dc173a59e1827630150ac7fbb4e19446adfb
+Author: Colin Walters <walters@verbum.org>
+Date:   Thu Apr 8 22:47:39 2010 -0400
+
+    [liveimage-diff] New tool to diff livecds
+
+commit 28267914cefde4a4b9bb50a7910c73a01db5cf04
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Apr 7 10:10:02 2010 -0400
+
+    Categorize removals a bit more
+
+commit dd680aa497fdf76f85480d715e8a351190d85090
+Author: Igor Pires Soares <igor@fedoraproject.org>
+Date:   Tue Apr 6 19:13:19 2010 -0300
+
+    Bring inkscape back and remove unnecessary fonts
+    
+    Include inkscape and remove paratype-pt-sans-fonts, sil-abyssinica-fonts and wqy-zenhei-fonts.
+
+commit 3d5a72c3a9d3e7df24a4b33f4715131d09422eb9
+Author: kevin <kevin@tummy.com>
+Date:   Tue Apr 6 09:36:51 2010 -0600
+
+    Add nightly compose script used for making all the spins.
+
+commit 7a8f13033ad464d13cbe013b960eac5fe7314d42
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sun Apr 4 22:32:00 2010 +0200
+
+    design-suite: we don't want the whole evince devel thingie
+
+commit e62bfb7dfe029b2d5852c0edbf8789a7ea252c86
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sat Apr 3 17:38:52 2010 +0200
+
+    design-suite: lets fit on a cd now
+
+commit 9298e76e262864713e65aaeab39e2b3a01cac376
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Fri Apr 2 00:43:04 2010 +0200
+
+    design-suite: don't include fyre for now
+
+commit 95eaa5286f2900c5cfc505c92c5732006874313c
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Mar 31 18:43:12 2010 -0500
+
+    fedora-livecd-desktop.ks in custom needs more sym links.
+    
+    fedora-livecd-desktop.ks includes fedora-live-desktop.ks and
+    fedora-live-minimization.ks and so sym links for those need to be
+    added in custom as well, for things to work.
+
+commit ffb1758d4bb5a20676539b09d912ecfb3102e829
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Tue Mar 30 23:08:54 2010 +0200
+
+    design-suite: better add printing, right?
+
+commit 167f067eba56ee67e5e41e6e8b08847cdd90de0f
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Tue Mar 30 22:56:42 2010 +0200
+
+    design-suite: add some more applications and lets see where we go size wise
+
+commit d2c28a65e5b0c89903374c3ae478a04f9d14ef9e
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Mar 30 22:25:47 2010 +0200
+
+    remove kdeplasma-addons for size
+
+commit f6b9434ce89a043757f5c63cd578df1d9e96fa8f
+Author: Peter Robinson <perobinson@neo.(none)>
+Date:   Tue Mar 30 12:13:10 2010 +0100
+
+    Add extra Activities for testing purposes
+
+commit 6f00d1ba1daef3ef08722945d83f8734522638ab
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Mar 29 16:59:50 2010 +0200
+
+    design-suite: gwibber pulls couchdb which pulls erlang (57M) - let's stop this
+
+commit fd79940f8469a564e4bdbd81396cd6acc558d255
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sat Mar 27 21:08:07 2010 +0100
+
+    soas: better include the physics activty
+
+commit b54017ed55aa8bc6522cbc6048af21ed7bb42cd7
+Merge: a0a5940 bee1922
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Fri Mar 26 20:07:54 2010 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit a0a594011aa2b5279f2079fa72f053aa782e2cda
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Fri Mar 26 20:07:18 2010 +0100
+
+    design-suite: we might be better off adding gdm
+
+commit bee192224c6e3e77ddaf3927563b70f3f57866af
+Author: Colin Walters <walters@verbum.org>
+Date:   Fri Mar 26 13:14:14 2010 -0400
+
+    [fedora-livecd-desktop] Remove Java plugin, add simple-scan
+    
+    Java should really be installed dynamically via browser/PackageKit
+    as needed.
+    
+    simple-scan is really small, so bring that back in.
+
+commit 927706bf567b41afdfd8e607ed5657a7cecd9479
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Thu Mar 25 21:44:43 2010 +0100
+
+    soas: sync with latest changes from sugar labs' git
+
+commit 534d2f357c58e4b74789c6fde009324f9b6991a4
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Thu Mar 25 17:39:48 2010 +0100
+
+    design-suite: reduce package set and add desktop link to inkscape course
+
+commit e2dda732d9437e2bd160f38c7a309fceca116e27
+Author: kevin <kevin@tummy.com>
+Date:   Wed Mar 24 20:50:08 2010 -0600
+
+    Remove inkscape for now
+
+commit 834e61bfead4cbb2dd5146196cadaf8ccb0fb3f9
+Author: Colin Walters <walters@verbum.org>
+Date:   Wed Mar 24 17:41:57 2010 -0400
+
+    Also exclude simple-scan and foomatic db
+
+commit 2a68fde5981b3f8a6398e65e51c6dc281713a94d
+Author: Colin Walters <walters@verbum.org>
+Date:   Wed Mar 24 17:41:41 2010 -0400
+
+    Readd anaconda and isomd5sum
+    
+    Oops - these need to be in base.
+
+commit 6ade796a3602139dd77eb15fe4b649e2a7406be0
+Author: Colin Walters <walters@verbum.org>
+Date:   Tue Mar 23 14:18:48 2010 -0400
+
+    Drop explicit festival reference, always remove smartmontools
+
+commit 0aec4c2c80dbf7ddbb217efb6999b19391ef8e6f
+Author: Colin Walters <walters@verbum.org>
+Date:   Tue Mar 23 14:10:16 2010 -0400
+
+    PackagKit-command-not-found is now in comps
+
+commit 5d24cf4d318345169ab3b9161f47007b348bbc46
+Author: Colin Walters <walters@verbum.org>
+Date:   Tue Mar 23 12:58:51 2010 -0400
+
+    Update live-minimization.ks with comps changes
+    
+    * Is not in comps currently (or is optional)
+    esc
+    redhat-lsp
+    a2ps
+    compat-* (is only in non-default groups)
+    
+    * Removed from comps with my patches (or is now optional)
+    specspo
+    vorbis-tools
+    pinfo
+
+commit 198011f976ebdd2448fe1b25d907283aae24da8a
+Author: Colin Walters <walters@verbum.org>
+Date:   Tue Mar 23 09:14:04 2010 -0400
+
+    Rework live-base and desktop minimization
+    
+    First, strip the "minimization" parts out of fedora-live-base.ks,
+    and move them into fedora-live-minimization.ks.  All previous consumers
+    of fedora-live-base.ks are updated.
+    
+    The old fedora-live-base.ks was conflating two entirely different
+    things:
+    
+    * A live-based image which can be used to install
+    * Stripping some random bits to fit onto a CD
+    
+    The previous fedora-livecd-desktop is now fedora-live-desktop.ks.
+    The new file fedora-livecd-desktop.ks is actually further
+    minimizations on top of fedora-live-desktop.ks.
+    
+    Split up these two concepts so that fedora-live-desktop is *THE*
+    desktop.  What we expect everyone to have as a base, and the
+    exact same set of packages should be installed by Standalone
+    Anaconda (DVD) as well.  Then, we have minimization hacks
+    in fedora-live-desktop-cd.ks.
+    
+    Over time, we should be shrinking the default install and making
+    it more just-in-time, by e.g. having many more things use
+    the PackageKit library to pull in components as needed.
+
+commit 05c51b014625ed86848746fca9e3ad9578ff81fc
+Author: kevin <kevin@tummy.com>
+Date:   Tue Mar 23 22:53:55 2010 -0600
+
+    Exclude ibus-pinyin-open-phrase
+
+commit 71bb2c69b9cedada6d37f8de720a2b797f02280e
+Author: Colin Walters <walters@verbum.org>
+Date:   Tue Mar 23 10:05:59 2010 -0400
+
+    Add tools/ directory, with list-packages-for-ks.py
+    
+    Add a script which prints the explicitly specified package list
+    for a given comps file and kickstart.
+
+commit 9b2696fe94e81e9dfa104dc00b2f3fc0acb80590
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Mar 23 12:50:54 2010 -0700
+
+    Use the new filesystems group to get support rpms.
+
+commit ad6311931264f48ed10ee52802ebd96f8a33597f
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Mar 23 19:42:50 2010 +0100
+
+    Security: Sync LXDE and LXDM configuration with LXDE spin
+
+commit 8ca163d935c1be7e1d72c2110993aa5fd83e1089
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Mar 23 19:41:51 2010 +0100
+
+    LXDE: fix LXDM autologin
+
+commit 051abde97339c59d9a45a3cefa69f7914983f4db
+Author: kevin <kevin@tummy.com>
+Date:   Tue Mar 23 11:05:21 2010 -0600
+
+    Remove java group and just include the plugin we want
+
+commit bcb21938c54508b913962aebbc97c43f0f450120
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Mar 23 06:43:20 2010 +0100
+
+    replace amarok with kdeplasma-addons to reduce size
+
+commit a516f40dd51843a4f72d6d8913f2e77c1c198fa7
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Mar 23 01:31:15 2010 +0100
+
+    LXDE: fix lxdm start, set preferred apps and update package selection
+
+commit 4cc2e362ba6ec1f471b690e0752e68267b8b9466
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Mar 22 00:17:47 2010 +0100
+
+    design-suite: add rawtherapee abiword and gnumeric for now
+
+commit 7b9cc3b50e1f05e487121f7cff66ebd6a8ff3b77
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Fri Mar 19 03:33:49 2010 +0100
+
+    Xfce: xdg-user-dirs-gtk instead of xdg-user-dirs, drop nodoka since we use clearlooks
+
+commit 01b3c0c63caae197733e773deeefe5de427cb007
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Thu Mar 18 21:04:49 2010 +0100
+
+    soas: let's get us more multimedia support
+
+commit f43ab337b3908aa73171303695e872d48a072bf4
+Author: kevin <kevin@tummy.com>
+Date:   Tue Mar 16 10:35:06 2010 -0600
+
+    tigervnc -> remmina
+    gnome-screensaver -> xscreensaver
+
+commit 8500904f5693ffb6b258cda57ed82e295ad3bebc
+Author: Colin Walters <walters@verbum.org>
+Date:   Sun Mar 14 13:32:09 2010 -0400
+
+    [fedora-virt-server.ks.in] New file
+    
+    This is an image suitable for a fully-automated virtualized install.
+
+commit 2427dccc2a8d69cbb81fa1e1f74b94947e0715d5
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Tue Mar 9 19:14:54 2010 +0100
+
+    soas: add sugar-maze activity
+
+commit 56f66a93c6777d92d54c7d9c71ca02be0f2b1ba6
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Wed Mar 3 19:32:49 2010 +0100
+
+    LXDE: replace slim with lxdm
+
+commit 46d7c0211db129b80f1f378c49aa40eb5a7683c5
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Mar 1 17:33:39 2010 +0100
+
+    soas: add sugar-tamtam activity set
+
+commit 0f6601a6ef5afb08f562d5207f661d5d92081527
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sun Feb 28 17:18:41 2010 +0100
+
+    soas: add the typing turtle activity
+
+commit 4a36ced0947c47feae772733911c7d98763a9cd0
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Fri Feb 26 19:11:46 2010 +0100
+
+    soas: better add gvfs to get external drive support
+
+commit 53be816672288b8a4a82af08ffed21099e78f089
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Feb 23 05:56:42 2010 -0800
+
+    Switch over to branched repo for composes
+
+commit b501d94b54151e507c5f9ad42a0059cd79871fa1
+Author: Adam Miller <maxamillion@fedoraproject.org>
+Date:   Fri Feb 19 13:43:55 2010 -0600
+
+    Commented out package halberd as it is causing the build to fail.
+
+commit a3999b459e4e709eeaec03b8bcaa51f226ee986d
+Author: Adam Miller <maxamillion@fedoraproject.org>
+Date:   Fri Feb 19 08:34:53 2010 -0600
+
+    Needed to remove the generic-{release,release-notes,logos} now that spin is
+    official.
+
+commit 9bc51159dea14209da65488810b52944721cf387
+Author: Adam Miller <maxamillion@fedoraproject.org>
+Date:   Fri Feb 19 08:32:02 2010 -0600
+
+    Added kickstart for security spin as board has approved this spin.
+    http://lists.fedoraproject.org/pipermail/advisory-board/2010-February/008027.html
+
+commit 5ddfdd4a6a293baf3186c79e6b047d714185a87e
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Feb 18 00:09:41 2010 +0100
+
+    Add the custom/ kickstarts and bump version
+
+commit 344b87865adaf80262a52b4f64e4c9dc7e885b2b
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Feb 18 00:03:26 2010 +0100
+
+    Rename fedora-mini-base.ks and fedora-mini-moblin.ks to match the naming convention used by other spins, and edit the spins that include these kickstart files accordingly
+    Include fedora-live-mini.ks in the custom set of kickstarts
+
+commit 63f8ac6d44056c7d6b41c40dbc78483585fd1ace
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Wed Feb 17 23:33:52 2010 +0100
+
+    we want that for the mini kickstart too
+
+commit ff1e3e892cf4f2b49e35b24aba507f0707b24503
+Author: Warren Togami <wtogami@redhat.com>
+Date:   Wed Feb 17 17:12:09 2010 -0500
+
+    Point live at Fedora 13, not rawhide for now.
+
+commit 7dbf6d7e3da47236f88e2b204f2ec5c288dfc608
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Feb 15 22:30:13 2010 -0600
+
+    Fix size of games spin
+    
+    alienarena cut for size.
+    This allows for the normal desktop -wine to fit so drop the openoffice to
+    abiword substitution at the same time.
+
+commit 83b613eea85083debcc20e3d8f3ea5fb3317cc29
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Feb 15 23:07:47 2010 +0100
+
+    add fedora-mini-moblin spin
+
+commit 00f8a13d3a93d519650f074d45bc78a5333b60c1
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Feb 15 23:05:28 2010 +0100
+
+    add fedora-mini-base and adjust related spins
+
+commit 22d32f6e11f90251586fa653141a331fa9523a90
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Feb 15 22:59:37 2010 +0100
+
+    design: lets save some space and add input methods again
+    soas: add input methods again
+
+commit e15d946f1461c96fd4abb6a71b694950f708f158
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Feb 15 22:21:34 2010 +0100
+
+    Update Makefile.am to include new spins and drop old ones, bump version
+
+commit 775ef9d40e7b6c6ca1ae43ebe7a03d324c5c57a4
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Feb 15 22:18:53 2010 +0100
+
+    fedora-livecd-soas.ks was executable
+
+commit 3cf7717aa0a281b9e6bd12a3dcb2f34dbb8d4d7c
+Author: Igor Pires Soares <igor@fedoraproject.org>
+Date:   Mon Feb 15 16:55:54 2010 -0200
+
+    Remove inkscape
+    
+    Remove inkscape in order to downsize a little bit
+
+commit 945e62dd13dbd26d09147cb76ca10f08c89f7532
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Wed Feb 10 21:08:41 2010 +0100
+
+    soas: add a few packages needed for sugar
+
+commit a3088c3d74af3904c2a8dd19edd684b408be5220
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Feb 9 22:37:34 2010 +0100
+
+    fix wrong commit (some lines were doubled and replaced others)
+
+commit 6e827082de467cc0c4400fde7bdb7065f40d9079
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Feb 9 00:08:56 2010 +0100
+
+    Xfce: replace totem with parole and drop gftp
+
+commit 3d5296bcbe143bcfacd4d53ec1998646e694659c
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sat Feb 6 22:34:27 2010 +0100
+
+    soas: use auto-login for gdm for better user experience
+
+commit b76d7ce0e82827cedbcbc96682a01873269f48c3
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sat Feb 6 19:46:18 2010 +0100
+
+    design suite & soas: remove input methods to save some space
+
+commit 1af63fd1ef0a380e8206d0cdd6de4d39728b3008
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Thu Feb 4 09:24:01 2010 -0600
+
+    Make adjustments to counteract size increase of the desktop spin - From kamil
+
+commit 6d32575012d2654e293ae4ea0528bab080807585
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Tue Feb 2 01:14:53 2010 +0100
+
+    sugar-physics joins the fun
+
+commit 319b8691ae04e1e6a0c0f4c0a53eb0172884e9f5
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sat Jan 30 00:55:34 2010 +0100
+
+    xulrunner-python is in rawhide now: include sugar-browse again
+
+commit 528d86b1c274b20524efaaa60776cc35c2dbd98b
+Author: Igor Pires Soares <igor@F12dt.(none)>
+Date:   Fri Jan 29 02:42:09 2010 -0200
+
+    Remove OpenOffice.org
+    
+    Remove OpenOffice.org since the desktop spin is using it as a default now
+
+commit 6639168ca10f70e80f053e65de898ed08be9c567
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sat Jan 23 00:17:30 2010 +0100
+
+    soas: remove sugar-browse until xulrunner-python gets imported
+
+commit 1a55ae8a093f73e15310072e9d4d1b2e59461cd3
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Fri Jan 22 17:28:03 2010 +0100
+
+    use live-base in design suite and soas until mini kickstart gets imported
+
+commit 157a0fc701fc5117716eb5ff555d377925790c6b
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Fri Jan 22 17:24:33 2010 +0100
+
+    move design suite around to fit nightlies naming
+
+commit cdf27b95c17d097bc84a30bdceae4e56e10001b0
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Thu Jan 21 17:24:12 2010 +0100
+
+    replace kdegames with kdegames-minimal, add some more packages
+
+commit e62d6b945cbcd319eda50a9c5c28d5a1b549641e
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Wed Jan 20 20:36:11 2010 +0100
+
+    rename design suite and soas files to stay consistent
+
+commit c40fdb5952491f2cbc106cd994dc00353a6c41bf
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Wed Jan 20 20:23:12 2010 +0100
+
+    add the approved Fedora Design Suite and Sugar on a Stick kickstart files
+
+commit 28a65efde2a9d61f395cbf51962205da7183e66a
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Jan 20 12:12:36 2010 -0600
+
+    Don't use openoffice.org.
+    
+    The Desktop spin is now using openoffice.org instead of abiword. That's too
+    much space to use for the games spin. So go back to using abiword.
+
+commit bb3d0548a7e29cb091692c867276673a2ada6ca5
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Jan 19 00:32:55 2010 -0600
+
+    Add btanks. A tank battle game with a different look to it.
+
+commit ed5dd287cdd1c968788ace7f54449f290c0b130f
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Jan 19 00:22:08 2010 -0600
+
+    Add kcheckers.
+    
+    Checkers is a classic boardgame and makes a good addition to the games spin.
+
+commit 0c5b64eb01da21c67816e5dafe2fe403bce0519b
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Jan 18 16:02:08 2010 -0600
+
+    Add the 3d chess game to the games spin.
+
+commit 3907db67052df3e9f02bb1d2cfe49aaad83ff6d4
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Thu Jan 7 23:07:27 2010 +0100
+
+    the education spin dies for now
+
+commit 244077f99c45469cd02b2a1559b8f47d41e67be8
+Merge: 3689019 284c1cf
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat Jan 2 15:03:20 2010 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 3689019df359d0954ba8799e2ee4a04f7794a881
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat Jan 2 15:02:43 2010 +0100
+
+    There is no /boot/initrd* anymore to remove, so instead remove /boot/initram* (#551094)
+
+commit 284c1cf6e41366441359a29fd80cbee9eb7aced2
+Merge: f5ea0ee 2de411e
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Dec 28 17:31:43 2009 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit f5ea0eedf92c2ae25eae1a64f2bbdc1820b44db9
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Dec 28 17:30:42 2009 +0100
+
+    edu: fix issues to get at least the snapshots build for now
+
+commit 2de411e328b2a1044bc82a647d5deeee6027ba2a
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Dec 22 14:29:18 2009 +0100
+
+    push live images under 700 megs; add small hack to load plasma-netbook workspace on boot for testing issues
+
+commit 80a336488be25a2c00380208d20f90a2088eeedf
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Mon Dec 21 10:23:35 2009 +0100
+
+    remove some not essential packages for now
+
+commit c3ace496a637b01cd2a44ed28863aa92e993cf41
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Dec 14 13:07:43 2009 +0100
+
+    Revert incidental removal of the mdns service firewall enablement
+
+commit 2f276dfc3551a4739ac439aade2ac948b5d33408
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Dec 11 21:32:38 2009 -0500
+
+    Pass "--kickstart=" when running liveinst with a kickstart (#543722)
+
+commit cfbcf94f80a80ebeb7d298bd141a32308e46d624
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Dec 11 21:32:19 2009 -0500
+
+    git-log command no longer exists, should be "git log"
+
+commit f477634a4568d79dfe93b80bba11793dd6680f55
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Dec 9 20:31:41 2009 -0600
+
+    Maelstrom's license issues are fixed and it is back in rawhide.
+
+commit 2a65b84f22e7b6fc061128ab1698c26afe08a388
+Author: Warren Togami <wtogami@redhat.com>
+Date:   Tue Dec 8 09:24:38 2009 -0500
+
+    Print all RPMS installed during livecd-creator
+
+commit 7a86da60ce530b460565e5887c430c74a470fc3c
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Dec 2 23:32:42 2009 -0500
+
+    Replace abiword by @office in the desktop spin
+    
+    As discussed on fedora-desktop-list
+
+commit f343537f02cad88bc0dbcd74a541742a45c3e138
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Dec 2 23:31:47 2009 -0500
+
+    Move package selection tweaks to comps
+
+commit fa4558c3afab828c4bae0402a4c162a76d0c241f
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Dec 1 21:32:16 2009 -0600
+
+    Note stuff that shouldn't get pulled into the games spin.
+
+commit bddb61532b2832d4efd9475f0269fcd6b6b992bf
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Dec 1 21:28:11 2009 -0600
+
+    Drop Maelstrom in master due to license issues.
+
+commit 1cc0f152600bff9c4f19f1c9be87972b6b29bd98
+Author: Adam Miller <maxamillion@fedoraproject.org>
+Date:   Mon Nov 30 13:49:18 2009 -0600
+
+    Added vim-enhanced to fedora-livecd-xfce.ks
+
+commit 6db3bb40bd0a3614b54d3852f1d8ee7c04bdea0e
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sat Nov 21 22:17:27 2009 +0100
+
+    LXDE: fix spourious crash of lxde-settings-daemon
+
+commit 963c80a711c203d59abc806e85154d4edc51a54d
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sat Nov 14 00:09:40 2009 -0500
+
+    Clean ups
+    
+    Remove tweaks that are already coming correctly out of comps nowadays.
+
+commit 80b09dc2408fdfec41c7eabcb1422f5759699bf8
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Nov 9 10:48:19 2009 -0500
+
+    Turn off PackageKit-command-not-found on the uninstalled live CD
+    
+    This makes sense, since we already disable the rest of PackageKit,
+    and command-not-found causes long waits, downloading repodata which
+    would normally be available locally, but is missing on the uninstalled
+    live image.
+
+commit 27009d7b10b187a57fc02b043eaa2750e5fd89a5
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sat Nov 7 23:53:24 2009 -0500
+
+    Revert the previous commit
+    
+    It is quite assy to file a bug after RC was spun, and go ahead and
+    override the desktop teams editorial control of the desktop spin on the
+    same day by committing this without even asking.
+
+commit b13e5a5e440e9d1b3b099991bb03e39f7719f40c
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Sun Nov 8 14:14:51 2009 +1000
+
+    don't include PackageKit-command-not-found
+    
+    pk-command-not-found is still too flaky and we don't install it
+    by default in comps for normal installs (rhbz#533553)
+
+commit 63b2b2cf4fffac1f56dd6bc66a3ea66f9c4f607b
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Fri Nov 6 10:59:12 2009 -0800
+
+    Make sure we get dracut
+
+commit c4caad0bc94856b12a7eb042ac3ca85427d62584
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Fri Nov 6 18:33:26 2009 +0100
+
+    LXDE: fix screensaver scriptlet
+
+commit bca01ed335e50d51b711e05ad9a96160fbb7c470
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Thu Nov 5 14:09:41 2009 -0500
+
+    Really prevent screen locking
+
+commit a3db5deb1f82fd7d37af7666cf8a152aeb653092
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Wed Nov 4 08:55:47 2009 -0800
+
+    Keep xfce stuff off the DVD
+
+commit c627de3d8751ebb3f0761faec9f0279b6c8474e7
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Nov 2 23:05:54 2009 -0500
+
+    Don't remove dead packages
+
+commit 94698e8c40d5c8fbba31e8c415c5f80a2d52ac33
+Author: Warren Togami <wtogami@redhat.com>
+Date:   Mon Nov 2 15:40:56 2009 -0500
+
+    XXX: This often gets stuck during shutdown because /etc/init.d/halt
+          (or something else still running) wants to read files from the block\
+          device that was ejected.  Disable for now.  Bug #531924
+
+commit d491581401c1da562d53c45ac1834972dc153085
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Mon Nov 2 03:56:56 2009 +0100
+
+    Xfce: add tigervnc and parole, order packages by group
+
+commit 37facf231b093a99d8bf29c18cc3a0ee75ed59a3
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Thu Oct 29 01:15:23 2009 -0200
+
+    Fix ibus inclusion
+
+commit d2d0269d93fd78ffddfe9553218b02279f3576fc
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Oct 28 18:37:48 2009 -0400
+
+    Clean up desktop for the live user
+
+commit 99982160e13e41ccc5e857e1b7f299545929d135
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Wed Oct 28 01:09:18 2009 -0200
+
+    Include gtk2-immodules and inkscape
+    
+    Clean up unnecessary input methods, include gtk2-immodules in order to make im-cedilla work
+
+commit 62f8e4047bfcf8bd4ccb33a7218319815b84f35f
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Oct 27 03:38:04 2009 +0100
+
+    Xfce+LXDE: add system-config-services again
+
+commit 31fe801e2f509a34ed01bb1773374bdcd19968b9
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Oct 27 01:42:10 2009 +0100
+
+    LXDE: system-config tools cleanup, remove cups-pdf, disable screensaver
+
+commit 29bf2e3a0241e8e72d71cbf6d0f995baa469a230
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Oct 27 01:26:01 2009 +0100
+
+    Xfce: system-config tools cleanup, remove cups pdf
+
+commit a66367e67732d1c75a9de00ffa4230007bb3cb6c
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Oct 26 17:10:44 2009 -0400
+
+    Make /home/liveuser/Desktop owned by liveuser
+
+commit 3aa7d96804120d64b2fa8f8702722c19bcbd99b4
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sun Oct 25 01:34:56 2009 +0200
+
+    LXDE: add xcompmgr, fix slim.auth and liveinst.desktop
+
+commit b67d83654482381f8cb2daf08172e94da7ff7f9a
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Fri Oct 23 02:49:32 2009 +0200
+
+    add xfce4-stopwatch-plugin
+
+commit 1b2ea51d8baaaa74e342a368d836e3ff288ef146
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Wed Oct 21 15:10:44 2009 -0200
+
+    Drop inkscape, include @input-methods
+    
+    Include @input-methods in order to fix a issue with us-acentos keyboard layout.
+
+commit eb9ab6d772076814eecb07e24565b4abdabb0678
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Oct 17 17:39:27 2009 -0500
+
+    blobAndConquer got dropped from F12 and needs to come out of the games spin.
+
+commit 6cc5c506123445b619c4a701ff58282c4b290ce4
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Oct 13 19:30:18 2009 +0200
+
+    various package changes to fit to 700MB; remove prelink removal but disable it on the live images
+
+commit 69b93c5d5f0c97d2724eb526a8e756ac835b7439
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sat Oct 10 01:49:20 2009 +0200
+
+    add xfce4-xfswitch-plugin
+
+commit 1c2828431473c2b39157ad79a8bbe1c870e766ea
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Wed Oct 7 02:04:54 2009 +0200
+
+    include liveinst.desktop, replace pavucontrol with gmixer and xfce4-notifd with notification-deamon and, update slim.conf
+
+commit 6232a8d1b1e0fb7b2a148504632ae2b6368ebc32
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Mon Oct 5 12:23:03 2009 -0300
+
+    Remove input methods again
+
+commit 82a6a5e1c88c501688c8098fecde6cd392d63446
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Fri Oct 2 11:54:55 2009 -0400
+
+    The desktop spin doesn't need to be a nfs or nis client
+    
+    The removes a good chunk of the remaining services at boot
+
+commit f50dbf8e3a8cd586ccc57bf967584256dc9357af
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Thu Oct 1 10:54:28 2009 -0400
+
+    Remove the unbranding
+    
+    I'm removing the unbranding part again, since I tend to forget myself
+    that it is there and am then surprised when I produce unbranded spins.
+    I'll just use a derived kickstart file for test days.
+    
+    Also, remove the -bug-buddy line, since we killed bug-buddy.
+
+commit e082b23f038220e77f9b782da032ba4b5c76e1c7
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Sep 30 19:01:03 2009 -0500
+
+    nazghul-haxima has been renamed to haxima
+
+commit 10f6e373a8d5578660403ae62edededd6001f588
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Sep 30 23:30:05 2009 +0200
+
+    free space for KDE3 versions of k3b and koffice
+
+commit 7f36e70c4dd7ee961ca0ed1fac9fe43964d88efb
+Author: chitlesh <chitlesh@fedoraproject.org>
+Date:   Mon Sep 28 19:38:12 2009 +0200
+
+    FEL: synced comps and kickstart file
+
+commit 68df4ce6cc3e14625b0a8f94f920e1b671bada9d
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sun Sep 27 20:09:12 2009 +0200
+
+    add avogadro to the education spin
+
+commit 31fb57d3a9a9363823182e07c2a4bb275a050228
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sun Sep 27 17:14:56 2009 +0200
+
+    small correction for package name in education spin
+
+commit 81ae5b1c5a9396838a4f518bd3f52ccc285fe8e7
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sun Sep 27 17:11:18 2009 +0200
+
+    ship python doc with education spin
+
+commit 8235da0077f9c43f7e21b09f8527ee9128a65967
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sat Sep 26 23:30:14 2009 +0200
+
+    smaller modifications and package inclusions for the education spin
+
+commit 8e6d0eae42c094c1d6424b237df7f4fa1e909594
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Thu Sep 24 20:05:52 2009 +0200
+
+    add pavucontrol, use pinentry-gtk to avoid qt3 on the live images
+
+commit ba699452d72c5f757f1e2bc6459f3b31924e4623
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Thu Jun 11 10:46:01 2009 +1000
+
+    drop google-droid-*-fonts since Droid Sans overrides ja_JP desktop
+    (see rh#517789)
+
+commit 864692a1ee66aab6737bf741fce75a9355e29998
+Author: kevin <kevin@tummy.com>
+Date:   Tue Sep 22 16:38:33 2009 -0600
+
+    Move chown/restorecon to the right place.
+    Add install icon on the desktop.
+    Remove ssmtp
+
+commit 40ca8b4ccc77f0d5deeb87e5b1fba5a3909c2695
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Mon Sep 21 12:02:00 2009 -0300
+
+    Include inkscape and @input-methods
+    
+    Rely on fedora-live-base for IM inclusion
+    Include inkscape
+    Add support for Spanish
+
+commit 37c34f0feb4d465fd1045b101b96feb95458c953
+Author: Colin Walters <walters@verbum.org>
+Date:   Fri Sep 18 12:09:17 2009 -0400
+
+    [fedora-livecd-desktop] Add note about this versus gnome-desktop comps group
+    
+    In short modify comps first, livecd-desktop kickstart package set modifications
+    are only for space constraints in general.
+
+commit 38a13477294001410492e8f30cabe3e1e3d1189b
+Author: kevin <kevin@tummy.com>
+Date:   Mon Sep 7 16:52:12 2009 -0600
+
+    Move chown/restorecon to after changes
+
+commit 457fe5982d854944d2c962ab770cc44255fef296
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Sep 7 15:26:30 2009 -0500
+
+    Include QA's base ks file for test days.
+
+commit f05c69d17d3f5e15eff68c3a9d27ab27c0f07b50
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Fri Sep 4 12:44:45 2009 -0400
+
+    Create the directory first....
+
+commit 0ae49669504a495c0e2a46319740f0e8bf4ad8ba
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Sep 2 12:27:17 2009 -0400
+
+    Install abrt instead of bug-buddy
+
+commit d2a1d21c1ca6efd190570c0d400a4d21b0d60598
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Sep 1 23:24:41 2009 -0400
+
+    Add 'Install to hard drive' to the desktop
+
+commit fd52640599d8371e14e9757e09033a0d9cebb537
+Merge: 46429cf 9fe9a08
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sun Aug 30 14:32:49 2009 +0200
+
+    Merge branch 'master' of ssh://cwickert@git.fedoraproject.org/git/hosted/spin-kickstarts
+
+commit 46429cfbbcbbf700c0956155b65068d5c58cbeb3
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sun Aug 30 14:24:14 2009 +0200
+
+    partitial fix for bug #518068
+
+commit 9fe9a08e265d04f1cae44abe0079b1893f962c35
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Sat Aug 29 19:31:34 2009 -0300
+
+    Remove unnecessary fonts and include Gimp
+    
+    Removed:
+    ipa-pgothic-fonts
+    kacst-*
+    khmeros-base-fonts
+    s-c-display
+    paktype-*
+    
+    Included:
+    Gimp
+
+commit 2cfa984d499c174e399ded8717f49f42bcadad82
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Aug 25 15:59:29 2009 +0200
+
+    resize2fs is not failing on x86_64 anymore, so re-add some packages and add some more. However, adding one more package would causre resize2fs to fail again
+
+commit 275e60b5a0968a8199c9a0fd49d2d2f51c273c89
+Author: Adam Miller <maxamillion@gmail.com>
+Date:   Tue Aug 18 15:27:56 2009 -0500
+
+    Moved entries related to /home/liveuser/.config/xfce4 in reference to
+    bz #500525 (https://bugzilla.redhat.com/show_bug.cgi?id=500525)
+    Also removed catfish-engines for space conservation.
+
+commit ae76b54f81681f4a20df8ea287e8a94f98d4ca31
+Author: Adam Miller <maxamillion@gmail.com>
+Date:   Tue Aug 18 15:18:04 2009 -0500
+
+    Removed tracker search tool and replaced with catfish+catfish-engines
+
+commit c418ecc0c19312122fb56d0471195f119cf0d16e
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Aug 18 21:58:04 2009 +0200
+
+    add yum-presto and make sure PolicyKit-kde doesn'get pulled in
+
+commit 8c4f4750b8dfd23a322561bd74e00eb61dcbddd8
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Aug 18 16:33:55 2009 +0200
+
+    use yum-presto by default (like on gnome spin: https://www.redhat.com/archives/fedora-devel-list/2009-August/msg00932.html)
+
+commit 9c2da2c9c1865d07c868f9ab4f58bb78fe229b19
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Aug 10 15:10:50 2009 -0400
+
+    Don't include constantine-backgrounds-extras
+    
+    It is too large.
+
+commit d3be5a684d81d7f9625dbf310e3a32e98f7e1e56
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Thu Aug 13 21:46:02 2009 +0200
+
+    omit prelink for now (#515539)
+
+commit 8f6feacbe65ce408838830de1269c0e2dd220481
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Thu Aug 13 19:54:59 2009 +0200
+
+    remove sugar-pippy for now (has dependency issues)
+
+commit e897526b3a0b345b511ed246d72b8b2d4628f144
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Wed Aug 12 07:04:57 2009 +0200
+
+    remove olpcsound-devel to let education spin build
+
+commit b5cf49ea334c6f26f4b280d1fa2b72d9d999a183
+Author: Fabian Affolter <fabian@bernewireless.net>
+Date:   Tue Aug 11 20:16:40 2009 +0200
+
+    Added new localization for German (Germany)
+
+commit 6645472a9576f1d05169cd0a4b16c78e9b2b54b3
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Mon Aug 10 15:16:14 2009 +0200
+
+    size fixes: don't include konq-plugins,koffice-kpresenter,kdeartwork for now
+
+commit 5131d5974f844349f56c35856713e4c3767e4e13
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Aug 10 15:13:49 2009 +0200
+
+    Correct %include
+
+commit 03c617ac2c8d08390d3bd9ba24a388a5e882828f
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Aug 10 15:05:10 2009 +0200
+
+    Move fedora-livecd-lxde-de_DE.ks into the right location
+
+commit c76f00d1f69ef1b175c370cbd76a2cc609483ac0
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Mon Aug 10 11:28:01 2009 +0200
+
+    make liveinst.desktop in ~/Desktop usuable and show it's icons
+
+commit 59273db9d9cd7fd7f81953eeaf932fd84219f21f
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sat Aug 8 21:43:49 2009 +0200
+
+    make sure kpackagekit doesn't end up the LXDE live images
+
+commit 3419f1fd595dd95ccbd918c9de478103d1a8253c
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sat Aug 8 19:18:53 2009 +0200
+
+    add fedora-livecd-lxde-de_DE.ks
+
+commit 57a18f03bea89e85dea7e0178672da5870308cf3
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Sat Aug 8 19:14:59 2009 +0200
+
+    gxine instead of totem
+
+commit 58fc118650cb98abab8315f64224ee60d64dedb1
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Thu Aug 6 19:08:05 2009 +0200
+
+    make sure gnome-packagekit doesn't end up on KDE live images
+
+commit 35ab752e27db04e14ce6a0414eb59d086590e487
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Aug 5 15:58:38 2009 +0100
+
+    Remove a few command-line applications
+    
+    Those have no use on a modern desktop.
+
+commit 22eaf1c099c269d0f6fa03a23af076bb653d2ba0
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Aug 4 23:09:37 2009 -0400
+
+    Drop gimp
+    
+    Drop gimp, as discussed on the list, by droping the entire graphics
+    group. Also streamline the exclusions a bit, and add the droid fonts.
+
+commit db36bdadbc31d34d79a282601743d2f06fce97da
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Aug 4 14:34:18 2009 +0200
+
+    Remove rebranding from LXDE Spin
+
+commit 10833cdbb790bef8f4ffe758d3fea78bffe19ed4
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Aug 4 14:33:46 2009 +0200
+
+    Move LXDE Spin into main directory and update Makefile.am
+
+commit bb9621b7b2bff6dfffdffa3d0bb087840009d7a7
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Aug 4 00:54:37 2009 +0200
+
+    Update Makefile.am for education spin becoming a DVD
+
+commit 854e261e67c2113f318bd8117844d654e8985f78
+Merge: f8c654e e52931e
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Aug 4 00:53:55 2009 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit e52931efa4630761655c68038808512e6c930b4e
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Mon Aug 3 23:59:14 2009 +0200
+
+    move to dvd-size for the education spin here
+
+commit f8c654e6f2af9fcab438c73092a14c874e5f92f0
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Aug 3 23:45:18 2009 +0200
+
+    Update .spec.in, Makefile.am and configure.ac
+
+commit dfda24729b8416b8fa7ed3c07298a988b13f3734
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Aug 3 23:44:14 2009 +0200
+
+    Move localized kickstarts to l10n/
+    Move custom kickstarts to custom/
+    Remove fedora-livecd-desktop-en_US.ks now that it is no longer necessary to
+      localize the desktop.ks kickstart in en_US.
+
+commit 219a9331f766b0a7a819e7072d3ec18dacc1d801
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Aug 3 16:15:27 2009 -0400
+
+    increasingly desperate attempts to save space...
+
+commit 1fd5a7e512135769c12c768681e0e39461753fda
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Aug 3 14:52:33 2009 -0400
+
+    No need for smartmontools in the dekstop spin
+
+commit 2a473175ae6c858ac1b285db80b94a308ab658f9
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Aug 3 13:00:53 2009 -0400
+
+    more fixes for warren
+
+commit 26f6a2b7acd11a1b09111e8a51c1a69c806a955a
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Aug 3 12:47:59 2009 -0400
+
+    Enable rawhide by default
+
+commit 986c7b7555d42b12474d15fa2c3b5a3f3d88f6a9
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Aug 3 12:31:14 2009 -0400
+
+    Revert accidental %repo changes
+
+commit df41cf5b34e71a2ab5bbbb09c65df4e6448d1d08
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Aug 3 00:32:02 2009 -0400
+
+    More space saving measures
+
+commit 1e5c02a38b99c44146a07ae78eba7d048e03396d
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Sun Aug 2 22:28:40 2009 +0200
+
+    revert to old edu spin concept (cd-size)
+
+commit 296877999279e5baa1a7dbc29d7926c7e8a3cc58
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sun Aug 2 01:49:15 2009 -0400
+
+    Drop quota
+
+commit 6a9535e90ae904a74639b19a33641c7c5de2cc5a
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sun Aug 2 00:12:18 2009 -0400
+
+    Drop krb5-workstation, along with krb5-auth-dialog
+
+commit 62c2e6823e9e9b5938109579f661ada3a4de88b6
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sat Aug 1 21:33:09 2009 -0400
+
+    Remove a workaround for a long-fixed avahi bug
+
+commit f7ac815bc0e868d7a23b2c83eacf3c6ae0f54593
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Thu Jul 30 00:58:23 2009 -0400
+
+    Don't include seahorse
+
+commit c60049a24cb2a0c444afe895cca575c800c4f5c5
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Jul 29 17:51:10 2009 -0400
+
+    Drop alacarte
+
+commit 15ceaebd2b476447bbcd647c4ee4f72364555eff
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Tue Jul 28 17:03:46 2009 -0300
+
+    Remove deprecated packages references
+    
+    Remove references to totem-xine, paktype-fonts and kacst-fonts
+
+commit 3017558e21ce17bade37c822a1514f461a3e1eff
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sun Jul 26 13:07:09 2009 -0400
+
+    Add a note about debranding
+
+commit db63e36504ab24edcda86fa7a0579d992b67dada
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Thu Jul 23 14:40:52 2009 -0400
+
+    Debrand desktop spins by default
+
+commit 45e611754b54c06553ebe347b6df82d7f9917f09
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Thu Jul 23 09:24:18 2009 -0400
+
+    Include PackageKit-command-not-found
+
+commit 91030f9ce33758e6fb226258288c1bb8f316a0bb
+Author: Adam Miller <maxamillion@gmail.com>
+Date:   Tue Jul 21 15:15:50 2009 -0500
+
+    Added claws-mail plugins for various enhancements
+
+commit 08f803e44093739399dba3ff7121ab1fcded2586
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Jul 21 14:56:11 2009 -0400
+
+    Drop krb5-auth-dialog from the desktop spin
+
+commit 75e4a7ad2041e25875b31ddfa4baf7ea8a04bc48
+Author: Adam Miller <maxamillion@gmail.com>
+Date:   Tue Jul 21 10:41:03 2009 -0500
+
+    Added liferea back, it is *not* dead upstream, communications mistake.
+
+commit 82ec2d19470d208acb1ea049b2ddc8e16adf3243
+Author: Adam Miller <maxamillion@gmail.com>
+Date:   Tue Jul 21 09:14:07 2009 -0500
+
+    Added gparted, changed galculator for gcalctool
+
+commit d598398360730bfa05f8ece3b7124b2e2df2d575
+Author: Adam Miller <maxamillion@gmail.com>
+Date:   Tue Jul 21 09:00:52 2009 -0500
+
+    Removed liferea, dead upstream and we can use Firefox to pull feeds
+
+commit 59179855b178d8ecf6e247e426ff9f96fecdc964
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Tue Jul 21 15:02:58 2009 +0200
+
+    move to dvd size for education spin now
+
+commit 009e2bc96b8bb9832684b66ee38577c98643a11c
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Tue Jul 21 14:59:51 2009 +0200
+
+    apply changes for new education spin concept
+      - move to Gnome & Sugar as desktop environments
+      - add default IRC channels
+      - include development tools
+
+commit 32ab4404441e6d3b62b2607b3f645870da51cb7d
+Merge: c9323a7 2548daa
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Jul 21 13:25:17 2009 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 2548daaed4775ed0b89d8c502ea6c436f01ffe8e
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Jul 21 01:09:35 2009 -0400
+
+    Correct a package name
+
+commit 980906b85aa9dbeb6eb0a4f213d812c7a8414ddf
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Tue Jul 21 02:29:29 2009 +0200
+
+    remove gnomebaker wich is a dupe with xfburn, add some new panel plugins
+
+commit cb4a7538de3795058d310751cce0e89f85f2b31e
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Jul 20 10:22:11 2009 -0400
+
+    Drop some system-config utilities
+    
+    As per fedora-desktop-list discussion.
+
+commit 5356ab52cdd4f09091e8e10371c74ca567c56082
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Sat Jul 18 03:17:23 2009 -0400
+
+    Drop gimp-data-extras to gain some space
+
+commit e31f0476f31a1ca72e121f26b0217df9cd920dd6
+Author: Adam Miller <maxamillion@gmail.com>
+Date:   Tue Jul 14 17:06:27 2009 -0500
+
+    Added myself to the maintainers list for xfce spin.
+
+commit ac4633551f8f40d439e5cad2bfc8d87ebd2bf386
+Author: Adam Miller <maxamillion@gmail.com>
+Date:   Tue Jul 14 17:04:29 2009 -0500
+
+    Replaced bluez-gnome with gnome-bluetooth as that is the direction that
+    F12 is going and bluez-gnome was causing xfce spin to fail to build
+    against current rawhide.
+
+commit dfef3dbab8b782ea4eb88b0bccad1a34dab8ab16
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Jul 14 10:28:02 2009 +0200
+
+    remove filelight to avoid kdelibs3 on the images; some small cleanups
+
+commit b48e693ac89406c1f1056212b3523e249c7caa6f
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun Jul 12 22:07:11 2009 -0500
+
+    New game, colossus, added to the games spin
+
+commit 1345dd78dd999fc07e16e165ec8e56194081b4d0
+Author: kevin <kevin@tummy.com>
+Date:   Tue Jul 7 19:49:57 2009 -0600
+
+    Add midori, xfburn and rtorrent
+
+commit 571bfc23207102146228c58e675f151812fe610e
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Wed Jun 17 11:38:35 2009 -0400
+
+    udev dropped vol_id, replace with blkid
+    
+    udev no longer ships a vol_id binary saying that blkid should be
+    used instead.  *sigh*
+
+commit 6a020e014f1c2b1ed4cd1b19f09538e9986b1ca7
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Jul 6 21:09:51 2009 -0400
+
+    Add the tomboy exclude back for now
+    
+    When I was building a livecd earlier today, for some reason tomboy
+    got pulled in, even though yum groupinfo told me that it is optional
+    now...
+
+commit cb614b8f4cd45ba79f69b430b48a6f8ff8c864f8
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Jul 6 14:08:43 2009 -0400
+
+    Try harder to loose wget
+
+commit fd836a3354193e05f7b53b5ee3492f83e40d1d6d
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Jul 6 12:33:05 2009 -0400
+
+    Exclude man-pages too
+    
+    For some reason man-pages slips through and ends up in F12 spins now.
+
+commit bbf96e37e0f215baaa9befad21d23dd0805edfef
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Jul 6 12:23:56 2009 -0400
+
+    Not need to exclude tomboy anymore
+    
+    Gnote is now the default in comps anyway.
+
+commit 5138977598e9845f53efc8b10e853036e3268fa6
+Author: chitlesh <chitlesh@fedoraproject.org>
+Date:   Mon Jul 6 16:12:43 2009 +0200
+
+    gnome based FEL tested against 06/07/2009's rawhide
+
+commit c9323a724b6c08fb55adbe008e948fe4cbaec4c6
+Merge: 5236eb7 6a6e3ab
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Jul 2 02:20:07 2009 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 6a6e3abe47ea1a3b892f6dafadbaedef7d716c63
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Tue Jun 23 10:07:04 2009 +1000
+
+    totem-xine is gone too (so totem-gstreamer moved into totem)
+
+commit f1c7268d7b7af08af0cc9b75d82b2da0250cc803
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Mon Jun 22 14:18:23 2009 +1000
+
+    totem-gstreamer was dropped from rawhide
+
+commit f3bdc1672b1f91f9e9ec143f6039c4ec033f1add
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Thu Jun 11 10:46:01 2009 +1000
+
+    - update example repos from f10 to f11
+    - comment out -debuginfo to avoid annoying warning every spin
+    
+    debuginfo should only get pulled in if a debuginfo repo is explicitly enabled
+    and someone might actually want to have it for testing say, so hope we can
+    drop it completely
+
+commit 3e28840706c73680c60e8cfa8011be71745688f3
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Jun 2 16:16:08 2009 -0700
+
+    Drop all of GConf2-dbus*
+
+commit cb9c3876b7fef7bfded64c263a5ae9cfc8041ec1
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Jun 2 12:15:58 2009 -0700
+
+    Exclude packages which are causing conflicts
+
+commit 5236eb7773518c080859975d2033f4f2830ee5a0
+Merge: 8d16c77 62f84b1
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun May 31 12:36:05 2009 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 62f84b12153f70af93ab663661723ccf4a78d6d5
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Mon May 18 14:50:38 2009 -0700
+
+    northern-sami-support doesn't exist anymore
+
+commit 8d16c775bd226f68c8cfd93f8d097d4f681d4507
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat May 16 13:59:51 2009 +0200
+
+    ChangeLog in rpm spec
+
+commit beba0a37a71f718970c07d75a7d1e641b714e2e6
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat May 16 13:55:11 2009 +0200
+
+    Bump release number for final F-11 release
+
+commit 7f5490434a70635ea967d7bed9376b1d488841f4
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Thu May 14 15:37:58 2009 +0200
+
+    size issues; remove kdeplasma-addons to free ~5megs
+
+commit 2d67e9378257b828317e11f4c3a89881aae2ce62
+Author: Bill Nottingham <notting@redhat.com>
+Date:   Wed May 13 17:06:00 2009 -0400
+
+    Exclude btanks (#500715)
+
+commit f4133df1e1b2ad6d2a2d90e7986e8c0ffa5cc772
+Author: kevin <kevin@tummy.com>
+Date:   Wed May 13 13:04:36 2009 -0600
+
+    Add a restorecon for now to fix selinux issues on boot.
+    A more correct fix will be commited for f12.
+
+commit 346bbaab7d4beaeedcfdec3b94b4a9e798eef3a7
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue May 12 10:25:33 2009 +0200
+
+    size issues; remove kftpgrabber
+
+commit 2c3537e702c452ac232496c6139b5b9cf319cdc5
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sun May 10 09:22:38 2009 -0500
+
+    I found two more games that aren't playable without downloading content first.
+
+commit bc064e9a62b72becca7c73de1c4c24f20b530512
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Mon May 4 16:45:21 2009 -0700
+
+    Drop authoring/publishing from DVD.  Gets rid of tex and all that mess.
+
+commit 4046de03beed419a0e889a843297491ed225c3f3
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Mon May 4 14:59:41 2009 -0700
+
+    Save some more space
+
+commit e7ca906fcfde04656e69516858cba0c77e9fe820
+Author: Rex Dieter <rdieter1@localhost.localdomain>
+Date:   Wed Apr 29 20:17:10 2009 -0500
+
+    disable nepomuk for livecd user
+
+commit 7f9a28dc909fc353be145a848410cd8e3756ed6d
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Apr 29 12:25:32 2009 +0200
+
+    only cleanups, no changes to package list
+
+commit 58f83c9b41dcc9ba67a0f0e9a2d333138aa59dfb
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Fri Apr 24 22:19:53 2009 +0200
+
+    remove some packages to free space; some cleanups to the kickstart
+
+commit 48c898c15d5faca5481b3752bc72d40d1659ee33
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Fri Apr 24 15:50:55 2009 +0200
+
+    space fixes: -amarok,+kdeartwork,+konq-plugins, +kdeplasma-addons, +kftpgrabber
+
+commit 53146d774b0a33007ee677798e53cc916364f6ef
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Apr 16 12:27:44 2009 -0700
+
+    Keep the generic stuff out of the Fedora spin
+
+commit 657172e0f6f92fb02f7b5b262f1578b66d94b468
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Apr 16 12:26:18 2009 -0700
+
+    Drop libflashsupport, it no longer exists.
+    
+    Exclude astronomy-bookmarks to avoid conflicts on the DVD
+
+commit 2428460b15bc9144c3d1fdc5e500e701b606687a
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Apr 16 11:30:20 2009 -0700
+
+    Save enough space to fit ppc on a DVD again
+
+commit 8583712527d2fe63e5226d1b4aaa23cf558bad6c
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Apr 14 14:21:51 2009 -0700
+
+    Add the dial-up group to the install ks
+
+commit e6f97e0302e87780d6ddcdfdb9dd73131cdd9466
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Apr 14 17:18:08 2009 +0200
+
+    remove gnome-packagekit (it's disabled in KDE now); fix removal of unneeded fonts (renamings)
+
+commit dfb6692632aed8e93e6574e77b16e971f7f97003
+Author: kevin <kevin@tummy.com>
+Date:   Thu Apr 9 19:28:40 2009 -0600
+
+    Add cheese to Xfce spin
+
+commit 41d76a854871f4e304cf482ae4d5981da4d2295e
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Apr 9 13:03:31 2009 -0700
+
+    Remove xguest from the live image, decision was made to not ship it for F11
+
+commit 805dcc37d520c66b9f210c7f701c4ec00ca96968
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Tue Apr 7 15:04:56 2009 -0700
+
+    Promote some deselections to full exclusions to keep them off the install media
+
+commit 92b2ac326a861b1e791d8f5a97358a7b44265e41
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Tue Apr 7 10:44:42 2009 -0400
+
+    Poke a hole for mdns in the firewall since we do other things to make it work nicely
+
+commit bea1371dcbfff5f1b441ceb8371ab6c403dc89a1
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Apr 7 09:12:30 2009 -0500
+
+    nexuiz removed because 2.5 needs signicantly more space.
+    The new nexuiz version is much larger and I need to remove it for space.
+    This also resolves the space issue created by switching to the fluidsynth
+    font.
+
+commit 136a10ffb1ac13f7f8bdad01b6480daa6f84058b
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Apr 7 11:48:27 2009 +0200
+
+    only include some parts of kdeartwork
+
+commit 4c2b5dcaf56306bd84d18778ef99f064e12f88eb
+Author: Igor Pires Soares <igor@amd5600.localdomain>
+Date:   Sun Apr 5 19:26:14 2009 -0300
+
+    Fix some fonts removal
+
+commit 9ec863778654f5462ab33300181ec1a9348d58ef
+Author: kevin <kevin@tummy.com>
+Date:   Wed Mar 18 00:05:47 2009 -0600
+
+    Add xfce4-power-manager and gigolo
+    Replace gnome-power-manager
+    Cosmetic cleanups
+
+commit 22b216589aae1c5d1cc6b9f5ff4e97f95009032b
+Author: Chitlesh GOORAH <chitlesh@cgoorah.(none)>
+Date:   Sat Mar 14 12:20:45 2009 +0100
+
+    supports @electronic-lab groupinstall
+
+commit b1aa49f574ded79ff890a749bf98b7cda8ee4767
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Wed Mar 11 15:13:09 2009 -0400
+
+    Add xguest to desktop ks
+    
+    Originally brought up by mether and discussed on fedora-desktop-list,
+    we're going to give it a try at least for the beta
+
+commit c153a50c0bb1d09de91cea293184653f4d9000c8
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Fri Mar 6 16:54:17 2009 -0500
+
+    Parameterize LiveOS so that we can support multiple images on a stick
+    
+    Booting with live_dir=foo will now look in foo/ rather than LiveOS/
+    for the live image bits and pieces
+
+commit cafd01a101cb288aaba161811ef0d7f7d60d1c46
+Merge: 441cc3f 80ff46c
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Mar 6 15:07:31 2009 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 441cc3f424f5b7bcbe3ae026f2a0a92310d5c407
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Mar 6 15:04:51 2009 +0100
+
+    Bump version/release
+
+commit d6cc56f5a42c6ba1e723e923dd9bc3fa49fb5d29
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Mar 6 15:03:17 2009 +0100
+
+    Remove the developer spin which has not been submitted nor reviewed for Fedora 11
+
+commit 80ff46c81d29953bced42a206c1f768219d95131
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Fri Mar 6 14:41:11 2009 +1000
+
+    revert: doh - NetworkManager-{vpnc,openvpn} are much alive
+
+commit f7f1fe8deb6770442a5a10c1bc887926c7f1884d
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Fri Mar 6 13:06:28 2009 +1000
+
+    NetworkManager-{vpnc,openvpn} are no more
+
+commit e4bd804695f4c621d246538474accd66b5bbfab0
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Fri Mar 6 13:06:00 2009 +1000
+
+    NetworkManager-{vpnc,openvpn} are no more
+
+commit 92a9839cc63d6e297f02e8382b2dc1cd697aa165
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Wed Mar 4 17:16:16 2009 +0100
+
+    replace Edu Math with Education Spin
+
+commit ad661635e2d105bed093ab5e376a0e7b0a39cce0
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Mon Mar 2 23:51:56 2009 -0600
+
+    Remove games that are only playable with 3rd party downloads.
+    
+    bolzplatz2006, clonekeen, rott-shareware and vavoom are only playable with
+    downloads which doesn't work very well with a live DVD.
+    quake3 is playable with openarena, but currently that isn't included because
+    of size. If that changes, including openarena will bring it in without
+    a specific mention, so it should still come off the list.
+
+commit af94e059e8a56f7ad452a1e83510dd2b729e61ba
+Author: Sebastian Dziallas <sebastian@when.com>
+Date:   Fri Feb 27 22:35:42 2009 +0100
+
+    remove kickstart file for Fedora Sugar Spin
+
+commit 801ff420d9b1dc4bf5e2cd8e68e2e2f3491681e4
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Feb 25 23:36:12 2009 +0100
+
+    use system-config-printer-kde instead of system-config-printer; re-add konq-plugins; kdeartwork isn't really needed
+
+commit 4e36f20cba0d76b0fa62f7c34836b7aa84274075
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Feb 24 15:40:52 2009 +0100
+
+    Added de_CH localized spins
+    Bump version number
+
+commit f2d41ccd6b9f7a91ee83e76dc199ae8ae73ed0c8
+Merge: bf35f2e c21e07f
+Author: Chitlesh GOORAH <chitlesh@cgoorah.(none)>
+Date:   Sun Feb 22 00:48:35 2009 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit bf35f2e561f2586a66cfaa190d3e48b6a1b5e785
+Author: Chitlesh GOORAH <chitlesh@cgoorah.(none)>
+Date:   Sun Feb 22 00:47:53 2009 +0100
+
+    FEL ks update wrt to perl modules
+
+commit c21e07f2134625231a1b8bf98df24764b92c0ab7
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Feb 21 16:37:46 2009 -0600
+
+    Remove bsd-games
+    We really don't need a bunch of text based games on a showcase spin. People
+    can still try netwhack if they want to play a good text vased game.
+
+commit 1809b29645296fb67df28f3f7170d718f31476e5
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Feb 21 14:56:07 2009 -0600
+
+    evolution and libgweather are too painful to drop
+    
+    For some reason a much more extensive list of desktop packages depend on
+    both evolution and libgweather, then one would naively expect.
+    So they are no longer candidates for fat removal.
+
+commit 1e6c781aa87d6a3c111ff19c57e07a09ce9ef750
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Feb 21 13:15:10 2009 -0600
+
+    Remove two package names that were obsoleted.
+    poker2d-kde and ksirk are in poker2d and kdegames and shouldn't have been
+    in the ks file.
+    I am also geting ready to remove evolution and libgweather if I can, but
+    my first try doesn't keep them from being pulled in by something.
+
+commit bbef118506bb0b927347b8e01771fe6d14884d76
+Author: Igor Pires Soares <igor@amd5600.localdomain>
+Date:   Thu Feb 19 00:34:57 2009 -0300
+
+    Manage space in order to include all broffice.org packages
+    
+    Increase the localization aspect by using "%packages --instLangs en_US:pt_BR". We are also including en_US for compatibility reasons.
+    
+    Also include @java and some other desktop packages.
+
+commit ea4f0d7abeea385809c7f0a921e476df74c626e2
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Wed Feb 18 20:26:29 2009 -0600
+
+    Remove wine (for x86_64 size issue), dosbox and wget
+    
+    By dropping wine I keep a bunch of extra libs from being included in the
+    x86_64 spin so that it should be very close to the size of the i686 spin.
+    
+    dosbox is an emulator and I think we should be showing off Fedora games
+    rather than 3rd party games.
+    
+    wget is not needed now that the spin is based off the desktop. Some way to
+    grab online content will be included.
+
+commit 1fdce966c99879ef37d2986f84ea71daaf5367db
+Author: Kevin Fenzi <kevin@ohm.scrye.com>
+Date:   Mon Feb 16 09:26:32 2009 -0700
+
+    Removed drivel (no longer available)
+    Removed imsettings-xfce until it's re-written
+    Cleaned up old gnome-session hack, it's not needed anymore
+
+commit ddb82a00fa3ea73b5fe68688782b24bb656ef281
+Author: Igor Pires Soares <igor@amd5600.localdomain>
+Date:   Fri Feb 13 20:20:00 2009 -0200
+
+    Remove obsolete package references and shrink a bit more
+
+commit cc74c42d90f1598bb2c62f9b7331fdc9890a721b
+Author: Igor Pires Soares <igor@amd5600.localdomain>
+Date:   Mon Feb 9 01:33:33 2009 -0200
+
+    Fix input-methods removal
+    
+    Keep individual package removal due to compatibility reasons
+
+commit 9ed576b61493de490af3724a6f4c4017cf660f10
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Feb 5 14:33:23 2009 -0800
+
+    Add mc to the install spin for possible selection
+
+commit 148a970d0c24c09399b8e75cc0d59aeddb2a0aef
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Jan 28 22:48:45 2009 +0100
+
+    remove some more unneeded fonts, remove kdegames to free the needed space for the german translation (quick'n'dirty)
+
+commit f71c9dc9879333bbaf971fffd70402ce6d38ea06
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Jan 28 14:52:01 2009 +0100
+
+    decrease the size of the live images (maybe still not enough on x86_64)
+
+commit b798368b47469a76a724e796f8cd50c8434ef604
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Wed Jan 21 11:09:56 2009 +1000
+
+    no longer include scim-pinyin
+
+commit 68b14e1e540ecfcb27dcc0d64ec1f51d13d2c84e
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Tue Jan 20 17:04:20 2009 -0500
+
+    Switch to ext4 for / on the live images
+    
+    With ef2fsprogs-1.41.3-4.fc11, shrinking of ext4 filesystems is fixed and since we want to be using ext4 as the rootfs
+    for Fedora 11 alpha, let's make the change.  Note that you'll also need livecd-tools-021 for livecd-creator to not
+    reject the fstype
+
+commit 6c3b810f83b61da80424d796140848c4efee2a54
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Tue Jan 20 00:17:57 2009 -0600
+
+    Remove openarena to get under 4 GiB for the alpha release.
+    
+    The Spins SIG decided to have iso's under 4 GiB for the alpha release.
+    This may change for the beta. Removing openarea appeared to be the best option
+    for getting under 4 GiB. If the Spins SIG allows > 4 GiB iso's later, it
+    will be added back.
+
+commit a343b708b8770ad183fc4b94c246e5664b078803
+Merge: 202884d 2c4ad37
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Jan 17 12:37:54 2009 -0600
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 202884d005df37a17f491b78487697d5ddb32c47
+Author: Bruno Wolff III <bruno@wolff.to>
+Date:   Sat Jan 17 12:27:30 2009 -0600
+
+    Update maintainer comments to point to myself instead of Rahul.
+
+commit 2c4ad376043d618008f88c312b7975ba941c8f03
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Mon Jan 12 13:11:28 2009 +1000
+
+    wqy-bitmap-fonts is only installed for @chinese-support
+
+commit 2138c75bc0b56279b6ccad96bac02b852e17fb0f
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Mon Jan 12 13:00:54 2009 +1000
+
+    dejavu-fonts-experimental is obsolete in f11
+
+commit d1736cc5c30c636afe23e4e185180eb0d3531286
+Author: Bruno Wolff III <bruno@bruno.wolff.to>
+Date:   Sat Jan 10 15:23:33 2009 -0600
+
+    Increase build partition size
+    Remove vdrift, uqm and starfighter
+    Base on desktop spin
+
+commit af1369b8892ae0eb00ee2674fbbb22928a42c04a
+Author: Rex Dieter <rdieter1@localhost.localdomain>
+Date:   Mon Dec 22 08:31:44 2008 -0600
+
+    fix bug #476965 (DESKTOPMANAGER=KDM botch)
+
+commit 04ec7b3a3d5a2fef28e7d02dcc12f7f7a041aeb6
+Author: Fabian Affolter <fab@fedoraproject.org>
+Date:   Sat Dec 13 13:59:59 2008 +0100
+
+    - remove DOS line endings
+    - add some more gconf stuff
+
+commit c9c032f54f565c48a5231cd2f5ec993ca2c0b034
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Tue Dec 9 20:59:55 2008 +0100
+
+    Add Alpine to Sugar Spin
+
+commit 51cfab9fee0e2a745ca143317db010184c4468cf
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Mon Dec 8 13:18:55 2008 -0500
+
+    Add a delay on ejecting (#474817)
+    
+    The eject is at the end of the reboot and so people don't always have enough
+    time to remove the CD.  Add a delay to allow them to get the CD out
+
+commit b648168162b0cc517a914c7e514d7d79059702f0
+Merge: ac4acd8 ca20f10
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Dec 8 11:54:47 2008 +0100
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit ac4acd8db673258945d78275c047b146b3141cc8
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Dec 8 11:53:27 2008 +0100
+
+    Include a desktop environment for the games livedvd (#474775)
+
+commit ca20f10bfcea191f0a7d685bfe5cdc218cd7fc17
+Author: Christoph Wickert <fedora@christoph-wickert.de>
+Date:   Mon Dec 1 02:20:15 2008 +0100
+
+    make claws preferred email app
+
+commit bb2a62ca3df14d6385ab4b6b4b1b27c496c539d9
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun Nov 30 20:44:12 2008 +0100
+
+    Compose aos against rawhide in the master branch
+
+commit 4a4a6fff946a9582e6087677212af3e995745c46
+Merge: f8b542b ceb2800
+Author: root <root@elwood.kanarip.com>
+Date:   Sun Nov 30 20:38:49 2008 +0100
+
+    Merge branch 'F-10'
+    
+    Conflicts:
+    
+    	Makefile.am
+    	configure.ac
+    	fedora-live-base.ks
+    	fedora-livecd-sugar.ks
+    	spin-kickstarts.spec.in
+
+commit f8b542bfe8e3b3a5bc8da1080ff07dc405b5144e
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun Nov 30 20:14:48 2008 +0100
+
+    Add fedora-livecd-broffice.org.ks to package
+
+commit ee522306e5f14fa3bcd72e4e091268a6e5bf4e27
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat Nov 29 22:14:13 2008 +0100
+
+    Make the most recent repositories say 10 instead of 9
+
+commit 1fbd49fbd146728db78aa1b58ca990f005c01394
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat Nov 29 22:12:53 2008 +0100
+
+    Remove fedora-livecd-desktop-default.ks
+    Bump release
+
+commit 5104e474d36323f723fb607a6619960f6d00c39e
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Sat Nov 29 19:05:01 2008 +0100
+
+    Remove language support from Sugar Spin
+
+commit d4a2746f82c3c4c741d04e0b917bd751c32f33d7
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Nov 20 00:21:36 2008 +0100
+
+    Remove sysprof from fedora-livedvd-developer.ks
+
+commit ceb2800be84239c1474b739dc20771148d8e6766
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Nov 20 00:26:19 2008 +0100
+
+    Bump release
+
+commit d3548e6e1c0af5fef8ee13251e2451346902f20e
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Nov 20 00:26:07 2008 +0100
+
+    Set default repository config to f10
+
+commit f918eab54606fa7f38aaaceaf485297352d08b53
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Nov 20 00:24:34 2008 +0100
+
+    Bump version
+
+commit 73d549965ef1e6a2f7db423928f9a77cae73439b
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Nov 20 00:21:36 2008 +0100
+
+    Remove sysprof from fedora-livedvd-developer.ks
+
+commit 073c6eac05ece0175f70f7a6ccc04f87a08e8a75
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Nov 20 00:21:15 2008 +0100
+
+    Bump version
+
+commit 5bb471c0dc05088534b2f1c4a29a7027d2a2134c
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat Nov 15 21:26:11 2008 +0100
+
+    Remove the fedora-livecd-navigation awaiting technical review from the Spin SIG
+     - Notified Fabian about this, he'll submit it for review
+
+commit 0320a33a2c2eb8dc4f29535bac88fa9f54161b88
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Thu Nov 13 13:16:56 2008 +0100
+
+    make sure that alsunmute is there for working sound; make sure /usr/bin/pactl is there for workaround #466544
+
+commit 4dc334f28c51047240c6c841b33c3da91205351d
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Sat Nov 15 17:24:09 2008 +0100
+
+    dropped libflashsupport as it is blocked from F-10
+
+commit ab1c6a8b9c91a10e7431be5099de6e127e4e7233
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Sat Nov 15 17:25:36 2008 +0100
+
+    changed date
+
+commit c365b84839420e4936f039c455a092c9ef3b58dd
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Sat Nov 15 17:25:36 2008 +0100
+
+    changed date
+
+commit 726eb8d9d74e538f940b7df4e6158fa19b9144bd
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Sat Nov 15 17:24:09 2008 +0100
+
+    dropped libflashsupport as it is blocked from F-10
+
+commit c5ea4a3550f975f6a27187ae9f71789c7675777f
+Author: Fabian Affolter <fab@fedoraproject.org>
+Date:   Sat Nov 15 15:19:19 2008 +0100
+
+    rename fedora-navigation.ks
+
+commit 30e091e98028bcfdb705b4260c24dcd28b5e8cc0
+Author: Fabian Affolter <fab@fedoraproject.org>
+Date:   Sat Nov 15 15:07:22 2008 +0100
+
+    Initial import of this draft
+    This is not tested nor complete.
+
+commit d83eff5abba8335ee6ca2b29304237babd12efcc
+Author: Fabian Affolter <fab@fedoraproject.org>
+Date:   Sat Nov 15 15:03:36 2008 +0100
+
+    Initial import
+
+commit 86590f9fe9d18fe1f6ae1608adced232b5ec3718
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Thu Nov 13 13:16:56 2008 +0100
+
+    make sure that alsunmute is there for working sound; make sure /usr/bin/pactl is there for workaround #466544
+
+commit 2fc671c69c9dc80de3f934a75fca4929aef11988
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun Nov 9 21:41:13 2008 +0100
+
+    Update version
+    
+    Conflicts:
+    
+    	configure.ac
+
+commit 9fa4ab152350564fc54c1290e6c89ddde06cb724
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Sun Nov 9 19:23:52 2008 +0100
+
+    updated to livesys mechanism
+
+commit 38222a576d75d1f47752c18047357002817abee1
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun Nov 9 21:37:56 2008 +0100
+
+    Update version
+
+commit c3ea3a8a0bdbd7895159093c2cccf0a7bd029160
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Sun Nov 9 19:23:52 2008 +0100
+
+    updated to livesys mechanism
+
+commit 5c836f6352eade439b64d3197d2279702c4fd88d
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Fri Nov 7 14:27:47 2008 -0800
+
+    The exclude didn't look right, got an extra + in there somehow.
+
+commit dcc85fafa4ea3a4632a63d6ba8d9089889a17a9c
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Fri Nov 7 14:27:47 2008 -0800
+
+    The exclude didn't look right, got an extra + in there somehow.
+
+commit d432a11a6c6d8237d9199c62ed5e8db9118d7b70
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Fri Nov 7 11:01:59 2008 +1000
+
+    remove fedora-livecd-desktop-default.ks since it is no longer needed
+
+commit a05e9932f128ef2fc249c01c8f8d140320d351ab
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Nov 5 13:08:07 2008 +0100
+
+    add kde-plasma-lancelot
+
+commit d0aa55225372f64e2033d52fe67da9c2320ad4bc
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Mon Nov 3 15:50:59 2008 +0100
+
+    the inclusion of input-methods was postboned for F11, so remove the replacement for scim-python-pinyin also from this kickstart to make sure that scim won't end up on the KDE live images; add twinkle as additional package
+
+commit 59869f2b0956cbc5618238f9d2c946deeb6d548b
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Nov 6 13:32:52 2008 -0500
+
+    Ensure we mount persistent home and swap always (#470317)
+    
+    We weren't running any of this if you had persistence configured and you had
+    already booted.  We should at least mount the persistent /home and turn on
+    swap for that case as well as doing our tmpfs mounts
+
+commit 39f10542d30bcea411d80a4c9b8179cbc193bc08
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Nov 6 13:32:52 2008 -0500
+
+    Ensure we mount persistent home and swap always (#470317)
+    
+    We weren't running any of this if you had persistence configured and you had
+    already booted.  We should at least mount the persistent /home and turn on
+    swap for that case as well as doing our tmpfs mounts
+
+commit 45878133367e98caf007c445b37dfcd0a532f16d
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Wed Nov 5 18:53:29 2008 -0800
+
+    Exclude the dap-server-cgi package.  This was making the Engineering
+    and Science group show up for just this one package.
+
+commit d36fbc1acb23e232fd53c3910b73c291c3538bb0
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Wed Nov 5 18:52:59 2008 -0800
+
+    Add the fedora-packager group.  It was showing up anyway due to shared
+    packages, and it's useful to have with the other dev packages.
+
+commit f9e7d855f5e65ae59f5187b5e9ea9b6f1ea1de6a
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Wed Nov 5 18:52:22 2008 -0800
+
+    The default size is now 695 instead of 670.
+
+commit e95427f4f08ecd7ab5cc5326278fde6d90641df9
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Wed Nov 5 18:53:29 2008 -0800
+
+    Exclude the dap-server-cgi package.  This was making the Engineering
+    and Science group show up for just this one package.
+
+commit 51ac1c77e5f408df9685856e7f1b97fefc40a5b9
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Wed Nov 5 18:52:59 2008 -0800
+
+    Add the fedora-packager group.  It was showing up anyway due to shared
+    packages, and it's useful to have with the other dev packages.
+
+commit 60d370c6be6b9a82168d5647af789cd561c75491
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Wed Nov 5 18:52:22 2008 -0800
+
+    The default size is now 695 instead of 670.
+
+commit 4a32877c01417bd88f73333f75ee1ab093701d97
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Nov 5 13:08:07 2008 +0100
+
+    add kde-plasma-lancelot
+
+commit 2c74f67ac4e9c9ff23bca1f101b482b57e630ea2
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Mon Nov 3 15:50:59 2008 +0100
+
+    the inclusion of input-methods was postboned for F11, so remove the replacement for scim-python-pinyin also from this kickstart to make sure that scim won't end up on the KDE live images; add twinkle as additional package
+
+commit 587e6d3dfb838a95a72a65ad2dd69c7872d0114f
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Nov 3 08:42:37 2008 +0100
+
+    Revert "Install input methods by default."
+    
+    This reverts commit bd870f59d70eacb0362462976444381a7924f067.
+
+commit e7e6899a30be56aa9c0900ede9db6d58e3977fbb
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Fri Oct 31 01:32:02 2008 +0100
+
+    the removal/split of solar-backgrounds has freed some space. So there is some place for more addon packages: digikam, konq-plugins, pavucontrol, kdeedu-kstars
+
+commit 711eac0836c1da682c025826537e4f889a150590
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Fri Oct 31 15:07:40 2008 -0400
+
+    Switch to using greedy migration heuristic for geode (#462531, #467762)
+    
+    The geode driver seems to have some bugs that using the greedy migration
+    heuristic works around (discovered in upstream
+    https://bugs.freedesktop.org/show_bug.cgi?id=15700).  This fixes both the
+    black boxes we see on XO and also seems to make the text appear properly.
+
+commit 0cd792c7584523360c7aa291b1c3428e053bc3b3
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Fri Oct 31 15:07:40 2008 -0400
+
+    Switch to using greedy migration heuristic for geode (#462531, #467762)
+    
+    The geode driver seems to have some bugs that using the greedy migration
+    heuristic works around (discovered in upstream
+    https://bugs.freedesktop.org/show_bug.cgi?id=15700).  This fixes both the
+    black boxes we see on XO and also seems to make the text appear properly.
+
+commit c82626263c2329de843492bf5e9f7029b7424c88
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Fri Oct 31 01:32:02 2008 +0100
+
+    the removal/split of solar-backgrounds has freed some space. So there is some place for more addon packages: digikam, konq-plugins, pavucontrol, kdeedu-kstars
+
+commit 37284819968b5d692cadb00c8d2450dbd6e88df5
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Thu Oct 30 17:09:27 2008 +0100
+
+    Remove rebranding and input methods for Sugar Spin
+
+commit 76cbd92e64cc6043ed376dde8f72ac9a29c5dbaf
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Thu Oct 30 18:37:23 2008 +1000
+
+    Use default input-methods from base
+    
+    Remove input-methods removals and other older cleanup
+    since hopefully base should be ok.
+
+commit b5595740b79d0d9cb53bbd72a509421b5572dabc
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Thu Oct 30 18:33:56 2008 +1000
+
+    No longer install all language groups by default.
+    
+    We no longer need to install all language groups since @input-methods and
+    @fonts provide decent default i18n support.  fedora-livecd-desktop-default.ks
+    is now large obsolete and no longer needed once remaining font cleanup
+    is moved.
+
+commit 083fd6d50b6694d48287b1253a95f01775428fcf
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Thu Oct 30 18:30:00 2008 +1000
+
+    Install scim-pinyin instead of scim-python-pinyin
+
+commit c022150966a79e6fe36f6764c149934f3255232d
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Thu Oct 30 18:24:09 2008 +1000
+
+    Cleanup input method packages
+    
+    Remove m17n* and scim* from local spins.
+
+commit 7b5158766db4d2d3ecd1bcf2df7fa6a6751c7f7d
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Oct 28 20:27:07 2008 +0100
+
+    replace scim-python-pinyin with scim-pinyin for size issues
+
+commit 337855a64797824236116875710d9f9fa07bfd6e
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Oct 29 13:45:46 2008 +0100
+
+    don't install unnecessary input-methods and fonts to save spae; remove the workaround for adding the german keyboard layout inside KDE
+
+commit d9bb91b3eff54876fe3ebec689fb83465ad0eeab
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Oct 29 13:45:46 2008 +0100
+
+    don't install unnecessary input-methods and fonts to save spae; remove the workaround for adding the german keyboard layout inside KDE
+
+commit fd3884fe052208c4c0f28210de1e36a4914155c1
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Oct 28 20:27:07 2008 +0100
+
+    replace scim-python-pinyin with scim-pinyin for size issues
+
+commit c4fcc0c254397bce2df38875a5784b0d16bac258
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Tue Oct 28 14:53:16 2008 -0200
+
+    Don't install unnecessary input methods
+
+commit 9684f9bbb6bc31d110e1746549065ea638aa8d0c
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Oct 28 14:49:21 2008 +0100
+
+    Add fedora-install-fedora.ks to package
+
+commit 2e3cc48e8bb3638c1e1641a5f544fee7ce7ebb0e
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Oct 28 14:47:53 2008 +0100
+
+    Remove fedora-livecd-sugar which has not been approved for F-10
+
+commit 4aba382eccdff4d633a55148eaf8ca537533346c
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Oct 28 13:43:35 2008 +0100
+
+    Clean configure.ac
+
+commit 5b4d78bbb21ec7162763b1ddcd8d44d8701ea184
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Oct 28 13:42:44 2008 +0100
+
+    Bump version (for real this time)
+
+commit 684f924a724ae5cd13ae6043ee32bc651e60af24
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Oct 28 13:38:39 2008 +0100
+
+    There is no Electronic Lab LiveCD anymore, make the changes
+    Sort the Makefile to list the actual spin first, then it's localizations
+
+commit 19665545c31383533da62d2b92d10d7146e9aa62
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Oct 28 13:36:52 2008 +0100
+
+    List AUTHORS
+
+commit 28b35d7538d3ae52d82688366e55a944beea6b40
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Oct 28 13:34:16 2008 +0100
+
+    List our upstream project URL in NEWS
+
+commit bd870f59d70eacb0362462976444381a7924f067
+Author: Jens Petersen <petersen@redhat.com>
+Date:   Mon Oct 27 17:39:09 2008 +1000
+
+    Install input methods by default.
+    
+    Local spins should remove "scim*" and "m17n*" to avoid including input methods.
+
+commit 4dfc008e6c09725d7503abdda8c5b4dc44238f56
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Fri Oct 24 14:57:18 2008 +0200
+
+    Enable SELinux again for Sugar Spin
+
+commit 52fba85a9408aedddbf86c3f3ac468da3210a30b
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 23 17:49:21 2008 -0400
+
+    Quit plymouht before running anaconda (#468268)
+
+commit 2c69d4eb3ea42716dfed2b53b9c1ef23e2f14f29
+Author: Pedro Silva <pedro@localhost.localdomain>
+Date:   Thu Oct 23 16:11:18 2008 +0100
+
+    Remove kde keyboard patch on kde based pt_PT livecd/dvd
+    
+    Other minor cleanups
+
+commit ab382211dba8ffc8a5893e499447ce5ea0c3dd15
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Tue Oct 21 19:24:12 2008 +0200
+
+    add usermode-gtk manually to workaround #466768
+
+commit 70b63bdda2d18b09b5134e641c65500664e82ea1
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Sat Oct 18 19:34:57 2008 -0200
+
+    Bring sound-juicer and gnome-speech back, remove smc-fonts-meera
+
+commit 15d51a1927f9b25055e58cc200fa708fe1c14f40
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 16 22:08:41 2008 -0400
+
+    Fix enabling of swap from LiveOS/swap.img
+    
+    The previous check required there to be a swap partition in addition
+    to the existence of LiveOS/swap.img
+
+commit ad792441ada911318b6f3e9b51b57114b2ba70b7
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Thu Oct 16 00:40:16 2008 +0200
+
+    Add Sugar Spin
+
+commit cb9fc0f468075467878cf6a6b40b552c4915dad5
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Oct 15 21:24:14 2008 +0200
+
+    use kpackagekit instead of gnome-packagekit (at least for snapshot 2; see http://fedoraproject.org/wiki/SIGs/KDE/Meetings/2008-10-14); add liveusb-creator; replace user fedora with liveuser also in comments
+
+commit fc7ae6f087a5dfb04ab60307f346574a936e28f3
+Merge: fe584e3 3cb2718
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Oct 15 14:52:28 2008 -0400
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit fe584e3c7de1b151107704da783e8ed98ed19ade
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Oct 15 14:52:00 2008 -0400
+
+    don't install totem-xine
+
+commit 3cb271878a051e983ab39977ee2f1fe9e6c1fdae
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Wed Oct 15 12:57:03 2008 -0400
+
+    Fall back to mounting /dev/live as rw
+    
+    If we're using the live image for a persistent overlay, we can't mount it ro,
+    so just try to mount it rw if the ro mount fails
+
+commit 60b147e10d7d5c0c8317b088e3d20f8d1a1984b5
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Oct 14 23:17:00 2008 -0400
+
+    Add yelp again, now that we have enough space
+
+commit 753d45b7bcddb2903563c1a80c0e0c2278eb3c3f
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Fri Oct 10 10:26:52 2008 -0400
+
+    Turn off setroubleshoot while running off the live image
+    
+    setroubleshoot is very resource intensive and perhaps not entirely
+    relevant with the constrained use case of running from the live image.
+    Turn it off right now for when running off the live image
+
+commit 01ae816a570bf9f7790a51ca41d6165aace4cedb
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 9 21:02:44 2008 -0400
+
+    Mount /var/cache/yum with right perms (thanks to Till Maas)
+
+commit 37a74697b64d9767487b5c0f074184d665ebabb6
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 9 19:08:23 2008 -0400
+
+    Support having a swap file on the image
+    
+    If you're using a USB stick or SD card, you may wish to use a swapfile off
+    of it.  Support having a LiveOS/swap.img
+
+commit e50d87df6446417bd2c97d8c5dd7dff029f04968
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Oct 9 13:30:39 2008 -0700
+
+    Bring back kernel-devel in the install spin
+
+commit 7ba4cfd8c8ce0cb429fde368b790fffb1da590cb
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 9 14:59:29 2008 -0400
+
+    Don't run mdmonitor whne we're running off the live image
+
+commit 8b3c00d34d4b38291c1785d4a7b15354efae21a7
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Thu Oct 9 11:42:06 2008 -0700
+
+    Add the "Fedora" install spin.
+
+commit ca81e0ef35ca3daf83cd7e35601b480b607b4ca8
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 9 12:59:00 2008 -0400
+
+    Switch default rootfs size to 3072MB
+    
+    Switch the default rootfs to be smaller.  This shouldn't impact most of the
+    images as they're already CD sized.  But this makes it so that we can put
+    the unsquashed ext3fs onto an SD card for slower machines which makes a
+    huge difference in performance
+
+commit 41664a0c2b1d44726f12447b2d663138dd939e64
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 9 12:57:41 2008 -0400
+
+    Add a (temporary) bad hack to fix X on the XO (#460581)
+    
+    The geode driver doesn't properly autoconfig right now, so add a bad
+    hack to work-around.  This should go away within the next couple of
+    weeks
+
+commit 92cbd0b8e9d53ff998732f06590bd775cdc12977
+Merge: d173357 320bbae
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Oct 8 18:56:58 2008 -0400
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 320bbaee7fdd2dce3b5a6d578e22f0b9d020eb26
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Oct 8 15:01:57 2008 -0400
+
+    save some more space...still too large
+
+commit d173357341c5945098da26aae92b0f7f7b83ce3b
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Wed Oct 8 15:01:57 2008 -0400
+
+    save some more space...still too large
+
+commit 15cc4f871a34e120761f581575c8bf097e251d01
+Author: Jesse Keating <jkeating@redhat.com>
+Date:   Mon Oct 6 16:46:21 2008 -0700
+
+    Revert "local repo changes"
+    
+    This reverts commit d2479f8ed4c8d6a0a266e4183b17640988d79012.
+    
+    This commit wasn't supposed to be pushed to the public repo.
+
+commit 98f264dc3f55e36b2f848b2fdbfea93158422523
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Oct 6 11:04:52 2008 -0400
+
+    Try harder to turn off PackageKit.
+    Patch by Richard Hughes
+
+commit 1a6a1f6bac2958b359eac9c48a03a2c47adf352a
+Merge: 8cfac0f 22ca25f
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Mon Oct 6 10:41:20 2008 -0400
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 22ca25f36efd91997e5fbcad2e46e0d3d71ac8cc
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Sun Oct 5 18:33:49 2008 -0300
+
+    Remove xorg keyboard hack
+
+commit 8cfac0f2503c002cf52ae4076daea3b6142db9b0
+Merge: d2479f8 b1aa0f4
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Fri Oct 3 09:46:10 2008 -0400
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit d2479f8ed4c8d6a0a266e4183b17640988d79012
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Fri Oct 3 09:46:02 2008 -0400
+
+    local repo changes
+
+commit b1aa0f441e561581c3c1379e932c2ff86cc5009f
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 2 22:17:09 2008 -0400
+
+    Support using the internal NAND as the persistent /home for the OLPC
+    
+    The OLPC's internal NAND is a really good idea to use for /home rather than
+    taking up the very hard to find RAM.  The NAND is default set up with a
+    /home on mtd0, so also do some magic so that we create our homedir under that
+    /home.
+
+commit e61da567cd4a1edcf2d484392da34c5eeb048dc1
+Author: Pedro Silva <pedro@localhost.localdomain>
+Date:   Fri Oct 3 02:35:32 2008 +0100
+
+    Remove xorg keyboard patch in gnome based pt_PT livecd/dvd
+    
+    Fix language-pt_PT.ks template
+
+commit 1e4bef319b6fc1ddcb294bb8ffd0f7896a4482ba
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 2 11:08:23 2008 -0400
+
+    Fix up autologin on other kde images for fedora->liveuser change
+
+commit 7ccf72a59f23f7becf0d7d0e5a97852cb46cd588
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 2 11:07:33 2008 -0400
+
+    Fix file ownership for the username change
+
+commit ca2f8913a2901b7c0a59046aca0afbb9f1c24e49
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Thu Oct 2 11:05:16 2008 -0400
+
+    Switch out references to fedora in initscript and username to be generic
+
+commit 0069b1552232a3399abab9c074d27c9c9d56f65d
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Mon Sep 29 21:38:29 2008 +0200
+
+    Drop packages pulling in too many deps in edu-math spin
+
+commit d232790f677ad14552d13437210ebc6063da8910
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Fri Sep 26 02:28:01 2008 +0530
+
+    fix gnome session desktop file path
+
+commit 2bbb44b3c28b68138dc84c032df6ba3c32e51252
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Fri Sep 26 02:23:29 2008 +0530
+
+    drop autofs from base
+
+commit 922e80c23948c4c46d2eeb0a7fe825680d10eaf7
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Fri Sep 26 02:21:32 2008 +0530
+
+    sendmail change reverted
+
+commit e834a9df7d031a2620517b9e9bbb3676c5aea95d
+Merge: ae4afb9 65ab6d9
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Fri Sep 26 02:20:05 2008 +0530
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit ae4afb9f3ee2e77f8571b634dfb6d87b3add966f
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Fri Sep 26 02:16:39 2008 +0530
+
+    save space. drop non desktop oriented packages
+
+commit 65ab6d92cb3c855773fdfe8aa0aa5170cb14cb51
+Merge: d0748b4 a92a207
+Author: Colin Walters <walters@verbum.org>
+Date:   Thu Sep 25 15:21:49 2008 -0400
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit d0748b44f4de67f5018e95856c22e9550fe3a97f
+Author: Colin Walters <walters@verbum.org>
+Date:   Thu Sep 25 15:21:16 2008 -0400
+
+    Back off on sendmail change for now
+    
+    Removing sendmail breaks custom cron jobs; we will revisit
+    it next cycle.
+
+commit a92a207649ce13abb641469903fa1c94ed38e540
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Thu Sep 25 23:49:47 2008 +0530
+
+    gnome session hack
+
+commit 7c03fda0d30f6be21faf2d31f7a3d5e083daf5da
+Author: root <root@sundaram.pnq.redhat.com>
+Date:   Thu Sep 25 21:51:08 2008 +0530
+
+    include gnome-session
+
+commit 4e6210e55571bd3961044f942e8cbb8e42fdc3bf
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Thu Sep 25 17:00:25 2008 +0530
+
+    match desktop ks file settings
+
+commit 183f1575f1ae497782c5173c198516597e71609d
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Thu Sep 25 16:45:23 2008 +0530
+
+    add other xfce sig members as maintainers
+
+commit d4518e827d02119339c2bc5bf7855c49e372a213
+Author: Rahul Sundaram <sundaram@sundaram.pnq.redhat.com>
+Date:   Thu Sep 25 16:43:02 2008 +0530
+
+    Added NetworkManager-pptp and asunder, replace mirage with ristretto and xscreensaver with gnome-screensaver. Some additional cleanup as well
+
+commit d7ced17599095030ec955f171bbf6d58a50a9255
+Merge: 769f598 cd5fed2
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Sep 25 11:03:21 2008 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit cd5fed207919194f041e31e82f65293d173f77b5
+Author: Colin Walters <walters@verbum.org>
+Date:   Wed Sep 24 18:31:50 2008 -0400
+
+    Use ssmtp instead of sendmail
+
+commit 7c98d53f0a33f7a6e58ab4912c19f94ea5f3413d
+Merge: 601a68b cfa0756
+Author: Colin Walters <walters@verbum.org>
+Date:   Wed Sep 24 15:16:41 2008 -0400
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 601a68b97b052bf33352d80d74b3cd83771043d9
+Author: Colin Walters <walters@verbum.org>
+Date:   Wed Sep 24 12:52:43 2008 -0400
+
+    Add maintainership link, remove sendmail,autofs,gnome-games-help
+
+commit cfa07568c846798a32f5cd22258721e97aaad781
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Sep 24 12:05:22 2008 +0200
+
+    make sure that phonon-backend-xine is on the beta; remove pavucontrol for saving space
+
+commit 42093d04c6dbf2595f91fb5b179df34a0d0f6bc9
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Sun Sep 21 10:57:39 2008 +0200
+
+    set part to 8192
+
+commit 769f598f7230c11efe1a5c3423dc981a70a3edad
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Sep 19 14:13:41 2008 +0200
+
+    Remove --ignoremissing from %packages
+
+commit b5460a253cd9948b46f0cfd56d6bf7bf73b598f7
+Merge: ad801d9 71e4206
+Author: Pedro Silva <pedro@localhost.localdomain>
+Date:   Fri Sep 19 08:14:54 2008 +0100
+
+    Merge branch 'master' of ssh://pedrosilva@git.fedorahosted.org/git/spin-kickstarts
+
+commit 71e420654b3a8e4f337269b1b1f742d3ab417d22
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Wed Sep 17 21:56:34 2008 -0300
+
+    Update to fit the LiveCD size
+
+commit ad801d9d4ce6bf65fd0d0223273833629750ca12
+Author: Pedro Silva <pedro@localhost.localdomain>
+Date:   Tue Sep 16 20:56:56 2008 +0100
+
+    Change pt-latin1 to pt in xorg.conf hack on gnome based livecd and livedvd.
+
+commit 44f221c2a4b67cf6b07649254b69d6689c6d20b2
+Author: root <root@localhost.localdomain>
+Date:   Tue Sep 16 08:28:22 2008 -0400
+
+    Updated the aos kickstart file to be 550 megs to build on x86_64
+
+commit d440660c09ef3c1c6657a0ea7f2ba39798a4e09f
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Sun Sep 14 16:06:42 2008 -0400
+
+    Use GConf keys only for disabling packagekit update notification
+    
+    The GConf keys for PackageKit now do the right thing for disabling checking
+    for updates and notifying the user about them.  So use them rather than the
+    autostart hacked used in F9
+
+commit 6f5d0e5e7ac00f045c7f65aa42b5f08d6586d02c
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Sun Sep 14 12:44:23 2008 -0300
+
+    More Asian fonts out
+
+commit 39ea3b2a26b246d847b80a57ae676adcf203c6d9
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun Sep 14 15:39:26 2008 +0200
+
+    Add documentation to RPM
+
+commit ec9b8d9bcc85f330dc1638643cb9e4a34d392e2a
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Sep 10 17:57:44 2008 +0200
+
+    don't include additional fonts (@fonts should be enough); add description to kickstart
+
+commit e71b6584ad79c6f19ab7543dd98dcf0ea6a4de26
+Merge: 09abe56 08a12ea
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Tue Sep 9 23:47:58 2008 -0300
+
+    Merge branch 'master' of git://git.fedorahosted.org/spin-kickstarts
+
+commit 09abe5639ac11f20920da8eb73c71776041ad242
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Tue Sep 9 23:36:27 2008 -0300
+
+    Assure we won't get Asian input methods
+
+commit 08a12ea4eb0118a46f039b7f0a3db82858b405d1
+Merge: 2a7ce06 996573d
+Author: Bryan Kearney <bkearney@redhat.com>
+Date:   Mon Sep 8 10:02:59 2008 -0400
+
+    Merge branch 'master' of git://git.fedorahosted.org/spin-kickstarts
+
+commit 996573df652e5f3a5157202bf6370c3ce4b361d2
+Author: Fabian Affolter <fab@fedoraproject.org>
+Date:   Sat Sep 6 18:25:48 2008 +0200
+
+    Initial versions for de_CH (Swiss german)
+    
+    Language: 	de_DE
+    Keyboard:	sg-latin1
+    
+    Be aware, the files are not tested yet.
+
+commit 2a7ce0622a9d2801eb6adff9e8a92f42b357bbb9
+Author: root <root@localhost.localdomain>
+Date:   Thu Sep 4 09:00:14 2008 -0400
+
+    Enabled Selinux, but made it permissive
+
+commit edd4c149703747ccb7ecd745a16e720778de5672
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Wed Sep 3 18:51:39 2008 +0200
+
+    tuned to kde live spin
+
+commit 6b0176136971b47b4ceba0c8579da93d228d2b80
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Mon Sep 1 14:31:29 2008 -0300
+
+    Add broffice.org-calc
+
+commit 7c5f5275b2d6e4345a516ab53738ef3f047e894b
+Merge: adb4a41 20f6c71
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Sun Aug 31 15:22:43 2008 -0300
+
+    Merge branch 'master' of git://git.fedorahosted.org/spin-kickstarts
+
+commit adb4a410d6bb5e553309ba3598f8a4117910d644
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Sun Aug 31 12:43:38 2008 -0300
+
+    Remove spin debranding, put codeina back
+
+commit dd1430bdc1e3a7388aa49a2d61c159020b3c0f50
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Sun Aug 31 12:23:45 2008 -0300
+
+    Include missing %include
+
+commit 20f6c718e259f981a7f0679c2f6af790776ae363
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Aug 28 15:09:27 2008 +0200
+
+    Add fedora-aos.ks
+
+commit e25600d498e74adb03b64d2a1bc20683c33f5df4
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Aug 28 12:26:57 2008 +0200
+
+    Add fedora-aos.ks
+
+commit 775c630bbbb636a9034f685cfcb3f4136b93697a
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Aug 28 12:19:50 2008 +0200
+
+    Cosmetic changes
+
+commit f8fa17fb4a18c0aeb349a0426ca972054f5494c8
+Author: Igor Pires Soares <igor@amd5600.(none)>
+Date:   Wed Aug 13 15:31:29 2008 -0300
+
+    Initial BrOffice.org spin commit
+
+commit ef8196880c2d4037f8ddd096c76ea0dbd22d9c08
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Wed Aug 13 17:07:51 2008 +0200
+
+    Add fedora-logos again to education-math
+
+commit 498e32146f0fd6737054e649b66df64689d5d585
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Mon Aug 11 10:52:45 2008 -0400
+
+    Don't set face image and use more robust way of setting gdm config from F9 cfg
+
+commit 58b5bff26e7c19c5ee78f929a45430c0c02c2564
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Mon Aug 11 10:52:18 2008 -0400
+
+    Make the cache for 'man -k' to be able to work by default (#455968)
+
+commit 50929c433e27997425608789064e5c3b9d28c464
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Mon Aug 11 10:51:55 2008 -0400
+
+    Use plymouth when asking for password to unlock encrypted persistent /home
+
+commit 6984b85099baabe8d495a1ee335d990b996d914e
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Mon Aug 11 10:51:27 2008 -0400
+
+    Make language support in the all language case be the 50%+ mark used in F9
+
+commit 6621445de949abe8c762d2f162daebdc11aa6d30
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Mon Aug 11 10:50:41 2008 -0400
+
+    Bring default package sets in line with the images used for F9 and F10alpha
+
+commit b316cda63bcfe52bfd971b1bbbb8d2418c3ded00
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Mon Aug 11 10:49:11 2008 -0400
+
+    Use $basearch rather than hardcoding i386
+
+commit c69b335c85d3bad1ef92e565d04ae351c3a035a2
+Merge: 49b9792 dc08281
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat Aug 9 16:31:21 2008 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit dc08281a32e6f23e80ee6f26e7e9ce4cd83d4a67
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Aug 8 11:30:53 2008 +0200
+
+    Remove with uninstall
+
+commit a0c61670924a92cf147f505ef5ed8392dd624e9c
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Aug 7 21:54:03 2008 +0200
+
+    Add education-math to automake
+
+commit 2ceac6546a0246ed4a67e407dcade88cb87f936e
+Author: wart <wart@kobold.org>
+Date:   Sun Aug 3 19:56:19 2008 -0700
+
+    Modify game list to reduce footprint of DVD image
+
+commit 49b97923c836e56107dfe24d364cf927801d26a6
+Merge: e0d07dd 00b1391
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun Aug 3 12:49:52 2008 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 00b1391df5e8f7e738f08f27c3fa6268823e3274
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Fri Jul 25 11:11:26 2008 +0200
+
+    Add snippets and templates - Fix Education Math spin
+
+commit a86bc1466f30a4c134b4c9c56c8e599bab9cf749
+Author: Sebastian Vahl <fedora@deadbabylon.de>
+Date:   Wed Jul 23 11:13:08 2008 +0200
+
+    Prepare fedora-livecd-kde.ks for F10 Alpha
+
+commit 07fc4ad634d3fe0dc1a8aa0bbdbcdde3b3e5cd63
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Tue Jul 22 19:42:07 2008 +0200
+
+    Add "known issues" to Education Math spin - Correct spelling error
+
+commit 556776c4549c842383d648ff2421d639fa7889ae
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Tue Jul 22 19:30:35 2008 +0200
+
+    Modify Education Math spin - Fix issues with rebranding and installation
+
+commit e0d07dd55ff8f6b5a30f8fd5b393539c7fcdb815
+Merge: 91d55d3 a93ff46
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Wed Jul 16 15:49:52 2008 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+    
+    Conflicts:
+    
+    	fedora-livecd-education-math.ks
+
+commit a93ff46f02732de55004a733e4ed5efa763bcb0d
+Author: Sebastian Dziallas <sebastian@localhost.localdomain>
+Date:   Wed Jul 16 15:26:55 2008 +0200
+
+    Add fedora-livecd-education-math.ks spin
+
+commit 91d55d389827265f0d2b7f4da1d01540cb2560f8
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat Jul 12 12:49:51 2008 +0200
+
+    Add new Spin: Fedora Education Math
+
+commit 041280b04c76f78612bead95e29173a7a77d2ff9
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Jul 11 18:17:55 2008 +0200
+
+    Modify fedora-livedvd-games.ks to match new version from Hans de Goede
+
+commit 33c4dbe9b47d0d055e4750440c24f65c67d8598d
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Jul 11 08:43:28 2008 +0200
+
+    Make rawhide the default repository to compose against
+
+commit 3d919709cce2086fcda11bfc268deb6161ea80e7
+Merge: 4ec4838 63cccce
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Jul 4 17:56:26 2008 -0400
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit 4ec4838811848975b325c5524a3a738ebc1e8183
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Jul 4 17:56:12 2008 -0400
+
+    Fix fedora-livedvd-games.ks
+
+commit 2c812ce390461805d177ed499d5dfd29f3bf46a0
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Jul 4 17:50:38 2008 -0400
+
+    Fix fedora-livecd-electronic-lab.ks
+
+commit 131aa2def28f16ba1e6a98f5de2436e670db8089
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Jul 4 17:28:14 2008 -0400
+
+    Fix %packages and %end around the @*-support includes
+
+commit 63cccce363951b17d6695998b27c57a6e79f4125
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Tue Jun 24 21:02:15 2008 +0200
+
+    added sk2py
+
+commit e655eb74b27f1c58fffb8f1dcbac2653194339a3
+Author: Chitlesh Goorah <chitlesh@localhost.localdomain>
+Date:   Sun Jun 15 13:08:25 2008 +0200
+
+    Initial kickstart file for Fedora Electronic Lab LiveDVD
+
+commit 129c5442acaf54d9d637be9f3cd3214e7a23b31c
+Merge: de6fcee 4bb7cca
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Jun 9 16:55:42 2008 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit de6fceea2170fb5032d7d7d518a8058ac9f794ad
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Jun 9 16:54:56 2008 +0200
+
+    Add maintainer header
+
+commit 4bb7cca60ef6943a862d79985766952afb710874
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat Jun 7 11:33:53 2008 +0200
+
+    Fix suggestions from review request #448072
+
+commit 0c722ff3c4eebb069fcaaab6e5d83d7afb45004d
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Fri Jun 6 11:00:03 2008 +0200
+
+    And support specifying the persistent store by label or uuid
+    
+    If you specify persistenthome=LABEL=foo you will get the device labeled
+    as "foo" mounted as /home rather than LiveOS/home.img.  Similarly for UUID
+
+commit 84a6d143ac94dac59c56fb6ac1b9f42e93ad2ca7
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Fri Jun 6 10:55:55 2008 +0200
+
+    Ensure that tmpfs dirs are labeled correctly
+
+commit bb4474c3a1c6f8714116a507c839ace51360efae
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Jun 5 11:54:58 2008 +0200
+
+    Update Makefile
+
+commit e507687fe21f8b55181045d25bd03b11885198d0
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Jun 5 10:57:05 2008 +0200
+
+    Add fedora-livecd-desktop-pt_BR.ks localized spin
+
+commit b6f176dd238a97bfad880997ba951b0a48415d67
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Jun 3 14:18:34 2008 +0200
+
+    Add pt_PT localized kickstarts
+
+commit c09f96b74e9db7e8c903775fca3b4f10c8c7c095
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Tue Jun 3 13:49:27 2008 +0200
+
+    Update kickstart to latest version in livecd-tools
+
+commit 3a0bf25927b02c6113221770e632990aa4000052
+Author: Jeremy Katz <katzj@redhat.com>
+Date:   Tue Jun 3 13:42:24 2008 +0200
+
+    Fix mounting of live image backing store on /mnt/live
+
+commit 08cb98be0e67a5a6a1542872c45286269fc08c69
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Mon Jun 2 16:59:02 2008 +0200
+
+    Add pt_PT localized spin for fedora-livecd-desktop
+
+commit ce52fe065df7ff7d2dd99606c86b32efb953bfef
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat May 31 14:49:28 2008 +0200
+
+    Give README some content
+
+commit 34164c6a0ffd4bbfaa8c613a7571f88bf6d617cc
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat May 31 14:45:39 2008 +0200
+
+    Add maintainers for Fedora Electronic Lab Spin
+    Improve 'chkconfig --del' to 'chkconfig off'
+
+commit e2a4d704856b89c756c728a4ebcd258bef95dde7
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sat May 31 13:55:15 2008 +0200
+
+    Add new files to the spin-kickstarts repo:
+     - automake and specfile
+     - german localized Desktop Spin
+
+commit ecf21a0d7264891ce10b4010e563ec90f305501f
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri May 23 11:44:51 2008 +0200
+
+    Add a German localized version of the Fedora KDE LiveCD
+
+commit 82836661fecae3aed366c450c227a6a691b199e2
+Author: Rahul Sundaram <sundaram@redhat.com>
+Date:   Mon May 5 19:53:57 2008 +0530
+
+    sync to the latest wiki version
+
+commit 99e4cc1caa1e0b8ad594925784b521dfb1bdbd8a
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu May 1 16:30:50 2008 +0200
+
+    Having a fedora-livedvd-kde.ks makes no sense as all it does is include localization
+    Adjusted other kickstarts for consistency
+
+commit cbf5d061fc4f59175f4acf694af5b8bb2996755b
+Merge: a9beca9 4931b56
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu May 1 16:20:40 2008 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit a9beca90c322a0e174b5d83da61e1ea6a78cd767
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu May 1 16:20:16 2008 +0200
+
+    Delete old files, add new ones.
+
+commit 4931b568d225ad2c9a7446b8a17f76b0daf67c4d
+Author: Rahul Sundaram <sundaram@redhat.com>
+Date:   Mon Apr 28 17:56:31 2008 +0530
+
+    stop dropping fonts. add some and a few utils
+
+commit 000cbcc316880a49f18a5dbb1ed3a8aae1a51ce1
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Fri Apr 25 12:10:13 2008 +0200
+
+    Add KDE Spin
+
+commit 13934a0984417b545411c59fae3ccda8fa34e297
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Apr 24 01:29:55 2008 +0200
+
+    Add in the XFCE spin
+
+commit c1113866d856825fd048c18f5821bdb990c6cddb
+Merge: bc5b5a5 14af7d5
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Thu Apr 24 00:45:35 2008 +0200
+
+    Merge branch 'master' of ssh://git.fedorahosted.org/git/spin-kickstarts
+
+commit bc5b5a51f5dfebb0a981dea2c8f1735ba243046b
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Wed Apr 23 10:21:10 2008 +0200
+
+    Add fedora-live-xfce.ks for the XFCE Spin Concept
+
+commit 14af7d59f488b44afcd37b796f20f7ae1e61fae8
+Author: Rahul Sundaram <sundaram@redhat.com>
+Date:   Sat Apr 19 03:50:21 2008 +0530
+
+    include xfce ks file for Fedora 9
+
+commit bce1ba52d20a331e5d7edf266dc9d408706aa092
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun Apr 13 17:24:59 2008 +0200
+
+    Some sample kickstarts
+
+commit f74f667b97233aa0b559fc1ebfed1ac759c7215a
+Author: Jeroen van Meeuwen (Fedora Unity) <kanarip@fedoraunity.org>
+Date:   Sun Apr 13 15:23:15 2008 +0200
+
+    Initial commit

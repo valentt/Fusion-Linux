@@ -1,0 +1,7 @@
+== NOTICE ==
+
+This directory contains unofficial kickstarts. These have been technically
+approved by the Fedora Spins SIG, but have no trademark approval.
+
+If these kickstart files include standard kickstarts (such as live-base),
+they should use ../ for the directory name.

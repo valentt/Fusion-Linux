@@ -1,0 +1,44 @@
+The master branch is where development takes place:
+ - it may contain kickstart files that are broken, or
+ - spin concepts that are in the process of being
+   approved by the Board (trademark approval), or
+ - spin concepts that are in the process of being
+   approved by the Spins SIG
+
+The release specific branches contain spin concepts that:
+ - are approved (both by Board and Spin SIG)
+ - maintained for the remainder of the release cycle
+
+When kickstart files are added or removed, Makefile.am should be updated to
+reflect the change.
+
+To rebuild the srpm for a new version or a new release without patches:
+
+git clone ssh://git.fedorahosted.org/git/spin-kickstarts.git spin-kickstarts
+cd spin-kickstarts
+# If you need a specific branch other than master:
+git checkout BRANCHNAME
+# Edit configure.ac to update the version or release
+# Edit spin-kickstarts.spec.in to update the change log
+git commit -a
+git push
+aclocal
+automake
+autoconf
+./configure
+make dist
+install -D -m 644 spin-kickstarts-*.tar.gz ~/rpmbuild/SOURCES
+# Edit spin-kickstarts.spec if some changelog history needs to be included
+install -D -m 644 spin-kickstarts.spec ~/rpmbuild/SPECS
+rpmbuild -ba ~/rpmbuild/SPECS/spin-kickstarts.spec
+# If the sprm gets published then publish the tar.gz file on fedorahosted
+scp spin-kickstarts-*.tar.gz fedorahosted.org:spin-kickstarts
+# Clean up the generated files:
+git clean -f -d
+# To update a branch of spin-kickstarts
+#   Make sure the branch is current (git pull)
+#   Copy over the new spec file
+#   In each branch run make new-sources FILES=/pathto/spin-kickstarts-*.tar.gz
+#   Commit the changes with git commit -a
+#   Make a new tag with make tag
+#   Do the build with make build
