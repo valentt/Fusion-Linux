@@ -156,6 +156,14 @@ kdeutils # filelight is obsoleted by kdeutils, filelight visualizes diskspace us
 kdeedu-marble # Marble is desktop atlas and globe 22 M
 
 
+# video editing apps
+avidemux # video editing app, 25 M
+openshot # premier video editing app for linux desktop, 32 M
+#HandBrake-gui # great DVD transcoding app # removed because it takes over all video extensions
+#pitivi
+#k9copy # k9 uses kdelibs as dependency :(, 14 M
+
+
 # p2p apps
 ## amule # temporary bug issue - requires libthreadutil.so.2
 transmission # fabulos and lightweight bittorrent client
