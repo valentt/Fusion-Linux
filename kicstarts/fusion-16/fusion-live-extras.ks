@@ -69,7 +69,7 @@ picard-freeworld # Audio tagging application using data from the MusicBrainz dat
 
 # video editing apps
 avidemux # video editing app, 25 M
-openshot # premier video editing app for linux desktop
+openshot # premier video editing app for linux desktop, 32 M
 #HandBrake-gui # great DVD transcoding app # removed because it takes over all video extensions
 #pitivi
 #k9copy # k9 uses kdelibs as dependency :(, 14 M
