@@ -58,6 +58,7 @@ repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/n
 -vinagre
 -evolution*
 
+
 # desktop tools and addons
 # avant-window-navigator # great looking navigation panel, 51 M with python dependencies
 # awn-extras-applets
@@ -87,6 +88,7 @@ xchat # gui IRC chat client
 # pidgin # instant messaging and chat client # 1.5 M
 #-empathy # instant messaging and voice client # 49 M
 
+
 # internet apps
 pan
 chromium # 92 M temporary bug - requires libc.so.6(GLIBC_2.15)
@@ -99,6 +101,7 @@ hotot # identica and twitter microbloging client, 1 M
 #midori
 #epiphany
 #evolution-mapi
+
 
 # graphics and photo apps
 
@@ -132,6 +135,7 @@ qiv
 #kipi-plugins
 #-shotwell
 
+
 # p2p apps
 ## amule # temporary bug issue - requires libthreadutil.so.2
 transmission # fabulos and lightweight bittorrent client
@@ -139,6 +143,7 @@ tucan # download manager for file services like megaupload.com, rapidshare.com, 
 uget # download manager
 #deluge
 #azureus
+
 
 # games, cool small ones
 abe
