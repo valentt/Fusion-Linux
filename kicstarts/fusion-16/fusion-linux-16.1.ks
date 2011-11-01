@@ -165,6 +165,36 @@ freeciv # Civilization clone, 4/5, 24 M
 # Ri-li # drive wooden trains, great looking snake clone, 4/5, 134 M
 # freecol # Colonization clone, 3/5, 23 M
 
+# premium games (big ones)
+
+# First Person Shooters
+# urbanterror # military first person 3D shooter, 5/5, 1 M + 717 M
+# sauerbraten # Cube 2, only in Russian Fedora repos, 4/5, 503 M
+# nexuiz # first person 3D shooter, 853 M
+# tremulous # first person multiplayer aliens VS humans 3D shooter, 4/5, 100 M
+# alienarena # first person 3D shooter, 852 M
+# openarena # first person 3D shooter, 
+# worldofpadman # cartoon character first person 3D shooter - multiplayer only, 5/5, 3 M + 605 M
+
+# RPG and real-time strategy games
+# glest # 3D real time strategy in medieval Europe, 4/5, 107 M
+# warzone2100 # 3D futuristic real time strategy, 5/5, 74 M
+# boswars
+# wesnoth
+# widelands # RTS strategy game, 3/5, 91 M
+# ufoai
+# spring # 3D real-time engine and game installer, complicated setup - 2/5, 59 M
+
+# Car driving
+# vdrift # Driving, drifting racing simulation, 521 M
+# maniadrive
+# torcs # car racing simulator, 3/5, 314 M
+# trophy #
+# ultimatestunts, 3D racing game, remake od old dos game, 3/5, 22 M
+
+# vegastrike # 3D space action RPG space sim, trading and bounty hunting. Elite and Privateer clone, 739 M
+
+
 # education
 stellarium # Photo-realistic planetarium 40 M
 
