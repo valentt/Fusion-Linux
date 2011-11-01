@@ -4,7 +4,7 @@
 # mailto:desktop@lists.fedoraproject.org
 
 # timezone Europe/Zagreb
-part / --size 6500 --fstype ext4
+part / --size 6000 --fstype ext4
 
 #repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
 repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/16/Everything/i386/os/
