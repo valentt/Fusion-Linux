@@ -301,7 +301,7 @@ b43-fwcutter
 
 # misc terminal apps and tools
 unrar
-akmod-wl # driver for broadcom wireless cards # no more a separate package?
+# akmod-wl # driver for broadcom wireless cards # no more a separate package?
 # cnetworkmanager # Command Line Interface for NetworkManager - removed?
 
 # minimal development package, 34 M
