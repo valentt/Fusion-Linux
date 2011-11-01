@@ -155,6 +155,16 @@ gstreamer-ffmpeg
 gstreamer-plugins-bad
 #gstreamer-plugins-bad-extras
 
+# video media players
+vlc # video player that plays all video codecs, 11 M
+mozilla-vlc # mozilla vlc plugin, 70 K
+Miro # InternetTV player, 16 M
+#-gnome-mplayer
+#-mplayer
+#-totem # Totem is replaced with vlc, 8.4 M
+#-totem-nautilus
+#gecko-mediaplayer
+
 # video tools
 ffmpeg
 ffmpeg2theora
