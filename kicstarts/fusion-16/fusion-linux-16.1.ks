@@ -148,6 +148,13 @@ qiv
 #-shotwell
 
 
+# codecs
+gstreamer-plugins-ugly
+gstreamer-ffmpeg
+gstreamer-plugins-bad
+#gstreamer-plugins-bad-extras
+
+
 # audio apps
 audacious # best simple audio and mp3 player
 audacious-plugins-freeworld* # audacious with plugins 5.3 M
@@ -272,6 +279,10 @@ fortune-firefly
 yum-plugin-remove-with-leaves # yum plugin that removes unused dependencies also 
 b43-fwcutter
 
+# misc terminal apps and tools
+unrar
+akmod-wl # driver for broadcom wireless cards # no more a separate package?
+# cnetworkmanager # Command Line Interface for NetworkManager - removed?
 
 # minimal development package, 34 M
 make
@@ -291,6 +302,14 @@ xorg-x11-apps # xkill app for killing unresponsive apps
 #playonlinux # Run your Windows applications on Linux easily via wine 6 M
 #fedora-ksplice # ksplice utility enables you have kernel updates without reboot
 # vim-enhanced # vi is enough for most people, 26M - 65 M with perl dependency
+
+# remove selinux (22 M)
+#-audit
+#-setools-libs
+#-setroubleshoot-server
+#-selinux-policy
+#-gtkhtml2
+#-libsemanage-python
 
 @croatian-support # this distro has english and croatian support by default
 
