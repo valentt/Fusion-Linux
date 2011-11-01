@@ -40,6 +40,16 @@ repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/n
 -@games
 -gnome-games # GNOME games, 15 M
 
+# remove Brasero (12 M)
+-brasero # remove duplicate burning app, 10 M
+-icedax
+-libbeagle
+-libburn
+-libisofs
+-vorbis-tools
+-brasero-nautilus
+
+
 @office # LiberOffice suite, 417 M
 #abiword
 #gnumeric
@@ -103,6 +113,8 @@ hotot # identica and twitter microbloging client, 1 M
 #evolution-mapi
 
 
+
+
 # graphics and photo apps
 
 gimp # most powerful open source image editor 50 M
@@ -134,6 +146,14 @@ qiv
 #hugin # Photo panorama application, 49 M
 #kipi-plugins
 #-shotwell
+
+
+# KDE apps
+kdelibs # base for other KDE apps 63 M
+k3b-extras-freeworld # best CD/DVD/Blu-ray burning app for Linux, 55 M ( + kdelibs + deps 117 M)
+krusader # best file manager, similar to windows commander but more powerful 22 M
+kdeutils # filelight is obsoleted by kdeutils, filelight visualizes diskspace usage
+kdeedu-marble # Marble is desktop atlas and globe 22 M
 
 
 # p2p apps
