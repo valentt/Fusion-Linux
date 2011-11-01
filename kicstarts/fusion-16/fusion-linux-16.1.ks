@@ -234,6 +234,18 @@ yum-plugin-remove-with-leaves # yum plugin that removes unused dependencies also
 b43-fwcutter
 
 
+# minimal development package, 34 M
+make
+binutils
+gcc
+glibc-devel
+glibc-headers
+libgomp
+patch
+kernel-headers
+kernel-devel
+
+
 wxPython # wxPython for autoten
 wine # 83 M
 xorg-x11-apps # xkill app for killing unresponsive apps
