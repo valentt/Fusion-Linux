@@ -179,7 +179,7 @@ wget
 netactview # Network connections viewer similar in functionality with netstat
 livecd-tools
 liveusb-creator
-sshfs
+sshfs # mount remote ssh folders, pure awesomeness ;)
 powertop
 conky
 ntfs-config # GUI for easy NTFS mounting and configuration, 500 kB
