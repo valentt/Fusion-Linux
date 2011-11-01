@@ -11,6 +11,8 @@ part / --size 5000 --fstype ext4
 
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/i386/
 repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/i386/
+repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/$basearch/os/
+repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/$basearch/os/
 # repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/i386/os/
 # repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/i386/
 
@@ -154,6 +156,15 @@ gstreamer-ffmpeg
 gstreamer-plugins-bad
 #gstreamer-plugins-bad-extras
 
+# video tools
+ffmpeg
+ffmpeg2theora
+mencoder
+# Arista encoder dependencies, 350 k
+gstreamer-plugins-bad-nonfree
+gnome-python2-rsvg
+nautilus-python
+python-gudev
 
 # audio apps
 audacious # best simple audio and mp3 player
