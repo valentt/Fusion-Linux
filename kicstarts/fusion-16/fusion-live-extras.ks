@@ -25,7 +25,7 @@ gstreamer-plugins-bad
 #gstreamer-plugins-bad-extras
 
 # video media players
-vlc
+vlc # video player that plays all video codecs, 11 M
 #*#mozilla-vlc # mozilla vlc plugin, 
 #Miro # InternetTV player, 16 M
 -gnome-mplayer
@@ -57,7 +57,7 @@ teamviewer6 # best remote desktop for Linux and other platforms, 84 M
 
 # audio apps
 audacious # best simple audio and mp3 player
-audacious-plugins-freeworld* # audacious with plugins 6.3 M
+audacious-plugins-freeworld* # audacious with plugins 5.3 M
 audacity-freeworld
 #banshee
 #rhythmbox # audio player, 11 M
