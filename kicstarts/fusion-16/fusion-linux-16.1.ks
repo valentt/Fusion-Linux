@@ -334,6 +334,10 @@ xorg-x11-apps # xkill app for killing unresponsive apps
 
 @croatian-support # this distro has english and croatian support by default
 
+# rpmfusion release packages
+rpmfusion-free-release
+rpmfusion-nonfree-release
+
 # xscreensaver and other fabulous screensavers (23 M)
 ##xscreensaver
 ##xscreensaver-gl*
