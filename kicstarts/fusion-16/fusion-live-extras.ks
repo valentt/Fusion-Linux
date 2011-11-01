@@ -18,23 +18,10 @@ repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/15/
 
 %packages
 
-# video media players
-vlc # video player that plays all video codecs, 11 M
-mozilla-vlc # mozilla vlc plugin, 
-Miro # InternetTV player, 16 M
--gnome-mplayer
--mplayer
--totem # Totem is replaced with vlc, 8.4 M
--totem-nautilus
-#gecko-mediaplayer
-#gxine
-#xine-lib-extras-nonfree
-
 # eyecandy
 #desktop-backgrounds-basic
 faenza-fusion-icon-theme # Fusion Linux icon theme
 faenza-icon-theme
-
 
 #fusion linux repo
 #mintmenu
