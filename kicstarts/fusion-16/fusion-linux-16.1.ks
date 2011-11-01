@@ -116,8 +116,6 @@ hotot # identica and twitter microbloging client, 1 M
 #evolution-mapi
 
 
-
-
 # graphics and photo apps
 
 gimp # most powerful open source image editor 50 M
@@ -306,6 +304,17 @@ libgomp
 patch
 kernel-headers
 kernel-devel
+
+
+# Java 1.6 (85 M)
+java-1.6.0-openjdk
+jline
+rhino
+tzdata-java
+
+# remove Java 1.5 (48 M)
+-@java-1.5.0
+-libgcj
 
 
 wxPython # wxPython for autoten
