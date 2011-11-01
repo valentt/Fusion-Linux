@@ -18,16 +18,10 @@ repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/15/
 
 %packages
 
-# codecs
-gstreamer-plugins-ugly
-gstreamer-ffmpeg
-gstreamer-plugins-bad
-#gstreamer-plugins-bad-extras
-
 # video media players
 vlc # video player that plays all video codecs, 11 M
-#*#mozilla-vlc # mozilla vlc plugin, 
-#Miro # InternetTV player, 16 M
+mozilla-vlc # mozilla vlc plugin, 
+Miro # InternetTV player, 16 M
 -gnome-mplayer
 -mplayer
 -totem # Totem is replaced with vlc, 8.4 M
@@ -42,9 +36,6 @@ faenza-fusion-icon-theme # Fusion Linux icon theme
 faenza-icon-theme
 
 
-
-
-
 #fusion linux repo
 #mintmenu
 #dockbarx
@@ -54,34 +45,6 @@ xterm
 #fusion-linux-14 # package with setting for look & feel of Fusion GNOME desktop
 teamviewer6 # best remote desktop for Linux and other platforms, 84 M
 
-
-# audio apps
-audacious # best simple audio and mp3 player
-audacious-plugins-freeworld* # audacious with plugins 5.3 M
-audacity-freeworld
-#banshee
-#rhythmbox # audio player, 11 M
-picard-freeworld # Audio tagging application using data from the MusicBrainz database, 3.3 M
-# hydrogen # advanced drum machine for Linux, has java-1.5.0 as dependency (48 M), 9.5 M
-# hydrogen-drumkits # additional drum kit sounds for hydrogen, 20 M
-
-
-
-# video editing apps
-avidemux # video editing app, 25 M
-openshot # premier video editing app for linux desktop, 32 M
-#HandBrake-gui # great DVD transcoding app # removed because it takes over all video extensions
-#pitivi
-#k9copy # k9 uses kdelibs as dependency :(, 14 M
-
-# KDE apps
-kdelibs # base for other KDE apps 63 M
-k3b-extras-freeworld # best CD/DVD/Blu-ray burning app for Linux, 55 M ( + kdelibs + deps 117 M)
-krusader # best file manager, similar to windows commander but more powerful 22 M
-kdeutils # filelight is obsoleted by kdeutils, filelight visualizes diskspace usage
-kdeedu-marble # Marble is desktop atlas and globe 22 M
-
-
 # desktop apps
 # geany # advanced IDE and text editor, 2.3 M
 # pyroom # fullscreen uncluterred text editor for better productivity, 5.5 M
@@ -90,22 +53,6 @@ gnome-translate # translation tool, 1.2 M
 giver # easy local file sharing, 0.3 M
 
 
-# video tools
-ffmpeg
-ffmpeg2theora
-mencoder
-# Arista encoder dependencies, 350 k
-gstreamer-plugins-bad-nonfree
-gnome-python2-rsvg
-nautilus-python
-python-gudev
-
-
-# misc terminal apps and tools
-unrar
-akmod-wl # driver for broadcom wireless cards # no more a separate package?
-# cnetworkmanager # Command Line Interface for NetworkManager - removed?
-
 # proprietary bits
 flash-plugin
 nautilus-dropbox
@@ -113,32 +60,6 @@ nautilus-dropbox
 # picasa # great photo management app, but crashes alot!, 82 M
 # google-chrome-unstable
 
-# remove Java 1.6 (85 M)
-java-1.6.0-openjdk
-jline
-rhino
-tzdata-java
-
-# remove Java 1.5 (48 M)
--@java-1.5.0
--libgcj
-
-# remove Brasero (12 M)
--brasero # remove duplicate burning app, 10 M
--icedax
--libbeagle
--libburn
--libisofs
--vorbis-tools
--brasero-nautilus
-
-# remove selinux (22 M)
-#-audit
-#-setools-libs
-#-setroubleshoot-server
-#-selinux-policy
-#-gtkhtml2
-#-libsemanage-python
 
 # remove apps and packages that are not needed
 -planner # project planning, 6 M
@@ -153,12 +74,6 @@ tzdata-java
 -lcms
 -jbigkit-libs
 
-#tomboy
-gnote # note taking, tomboy clone done in C, 6 M
-
-# rpmfusion release packages
-rpmfusion-free-release
-rpmfusion-nonfree-release
 
 %end
 
