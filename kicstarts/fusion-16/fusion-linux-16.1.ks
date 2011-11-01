@@ -158,7 +158,7 @@ gstreamer-plugins-bad
 # video media players
 vlc # video player that plays all video codecs, 11 M
 mozilla-vlc # mozilla vlc plugin, 70 K
-# Miro # InternetTV player, 16 M
+# Miro # InternetTV player, 16 M - missing package?
 #-gnome-mplayer
 #-mplayer
 #-totem # Totem is replaced with vlc, 8.4 M
