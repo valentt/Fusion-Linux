@@ -7,7 +7,7 @@
 #%include fusion-live-extras.ks
 
 timezone Europe/Zagreb
-part / --size 5000 --fstype ext4
+part / --size 5500 --fstype ext4
 
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/i386/
 repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/i386/
@@ -209,6 +209,7 @@ k3b-extras-freeworld # best CD/DVD/Blu-ray burning app for Linux, 55 M ( + kdeli
 krusader # best file manager, similar to windows commander but more powerful 22 M
 kdeutils # filelight is obsoleted by kdeutils, filelight visualizes diskspace usage
 kdeedu-marble # Marble is desktop atlas and globe 22 M
+# kdeutils-filelight # vizualizes used file space
 
 
 # games, cool small ones
