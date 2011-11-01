@@ -113,18 +113,6 @@ nautilus-dropbox
 # picasa # great photo management app, but crashes alot!, 82 M
 # google-chrome-unstable
 
-
-# minimal development package, 34 M
-make
-binutils
-gcc
-glibc-devel
-glibc-headers
-libgomp
-patch
-kernel-headers
-kernel-devel
-
 # remove Java 1.6 (85 M)
 java-1.6.0-openjdk
 jline
