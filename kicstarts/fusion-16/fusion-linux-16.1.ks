@@ -90,6 +90,7 @@ gtk-recordmydesktop
 control-center-extra
 gkrellm
 seahorse
+gnote # note taking, tomboy clone done in C, 6 M
 gconf-editor
 nautilus-image-converter
 nautilus-actions
