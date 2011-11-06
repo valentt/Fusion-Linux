@@ -13,6 +13,7 @@ repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/c
 repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/i386/
 repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/$basearch/os/
 repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/$basearch/os/
+repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/15/$basearch/
 # repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/i386/os/
 # repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/i386/
 
@@ -266,6 +267,7 @@ freeciv # Civilization clone, 4/5, 24 M
 
 # vegastrike # 3D space action RPG space sim, trading and bounty hunting. Elite and Privateer clone, 739 M
 
+VirtualBox-4.1
 
 # education
 stellarium # Photo-realistic planetarium 40 M
@@ -362,4 +364,22 @@ rpmfusion-nonfree-release
 %end
 
 %post
+
+# tweak bash terminal and add fortune
+cat >> /etc/skel/.bashrc << EOF
+
+PS1='\[\033[01;34m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W]\[\033[00m\]\\$ '
+fortune
+EOF
+
+# tweak swappiness
+echo "" >>/etc/sysctl.conf
+echo "vm.swappiness=10" >>/etc/sysctl.conf
+echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
+
+# install VirtualBox Guest Additions
+mkdir /tmp/mnt
+mount -o loop /usr/share/virtualbox/VBoxGuestAdditions.iso /tmp/mnt/
+/tmp/mnt/VBoxLinuxAdditions.run
+
 %end
