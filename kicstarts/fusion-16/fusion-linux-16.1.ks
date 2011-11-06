@@ -76,7 +76,8 @@ repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/f
 # avant-window-navigator # great looking navigation panel, 51 M with python dependencies
 # awn-extras-applets
 gtk-redshift # adjust colour temperature of you screen according to time of day, might help your eyes hurt less if you work at night, 350 kB
-ailurus # GNOME tweak app, 5.2 M
+ailurus # GNOME tweak app, 1.8 M
+gnome-tweak-tool # GNOME 3 tweak tool, 123 K
 hardinfo # GUI hardware and system information utility, 0.4 M
 AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 cheese
