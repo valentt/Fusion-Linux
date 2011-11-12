@@ -39,6 +39,14 @@
 -vorbis-tools
 -brasero-nautilus
 
+# remove printer profile files, argyllcms and foo2* printer files (67 M)
+#-foomatic*
+#-foomatic-db*
+#-foo2*
+#-argyllcms
+#-lcms
+#-jbigkit-libs
+
 -opencc # chinese support, 9 M
 #-gutenprint* # Printing support, 17 M
 -libhangul # 6.4 M
