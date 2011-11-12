@@ -131,12 +131,28 @@ gpgcheck=0
 EOF
 
 # Gimp 2.7 repository
-cat >> /etc/yum.repos.d/fedora-gimp.repo << EOF
-[fedora-gimp]
-name=Development version of Gimp that will replace stable release
-baseurl=http://repos.fedorapeople.org/repos/luya/gimp/fedora-$releasever/i686/
+cat >> /etc/yum.repos.d/fedora-unstable.repo << EOF
+[fedora-gimp-unstable]
+name=Unstable development versions of GIMP for Fedora $releasever - $basearch
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/
 enabled=1
-gpgcheck=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+
+[fedora-gimp-unstable-debuginfo]
+name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Debug
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/debug/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+
+[fedora-gimp-unstable-source]
+name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Source
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/src/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+
 EOF
 
 # Dropbox repository
