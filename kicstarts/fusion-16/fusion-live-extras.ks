@@ -131,7 +131,7 @@ gpgcheck=0
 EOF
 
 # Gimp 2.7 repository
-cat >> /etc/yum.repos.d/fedora-unstable.repo << EOF
+cat >> /etc/yum.repos.d/fedora-gimp-unstable.repo << EOF
 [fedora-gimp-unstable]
 name=Unstable development versions of GIMP for Fedora $releasever - $basearch
 baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/
