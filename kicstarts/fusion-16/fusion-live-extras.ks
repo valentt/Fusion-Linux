@@ -200,6 +200,12 @@ gpgcheck=1
 EOF
 
 
+# install VirtualBox Guest Additions
+#mkdir /tmp/mnt
+#mount -o loop /usr/share/virtualbox/VBoxGuestAdditions.iso /tmp/mnt/
+#/tmp/mnt/VBoxLinuxAdditions.run
+
+
 %end
 
 
