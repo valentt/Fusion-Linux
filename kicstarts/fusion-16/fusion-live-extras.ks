@@ -28,10 +28,10 @@ faenza-icon-theme
 #mintmenu
 #dockbarx
 #python-imaging # python module needed for dockbarx, 0.4 M
-autoplus
+#autoplus
 xterm
 #fusion-linux-14 # package with setting for look & feel of Fusion GNOME desktop
-teamviewer6 # best remote desktop for Linux and other platforms, 84 M
+#teamviewer6 # best remote desktop for Linux and other platforms, 84 M
 
 # desktop apps
 # geany # advanced IDE and text editor, 2.3 M
