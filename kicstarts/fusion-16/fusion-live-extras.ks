@@ -21,8 +21,8 @@ repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/f
 
 # eyecandy
 #desktop-backgrounds-basic
-faenza-fusion-icon-theme # Fusion Linux icon theme
-faenza-icon-theme
+##faenza-fusion-icon-theme # Fusion Linux icon theme
+##faenza-icon-theme
 
 #fusion linux repo
 #mintmenu
