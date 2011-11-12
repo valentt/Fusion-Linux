@@ -7,6 +7,7 @@
 #%include fusion-live-minimization.ks
 
 
+
 timezone Europe/Zagreb
 part / --size 5500 --fstype ext4
 
@@ -14,63 +15,17 @@ repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/
 repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/i386/
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/i386/
 repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/i386/
-repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/15/$basearch/
+
 #repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/$basearch/os/
 #repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/$basearch/os/
 
 
 %packages
 
-# remove japanese support, 26 M
--anthy # japanese support, 26 M
--anthy-9100h # japanese support, 26 M
--ibus-anthy
--kasumi
-
-# remove chinese support, 65 M
--ibus-pinyin*
--wqy-zenhei-fonts # chinese fonts, 16 M
--libchewing # input for chinese, 7 M
-
-# non-english fonts that are not needed
--un-core* # korean fonts, 7.4 M
--thai-scalable-fonts-common
--cjkuni-uming-fonts
--un-core-dotum-fonts
--vlgothic-fonts
--wqy-zenhei-fonts
-
-# remove lame games and replace them with better ones
--@games
--gnome-games # GNOME games, 15 M
-
-# remove Brasero (12 M)
--brasero # remove duplicate burning app, 10 M
--icedax
--libbeagle
--libburn
--libisofs
--vorbis-tools
--brasero-nautilus
-
 
 @office # LiberOffice suite, 417 M
 #abiword
 #gnumeric
-
--opencc # chinese support, 9 M
-#-gutenprint* # Printing support, 17 M
--libhangul # 6.4 M
--gucharmap # view font characters, 6.6 M
--planner # project planning, 6.5 M
--groff # removes man and less but saves, 9.2 M
--seahorse # key manager, 7.4 M
--totem # remove Totem video player and shotwell, 23 M
-#-shotwell # remove Shotwell photo manager, 0 M
--orca* # accessibility support, 40 M
-#-totem* # this removes lots of dependencies, but saves lots of space
--vinagre
--evolution*
 
 
 # desktop tools and addons
@@ -269,7 +224,7 @@ freeciv # Civilization clone, 4/5, 24 M
 
 # vegastrike # 3D space action RPG space sim, trading and bounty hunting. Elite and Privateer clone, 739 M
 
-VirtualBox-4.1
+
 
 # education
 stellarium # Photo-realistic planetarium 40 M
@@ -305,7 +260,6 @@ yum-plugin-remove-with-leaves # yum plugin that removes unused dependencies also
 b43-fwcutter
 
 # misc terminal apps and tools
-unrar
 # akmod-wl # driver for broadcom wireless cards # no more a separate package?
 # cnetworkmanager # Command Line Interface for NetworkManager - removed?
 
@@ -339,13 +293,6 @@ xorg-x11-apps # xkill app for killing unresponsive apps
 #fedora-ksplice # ksplice utility enables you have kernel updates without reboot
 # vim-enhanced # vi is enough for most people, 26M - 65 M with perl dependency
 
-# remove selinux (22 M)
-#-audit
-#-setools-libs
-#-setroubleshoot-server
-#-selinux-policy
-#-gtkhtml2
-#-libsemanage-python
 
 @croatian-support # this distro has english and croatian support by default
 
