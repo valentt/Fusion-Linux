@@ -85,4 +85,12 @@
 -xsane-gimp
 -sane-backends
 
+# remove selinux (22 M)
+#-audit
+#-setools-libs
+#-setroubleshoot-server
+#-selinux-policy
+#-gtkhtml2
+#-libsemanage-python
+
 %end
