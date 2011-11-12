@@ -108,7 +108,7 @@ rm /usr/share/applications/kde4/kwikdisk.desktop
 
 
 # add .repo files for additional repositories
-releasever=15
+releasever=16
 basearch=i386
 
 # Fusion Linux repository
