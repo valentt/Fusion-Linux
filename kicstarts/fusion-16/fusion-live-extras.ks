@@ -152,7 +152,6 @@ baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$relea
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
-
 EOF
 
 # Dropbox repository
