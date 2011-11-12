@@ -47,11 +47,11 @@ nautilus-dropbox
 # picasa # great photo management app, but crashes alot!, 82 M
 # google-chrome-unstable
 
+# nonfree packages
+unrar
 
-# remove apps and packages that are not needed
--planner # project planning, 6 M
--gnome-pilot
--jomolhari-fonts # tibetan fonts, 2.2 M
+
+
 
 # remove printer profile files, argyllcms and foo2* printer files (67 M)
 -foomatic*
