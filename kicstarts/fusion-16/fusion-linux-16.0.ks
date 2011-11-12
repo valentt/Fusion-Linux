@@ -2,6 +2,7 @@
 # valent.turkovic@gmail.com
 
 %include fedora-live-desktop.ks
+%include fusion-nonfree.ks
 
 #%include fusion-live-minimization.ks
 #%include fusion-live-extras.ks
