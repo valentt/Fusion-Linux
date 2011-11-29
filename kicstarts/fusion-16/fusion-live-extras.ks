@@ -6,9 +6,9 @@
 # timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
 
-#releasever=16
+releasever=16
 #basearch=i386
-#basearch=x86_64
+basearch=x86_64
 
 #repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
 repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/$releasever/Everything/$basearch/os/
@@ -113,7 +113,8 @@ rm /usr/share/applications/kde4/kwikdisk.desktop
 
 # add .repo files for additional repositories
 releasever=16
-basearch=i386
+#basearch=i386
+basearch=x86_64
 
 # Fusion Linux repository
 cat >> /etc/yum.repos.d/fusion.repo << EOF
