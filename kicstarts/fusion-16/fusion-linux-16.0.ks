@@ -9,9 +9,9 @@
 timezone Europe/Zagreb
 part / --size 5500 --fstype ext4
 
-releasever=16
+#releasever=16
 #basearch=i386
-basearch=x86_64
+#basearch=x86_64
 
 repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
 repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/$releasever/$basearch/
