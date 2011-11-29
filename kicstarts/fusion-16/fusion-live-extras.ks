@@ -11,13 +11,13 @@ part / --size 6000 --fstype ext4
 #basearch=x86_64
 
 #repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
-repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/$releasever/Everything/x86_64/os/
-repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/$releasever/x86_64
+repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/16/Everything/x86_64/os/
+repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/16/x86_64
 repo --name=adobe --baseurl=http://linuxdownload.adobe.com/linux/x86_64/
 repo --name=skype --baseurl=http://download.skype.com/linux/repos/fedora/updates/i586
 repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/15/
 repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/15/x86_64/
-#repo --name=livna --baseurl=http://ftp-stud.fht-esslingen.de/pub/Mirrors/rpm.livna.org/repo/$releasever/i386/
+#repo --name=livna --baseurl=http://ftp-stud.fht-esslingen.de/pub/Mirrors/rpm.livna.org/repo/16/i386/
 #repo --name=playonlinux --baseurl=http://rpm.playonlinux.com/fedora/yum/base
 
 
