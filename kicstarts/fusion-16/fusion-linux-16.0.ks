@@ -251,7 +251,7 @@ atop
 testdisk
 smartmontools
 p7zip-plugins
-mutt
+## mutt
 screen
 rdesktop # 150 kB
 remmina # best vnc client, 3 M
