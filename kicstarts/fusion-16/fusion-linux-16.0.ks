@@ -98,7 +98,7 @@ inkscape # 36.6 M
 mypaint # MyPaint is a fast and easy open-source graphics application for digital painters, 7.3 M
 xournal # application for pdf annotation, notetaking, sketching, keeping a journal using a stylus, 0.6 M
 bitstream-vera-sans-fonts
-blender # 3D modeling, visualization and animation, 24 M
+## blender # 3D modeling, visualization and animation, 24 M
 fotowall
 ## photoprint
 posterazor
