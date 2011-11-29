@@ -83,7 +83,7 @@ gimp # most powerful open source image editor 50 M
 gimp-data-extras
 ## fixme # gimp-fourier-plugin
 gimpfx-foundry
-gimp-resynthesizer
+## gimp-resynthesizer
 gimp-lqr-plugin
 GREYCstoration-gimp
 ufraw-gimp
