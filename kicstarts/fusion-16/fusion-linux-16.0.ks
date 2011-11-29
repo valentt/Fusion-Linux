@@ -179,7 +179,7 @@ frozen-bubble
 alienblaster
 foobillard
 chromium-bsu
-teeworlds # fast paced 2D multiplayer platform shoot'em up, 5/5, 7.2 M
+## teeworlds # fast paced 2D multiplayer platform shoot'em up, 5/5, 7.2 M
 glaxium # arcade game where you get to control a spaceship and destroy enemies, 2.2 M
 CriticalMass # 2D space shoot'em up game, Galaga clone
 Maelstrom
