@@ -87,7 +87,7 @@ gimpfx-foundry
 gimp-lqr-plugin
 GREYCstoration-gimp
 ufraw-gimp
-gloobus-preview # preview and instant access to a variety of file types without the need to open their default applications
+## gloobus-preview # preview and instant access to a variety of file types without the need to open their default applications
 viewnior # better image viewer than Eye Of Gnome with crop with same slick interface, 450 k
 -eog # Eye Of Gnome is replaced with Viewnior, 5 M
 shutter # great screen capture app, a bit big, 31 M
