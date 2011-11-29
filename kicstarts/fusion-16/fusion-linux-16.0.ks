@@ -101,7 +101,7 @@ bitstream-vera-sans-fonts
 ## blender # 3D modeling, visualization and animation, 24 M
 fotowall
 ## photoprint
-posterazor
+## posterazor
 jhead
 qiv
 #hugin # Photo panorama application, 49 M
