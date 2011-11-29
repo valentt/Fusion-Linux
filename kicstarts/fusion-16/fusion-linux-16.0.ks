@@ -100,7 +100,7 @@ xournal # application for pdf annotation, notetaking, sketching, keeping a journ
 bitstream-vera-sans-fonts
 blender # 3D modeling, visualization and animation, 24 M
 fotowall
-photoprint
+## photoprint
 posterazor
 jhead
 qiv
