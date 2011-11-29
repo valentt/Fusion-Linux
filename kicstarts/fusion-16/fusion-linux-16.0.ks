@@ -82,10 +82,10 @@ gimp # most powerful open source image editor 50 M
 # additional GIMP plugins 14 M
 gimp-data-extras
 ## fixme # gimp-fourier-plugin
-gimpfx-foundry
+## gimpfx-foundry
 ## gimp-resynthesizer
-gimp-lqr-plugin
-GREYCstoration-gimp
+## gimp-lqr-plugin
+## GREYCstoration-gimp
 ufraw-gimp
 ## gloobus-preview # preview and instant access to a variety of file types without the need to open their default applications
 viewnior # better image viewer than Eye Of Gnome with crop with same slick interface, 450 k
