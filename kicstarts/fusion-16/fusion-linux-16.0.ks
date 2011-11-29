@@ -6,9 +6,9 @@
 
 #%include fusion-live-minimization.ks
 
-releasever=16
+#releasever=16
 #basearch=i386
-basearch=x86_64
+#basearch=x86_64
 
 timezone Europe/Zagreb
 part / --size 5500 --fstype ext4
