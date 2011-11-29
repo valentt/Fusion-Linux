@@ -122,7 +122,7 @@ cat >> /etc/yum.repos.d/fusion.repo << EOF
 
 [fusion]
 name=Few packages that are missing for Fusion Linux (Fedora Remix)
-baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-$releasever/x86_64/
+baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-$releasever/$basearch/
 enabled=1
 skip_if_unavailable=1
 gpgcheck=0
@@ -139,14 +139,14 @@ EOF
 cat >> /etc/yum.repos.d/fedora-gimp-unstable.repo << EOF
 [fedora-gimp-unstable]
 name=Unstable development versions of GIMP for Fedora $releasever - x86_64
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/x86_64/
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
 
 [fedora-gimp-unstable-debuginfo]
 name=Unstable development versions of GIMP for Fedora $releasever - x86_64 - Debug
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/x86_64/debug/
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/debug/
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
