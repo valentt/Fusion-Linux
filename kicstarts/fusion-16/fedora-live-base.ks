@@ -19,7 +19,7 @@ services --enabled=NetworkManager --disabled=network,sshd
 
 #releasever=16
 #basearch=i386
-basearch=x86_64
+#basearch=x86_64
 
 #repo --name=rawhide --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=rawhide&arch=$basearch
 repo --name=fedora --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
