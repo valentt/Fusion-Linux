@@ -17,7 +17,7 @@ xconfig --startxonboot
 part / --size 3072 --fstype ext4
 services --enabled=NetworkManager --disabled=network,sshd
 
-releasever=16
+#releasever=16
 #basearch=i386
 basearch=x86_64
 
