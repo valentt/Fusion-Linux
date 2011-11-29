@@ -13,10 +13,10 @@ part / --size 5500 --fstype ext4
 #basearch=i386
 #basearch=x86_64
 
-repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/x86_64/os/
-repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/$releasever/x86_64/
-repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-$releasever/x86_64/
-repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/x86_64/
+repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/x86_64/os/
+repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/x86_64/
+repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/x86_64/
+repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/x86_64/
 
 #repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/x86_64/os/
 #repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/x86_64/os/
