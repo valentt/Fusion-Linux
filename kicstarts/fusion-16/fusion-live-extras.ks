@@ -11,12 +11,12 @@ part / --size 6000 --fstype ext4
 #basearch=x86_64
 
 #repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
-repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/$releasever/Everything/$basearch/os/
-repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/$releasever/$basearch
-repo --name=adobe --baseurl=http://linuxdownload.adobe.com/linux/$basearch/
+repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/$releasever/Everything/x86_64/os/
+repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/$releasever/x86_64
+repo --name=adobe --baseurl=http://linuxdownload.adobe.com/linux/x86_64/
 repo --name=skype --baseurl=http://download.skype.com/linux/repos/fedora/updates/i586
 repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/15/
-repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/15/$basearch/
+repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/15/x86_64/
 #repo --name=livna --baseurl=http://ftp-stud.fht-esslingen.de/pub/Mirrors/rpm.livna.org/repo/$releasever/i386/
 #repo --name=playonlinux --baseurl=http://rpm.playonlinux.com/fedora/yum/base
 
@@ -122,7 +122,7 @@ cat >> /etc/yum.repos.d/fusion.repo << EOF
 
 [fusion]
 name=Few packages that are missing for Fusion Linux (Fedora Remix)
-baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-$releasever/$basearch/
+baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-$releasever/x86_64/
 enabled=1
 skip_if_unavailable=1
 gpgcheck=0
@@ -138,21 +138,21 @@ EOF
 # Gimp 2.7 repository
 cat >> /etc/yum.repos.d/fedora-gimp-unstable.repo << EOF
 [fedora-gimp-unstable]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/
+name=Unstable development versions of GIMP for Fedora $releasever - x86_64
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/x86_64/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
 
 [fedora-gimp-unstable-debuginfo]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Debug
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/debug/
+name=Unstable development versions of GIMP for Fedora $releasever - x86_64 - Debug
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/x86_64/debug/
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
 
 [fedora-gimp-unstable-source]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Source
+name=Unstable development versions of GIMP for Fedora $releasever - x86_64 - Source
 baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/src/
 enabled=0
 gpgcheck=1
