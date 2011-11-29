@@ -81,7 +81,7 @@ hotot # identica and twitter microbloging client, 1 M
 gimp # most powerful open source image editor 50 M
 # additional GIMP plugins 14 M
 gimp-data-extras
-gimp-fourier-plugin
+## fixme # gimp-fourier-plugin
 gimpfx-foundry
 gimp-resynthesizer
 gimp-lqr-plugin
