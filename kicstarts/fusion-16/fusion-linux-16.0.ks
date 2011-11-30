@@ -265,6 +265,7 @@ fortune-mod # wise and funny quotes
 fortune-firefly
 yum-plugin-remove-with-leaves # yum plugin that removes unused dependencies also 
 b43-fwcutter
+lm_sensors # hardware monitoring tools, 400 k
 
 # misc terminal apps and tools
 # akmod-wl # driver for broadcom wireless cards # no more a separate package?
