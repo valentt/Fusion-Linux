@@ -6,18 +6,20 @@
 
 #%include fusion-live-minimization.ks
 
-
-
 timezone Europe/Zagreb
 part / --size 5500 --fstype ext4
 
-repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/$basearch/os/
-repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/$basearch/
-repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/$basearch/
-repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/$basearch/
+#releasever=16
+#basearch=i386
+#basearch=x86_64
 
-#repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/$basearch/os/
-#repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/$basearch/os/
+repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/x86_64/os/
+repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/x86_64/
+repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/x86_64/
+repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/x86_64/
+
+#repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/x86_64/os/
+#repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/x86_64/os/
 
 
 %packages
@@ -79,13 +81,13 @@ hotot # identica and twitter microbloging client, 1 M
 gimp # most powerful open source image editor 50 M
 # additional GIMP plugins 14 M
 gimp-data-extras
-gimp-fourier-plugin
-gimpfx-foundry
-gimp-resynthesizer
-gimp-lqr-plugin
-GREYCstoration-gimp
+## fixme # gimp-fourier-plugin
+## gimpfx-foundry
+## gimp-resynthesizer
+## gimp-lqr-plugin
+## GREYCstoration-gimp
 ufraw-gimp
-gloobus-preview # preview and instant access to a variety of file types without the need to open their default applications
+## gloobus-preview # preview and instant access to a variety of file types without the need to open their default applications
 viewnior # better image viewer than Eye Of Gnome with crop with same slick interface, 450 k
 -eog # Eye Of Gnome is replaced with Viewnior, 5 M
 shutter # great screen capture app, a bit big, 31 M
@@ -96,10 +98,10 @@ inkscape # 36.6 M
 mypaint # MyPaint is a fast and easy open-source graphics application for digital painters, 7.3 M
 xournal # application for pdf annotation, notetaking, sketching, keeping a journal using a stylus, 0.6 M
 bitstream-vera-sans-fonts
-blender # 3D modeling, visualization and animation, 24 M
+## blender # 3D modeling, visualization and animation, 24 M
 fotowall
-photoprint
-posterazor
+## photoprint
+## posterazor
 jhead
 qiv
 #hugin # Photo panorama application, 49 M
@@ -153,7 +155,7 @@ openshot # premier video editing app for linux desktop, 32 M
 
 
 # p2p apps
-amule # temporary bug issue - requires libthreadutil.so.2
+## amule # temporary bug issue - requires libthreadutil.so.2
 transmission # fabulos and lightweight bittorrent client
 tucan # download manager for file services like megaupload.com, rapidshare.com, mediafire.com, hotfile.com etc, 6 M
 uget # download manager
@@ -177,7 +179,7 @@ frozen-bubble
 alienblaster
 foobillard
 chromium-bsu
-teeworlds # fast paced 2D multiplayer platform shoot'em up, 5/5, 7.2 M
+## teeworlds # fast paced 2D multiplayer platform shoot'em up, 5/5, 7.2 M
 glaxium # arcade game where you get to control a spaceship and destroy enemies, 2.2 M
 CriticalMass # 2D space shoot'em up game, Galaga clone
 Maelstrom
@@ -244,12 +246,12 @@ sshfs # mount remote ssh folders, pure awesomeness ;)
 powertop
 conky
 ntfs-config # GUI for easy NTFS mounting and configuration, 500 kB
-htop
+## htop
 atop
 testdisk
 smartmontools
 p7zip-plugins
-mutt
+## mutt
 screen
 rdesktop # 150 kB
 remmina # best vnc client, 3 M
