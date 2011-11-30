@@ -39,11 +39,8 @@ hardinfo # GUI hardware and system information utility, 0.4 M
 AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 cheese
 alacarte # gnome menu editor, 400 k
-# parcellite # gnome clipboard manager
 clipit # gnome clipboard manager, 200 k
 synapse # gnome-do alternative, 1.3 M
-#gnome-do
-#gnome-shell # GNOME 3.0 preview, 3 M
 beesu # start gui apps as root, like gtksu, 30 kB
 nautilus-beesu-manager # beesu nautilus manager, 40 kB
 gtk-recordmydesktop
@@ -58,8 +55,7 @@ nautilus-open-terminal
 nautilus-sendto
 irssi # command line IRC chat client used for Get Live Help, 2.3 M
 xchat # gui IRC chat client
-# pidgin # instant messaging and chat client # 1.5 M
-#-empathy # instant messaging and voice client # 49 M
+
 
 
 # internet apps
