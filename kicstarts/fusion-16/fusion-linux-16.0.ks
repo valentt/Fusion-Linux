@@ -38,7 +38,8 @@ hardinfo # GUI hardware and system information utility, 0.4 M
 AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 cheese
 alacarte # gnome menu editor, 400 k
-parcellite # gnome clipboard manager
+# parcellite # gnome clipboard manager
+clipit # gnome clipboard manager
 synapse # gnome-do alternative
 #gnome-do
 #gnome-shell # GNOME 3.0 preview, 3 M
