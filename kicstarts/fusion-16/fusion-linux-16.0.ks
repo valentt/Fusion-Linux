@@ -165,10 +165,10 @@ uget # download manager
 # KDE apps
 kdelibs # base for other KDE apps 63 M
 k3b-extras-freeworld # best CD/DVD/Blu-ray burning app for Linux, 55 M ( + kdelibs + deps 117 M)
-krusader # best file manager, similar to windows commander but more powerful 22 M
+krusader # best file manager, similar to windows commander but more powerful, 22 M
 kdiff3 # Compare + merge 2 or 3 files or directories, 4.3 M
 kdeutils # filelight is obsoleted by kdeutils, filelight visualizes diskspace usage
-kdeedu-marble # Marble is desktop atlas and globe 22 M
+kdeedu-marble # Marble is desktop atlas and globe, 22 M
 # kdeutils-filelight # vizualizes used file space
 
 
