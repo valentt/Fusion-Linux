@@ -34,6 +34,7 @@ repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/n
 gtk-redshift # adjust colour temperature of you screen according to time of day, might help your eyes hurt less if you work at night, 350 kB
 ailurus # GNOME tweak app, 1.8 M
 gnome-tweak-tool # GNOME 3 tweak tool, 123 K
+gnome-documents # document manager application for GNOME, 400 k
 hardinfo # GUI hardware and system information utility, 0.4 M
 AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 cheese
