@@ -55,7 +55,14 @@ nautilus-open-terminal
 nautilus-sendto
 irssi # command line IRC chat client used for Get Live Help, 2.3 M
 xchat # gui IRC chat client
-
+gnome-shell-extension-alternate-tab
+gnome-shell-extension-alternative-status-menu
+gnome-shell-extension-cpu-temperature
+gnome-shell-extension-icon-manager
+gnome-shell-extension-mediaplayers
+gnome-shell-extension-remove-accessibility-icon
+gnome-shell-extension-righthotcorner
+gnome-shell-extension-user-theme
 
 
 # internet apps
