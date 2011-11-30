@@ -40,7 +40,7 @@ AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 cheese
 alacarte # gnome menu editor, 400 k
 # parcellite # gnome clipboard manager
-clipit # gnome clipboard manager
+clipit # gnome clipboard manager, 200 k
 synapse # gnome-do alternative
 #gnome-do
 #gnome-shell # GNOME 3.0 preview, 3 M
