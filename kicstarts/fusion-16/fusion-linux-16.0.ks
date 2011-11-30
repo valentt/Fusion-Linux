@@ -41,7 +41,7 @@ cheese
 alacarte # gnome menu editor, 400 k
 # parcellite # gnome clipboard manager
 clipit # gnome clipboard manager, 200 k
-synapse # gnome-do alternative
+synapse # gnome-do alternative, 1.3 M
 #gnome-do
 #gnome-shell # GNOME 3.0 preview, 3 M
 beesu # start gui apps as root, like gtksu, 30 kB
