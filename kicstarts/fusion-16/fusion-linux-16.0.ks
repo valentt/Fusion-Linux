@@ -39,6 +39,7 @@ hardinfo # GUI hardware and system information utility, 0.4 M
 AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 cheese
 alacarte # gnome menu editor, 400 k
+autokey # textexpander alternative - assign abbreviations and hotkeys to longer texts, 950 k
 clipit # gnome clipboard manager, 200 k
 synapse # gnome-do alternative, 1.3 M
 beesu # start gui apps as root, like gtksu, 30 kB
