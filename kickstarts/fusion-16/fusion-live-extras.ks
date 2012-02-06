@@ -47,7 +47,7 @@ flash-plugin
 nautilus-dropbox
 # skype # removed for distrubution and legal reasons. 
 # picasa # great photo management app, but crashes alot!, 82 M
-# google-chrome-unstable
+# google-chrome-stable
 
 # nonfree packages
 rpmfusion-nonfree-release
@@ -111,7 +111,8 @@ rm /usr/share/applications/kde4/kwikdisk.desktop
 
 
 # add .repo files for additional repositories
-# releasever=16
+releasever=16
+basearch=x86_64
 # basearch=i386
 
 # Fusion Linux repository
@@ -129,8 +130,8 @@ gpgcheck=0
 name=Few packages that are missing for Fusion Linux (Fedora Remix) - Source
 baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-$releasever/SRPMS
 enabled=0
-skip_if_unavailable=1
 gpgcheck=0
+skip_if_unavailable=1
 EOF
 
 # Gimp 2.7 repository
@@ -141,6 +142,7 @@ baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$relea
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+skip_if_unavailable=1
 
 [fedora-gimp-unstable-debuginfo]
 name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Debug
@@ -148,6 +150,7 @@ baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$relea
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+skip_if_unavailable=1
 
 [fedora-gimp-unstable-source]
 name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Source
@@ -155,6 +158,7 @@ baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$relea
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+skip_if_unavailable=1
 EOF
 
 # Dropbox repository
@@ -165,6 +169,7 @@ name=Dropbox Repository
 baseurl=http://linux.dropbox.com/fedora/16/
 baseurl=http://linux.dropbox.com/fedora/15/
 gpgkey=http://linux.dropbox.com/fedora/rpm-public-key.asc
+skip_if_unavailable=1
 EOF
 
 # Playonlinux repository
@@ -175,6 +180,7 @@ baseurl=http://rpm.playonlinux.com/fedora/yum/base
 enable=1
 gpgcheck=0
 gpgkey=http://mulx.playonlinux.com/rpm/rpm.gpg
+skip_if_unavailable=1
 EOF
 
 # install Google repository (Picasa, Google Chrome Browser ...)
@@ -183,10 +189,21 @@ rpm --import linux_signing_key.pub
 cat >> /etc/yum.repos.d/google.repo << EOF
 [google]
 name=Google - i386
-baseurl=http://dl.google.com/linux/rpm/stable/i386
+baseurl=http://dl.google.com/linux/rpm/stable/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+skip_if_unavailable=1
+EOF
+
+# Google Chrome repo
+cat >> /etc/yum.repos.d/google-chrome.repo << EOF
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
+enabled=1
+gpgcheck=1
+skip_if_unavailable=1
 EOF
 
 # Google Earth repo
@@ -197,6 +214,7 @@ baseurl=http://dl.google.com/linux/earth/rpm/stable/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+skip_if_unavailable=1
 EOF
 
 # Add Skype repository
@@ -210,6 +228,7 @@ baseurl=http://download.skype.com/linux/repos/fedora/updates/i586/
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-skype
 enabled=1
 gpgcheck=1
+skip_if_unavailable=1
 EOF
 
 # Add Cinnamon repository
