@@ -82,6 +82,9 @@ PS1='\[\033[01;34m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W]\[\033[00m\]\\$ '
 fortune
 EOF
 
+# add synapse to autostart directory
+mkdir -p /etc/skel/autostart
+cp /usr/share/applications/synapse.desktop /etc/skel/autostart/
 
 # tweak swappiness
 echo "" >>/etc/sysctl.conf
