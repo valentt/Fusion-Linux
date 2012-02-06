@@ -1,3 +1,7 @@
 fusion-welcome:
  - install skype 2.2 beta instead of 2.1 via current yum repo
- - 
+ 
+
+icons
+  - finish creating all icons
+  - package them in rpm
