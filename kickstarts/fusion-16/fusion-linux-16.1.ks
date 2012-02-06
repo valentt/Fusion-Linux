@@ -4,17 +4,19 @@
 %include fedora-live-desktop.ks
 %include fusion-live-extras.ks
 
-#%include fusion-live-minimization.ks
+%include fusion-live-minimization.ks
 
 
 
 timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
 
-repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/$basearch/os/
+#repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/$basearch/os/
+repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/$basearch/
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/$basearch/
 repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/$basearch/
+repo --name=fedora-cinnamon --baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-$releasever/$basearch/
 
 #repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/$basearch/os/
 #repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/$basearch/os/
@@ -31,6 +33,7 @@ repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/n
 # desktop tools and addons
 # avant-window-navigator # great looking navigation panel, 51 M with python dependencies
 # awn-extras-applets
+cinnamon
 gtk-redshift # adjust colour temperature of you screen according to time of day, might help your eyes hurt less if you work at night, 350 kB
 ailurus # GNOME tweak app, 1.8 M
 gnome-tweak-tool # GNOME 3 tweak tool, 123 K
@@ -39,7 +42,7 @@ hardinfo # GUI hardware and system information utility, 0.4 M
 AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 cheese
 alacarte # gnome menu editor, 400 k
-clipit # gnome clipboard manager, 200 k
+## clipit # gnome clipboard manager, 200 k
 synapse # gnome-do alternative, 1.3 M
 beesu # start gui apps as root, like gtksu, 30 kB
 nautilus-beesu-manager # beesu nautilus manager, 40 kB
@@ -67,7 +70,7 @@ gnome-shell-extension-user-theme
 
 # internet apps
 pan
-chromium # 92 M temporary bug - requires libc.so.6(GLIBC_2.15)
+##chromium # 92 M temporary bug - requires libc.so.6(GLIBC_2.15)
 #google-chrome-stable
 #chromium-browser
 thunderbird # 46 M
@@ -121,7 +124,7 @@ gstreamer-plugins-bad
 
 # video media players
 vlc # video player that plays all video codecs, 11 M
-mozilla-vlc # mozilla vlc plugin, 70 K
+npapi-vlc # mozilla vlc plugin, 70 K
 # Miro # InternetTV player, 16 M - missing package?
 #-gnome-mplayer
 #-mplayer
@@ -134,7 +137,6 @@ ffmpeg
 ffmpeg2theora
 mencoder
 # Arista encoder dependencies, 350 k
-gstreamer-plugins-bad-nonfree
 gnome-python2-rsvg
 nautilus-python
 python-gudev
@@ -179,7 +181,7 @@ kdeedu-marble # Marble is desktop atlas and globe, 22 M
 
 # games, cool small ones
 abe
-blobwars
+# blobwars # a little platform shooter, 63 MB
 frozen-bubble
 alienblaster
 foobillard
@@ -306,7 +308,6 @@ xorg-x11-apps # xkill app for killing unresponsive apps
 
 # rpmfusion release packages
 rpmfusion-free-release
-rpmfusion-nonfree-release
 
 # xscreensaver and other fabulous screensavers (23 M)
 ##xscreensaver

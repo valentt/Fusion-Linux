@@ -7,7 +7,8 @@
 part / --size 6000 --fstype ext4
 
 #repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
-repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/16/Everything/$basearch/os/
+#repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/16/Everything/$basearch/os/
+repo --name=rpmfusion-non-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/16/$basearch
 repo --name=adobe --baseurl=http://linuxdownload.adobe.com/linux/$basearch/
 repo --name=skype --baseurl=http://download.skype.com/linux/repos/fedora/updates/i586
@@ -38,7 +39,7 @@ xterm
 # pyroom # fullscreen uncluterred text editor for better productivity, 5.5 M
 gnome-translate # translation tool, 1.2 M
 #choqok # kde based twitter client, 4.1 M
-giver # easy local file sharing, 0.3 M
+#giver # easy local file sharing, 0.3 M + 43M, but has mono as dependency
 
 
 # proprietary bits
@@ -49,6 +50,8 @@ nautilus-dropbox
 # google-chrome-unstable
 
 # nonfree packages
+rpmfusion-nonfree-release
+gstreamer-plugins-bad-nonfree
 unrar
 
 
@@ -186,7 +189,17 @@ gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
 
-# install Skype repository
+# Google Earth repo
+cat >> /etc/yum.repos.d/google-earth.repo << EOF
+[google-earth]
+name=google-earth
+baseurl=http://dl.google.com/linux/earth/rpm/stable/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+EOF
+
+# Add Skype repository
 gpg --keyserver pgp.mit.edu --recv-keys 0xD66B746E
 gpg -a -o /etc/pki/rpm-gpg/RPM-GPG-KEY-skype --export 0xD66B746E
 cat >> /etc/yum.repos.d/skype.repo << EOF
@@ -199,6 +212,22 @@ enabled=1
 gpgcheck=1
 EOF
 
+# Add Cinnamon repository
+cat >> /etc/yum.repos.d/fedora-cinnamon.repo << EOF
+[fedora-cinnamon]
+name=Cinnamon provides core user interface functions for the GNOME 3 desktop
+baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-$releasever/$basearch/
+enabled=1
+skip_if_unavailable=1
+gpgcheck=0
+
+[fedora-cinnamon-source]
+name=Cinnamon provides core user interface functions for the GNOME 3 desktop - Source
+baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-$releasever/SRPMS
+enabled=0
+skip_if_unavailable=1
+gpgcheck=0
+EOF
 
 # install VirtualBox Guest Additions
 #mkdir /tmp/mnt
