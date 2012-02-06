@@ -83,8 +83,8 @@ fortune
 EOF
 
 # add synapse to autostart directory
-mkdir -p /etc/skel/autostart
-cp /usr/share/applications/synapse.desktop /etc/skel/autostart/
+mkdir -p /etc/skel/.config/autostart
+cp /usr/share/applications/synapse.desktop /etc/skel/.config/autostart/
 
 # tweak swappiness
 echo "" >>/etc/sysctl.conf
