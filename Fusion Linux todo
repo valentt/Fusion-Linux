@@ -4,4 +4,4 @@ fusion-welcome:
 
 icons
   - finish creating all icons
-  - package icons in rpm
+  - package icons in rpm (need to find somebody who knows how to create rpm packages)
