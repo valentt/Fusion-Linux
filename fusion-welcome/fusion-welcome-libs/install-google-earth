@@ -1,0 +1,28 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  GOOGLE EARTH
+  ---------------
+  Google has made Google Earth available for Linux users but it is not
+  released under any open source licence and it is forbidden to distibute
+  it by default in Fusion Linux.
+
+  Would you like to install Google Earth?
+
+      yum install google-earth-stable
+
+  You will be promted for your administrator password, so please
+  have it ready.
+
+  Note: additional packages listed as dependencies may also be installed.
+
+  Hit any key to install Google Earth, or \"s\" to skip..."
+
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    su - -c 'yum install -y google-earth-stable'
+fi
