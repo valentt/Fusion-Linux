@@ -3,13 +3,19 @@ fusion-welcome:
  
 
 icons
-  - finish creating all icons
-  - package icons in rpm (need to find somebody who knows how to create rpm packages)
+ - finish creating all icons
+ - package icons in rpm (need to find somebody who knows how to create rpm packages)
 
 misc
-  - enable google-earth font and other tweaks if users install it
+ - enable google-earth font and other tweaks if users install it
 
 cinnamon
  - custom theme?
  - customization?
  - how to tweak favorite apps?
+
+irc live help
+ - create script that logs users 
+
+desktop tweaks
+ - enable nautilus to handle desktop
