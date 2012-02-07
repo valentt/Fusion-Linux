@@ -1,0 +1,15 @@
+To install this theme: Download it and decompress it in ~/.themes
+(or /usr/share/themes to install it system-wide) make sure you take ownership of folder Dark Shine.
+
+Dark Shine is a new modern theme for Cinnamon. It tries to blend transparency and usability, with smooth transition effects between different elements. Dark Shine is a bit squarish and perhaps the best match for Faenza icons. 
+---
+
+Warning:
+
+This theme is not compatible with old Gnome Shell 3.0 (e.g.-Fedora 15). 
+Not responsible if you try to use it on old Gnome Shell and things break.
+
+---
+
+License: GPL
+
