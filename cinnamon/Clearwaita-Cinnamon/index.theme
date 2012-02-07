@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=Clearwaita
+Type=X-GNOME-Metatheme
+Encoding=UTF-8
+GtkTheme=Clearwaita
+MetacityTheme=Clearwaita
+IconTheme=gnome
+CursorTheme=Adwaita
+CursorSize=24
