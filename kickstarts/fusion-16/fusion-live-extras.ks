@@ -163,6 +163,7 @@ gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
 skip_if_unavailable=1
 EOF
+rpm -import http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/RPM-GPG-KEY-nphilipp
 
 # Dropbox repository
 rm /etc/yum.repos.d/dropbox.repo
