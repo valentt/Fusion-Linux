@@ -32,6 +32,7 @@ Highlighted software packages:
 
 
 Features and highlights are:
+* Cinnamon
 * New download managers - Tucan and Uget
 * New remote desktop app - Remmina
 * bug fixes
