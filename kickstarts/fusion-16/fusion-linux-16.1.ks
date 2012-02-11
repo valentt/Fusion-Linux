@@ -32,7 +32,6 @@ repo --name=fedora-cinnamon --baseurl=http://repos.fedorapeople.org/repos/leigh1
 
 # desktop tools and addons
 # avant-window-navigator # great looking navigation panel, 51 M with python dependencies
-# awn-extras-applets
 # awn-extras-applets # add avant-window-navigator and all extras, 6.7 M
 cinnamon
 gtk-redshift # adjust colour temperature of you screen according to time of day, might help your eyes hurt less if you work at night, 350 kB
