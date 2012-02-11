@@ -1,0 +1,80 @@
+Community Fedora Remix 13.1 "Lucky 13"
+
+Community Fedora Remix 13.1 "Lucky 13" live DVD/USB announcement
+
+There are two basic guiding principle behind this Fedora Remix, first one is "beyond upstream" and "multimedia out of the box", you can also think of it like Pimp My Ride version of Fedora ;)
+
+To clarify a bit what "beyond upstream" means you have to know that Fedora is really close tied with upstream projects and Fedora developers won't do anything that upstream doesn't do, and "upstream only" mentality has lots good things going for it.
+
+One of the deawbacks is that "upsteram only" makes for too conservative and old fashioned Desktop when look and feel of Desktop is concerned. Design of Fedora is great, I'm not talking about great artwork that Fedora Design team has made. 
+
+Fedora is just too closely tied to upstream and this is doesn't allow much progress and experimentation on the look and feel side of things, that is why there are Remixes, because of this opportunity we decided to make an awesome looking Fedora Remix oriented for Desktop users.
+
+This Fedora Remix is also very much influenced by Linux Mint and with its community.
+
+For the impatient ones here are the the download links:
+* bittorent - http://bit.ly/d4UvQU
+* direct http download - http://depositfiles.com/files/ocnh1sxc9
+* iso.linux.hr - http://iso.linux.hr/community-fedora-remix/
+
+
+Feel free to contribute and join this project, this project eagerly awaits your fresh ideas about how Linux desktop should look and work. Join mailing list - http://groups.google.com/group/community-fedora-remix
+
+
+If you customize your desktop to the point it is not recognized any more then this project it right for you.
+
+
+How contribute?
+- Ideas:
+  * Show some great GNOME themes
+  * Know some great app/tool that everybody should use?
+  
+- Designers:
+  * Design great new wallpapers, GNOME themes...
+  * Design out new web site
+
+- Developers:
+  * Make new RPM packages
+  * Tweak kickstart file
+  * Tweak GNOME settings
+
+- Web developers
+  * Help create new web site for this project
+
+
+Community Fedora Remix 13 features and highlights: 
+
+* 100% compatible with Fedora
+* GNOME enhancement with mintMenu and DockbarX
+* Chromium Internet browser + Firefox
+* Compiz Fusion compositing window manager
+* multimedia support out of the box (mp3 playback)
+* GNOME Do – intelligent application launcher (http://tinyurl.com/yntg9l)
+* OpenOffice 3.2
+* Inkscape, Blender and GIMP
+* Evolution with native Exchange support (mapi)
+* Thunderbird 3.0
+* better hardware compatibility for broadcom wireless cards
+* better games selection
+* wireless security tools (aircrack-ng and kismet)
+* Nautilus in browser mode by default
+* enabled clicking via touchpad by default
+* optimized iso image for 2GB usb
+* many other enhancements
+
+* Advanced users feel free to look into /usr/share/community-fedora-remix/ directory, you will find all files that were used to create this Fedora Remix.
+
+* mintMenu and DockbarX 
+mintMenu and DockbarX are two GNOME panel addons that make this Linux distro unique and these are the most obvious features that you will encounter first time you login.
+
+- If you would like to test only mintMenu and disable DockbarX type this into terminal window:
+gconftool-2 --load /usr/share/community-fedora-remix/gconf2/one-panel-settings.xml
+
+- For standard GNOME look & feel just type this into terminal:
+gconftool-2 --load /usr/share/community-fedora-remix/gconf2/default-panel-settings.xml
+
+- And again for full mintMenu + DockbarX desktop this is the magic key:
+gconftool-2 --load /usr/share/community-fedora-remix/gconf2/one-panel-settings-dockbarx.xml
+
+
+If you have any suggestion on how to make this Fedora Remix better and to get involved feel free to join us and make this Fedora Remix even better.

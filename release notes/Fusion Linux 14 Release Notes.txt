@@ -1,0 +1,92 @@
+Fusion Linux 14 "Shagadelic Fusion"
+
+Fusion Linux 14 "Shagadelic Fusion" release notes
+
+Fusion Linux is a Fedora Remix that includes all the best software that is available for Linux. Fusion uses a combination of free and open-source, non-free and non-open-source firmware and software, to bring the user the most advanced experience on the Linux platform.
+
+Fusion Linux is an installable Live image that includes multimedia functionality out of the box, with added desktop tweaks for better usability and additional software. It also gives the user the option of installing the operating system to the hard disk for a much better user experience.
+
+Fusion Linux is 100% compatible with Fedora. A Fedora Remix including packages from Fedora and RPM Fusion software repositories plus some custom packages.
+
+FUSION LINUX GUIDING PRINCIPLES
+Guiding principles behind this Fedora Remix are; “Beyond Upstream” and “Multimedia Out of the Box”. You can also think of it as a “Pimp My Ride” version of Fedora!
+
+Fedora is closely tied with upstream which can stifle progress and experimentation regarding the look and feel of the desktop experience. Hence the need for the desktop Fedora Remix.
+Because of this opportunity we decided to make an awesome looking Fedora Remix oriented for advanced desktop users and Linux enthusiasts.
+
+To clarify what “Beyond Upstream” means, you have to understand that the Fedora Project is really closely tied with the upstream projects and the Fedora Developers don’t do anything that upstream don’t approve. One of the drawbacks is that “Upstream Only” makes for a too conservative and old fashioned desktop user experience. This is where Fusion Linux steps in.
+
+
+
+For the impatient ones here are the the download links:
+* bittorent - http://bit.ly/d4UvQU
+* direct http download - http://depositfiles.com/files/ocnh1sxc9
+* iso.linux.hr - http://iso.linux.hr/fusion-linux/
+
+
+Feel free to contribute and join this project, this project eagerly awaits your fresh ideas about how Linux desktop should look and work. Join mailing list - http://groups.google.com/group/fusion-linux
+
+
+If you customize your desktop to the point it is not recognized any more then this project it right for you.
+
+
+How contribute?
+- Ideas:
+  * Show some great GNOME themes
+  * Know some great app/tool that everybody should use?
+  
+- Designers:
+  * Design great new wallpapers, GNOME themes...
+  * Design out new web site
+
+- Developers:
+  * Make new RPM packages
+  * Tweak kickstart file
+  * Tweak GNOME settings
+
+- Web developers
+  * Help create new web site for this project
+
+
+Fusion Linux features and highlights: 
+
+Shagadelic New look:
+* Faenza Fusion icons
+* Alliance Fusion GTK & Metacity theme
+
+* 100% compatible with Fedora
+* GNOME enhancement with mintMenu and DockbarX
+* Chromium as default browser + Firefox 4.0
+* Compiz Fusion enabled by default
+* multimedia support out of the box (mp3 & divx playback)
+* GNOME Do – intelligent application launcher (http://tinyurl.com/yntg9l)
+* OpenOffice 3.3
+* Linux Creative Suite - Inkscape, Blender and GIMP
+* Thunderbird 3.0
+* better hardware compatibility for broadcom wireless cards
+* better games selection
+* wireless security tools (aircrack-ng and kismet)
+
+GNOME Tweaks
+* Nautilus in browser mode by default
+* enabled clicking via touchpad by default
+
+* optimized iso image for 2GB usb and DVD
+* many other enhancements
+
+* Advanced users feel free to look into /usr/share/fusion-linux/ directory, you will find all files that were used to create this Fedora Remix.
+
+* mintMenu and DockbarX 
+mintMenu and DockbarX are two GNOME panel addons that make this Linux distro unique and these are the most obvious features that you will encounter first time you login.
+
+- If you would like to test only mintMenu and disable DockbarX type this into terminal window:
+gconftool-2 --load /usr/share/fusion-linux/gconf2/one-panel-settings.xml
+
+- For standard GNOME look & feel just type this into terminal:
+gconftool-2 --load /usr/share/fusion-linux/gconf2/default-panel-settings.xml
+
+- And again for full mintMenu + DockbarX desktop this is the magic key:
+gconftool-2 --load /usr/share/fusion-linux/gconf2/one-panel-settings-dockbarx.xml
+
+
+If you have any suggestion on how to make this Fedora Remix better and to get involved feel free to join us and make this Fedora Remix even better.
