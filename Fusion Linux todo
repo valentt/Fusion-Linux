@@ -43,4 +43,7 @@ Find Fusion 16 name
 Terminal colour:
  - Solarized - http://ethanschoonover.com/solarized
 
+
+Import GPG keys, example: rpm -import http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/RPM-GPG-KEY-nphilipp
+
 [1] http://www.webupd8.org/2011/09/compiz-like-mousewheel-zoom-tool-for.html
