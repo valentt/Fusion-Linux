@@ -145,9 +145,13 @@ python-gudev
 audacious # best simple audio and mp3 player
 audacious-plugins-freeworld* # audacious with plugins 5.3 M
 audacity-freeworld
+picard-freeworld # Audio tagging application using data from the MusicBrainz database, 3.3 M
+padevchooser # pulseaudio tools
+pavucontrol
+pavumeter
+paprefs
 #banshee
 #rhythmbox # audio player, 11 M
-picard-freeworld # Audio tagging application using data from the MusicBrainz database, 3.3 M
 # hydrogen # advanced drum machine for Linux, has java-1.5.0 as dependency (48 M), 9.5 M
 # hydrogen-drumkits # additional drum kit sounds for hydrogen, 20 M
 
