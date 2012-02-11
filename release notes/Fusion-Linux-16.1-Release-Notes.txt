@@ -57,7 +57,6 @@ Software highlights:
 * PlayOnLinux - easily install numerous Windows games and apps
 * GParted - partition editor for graphically managing your disk partitions
 * FedoraTools - scripts for customizing your Fusion/Fedora OS
-* Gwibber - GNOME Twitter and Identica app
 * Redshift - takes care of your eyes if you work late
 * Development package and tools
 
