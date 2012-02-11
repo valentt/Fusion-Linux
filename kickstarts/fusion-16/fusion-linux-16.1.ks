@@ -267,8 +267,6 @@ yum-plugin-remove-with-leaves # yum plugin that removes unused dependencies also
 b43-fwcutter
 lm_sensors # hardware monitoring tools, 400 k
 # AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
-
-# misc terminal apps and tools
 # akmod-wl # driver for broadcom wireless cards # no more a separate package?
 # cnetworkmanager # Command Line Interface for NetworkManager - removed?
 
@@ -295,7 +293,6 @@ tzdata-java
 -libgcj
 
 
-wxPython # wxPython for autoten
 wine # 83 M
 xorg-x11-apps # xkill app for killing unresponsive apps
 #playonlinux # Run your Windows applications on Linux easily via wine 6 M
