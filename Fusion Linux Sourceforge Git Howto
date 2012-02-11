@@ -15,6 +15,7 @@
  git push origin master
 
 https://sourceforge.net/apps/trac/sourceforge/wiki/Git
+https://sourceforge.net/p/forge/documentation/Git%20-%20Beta/
 
 $ git clone ssh://USERNAME@fusion-linux.git.sourceforge.net/gitroot/fusion-linux/fusion-linux
 $ cd fusion-linux
