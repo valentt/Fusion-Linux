@@ -1,3 +1,19 @@
+# standard procedure when editing files
+1. change some files
+2. commit changes
+ git commit -m 'comment'
+3. upload changes
+ git push origin master
+
+# standard procedure when adding or deleting files
+1. add or delete some file
+2. scan all files to find new and deleted ones
+ git add --all
+3. commit changes
+ git commit -m 'comment'
+4. upload changes
+ git push origin master
+
 https://sourceforge.net/apps/trac/sourceforge/wiki/Git
 
 $ git clone ssh://USERNAME@fusion-linux.git.sourceforge.net/gitroot/fusion-linux/fusion-linux
@@ -30,18 +46,4 @@ git rm --cached path/to/submodule
 git add --all
 
 
-# standard procedure when editing files
-1. change some files
-2. commit changes
- git commit -m 'comment'
-3. upload changes
- git push origin master
 
-# standard procedure when adding or deleting files
-1. add or delete some file
-2. scan all files to find new and deleted ones
- git add --all
-3. commit changes
- git commit -m 'comment'
-4. upload changes
- git push origin master
