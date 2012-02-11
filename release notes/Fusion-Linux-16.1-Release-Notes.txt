@@ -24,6 +24,12 @@ Highlighted software packages:
 * Firefox 10
 * Thunderbird 10
 * GIMP 2.7.4 with Single Windowd Mode by default
+* Openshot 1.4
+* VLC player 1.1
+* Blender 2.59
+* Inkscape 0.48
+* Flash plugin 11.1
+
 
 Features and highlights are:
 * New download managers - Tucan and Uget
