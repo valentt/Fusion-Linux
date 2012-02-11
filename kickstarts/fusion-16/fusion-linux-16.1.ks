@@ -150,6 +150,7 @@ padevchooser # pulseaudio tools
 pavucontrol
 pavumeter
 paprefs
+pulseaudio-module-zeroconf
 #banshee
 #rhythmbox # audio player, 11 M
 # hydrogen # advanced drum machine for Linux, has java-1.5.0 as dependency (48 M), 9.5 M
