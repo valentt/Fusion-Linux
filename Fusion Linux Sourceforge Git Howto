@@ -1,4 +1,4 @@
-# standard workflow when editing files
+# standard workflow when editing existing files
 1. change some files
 2. commit changes
  git commit -m 'comment'
