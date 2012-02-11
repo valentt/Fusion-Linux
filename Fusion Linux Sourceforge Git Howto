@@ -38,4 +38,11 @@ git add --all
 3. upload changes
  git push origin master
 
-
+# standard procedure when adding or deleting files
+1. add or delete some file
+2. scan all files to find new and deleted ones
+ git add --all
+3. commit changes
+ git commit -m 'comment'
+4. upload changes
+ git push origin master
