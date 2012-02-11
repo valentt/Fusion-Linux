@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<metacity_theme>
+
+	<info>
+		<name>Universal</name>
+		<author>nale12</author>
+		<date>november 2011</date>
+		<copyright>GPL</copyright>
+		<description>This metacity theme displays words / abbreviations instead of buttons.</description>
+	</info>
+
+
+	<!-- Frame geometry: normal -->
+	<frame_geometry name="normal" has_title="true"
+			rounded_top_left="false" rounded_top_right="false"
+			rounded_bottom_left="false" rounded_bottom_right="false">
+		<distance name="left_width" value="0"/>
+		<distance name="right_width" value="0"/>
+		<distance name="bottom_height" value="0"/>
+		<distance name="left_titlebar_edge" value="7"/>
+		<distance name="right_titlebar_edge" value="5"/>
+		<distance name="title_vertical_pad" value="0"/>
+		<distance name="button_width" value="22"/>
+		<distance name="button_height" value="10"/>
+		<border name="title_border" left="0" right="6" top="5" bottom="5"/>
+		<border name="button_border" left="2" right="2" top="3" bottom="3"/>
+	</frame_geometry>
+
+	<!-- Frame geometry: maximized -->
+	<frame_geometry name="maximized" has_title="true"
+			rounded_top_left="false" rounded_top_right="false"
+			rounded_bottom_left="false" rounded_bottom_right="false">
+		<distance name="left_width" value="0"/>
+		<distance name="right_width" value="0"/>
+		<distance name="bottom_height" value="0"/>
+		<distance name="left_titlebar_edge" value="7"/>
+		<distance name="right_titlebar_edge" value="5"/>
+		<distance name="button_width" value="22"/>
+		<distance name="button_height" value="10"/>
+		<distance name="title_vertical_pad" value="0"/>
+		<border name="title_border" left="0" right="6" top="5" bottom="5"/>
+		<border name="button_border" left="2" right="2" top="3" bottom="3"/>
+	</frame_geometry>
+
+
+	<!-- Window background -->
+	<draw_ops name="window">
+	  <rectangle color="#3C3C3C" filled="true" x="0" y="0" width="width" height="height"/>
+	</draw_ops>
+	<draw_ops name="window_inactive">
+	  <rectangle color="#3C3C3C" filled="true" x="0" y="0" width="width" height="height"/>
+	</draw_ops>
+
+
+	<!-- Buttons_active_normal_window -->
+	<draw_ops name="close_active_normal">
+		<image filename="close_active_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="close_active_prelight">
+		<image filename="close_active_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="close_active_pressed">
+		<image filename="close_active_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="maximize_active_normal">
+		<image filename="maximize_active_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="maximize_active_prelight">
+		<image filename="maximize_active_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="maximize_active_pressed">
+		<image filename="maximize_active_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="minimize_active_normal">
+		<image filename="minimize_active_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="minimize_active_prelight">
+		<image filename="minimize_active_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="minimize_active_pressed">
+		<image filename="minimize_active_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="menu_active_normal">
+		<image filename="menu_active_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="menu_active_prelight">
+		<image filename="menu_active_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="menu_active_pressed">
+		<image filename="menu_active_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<!-- Buttons_inactive_normal_window -->
+	<draw_ops name="close_inactive_normal">
+		<image filename="close_inactive_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="close_inactive_prelight">
+		<image filename="close_inactive_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="close_inactive_pressed">
+		<image filename="close_inactive_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="maximize_inactive_normal">
+		<image filename="maximize_inactive_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="maximize_inactive_prelight">
+		<image filename="maximize_inactive_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="maximize_inactive_pressed">
+		<image filename="maximize_inactive_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="minimize_inactive_normal">
+		<image filename="minimize_inactive_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="minimize_inactive_prelight">
+		<image filename="minimize_inactive_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="minimize_inactive_pressed">
+		<image filename="minimize_inactive_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="menu_inactive_normal">
+		<image filename="menu_inactive_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="menu_inactive_prelight">
+		<image filename="menu_inactive_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="menu_inactive_pressed">
+		<image filename="menu_inactive_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+
+        <!-- Buttons_active_maximized_window -->
+	<draw_ops name="restore_active_normal">
+		<image filename="restore_active_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="restore_active_prelight">
+		<image filename="restore_active_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="restore_active_pressed">
+		<image filename="restore_active_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+
+        <!-- Buttons_inactive_maximized_window -->
+	<draw_ops name="restore_inactive_normal">
+		<image filename="restore_inactive_normal.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="restore_inactive_prelight">
+		<image filename="restore_inactive_prelight.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+	<draw_ops name="restore_inactive_pressed">
+		<image filename="restore_inactive_pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+
+	<!-- Titles -->
+       <draw_ops name="title_normal"><title color="#111111" x="0" y="1"/><title color="#dddddd" x="0" y="0"/>
+       </draw_ops>
+       <draw_ops name="title_inactive"><title color="#9a9a9a" x="0" y="0"/>
+       </draw_ops>
+
+
+	<!-- Title gradients -->
+	<draw_ops name="title_grad">
+		<gradient type="vertical" x="0" y="0" width="width" height="30">
+			<color value="#454545"/>
+			<color value="#3c3c3c"/>
+		</gradient>
+		<line color="#666666" x1="0" x2="width" y1="0" y2="0"/>
+       </draw_ops>
+
+	<draw_ops name="title_grad_maximized">
+		<gradient type="vertical" x="0" y="0 " width="width" height="18">
+			<color value="#454545"/>
+			<color value="#3c3c3c"/>
+		</gradient>
+		<line color="#666666" x1="0" x2="width" y1="0" y2="0"/>
+       </draw_ops>
+
+
+
+	<!-- Frame style: normal -->
+	<frame_style name="normal" geometry="normal">
+	        <piece position="entire_background" draw_ops="window"/>
+                <piece position="titlebar" draw_ops="title_grad"/>
+    		<piece position="title" draw_ops="title_normal"/>
+
+		<button function="close" state="normal" draw_ops="close_active_normal"/>
+		<button function="minimize" state="normal" draw_ops="minimize_active_normal"/>
+		<button function="maximize" state="normal" draw_ops="maximize_active_normal"/>
+		<button function="menu" state="normal" draw_ops="menu_active_normal"/>
+
+		<button function="close" state="pressed" draw_ops="close_active_pressed"/>
+		<button function="minimize" state="pressed" draw_ops="minimize_active_pressed"/>
+		<button function="maximize" state="pressed" draw_ops="maximize_active_pressed"/>
+		<button function="menu" state="pressed" draw_ops="menu_active_pressed"/>
+
+		<button function="close" state="prelight" draw_ops="close_active_prelight"/>
+		<button function="minimize" state="prelight" draw_ops="minimize_active_prelight"/>
+		<button function="maximize" state="prelight" draw_ops="maximize_active_prelight"/>
+		<button function="menu" state="prelight" draw_ops="menu_active_prelight"/>
+	</frame_style>
+
+
+	<!-- Frame style: inactive -->
+	<frame_style name="inactive" geometry="normal">
+                <piece position="entire_background" draw_ops="window_inactive"/>
+    		<piece position="title" draw_ops="title_inactive"/>
+                <piece position="titlebar" draw_ops="title_grad"/>
+		<button function="close" state="normal" draw_ops="close_inactive_normal"/>
+		<button function="minimize" state="normal" draw_ops="minimize_inactive_normal"/>
+		<button function="maximize" state="normal" draw_ops="maximize_inactive_normal"/>
+		<button function="menu" state="normal" draw_ops="menu_inactive_normal"/>
+
+		<button function="close" state="pressed" draw_ops="close_inactive_pressed"/>
+		<button function="minimize" state="pressed" draw_ops="minimize_inactive_pressed"/>
+		<button function="maximize" state="pressed" draw_ops="maximize_inactive_pressed"/>
+		<button function="menu" state="pressed" draw_ops="menu_inactive_pressed"/>
+
+		<button function="close" state="prelight" draw_ops="close_inactive_prelight"/>
+		<button function="minimize" state="prelight" draw_ops="minimize_inactive_prelight"/>
+		<button function="maximize" state="prelight" draw_ops="maximize_inactive_prelight"/>
+		<button function="menu" state="prelight" draw_ops="menu_inactive_prelight"/>
+	</frame_style>
+
+	<!-- Frame style: maximized -->
+	<frame_style name="maximized" geometry="maximized">
+                <piece position="entire_background" draw_ops="window"/>
+                <piece position="titlebar" draw_ops="title_grad_maximized"/>
+    		<piece position="title" draw_ops="title_normal"/>
+
+		<button function="close" state="normal" draw_ops="close_active_normal"/>
+		<button function="minimize" state="normal" draw_ops="minimize_active_normal"/>
+		<button function="maximize" state="normal" draw_ops="restore_active_normal"/>
+		<button function="menu" state="normal" draw_ops="menu_active_normal"/>
+
+		<button function="close" state="pressed" draw_ops="close_active_pressed"/>
+		<button function="minimize" state="pressed" draw_ops="minimize_active_pressed"/>
+		<button function="maximize" state="pressed" draw_ops="restore_active_pressed"/>
+		<button function="menu" state="pressed" draw_ops="menu_active_pressed"/>
+
+		<button function="close" state="prelight" draw_ops="close_active_prelight"/>
+		<button function="minimize" state="prelight" draw_ops="minimize_active_prelight"/>
+		<button function="maximize" state="prelight" draw_ops="restore_active_prelight"/>
+		<button function="menu" state="prelight" draw_ops="menu_active_prelight"/>
+	</frame_style>
+
+	<!-- Frame style: maximized inactive -->
+	<frame_style name="maximized_inactive" geometry="maximized">
+                <piece position="entire_background" draw_ops="window_inactive"/>
+                <piece position="titlebar" draw_ops="title_grad_maximized"/>
+    		<piece position="title" draw_ops="title_inactive"/>
+
+		<button function="close" state="normal" draw_ops="close_inactive_normal"/>
+		<button function="minimize" state="normal" draw_ops="minimize_inactive_normal"/>
+		<button function="maximize" state="normal" draw_ops="restore_inactive_normal"/>
+		<button function="menu" state="normal" draw_ops="menu_inactive_normal"/>
+
+		<button function="close" state="pressed" draw_ops="close_inactive_pressed"/>
+		<button function="minimize" state="pressed" draw_ops="minimize_inactive_pressed"/>
+		<button function="maximize" state="pressed" draw_ops="restore_inactive_pressed"/>
+		<button function="menu" state="pressed" draw_ops="menu_inactive_pressed"/>
+
+		<button function="close" state="prelight" draw_ops="close_inactive_prelight"/>
+		<button function="minimize" state="prelight" draw_ops="minimize_inactive_prelight"/>
+		<button function="maximize" state="prelight" draw_ops="restore_inactive_prelight"/>
+		<button function="menu" state="prelight" draw_ops="menu_inactive_prelight"/>
+	</frame_style>
+
+	<!-- Frame style set: normal -->
+	<frame_style_set name="normal">
+		<frame focus="no" state="normal" resize="both" style="inactive"/>
+		<frame focus="no" state="maximized" style="maximized_inactive"/>
+		<frame focus="no" state="shaded" style="inactive"/>
+		<frame focus="no" state="maximized_and_shaded" style="maximized_inactive"/>
+
+		<frame focus="yes" state="normal" resize="both" style="normal"/>
+		<frame focus="yes" state="maximized" style="maximized"/>
+		<frame focus="yes" state="shaded" style="normal"/>
+		<frame focus="yes" state="maximized_and_shaded" style="maximized"/>
+	</frame_style_set>
+
+
+
+	<!-- the end -->
+	<window type="normal" style_set="normal"/>
+	<window type="dialog" style_set="normal"/>
+	<window type="modal_dialog" style_set="normal"/>
+	<window type="menu" style_set="normal"/>
+	<window type="utility" style_set="normal"/>
+	<window type="border" style_set="normal"/>
+
+</metacity_theme>

@@ -1,0 +1,125 @@
+!! http://na12.deviantart.com
+
+!! menu title
+menu.title.bg: raised gradient vertical
+menu.title.bg.color:  #4c4c4c
+menu.title.bg.colorTo: #303030
+#window.active.label.text.font: shadow=y:shadowtint=100:shadowoffset=1
+#window.inactive.label.text.font: shadow=y:shadowtint=100:shadowoffset=1
+#menu.items.font: shadow=y:shadowtint=-100:shadowoffset=1
+menu.title.text.font: shadow=y:shadowtint=100:shadowoffset=1
+osd.label.text.font: shadow=y:shadowtint=-100:shadowoffset=1
+menu.title.text.color:#ffffff
+menu.title.text.justify: center
+menu.separator.padding.width: 10
+menu.separator.color:#4c4c4c
+menu.border.color: #4c4c4c
+menu.border.width: 3
+
+!! menu items
+menu.items.bg: flat solid 
+menu.items.bg.color:#4c4c4c
+menu.items.text.color:#eeeeee
+menu.items.justify: left
+menu.items.disabled.text.color: #aaaaaa
+menu.items.active.bg: flat vertical gradient 
+menu.items.active.bg.color:#7298B8
+menu.items.active.bg.colorTo:#567894
+menu.items.active.text.color:#ffffff
+
+
+!! window title
+window.active.title.bg: raised Gradient Vertical
+window.active.title.bg.color: #454545
+window.active.title.bg.colorTo: #3c3c3c
+window.active.title.bg.shadow: 0
+
+window.inactive.title.bg: raised Gradient Vertical
+window.inactive.title.bg.color:  #454545
+window.inactive.title.bg.colorTo:  #3c3c3c
+window.inactive.title.bg.shadow: 0
+
+!! window text
+window.label.text.justify: left
+window.active.label.bg: parentrelative
+window.active.label.text.color:#eeeeee
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #aaaaaa
+
+window.active.title.separator.color:  #3c3c3c
+window.inactive.title.separator.color: #3c3c3c
+
+!! window buttons
+window.active.button.unpressed.bg: parentrelative
+window.active.button.unpressed.image.color: #dddddd
+
+
+window.active.button.pressed.bg: parentrelative
+window.active.button.pressed.image.color: #999999
+
+
+window.active.button.disabled.bg: parentrelative
+window.active.button.disabled.image.color: #777777
+
+
+window.active.button.hover.bg: parentrelative
+window.active.button.hover.image.color: #ffffff
+
+window.active.button.toggled.bg: parentrelative
+window.active.button.toggled.image.color: #dddddd
+
+window.active.button.toggled.unpressed.bg: parentrelative
+window.active.button.toggled.unpressed.image.color: #dddddd
+
+window.active.button.toggled.pressed.bg: parentrelative
+window.active.button.toggled.pressed.image.color: #999999
+window.active.button.toggled.hover.bg: parentrelative
+window.active.button.toggled.hover.image.color: #ffffff
+window.inactive.button.unpressed.bg: parentrelative
+window.inactive.button.unpressed.image.color: #dddddd
+
+
+window.inactive.button.pressed.bg: parentrelative
+window.inactive.button.pressed.image.color: #999999
+
+
+window.inactive.button.disabled.bg: parentrelative
+window.inactive.button.disabled.image.color: #777777
+
+
+window.inactive.button.hover.bg: parentrelative
+window.inactive.button.hover.image.color: #ffffff
+
+
+window.inactive.button.toggled.bg: parentrelative
+window.inactive.button.toggled.image.color: #dddddd
+window.inactive.button.toggled.unpressed.bg: parentrelative
+window.inactive.button.toggled.unpressed.image.color: #dddddd
+
+window.inactive.button.toggled.pressed.bg: parentrelative
+window.inactive.button.toggled.pressed.image.color: #999999
+window.inactive.button.toggled.hover.bg: parentrelative
+window.inactive.button.toggled.hover.image.color: #ffffff
+!! misc settings
+border.color: #232323
+border.width: 0
+padding.width: 7
+padding.height: 3
+window.handle.width: 0
+window.client.padding.width: 0
+window.client.padding.height: 0
+menu.overlap.x: 1
+menu.overlap.y: 0
+osd.border.width: 1
+osd.border.color:  #555555
+
+osd.bg: flat solid
+osd.bg.color: #dcdcdc
+osd.label.text.color: #3c3c3c
+osd.hilight.bg: flat gradient vertical
+osd.hilight.bg.color: #ADadad
+osd.hilight.bg.colorTo: #7E7e7e
+
+osd.unhilight.bg: flat gradient vertical
+osd.unhilight.bg.color: #7E7e7e
+osd.unhilight.bg.colorTo: #404040
