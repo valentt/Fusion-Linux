@@ -6,6 +6,12 @@ $ touch test
 $ git add .
 $ git push origin master
 
+To access a Git repository, configure your Git client as follows (replace PROJECTNAME with the UNIX group name of the project, and REPONAME with the name of the git repository):
+
+git://PROJECTNAME.git.sourceforge.net/gitroot/PROJECTNAME/REPONAME (read-only)
+ssh://USERNAME@PROJECTNAME.git.sourceforge.net/gitroot/PROJECTNAME/REPONAME (read/write)
+
+
 
 http://git-scm.com/
 
