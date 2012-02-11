@@ -1,4 +1,4 @@
-Fusion Linux 14.1 "Thorium" release notes
+Fusion Linux 16.1 "XXX" release notes
 =======================================
 
 /About Fusion Linux/
@@ -18,14 +18,19 @@ And finally, Fusion Linux is 100% compatible with Fedora. :)
 
 This release has been in the making for few months, and it is mostly an update to out initial release. Biggest new feature is LibreOffice instead of OpenOffice and two biggest bugs squashed. One bug prevented Firefox 4.0 from starting while using it as LiveUSB or LiveDVD and other bug was a dependency issue that prevented updates from being downloaded. We hoped with this release to make all desktop components more stable and put an overall desktop polish.
 
+Highlighted software packages:
+* Linux kernel 3.2.5
+* LibreOffice 3.4.5
+* Firefox 10
+* Thunderbird 10
+* GIMP 2.7.4 with Single Windowd Mode by default
+
 Features and highlights are:
-* LibreOffice instead OpenOffice
 * New download managers - Tucan and Uget
 * New remote desktop app - Remmina
 * bug fixes
 * a brand new custom made theme
 * Fusion Linux post install welcome wizard script
-* Skype removed so Fusion Linux can be freely redistributed
 * multimedia support out of the box (Flash, MP3 & DivX playback)
 * better hardware compatibility for broadcom wireless cards
 * better games selection
