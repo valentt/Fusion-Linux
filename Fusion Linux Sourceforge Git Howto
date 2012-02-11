@@ -29,3 +29,13 @@ git rm --cached path/to/submodule
 
 # add bunch of new files and folders
 git add --all
+
+
+# standard procedure when editing files
+1. change some files
+2. commit changes
+ git commit -m 'comment'
+3. upload changes
+ git push origin master
+
+
