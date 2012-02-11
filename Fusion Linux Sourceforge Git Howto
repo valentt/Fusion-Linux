@@ -24,3 +24,6 @@ $ git add .
 $ git commit -m 'Initial commit'
 
 
+# Remove the submodule
+git rm --cached path/to/submodule
+
