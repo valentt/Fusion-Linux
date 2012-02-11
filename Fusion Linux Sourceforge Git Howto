@@ -5,7 +5,7 @@
 3. upload changes
  git push origin master
 
-# standard workflos when adding or deleting files
+# standard workflow when adding or deleting files
 1. add or delete some file
 2. scan all files to find new and deleted ones
  git add --all
