@@ -1,0 +1,88 @@
+Fusion Linux 14.1 "Thorium" release notes
+=======================================
+
+/About Fusion Linux/
+====================
+
+Fusion Linux is a Fedora Remix that uses a combination of free and open-source, non-free and non-open-source firmware and software, to bring the user the most advanced experience on the Linux platform.
+
+Fusion Linux includes an outstanding theme, multimedia functionality out of the box and added desktop tweaks for better usability. 
+
+Guiding principles behind Fusion Linux are "Beyond Upstream" and "Multimedia Out of the Box". 
+
+And finally, Fusion Linux is 100% compatible with Fedora. :)
+
+
+/About this release/
+====================
+
+This release has been in the making for few months, and it is mostly an update to out initial release. Biggest new feature is LibreOffice instead of OpenOffice and two biggest bugs squashed. One bug prevented Firefox 4.0 from starting while using it as LiveUSB or LiveDVD and other bug was a dependency issue that prevented updates from being downloaded. We hoped with this release to make all desktop components more stable and put an overall desktop polish.
+
+Features and highlights are:
+* LibreOffice instead OpenOffice
+* New download managers - Tucan and Uget
+* New remote desktop app - Remmina
+* bug fixes
+* a brand new custom made theme
+* Fusion Linux post install welcome wizard script
+* Skype removed so Fusion Linux can be freely redistributed
+* multimedia support out of the box (Flash, MP3 & DivX playback)
+* better hardware compatibility for broadcom wireless cards
+* better games selection
+
+We put a lot of work in the brand new custom made theme. It is based on Faenza icons and Alliance GTK theme with the little Fusion touch.
+
+Desktop highlihgts:
+* mintMenu 
+* DockbarX
+* GNOME Do
+* Compiz Fusion
+
+mintMenu and DockbarX are two GNOME panel addons that make this Linux distro unique. These are the most obvious features that you will encounter first time you login.
+
+Software highlights:
+* LibreOffice 3.3
+* Chromium + Firefox 4.0
+* Thunderbird 3.0
+* K3b - best CD/DVD and Blu-ray burning app
+* GIMP 2.7 beta, Scribus 1.4 svn, Inkscape and Blender
+* Dropbox - online backup and file sync
+* TeamViewer - multiplatform remote desktop app
+* F-Spot - image organizer and personal photo management
+* Banshee - media player
+* HandBrake - DVD ripping application, convert DVD to a video file
+* Arista video transcoder - right click on any video file to convert
+* PlayOnLinux - easily install numerous Windows games and apps
+* Miro - free and open internet TV application
+* Ailurus GNOME tweaking app
+* GParted - partition editor for graphically managing your disk partitions
+* FedoraPlus - scripts for customizing
+* Gwibber - GNOME Twitter and Identica app
+* Redshift - takes care of your eyes if you work late
+* Development package and tools
+
+Chromium is the default browser. We think Firefox 4.0 is great and is included, but but we still prefer Chromium.
+
+Desktop tweaks:
+* Nautilus browser mode by default
+* Clicking via touchpad by default
+
+
+/Download/
+==========
+
+http://fusionlinux.org/downloads/
+
+
+/Get involved/
+==============
+
+Feel free to join this project, we eagerly like to hear your ideas about how Fusion Linux should look and work.
+
+Get in touch with us on our forum: 
+* http://photoresolutions.freehostia.com/fusionlinuxforums/index.php
+
+
+We hope you enjoy the release as we do.
+
+The Linux Fusion Team
