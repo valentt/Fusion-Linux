@@ -1,7 +1,10 @@
 https://sourceforge.net/apps/trac/sourceforge/wiki/Git
 
-git clone ssh://USERNAME@fusion-linux.git.sourceforge.net/gitroot/fusion-linux/fusion-linux
-cd REPONAME
+$ git clone ssh://USERNAME@fusion-linux.git.sourceforge.net/gitroot/fusion-linux/fusion-linux
+$ cd fusion-linux
+$ touch test
+$ git add .
+$ git push origin master
 
 http://git-scm.com/
 
