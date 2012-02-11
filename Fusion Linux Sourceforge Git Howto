@@ -27,3 +27,5 @@ $ git commit -m 'Initial commit'
 # Remove the submodule
 git rm --cached path/to/submodule
 
+# add bunch of new files and folders
+git add --all
