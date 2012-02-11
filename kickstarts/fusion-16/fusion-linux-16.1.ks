@@ -39,7 +39,6 @@ ailurus # GNOME tweak app, 1.8 M
 gnome-tweak-tool # GNOME 3 tweak tool, 123 K
 gnome-documents # document manager application for GNOME, 400 k
 hardinfo # GUI hardware and system information utility, 0.4 M
-AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 cheese
 alacarte # gnome menu editor, 400 k
 ## clipit # gnome clipboard manager, 200 k
@@ -234,11 +233,11 @@ freeciv # Civilization clone, 4/5, 24 M
 # vegastrike # 3D space action RPG space sim, trading and bounty hunting. Elite and Privateer clone, 739 M
 
 
-
 # education
 stellarium # Photo-realistic planetarium 40 M
 
-# misc terminal apps and tools
+# misc gui and cli tools
+# AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 lxrandr # monitor configuration tool, 130 k
 gparted # partition management tool, 3.4 M
 accountsdialog
