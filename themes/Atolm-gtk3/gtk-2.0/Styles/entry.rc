@@ -1,0 +1,77 @@
+style "entry"					= "default"
+{
+	xthickness				= 3
+	ythickness				= 3
+
+	#GtkEntry::focus-padding 		= 1
+	GtkEntry::honors-transparent-bg-hint 	= 1
+	GtkEntry::state-hint 			= 0
+#	GtkWidget::interior-focus		= 1
+
+	GtkEntry::progress-border 		= { 2, 2, 2, 2}
+	bg[SELECTED]				= shade( 0.85, @base_color)
+	text[NORMAL]				= @text_color
+
+	engine "equinox" 
+	{
+		curvature			= 2.0
+        	#buttonstyle         		= 0
+		#animation			= TRUE
+	}
+}
+
+style "murrine-entry"				= "default"
+{
+	xthickness 				= 3
+	ythickness 				= 3
+
+	#base[INSENSITIVE]			= @base_color
+
+	engine "murrine"
+	{
+
+	}
+}
+
+#widget_class "*<GtkEntry>"			style:highest "pixmap-entry"
+
+style "comboentry"				= "entry"
+{
+	xthickness				= 3
+	ythickness				= 3
+
+	GtkButton::inner-border 		= { 0, 1, 0, 0 }
+	text[NORMAL]				= @text_color
+
+	base[NORMAL]      			= @base_color
+	base[PRELIGHT]   			= @base_color
+	base[INSENSITIVE] 			= shade (0.97, @bg_color)
+	base[ACTIVE]      			= @base_color
+	text[ACTIVE]      			= darker (@text_color)
+
+	engine "equinox" 
+	{
+		curvature			= 2.0
+	}
+}
+
+style "combo"					= "entry"
+{
+	xthickness				= 3
+	ythickness				= 3
+
+	GtkButton::inner-border 		= { 0, 1, 0, 0 }
+	text[NORMAL]				= @text_color
+	text[ACTIVE]      			= darker (@text_color)
+	text[INSENSITIVE]      			= darker(@fg_color)
+
+	base[NORMAL]      			= @base_color
+	base[PRELIGHT]   			= @base_color
+	base[INSENSITIVE] 			= @base_color
+	base[ACTIVE]      			= @base_color
+
+	engine "equinox" 
+	{
+		curvature			= 2.0
+	}
+}
