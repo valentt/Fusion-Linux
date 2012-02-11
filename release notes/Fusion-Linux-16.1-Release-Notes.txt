@@ -18,19 +18,6 @@ And finally, Fusion Linux is 100% compatible with Fedora. :)
 
 This release has been in the making for few months, and it is mostly an update to out initial release. Biggest new feature is LibreOffice instead of OpenOffice and two biggest bugs squashed. One bug prevented Firefox 4.0 from starting while using it as LiveUSB or LiveDVD and other bug was a dependency issue that prevented updates from being downloaded. We hoped with this release to make all desktop components more stable and put an overall desktop polish.
 
-Highlighted software packages:
-* Linux kernel 3.2.5
-* LibreOffice 3.4.5
-* Firefox 10
-* Thunderbird 10
-* GIMP 2.7.4 with Single Windowd Mode by default
-* Openshot 1.4
-* VLC player 1.1
-* Blender 2.59
-* Inkscape 0.48
-* Flash plugin 11.1
-* Synapse 0.2.6 (Gnome-Do alternative quick-start app)
-
 
 Features and highlights are:
 * Cinnamon desktop instead GNOME 3
@@ -51,22 +38,25 @@ Desktop highlihgts:
 
 
 Software highlights:
-* LibreOffice 3.3
-* Chromium + Firefox 4.0
-* Thunderbird 3.0
+* Linux kernel 3.2.5
+* LibreOffice 3.4.5
+* Firefox 10
+* Thunderbird 10
+* GIMP 2.7.4 with Single Windowd Mode by default
+* Openshot 1.4
+* VLC player 1.1
+* Blender 2.59
+* Inkscape 0.48
+* Flash plugin 11.1
+* Synapse 0.2.6 (Gnome-Do alternative quick-start app)
 * K3b - best CD/DVD and Blu-ray burning app
-* GIMP 2.7 beta, Scribus 1.4 svn, Inkscape and Blender
 * Dropbox - online backup and file sync
 * TeamViewer - multiplatform remote desktop app
-* F-Spot - image organizer and personal photo management
-* Banshee - media player
-* HandBrake - DVD ripping application, convert DVD to a video file
+
 * Arista video transcoder - right click on any video file to convert
 * PlayOnLinux - easily install numerous Windows games and apps
-* Miro - free and open internet TV application
-* Ailurus GNOME tweaking app
 * GParted - partition editor for graphically managing your disk partitions
-* FedoraPlus - scripts for customizing
+* FedoraTools - scripts for customizing your Fusion/Fedora OS
 * Gwibber - GNOME Twitter and Identica app
 * Redshift - takes care of your eyes if you work late
 * Development package and tools
