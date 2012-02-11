@@ -1,0 +1,16 @@
+https://sourceforge.net/apps/trac/sourceforge/wiki/Git
+
+git clone ssh://USERNAME@fusion-linux.git.sourceforge.net/gitroot/fusion-linux/fusion-linux
+cd REPONAME
+
+http://git-scm.com/
+
+Creating and Commiting
+
+$ cd (project-directory)
+$ git init
+$ (add some files)
+$ git add .
+$ git commit -m 'Initial commit'
+
+
