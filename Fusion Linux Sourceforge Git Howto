@@ -12,7 +12,6 @@ git://PROJECTNAME.git.sourceforge.net/gitroot/PROJECTNAME/REPONAME (read-only)
 ssh://USERNAME@PROJECTNAME.git.sourceforge.net/gitroot/PROJECTNAME/REPONAME (read/write)
 
 
-
 http://git-scm.com/
 
 Creating and Commiting
