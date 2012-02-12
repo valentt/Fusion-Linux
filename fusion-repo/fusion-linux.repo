@@ -1,6 +1,6 @@
 [Fusion Linux]
 name=Fusion Linux repo
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fusion-$releasever/$basearch/
+baseurl=https://github.com/valentt/Fusion-Linux/raw/531220b278f1ea32f0faf39c37aca962650c453a/fusion-repo/fusion-$releasever/$basearch/
 enabled=1
 skip_if_unavailable=1
 gpgcheck=0
