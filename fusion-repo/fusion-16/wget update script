@@ -1,0 +1,3 @@
+#!/bin/bash
+wget -c http://www.teamviewer.com/download/teamviewer_linux.rpm
+wget -c http://fedorautils.sourceforge.net/fedorautils-latest.noarch.rpm
