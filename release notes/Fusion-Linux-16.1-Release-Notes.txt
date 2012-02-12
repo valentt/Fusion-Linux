@@ -21,9 +21,10 @@ This release has been in the making for few months, and it is mostly an update t
 
 Features and highlights are:
 * Cinnamon desktop instead GNOME 3
+* Jockey restricted/proprietary driver manager 
+* Fedora Utils post install tweak tool
 * New download managers - Tucan and Uget
 * New remote desktop app - Remmina
-* bug fixes
 * a brand new custom made theme
 * Fusion Linux post install welcome wizard script
 * multimedia support out of the box (Flash, MP3 & DivX playback)

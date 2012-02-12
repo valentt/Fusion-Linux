@@ -252,16 +252,6 @@ skip_if_unavailable=1
 gpgcheck=0
 EOF
 
-# Add Parsidora repository for jockey driver tool
-cat >> /etc/yum.repos.d/parsidora.repo << EOF
-[parsidora]
-name=Parsidora $releasever – $basearch
-baseurl=http://parsidora.sourceforge.net/releases/$releasever/repos/parsidora/$basearch
-enabled=0
-gpgcheck=0
-skip_if_unavailable=1
-EOF
-
 # install VirtualBox Guest Additions
 #mkdir /tmp/mnt
 #mount -o loop /usr/share/virtualbox/VBoxGuestAdditions.iso /tmp/mnt/

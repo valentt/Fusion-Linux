@@ -17,7 +17,6 @@ repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/$basearch/
 repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/$basearch/
 repo --name=fedora-cinnamon --baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-$releasever/$basearch/
-repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/$releasever/repos/parsidora/$basearch
 
 #repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/$basearch/os/
 #repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/$basearch/os/
@@ -35,6 +34,7 @@ repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/$relea
 # avant-window-navigator # great looking navigation panel, 51 M with python dependencies
 # awn-extras-applets # add avant-window-navigator and all extras, 6.7 M
 cinnamon
+jockey-gtk # Jockey driver manager
 gtk-redshift # adjust colour temperature of you screen according to time of day, might help your eyes hurt less if you work at night, 350 kB
 ailurus # GNOME tweak app, 1.8 M
 gnome-tweak-tool # GNOME 3 tweak tool, 123 K
