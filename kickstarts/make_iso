@@ -1,0 +1,9 @@
+yum install livecd-tools spin-kickstarts -y
+
+
+livecd-creator -v -c /home/valentt/0_fedora_stuff/fedora-respin/fedora-9/livecd-fedora-9b-desktop-croatian.ks -f Fedora9-Blender -t /home/temp/ --cache=/home/yum-cache-9/
+
+livecd-creator -v -t /home/fusion-linux/temp/ --cache=/home/fusion-linux/yum-cache/ -f Fusion-Linux-16 -c /home/valentt/Dropbox/fusion-linux/fusion-16/fusion-linux-16.0.ks
+
+yum install qemu-kvm -y
+qemu-kvm -m 512 -cdrom Fusion-Linux-16.1.iso
