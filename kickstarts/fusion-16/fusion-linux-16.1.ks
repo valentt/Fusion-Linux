@@ -343,15 +343,4 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 # temporary hack till this file is split up from the package
 rm -rf /usr/share/xsessions/gnome.session
 
-# show icons on Desktop
-gsettings set org.gnome.desktop.background show-desktop-icons true
-
-# create autostart directory
-mkdir -p /etc/skel/.config/autostart
-
-# enable clipit clipboard manager autostart
-cp /usr/share/applications/clipit.desktop /etc/skel/.config/autostart
-
-# enable synapse autostart
-
 %end
