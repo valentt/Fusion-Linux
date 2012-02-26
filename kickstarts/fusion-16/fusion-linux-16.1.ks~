@@ -346,4 +346,8 @@ rm -rf /usr/share/xsessions/gnome.session
 # show icons on Desktop
 gsettings set org.gnome.desktop.background show-desktop-icons true
 
+# enable clipit clipboard manager autostart
+mkdir -p /etc/skel/.config/autostart
+cp /usr/share/applications/clipit.desktop /etc/skel/.config/autostart
+
 %end
