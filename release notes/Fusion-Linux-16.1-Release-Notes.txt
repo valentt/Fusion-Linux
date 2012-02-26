@@ -39,7 +39,7 @@ Desktop highlihgts:
 
 
 Software highlights:
-* Linux kernel 3.2.5
+* Linux kernel 3.2.7
 * LibreOffice 3.4.5
 * Firefox 10
 * Thunderbird 10
