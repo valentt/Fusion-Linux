@@ -87,8 +87,16 @@ PS1='\[\033[01;34m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W]\[\033[00m\]\\$ '
 fortune
 EOF
 
-# add synapse to autostart directory
+# show icons on Desktop
+gsettings set org.gnome.desktop.background show-desktop-icons true
+
+# create autostart directory
 mkdir -p /etc/skel/.config/autostart
+
+# enable clipit clipboard manager autostart
+cp /usr/share/applications/clipit.desktop /etc/skel/.config/autostart/
+
+# add synapse to autostart directory
 cp /usr/share/applications/synapse.desktop /etc/skel/.config/autostart/
 
 # tweak swappiness
