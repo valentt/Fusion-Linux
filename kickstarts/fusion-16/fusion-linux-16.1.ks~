@@ -342,4 +342,7 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 # temporary hack till this file is split up from the package
 rm -rf /usr/share/xsessions/gnome.session
 
+# show icons on Desktop
+gsettings set org.gnome.desktop.background show-desktop-icons true
+
 %end

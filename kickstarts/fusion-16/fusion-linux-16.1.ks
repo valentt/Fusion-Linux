@@ -53,6 +53,7 @@ gkrellm
 seahorse
 gnote # note taking, tomboy clone done in C, 6 M
 gconf-editor
+dconf-editor # graphical front end for gsettings
 nautilus-image-converter
 nautilus-actions
 nautilus-open-terminal
