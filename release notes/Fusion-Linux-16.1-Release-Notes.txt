@@ -30,7 +30,7 @@ Features and highlights are:
 * Fusion Linux post install welcome wizard script
 * multimedia support out of the box (Flash, MP3 & DivX playback)
 * better hardware compatibility for broadcom wireless cards
-* better games selection
+* much better selection of games
 
 We put a lot of work in the brand new custom made theme. It is based on Faenza icons and Alliance GTK theme with the little Fusion touch.
 
