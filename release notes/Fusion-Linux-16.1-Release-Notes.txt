@@ -16,7 +16,8 @@ And finally, Fusion Linux is 100% compatible with Fedora. :)
 /About this release/
 ====================
 
-This release has been in the making for few months, and it is mostly an update to out initial release. Biggest new feature is LibreOffice instead of OpenOffice and two biggest bugs squashed. One bug prevented Firefox 4.0 from starting while using it as LiveUSB or LiveDVD and other bug was a dependency issue that prevented updates from being downloaded. We hoped with this release to make all desktop components more stable and put an overall desktop polish.
+This release was long overdue, but big switch from GNOME2 to GNOME3 made releasing Fusion Linux much harder because GNOME3 has disrupted lots of enhancements that Fusion Linux relied upon.
+In this release, first real release since Fusion 14.1 you are seeing Fusion Linux almost in its full glory previous to GNOME3 release. We are using GNOME3 but we use Cinnamon instead of GNOME-Shell.
 
 
 Features and highlights are:
