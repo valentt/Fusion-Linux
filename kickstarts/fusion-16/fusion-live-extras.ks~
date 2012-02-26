@@ -257,16 +257,8 @@ EOF
 # Add Parsidora repository
 cat >> /etc/yum.repos.d/parsidora.repo << EOF
 [parsidora]
-name=Cinnamon provides core user interface functions for the GNOME 3 desktop
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-$releasever/$basearch/
-enabled=1
-skip_if_unavailable=1
-gpgcheck=0
-
-[fedora-cinnamon-source]
-name=Cinnamon provides core user interface functions for the GNOME 3 desktop - Source
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-$releasever/SRPMS
-enabled=0
+name=Parsidora $releasever – $basearch
+baseurl=http://parsidora.sourceforge.net/releases/$releasever/repos/parsidora/$basearch
 skip_if_unavailable=1
 gpgcheck=0
 EOF
