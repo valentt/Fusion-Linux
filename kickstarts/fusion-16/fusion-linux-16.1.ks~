@@ -200,6 +200,7 @@ Maelstrom
 KoboDeluxe
 numptyphysics # A crayon-drawing based physics puzzle game, 5/5, 0.7 M
 freeciv # Civilization clone, 4/5, 24 M
+solarwolf # Interesting space arcade game, 4 M
 # PySolFC # collection of more that 1000 solitaire card games, has java-1.5.0 as dependency (48 M), 13 M
 # hedgewars # worms clone, 5/5, 83 M
 # wormux # cartoon character worms clone, 4/5, 102 M
