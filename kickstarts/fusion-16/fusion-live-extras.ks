@@ -90,6 +90,9 @@ EOF
 # show icons on Desktop
 gsettings set org.gnome.desktop.background show-desktop-icons true
 
+# set Faience-Azur as default icon theme
+gsettings set org.gnome.desktop.interface icon theme Faience-Azur
+
 # create autostart directory
 mkdir -p /etc/skel/.config/autostart
 
@@ -353,6 +356,16 @@ cd install_root
 INSTALL_ROOT=$(pwd)
 echo $INSTALL_ROOT
 
+# Download Faience GNOME 3 icon theme
+cd "$LIVE_ROOT"
+mkdir -p faience_icon_theme
+cd faience_icon_theme
+wget http://www.deviantart.com/download/255099649/faience_icon_theme_by_tiheum-d47vo5d.zip
+unzip faience_icon_theme_by_tiheum-d47vo5d.zip
+tar xf Faience.tar.gz
+tar xf Faience-Azur.tar.gz
+tar xf Faience-Ocre.tar.gz
+tar xf Faience-Claire.tar.gz
 
 # Demo video and audio files
 #echo "Examples creation folder"
