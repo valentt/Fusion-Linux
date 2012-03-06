@@ -266,7 +266,8 @@ ntfs-config # GUI for easy NTFS mounting and configuration, 500 kB
 htop
 atop
 testdisk
-smartmontools
+gsmartcontrol # Graphical user interface for smartctl
+smartmontools # Tools for monitoring SMART capable hard disks
 p7zip-plugins
 mutt
 screen
