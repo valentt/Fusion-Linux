@@ -123,7 +123,6 @@ rm /usr/share/applications/fedora-ggz-gtk.desktop
 rm /usr/share/applications/livna-wxcas.desktop
 rm /usr/share/applications/kde4/dolphin.desktop
 rm /usr/share/applications/kde4/kdf.desktop
-rm /usr/share/applications/kde4/ksysguard.desktop
 rm /usr/share/applications/kde4/kwalletmanager.desktop
 rm /usr/share/applications/kde4/kwikdisk.desktop
 
