@@ -66,7 +66,7 @@ unrar
 %end
 
 
-%post
+%post --log=/root/ks-post.log
 
 # tweak swappiness
 echo "" >>/etc/sysctl.conf

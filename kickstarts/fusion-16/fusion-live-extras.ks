@@ -346,7 +346,7 @@ EOF
 
 
 
-%post --nochroot
+%post --nochroot--log=/mnt/sysimage/root/ks-post.log
 
 #
 # http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/s1-kickstart2-postinstallconfig.html
