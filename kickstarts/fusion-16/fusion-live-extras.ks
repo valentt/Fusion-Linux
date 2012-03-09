@@ -75,7 +75,7 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 
 # remove this session file from gnome-session package to make cinnamon the default
 # temporary hack till this file is split up from the package
-rm -rf /usr/share/xsessions/gnome.session	
+rm -rf /usr/share/xsessions/gnome.session
 
 # Gedit with 10 recent files
 gsettings set org.gnome.gedit.preferences.ui max-recents '13'
