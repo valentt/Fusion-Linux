@@ -348,6 +348,12 @@ EOF
 
 %post --nochroot
 
+#
+# http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/custom-guide/s1-kickstart2-postinstallconfig.html
+# --nochroot Allows you to specify commands that you would like to run outside of the chroot environment.
+#
+
+
 # Define variables where config files are located ($LIVE_ROOT) 
 # and which directory is used for building iso ($INSTALL_ROOT)
 LIVE_ROOT="/home/fusion-linux/"

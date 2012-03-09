@@ -349,7 +349,7 @@ EOF
 %post --nochroot
 
 #
-# http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/custom-guide/s1-kickstart2-postinstallconfig.html
+# http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/s1-kickstart2-postinstallconfig.html
 # --nochroot Allows you to specify commands that you would like to run outside of the chroot environment.
 #
 
