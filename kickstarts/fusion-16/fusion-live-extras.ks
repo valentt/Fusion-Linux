@@ -91,7 +91,7 @@ EOF
 gsettings set org.gnome.desktop.background show-desktop-icons true
 
 # set Faience-Azur as default icon theme
-gsettings set org.gnome.desktop.interface icon-theme Faience-Azur
+gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
 # create autostart directory
 mkdir -p /etc/skel/.config/autostart

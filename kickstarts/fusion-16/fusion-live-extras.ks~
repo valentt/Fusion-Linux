@@ -366,6 +366,11 @@ tar xf Faience.tar.gz
 tar xf Faience-Azur.tar.gz
 tar xf Faience-Ocre.tar.gz
 tar xf Faience-Claire.tar.gz
+mkdir -p "$INSTALL_ROOT/etc/skel/.icons/"
+cp -fR Faience/ "$INSTALL_ROOT/etc/skel/.icons/"
+cp -fR Faience-Azur/ "$INSTALL_ROOT/etc/skel/.icons/"
+cp -fR Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
+cp -fR Faience-Claire/ "$INSTALL_ROOT/etc/skel/.icons/"
 
 # Demo video and audio files
 #echo "Examples creation folder"
