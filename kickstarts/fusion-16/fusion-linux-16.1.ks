@@ -332,20 +332,7 @@ rpmfusion-free-release
 
 %post
 
-# tweak bash terminal and add fortune
-cat >> /etc/skel/.bashrc << EOF
 
-PS1='\[\033[01;34m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W]\[\033[00m\]\\$ '
-fortune
-EOF
 
-# tweak swappiness
-echo "" >>/etc/sysctl.conf
-echo "vm.swappiness=10" >>/etc/sysctl.conf
-echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
-
-# remove this session file from gnome-session package to make cinnamon the default
-# temporary hack till this file is split up from the package
-rm -rf /usr/share/xsessions/gnome.session	
 
 %end
