@@ -332,7 +332,4 @@ rpmfusion-free-release
 
 %post
 
-
-
-
 %end
