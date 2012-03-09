@@ -69,16 +69,7 @@ unrar
 %post
 
 # Gedit with 10 recent files
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t int /apps/gedit-2/preferences/ui/recents/max_recents 10 > /dev/null
-
-
-# make Chromium default browser
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t string /desktop/gnome/applications/browser/exec /usr/bin/chromium-browser > /dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t string /desktop/gnome/url-handlers/unknown/command "/usr/bin/chromium-browser %s" > /dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t string /desktop/gnome/url-handlers/http/command "/usr/bin/chromium-browser %s" > /dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t string /desktop/gnome/url-handlers/https/command "/usr/bin/chromium-browser %s" > /dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t string /desktop/gnome/url-handlers/about/command "/usr/bin/chromium-browser %s" > /dev/null
-
+gsettings set org.gnome.gedit.preferences.ui max-recents '13'
 
 # tweak bash terminal and add fortune
 cat >> /etc/skel/.bashrc << EOF
