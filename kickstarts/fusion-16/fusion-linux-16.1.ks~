@@ -40,6 +40,7 @@ gtk-redshift # adjust colour temperature of you screen according to time of day,
 ailurus # GNOME tweak app, 1.8 M
 gnome-tweak-tool # GNOME 3 tweak tool, 123 K
 gnome-documents # document manager application for GNOME, 400 k
+gnome-user-share # easy GNOME file sharing
 hardinfo # GUI hardware and system information utility, 0.4 M
 cheese
 alacarte # gnome menu editor, 400 k
