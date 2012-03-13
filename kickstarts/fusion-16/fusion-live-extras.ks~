@@ -78,7 +78,7 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 rm -rf /usr/share/xsessions/gnome.session
 
 # Gedit with 10 recent files
-dbus-launch gsettings set org.gnome.gedit.preferences.ui max-recents '13'
+gsettings set org.gnome.gedit.preferences.ui max-recents '13'
 
 # tweak bash terminal and add fortune
 cat >> /etc/skel/.bashrc << EOF
@@ -88,10 +88,10 @@ fortune
 EOF
 
 # show icons on Desktop
-dbus-launch gsettings set org.gnome.desktop.background show-desktop-icons true
+gsettings set org.gnome.desktop.background show-desktop-icons true
 
 # set Faience-Azur as default icon theme
-dbus-launch gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
+gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
 # create autostart directory
 mkdir -p /etc/skel/.config/autostart

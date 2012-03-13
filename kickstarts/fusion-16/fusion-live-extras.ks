@@ -77,6 +77,13 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 # temporary hack till this file is split up from the package
 rm -rf /usr/share/xsessions/gnome.session
 
+# testing new gsetting system scheme
+cat >> /usr/share/glib-2.0/schemas/01-fusion-settings << EOF
+[org/gnome/gedit/preferences/ui]
+max-recents=13
+EOF
+glib-compile-schemas /usr/share/glib-2.0/schemas/
+
 # Gedit with 10 recent files
 gsettings set org.gnome.gedit.preferences.ui max-recents '13'
 
