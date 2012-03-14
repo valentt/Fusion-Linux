@@ -85,7 +85,13 @@ EOF
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 # Gedit with 10 recent files
-gsettings set org.gnome.gedit.preferences.ui max-recents '13'
+# gsettings set org.gnome.gedit.preferences.ui max-recents '13'
+
+# show icons on Desktop
+# gsettings set org.gnome.desktop.background show-desktop-icons true
+
+# set Faience-Azur as default icon theme
+# gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
 # tweak bash terminal and add fortune
 cat >> /etc/skel/.bashrc << EOF
@@ -93,12 +99,6 @@ cat >> /etc/skel/.bashrc << EOF
 PS1='\[\033[01;34m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W]\[\033[00m\]\\$ '
 fortune
 EOF
-
-# show icons on Desktop
-gsettings set org.gnome.desktop.background show-desktop-icons true
-
-# set Faience-Azur as default icon theme
-gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
 # create autostart directory
 mkdir -p /etc/skel/.config/autostart
