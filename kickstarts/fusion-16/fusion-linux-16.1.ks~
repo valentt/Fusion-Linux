@@ -44,7 +44,7 @@ gnome-user-share # easy GNOME file sharing over Avahi
 hardinfo # GUI hardware and system information utility, 0.4 M
 cheese
 alacarte # gnome menu editor, 400 k
-## clipit # gnome clipboard manager, 200 k
+clipit # gnome clipboard manager, 200 k
 synapse # gnome-do alternative, 1.3 M
 beesu # start gui apps as root, like gtksu, 30 kB
 nautilus-beesu-manager # beesu nautilus manager, 40 kB
