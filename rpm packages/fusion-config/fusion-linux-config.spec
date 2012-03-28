@@ -10,7 +10,7 @@ License:    GPLv2+
 BuildArch:  noarch
 
 # for gnome default background
-Requires:   parsidora-backgrounds-gnome gsettings-desktop-schemas
+Requires:   fusion-linux-backgrounds-gnome gsettings-desktop-schemas
 
 # for touchpad settings
 Requires:   gnome-settings-daemon
