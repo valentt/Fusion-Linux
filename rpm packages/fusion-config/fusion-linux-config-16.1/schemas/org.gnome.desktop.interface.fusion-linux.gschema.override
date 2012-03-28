@@ -1,2 +1,2 @@
-[org.gnome.gedit.preferences.ui]
-max-recents='10'
+[org.gnome.desktop.interface]
+icon-theme='Faience-Azur'
