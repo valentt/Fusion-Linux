@@ -64,5 +64,5 @@ fi
 %{_datadir}/glib-2.0/schemas/*keyboard*
 
 %changelog
-* Tue Dec 27 2011 Hedayat Vatankhah <hedayat.fwd+rpmchlog@gmail.com> - 16.1-1
+* Tue Dec 27 2011 Hedayat Vatankhah <valent.turkovic@gmail.com> - 16.1-1
 - Initial release for Fusion Linux 16.1
