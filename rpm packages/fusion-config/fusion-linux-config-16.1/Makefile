@@ -1,4 +1,4 @@
-NAME = parsidora-config
+NAME = fusion-linux-config
 
 all:
 VERSION := $(shell awk '/Version:/ { print $$2 }' $(NAME).spec)
