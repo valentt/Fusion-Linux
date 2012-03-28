@@ -1,7 +1,7 @@
-Name:       parsidora-config
+Name:       fusion-linux-config
 Version:    16.0
-Release:    3%{?dist}
-Summary:    Parsidora Configuration Customizations
+Release:    1%{?dist}
+Summary:    Fusion Linux Configuration Customizations
 
 Group:      System Environment/Base
 URL:        http://parsidora.ir/
