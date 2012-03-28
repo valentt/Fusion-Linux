@@ -4,8 +4,8 @@ Release:    1%{?dist}
 Summary:    Fusion Linux Configuration Customizations
 
 Group:      System Environment/Base
-URL:        http://parsidora.ir/
-Source0:    http://downloads.sourceforge.net/parsidora/%{name}-%{version}.tar.bz2
+URL:        http://fusionlinux.org/
+Source0:    http://downloads.sourceforge.net/fusion-linux/%{name}-%{version}.tar.bz2
 License:    GPLv2+
 BuildArch:  noarch
 
