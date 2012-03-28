@@ -1,5 +1,5 @@
 Name:       fusion-linux-config
-Version:    16.0
+Version:    16.1
 Release:    1%{?dist}
 Summary:    Fusion Linux Configuration Customizations
 
@@ -64,5 +64,5 @@ fi
 %{_datadir}/glib-2.0/schemas/*keyboard*
 
 %changelog
-* Tue Dec 27 2011 Hedayat Vatankhah <hedayat.fwd+rpmchlog@gmail.com> - 16.0-1
-- Initial release for Fusion Linux 16
+* Tue Dec 27 2011 Hedayat Vatankhah <hedayat.fwd+rpmchlog@gmail.com> - 16.1-1
+- Initial release for Fusion Linux 16.1
