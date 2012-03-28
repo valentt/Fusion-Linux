@@ -5,7 +5,8 @@ Summary:    Fusion Linux Configuration Customizations
 
 Group:      System Environment/Base
 URL:        http://fusionlinux.org/
-Source0:    http://downloads.sourceforge.net/fusion-linux/%{name}-%{version}.tar.bz2
+# Source0:    http://downloads.sourceforge.net/fusion-linux/%{name}-%{version}.tar.bz2
+Source0:    %{name}-%{version}.tar.bz2
 License:    GPLv2+
 BuildArch:  noarch
 
