@@ -26,7 +26,7 @@ Requires:   libgnomekbd
 
 %description fa
 This package contains Fusion Linux specific user configuration which is prepared
-for Desktop users.
+for Fusion Linux Desktop users.
 
 %prep
 %setup -q
