@@ -18,13 +18,13 @@ Requires:   gnome-settings-daemon
 %description
 This package contains Fusion Linux specific user configuration.
 
-%package fa
+%package
 Summary:    Fusion Linux Custom Configuration
 
 # for keyboard settings
 Requires:   libgnomekbd
 
-%description fa
+%description
 This package contains Fusion Linux specific user configuration which is prepared
 for Fusion Linux desktop users.
 
@@ -41,15 +41,7 @@ install -p -m 644 schemas/* %{buildroot}%{_datadir}/glib-2.0/schemas/
 %posttrans
 glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 
-%posttrans fa
-glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
-
 %postun
-if [ $1 -eq 0 ]; then
-  glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
-fi
-
-%postun fa
 if [ $1 -eq 0 ]; then
   glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 fi
@@ -60,8 +52,6 @@ fi
 %{_datadir}/glib-2.0/schemas/*desktop*
 %{_datadir}/glib-2.0/schemas/*settings*
 
-%files fa
-%{_datadir}/glib-2.0/schemas/*keyboard*
 
 %changelog
 * Tue Dec 27 2011 Hedayat Vatankhah <valent.turkovic@gmail.com> - 16.1-1
