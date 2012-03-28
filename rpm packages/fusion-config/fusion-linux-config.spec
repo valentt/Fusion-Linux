@@ -19,7 +19,7 @@ Requires:   gnome-settings-daemon
 %description
 This package contains Fusion Linux specific user configuration.
 
-%package fa
+%package
 Summary:    Fusion Linux Custom Configuration
 
 # for keyboard settings
