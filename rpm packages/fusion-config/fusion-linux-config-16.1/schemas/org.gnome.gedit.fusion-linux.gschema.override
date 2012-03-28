@@ -1,2 +1,2 @@
-[org.gnome.desktop.background]
-picture-uri='file:///usr/share/backgrounds/parsidora/default/parsidora.xml'
+[org.gnome.gedit.preferences.ui]
+max-recents='10'
