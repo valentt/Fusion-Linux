@@ -1,0 +1,4 @@
+[org.gnome.libgnomekbd.keyboard]
+layouts=['us', 'ir']
+options=['grp_led\tgrp_led:scroll', 'terminate\tterminate:ctrl_alt_bksp', 'grp\tgrp:alt_shift_toggle']
+
