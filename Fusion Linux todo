@@ -3,6 +3,8 @@ fusion-welcome:
  - enter root immediately so there are no repeated root password requests?
  - offer to install google chrome
  
+create rpm packages
+ - fusion-linux-customization packages that override default gnome 3 settings
 
 icons
  - finish creating all icons
