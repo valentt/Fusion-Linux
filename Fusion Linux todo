@@ -8,6 +8,8 @@ create rpm packages
    * source - https://github.com/valentt/Fusion-Linux/blob/master/rpm%20packages/fusion-config/fusion-linux-config-16.1.tar.gz
  - fusion-welcome (can be also part of fusion-linux-customization package)
    * source - https://github.com/valentt/Fusion-Linux/blob/master/fusion-welcome/fusion-welcome.tar.gz
+ - package Faience icon theme
+  * source - http://tiheum.deviantart.com/art/Faience-icon-theme-255099649
 
 icons
  - finish creating all icons
