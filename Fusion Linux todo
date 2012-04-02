@@ -5,9 +5,8 @@ fusion-welcome:
  
 create rpm packages
  - fusion-linux-customization packages that override default gnome 3 settings
-   * source file is "Fusion Linux/rpm packages/fusion-config/fusion-linux-config-16.1.tar.gz"
-   * https://github.com/valentt/Fusion-Linux/blob/master/rpm%20packages/fusion-config/fusion-linux-config-16.1.tar.gz
-  - fusion-welcome (can be also part of fusion-linux-customization package)
+   * source - https://github.com/valentt/Fusion-Linux/blob/master/rpm%20packages/fusion-config/fusion-linux-config-16.1.tar.gz
+ - fusion-welcome (can be also part of fusion-linux-customization package)
    * source - https://github.com/valentt/Fusion-Linux/blob/master/fusion-welcome/fusion-welcome.tar.gz
 
 icons
