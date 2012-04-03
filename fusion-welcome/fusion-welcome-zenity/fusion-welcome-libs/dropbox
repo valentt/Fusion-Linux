@@ -1,0 +1,7 @@
+# Set Up Dropbox
+
+zenity --question --title="Step $STEP of $STEPS" --text="DROPBOX - ONLINE BACKUP, FILE SYNC AND SHARING MADE EASY\n\nDropbox is the easiest way to store, sync, and, share files online. There's no complicated interface to learn. Dropbox works seamlessly with your operating system and automatically makes sure your files are up-to-date. Available for Linux, Mac and Windows.\n\nHomepage: https://www.dropbox.com\n\nWould like to run Dropbox and automatically start each time you log on?\n\nAdd dropbox.desktop to your ~/.config/autostart folder ?" --ok-label="Yes" --cancel-label="Skip"
+if [ ! $? == 1 ]; then
+	cp /usr/share/applications/dropbox.desktop ~/.config/autostart
+	dropbox start -i &> /dev/null &
+fi

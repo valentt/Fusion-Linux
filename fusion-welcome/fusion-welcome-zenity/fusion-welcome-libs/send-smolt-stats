@@ -1,0 +1,6 @@
+# Send Smolt Statistics
+
+zenity --question --title="Step $STEP of $STEPS" --text="SEND YOUR HARDWARE STATISTICS\n\nSmolt is tool that gathers hardware information from computers running Linux.\n\nInformation collection is voluntary and anonymous.\nSmolt does not run automatically.\n\nFor more info visit http://smolt.fedoraproject.org/\nPlease consider sending your hardware statistics.\n\n\nWould you like to anonymously send hardware statistics now?\n" --ok-label="Yes" --cancel-label="Skip"
+if [ ! $? == 1 ]; then
+	smoltSendProfile
+fi

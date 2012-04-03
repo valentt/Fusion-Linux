@@ -1,0 +1,3 @@
+zenity --info --title="Finished!" --text="THANK YOU FOR USING FUSION LINUX! :)\n\nIf you have any questions or feedback, please come and visit us on the web:\n\nHomepage: http://fusionlinux.org
+Forums: http://photoresolutions.freehostia.com/fusionlinuxforums/
+Blog: http://fusionlinux.org/blog/\n\nYou can always run this wizard again by typing fusion-welcome in terminal.\n\nClick Ok to Exit."

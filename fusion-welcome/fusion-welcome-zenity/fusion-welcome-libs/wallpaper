@@ -1,0 +1,27 @@
+# Change Wallpaper
+
+function ChangeWall()
+{
+wall=$(zenity --list --width=200 --height=300 --title="Select Wallpaper" --text="Which wallpaper would you like to set as your default wallpaper?" --radiolist  --column "Select" --column "Options" TRUE "Fusion Linux wallpaper" FALSE "Fedora wallpaper" FALSE "Special surprise wallpaper" --separator=":")
+
+arr=$(echo $wall | tr "\:" "\n")
+
+for x in $arr
+do
+	if [ $x = "Fusion" ]; then
+	gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
+	fi
+	if [ $x = "Fedora" ]; then
+	gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/laughlin/default/laughlin.xml
+	fi
+	if [ $x = "Surprise" ]; then
+	gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/rei-forever/rei-forever.jpg
+	fi
+done
+}
+
+zenity --question --title="Step $STEP of $STEPS" --text="CHOOSE YOUR WALLPAPER\n\nWallapaper is usually matter of personal choice.\n\nSo beside default Fedora wallpaper we would like to offer you our Fusion Linux Wallapaper and also a surprise Wallpaper ;)\n\nDo you want to change your Wallpaper?" --ok-label="Yes" --cancel-label="Skip"
+
+if [ ! $? == 1 ]; then
+	ChangeWall
+fi

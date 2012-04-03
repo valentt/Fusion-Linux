@@ -1,0 +1,25 @@
+# Set Up Sudo
+
+function SudoOpts()
+{
+wall=$(zenity --list --width=200 --height=300 --title="Set up sudo" --text="Choose the type of sudo to be configured" --radiolist  --column "Select" --column "Options" TRUE "With Password" FALSE "Without Password" --separator=":")
+arr=$(echo $wall | tr "\:" "\n")
+for x in $arr
+do
+	if [ $x = "With" ]; then
+	echo "$USER ALL=(ALL)	ALL" > SUDO
+	su -c 'cat SUDO >> /etc/sudoers'
+	rm SUDO
+	fi
+	if [ $x = "Without" ]; then
+	echo "$USER ALL=(ALL)	NOPASSWD:ALL" > SUDO
+	su -c 'cat SUDO >> /etc/sudoers'
+	rm SUDO
+	fi
+done
+}
+
+zenity --question --title="Step $STEP of $STEPS" --text="SETUP SUDO FOR YOUR USER ACCOUNT\n\nSome people like to use sudo instead of the root account for doing administrative tasks, especially if you already got used to using sudo on other Linux distros. \n\nIf you choose to enable sudo you can run commands in terminal with root privileges using only your personal account password. \n\nWould like to enable sudo for user \"$USER\"? If you are uncertain skip this step.\n\nYou will be promted for your administrator password, so please have it ready." --ok-label="Yes" --cancel-label="Skip"
+if [ ! $? == 1 ]; then
+	SudoOpts
+fi

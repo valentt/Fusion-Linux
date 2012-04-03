@@ -1,0 +1,7 @@
+# Set Up Redshift
+
+zenity --question --title="Step $STEP of $STEPS" --text="EASY ON THE EYES WITH REDSHIFT\n\nRedshift adjusts the color temperature of your screen according to the position of the sun. This may help your eyes hurt less if you are working in front of the screen at night.\n\nA different color temperature is set during night and daytime. During twilight and early morning, the color temperature transitions smoothly from night to daytime temperature to allow your eyes to slowly adapt.\n\nHomepage: http://jonls.dk/redshift/\n\nWould like to run Redshift and automatically start each time you log on?\n\nAdd gtk-redshift.desktop to your ~/.config/autostart folder?" --ok-label="Yes" --cancel-label="Skip"
+if [ ! $? == 1 ]; then
+	cp /usr/share/applications/gtk-redshift.desktop ~/.config/autostart
+	gtk-redshift &> /dev/null &
+fi

@@ -1,0 +1,26 @@
+# Desktop look
+
+function DesktopLook()
+{
+desktop=$(zenity --list --width=200 --height=300 --title="Desktop Look & Feel" --text="Which desktop look & feel do you prefer?" --radiolist  --column "Select" --column "Options" TRUE "Fusion Linux Desktop" FALSE "Classic GNOME Desktop" --separator=":")
+
+arr=$(echo $desktop | tr "\:" "\n")
+
+for x in $arr
+do
+	if [ $x = "Fusion" ]; then
+	gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --load /usr/share/fusion-linux/gconf2/mintMenu.xml
+	gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --load /usr/share/fusion-linux/gconf2/dockbarx.xml
+	gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --load /usr/share/fusion-linux/gconf2/one-panel-settings-dockbarx.xml
+	fi
+	if [ $x = "Classic" ]; then
+	gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --load /usr/share/fusion-linux/gconf2/default-panel-settings.xml
+	fi
+done
+}
+
+zenity --question --title="Step $STEP of $STEPS" --text="Default Desktop Look\n\nYou can choose how your desktop will look. We suggest you leave default Fusion Look and Feel.\n\nIf you find that you prefer default GNOME look and feel it is easy to switch back.\n\n\n\nWould you like to change your Dekstop?" --ok-label="Yes" --cancel-label="Skip"
+
+if [ ! $? == 1 ]; then
+	DesktopLook
+fi

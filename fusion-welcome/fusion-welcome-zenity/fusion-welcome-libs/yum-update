@@ -1,0 +1,7 @@
+# Update System
+
+zenity --question --title="Step $STEP of $STEPS" --text="UPDATE INSTALLED PACKAGES\n\nWould you like to update the installed packages on your system?
+If you choose to do this, this script will execute the command:\n\n	yum update\n\nYou will be promted for your administrator password, so please have it ready." --ok-label="Yes" --cancel-label="Skip"
+if [ ! $? == 1 ]; then
+	su -c 'yum -y update'
+fi

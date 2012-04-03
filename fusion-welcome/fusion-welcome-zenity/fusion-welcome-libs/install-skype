@@ -1,0 +1,6 @@
+# Install Skype
+
+zenity --question --title="Step $STEP of $STEPS" --text="INSTALL SKYPE\n\nBy default, Fusion Linux does not come with Skype support. We have contacted Skype and asked for permission to have Skype client isntalled by default, but Skype denied our request.\n\nWould you like to install Skype now?\n\n	yum install skype\n\nYou will be promted for your administrator password, so please have it ready.\n\nNote: additional packages listed as dependencies may also be installed." --ok-label="Yes" --cancel-label="Skip"
+if [ ! $? == 1 ]; then
+	su -c 'yum -y install skype'
+fi

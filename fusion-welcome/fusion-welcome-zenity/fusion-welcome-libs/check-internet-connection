@@ -1,0 +1,8 @@
+# Check Connection
+i=`ping -c 1 ftp.de.debian.org > "/dev/null" 2>&1`
+if [ $? = 0 ]; then
+	zenity --info --text="Internet Connection Verified. Press OK to continue."
+else
+	zenity --error --text="No internet connection found. This script requires internet to work properly. Press OK to exit.\n\nYou can run the script again at a later date by entering the command \"fusion-welcome\" in your terminal."
+	exit 0;
+fi

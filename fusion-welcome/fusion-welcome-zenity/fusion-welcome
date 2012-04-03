@@ -1,0 +1,111 @@
+#!/bin/bash
+# Fusion Linux Welcome Script
+# Copyright (C) 2011  Satyajit sahoo
+#
+# License: GNU General Public License 3 <http://www.gnu.org/licenses/gpl-3.0.html>
+# Author: Satyajit Sahoo <satyajit.happy@gmail.com>
+# Web: Home Page <http://fusionlinux.org>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# http://www.gnu.org/licenses/gpl-3.0.html
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# No Warranty or guarantee of suitability exists for this software
+# Use at your own risk. The author is not responsible if your system breaks.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+# Declare Variables
+PROGRAM="Fusion Linux Welcome Script"
+VERSION="2.0"
+USER="$(logname)"
+LIBDIR="./fusion-welcome-libs"
+#LIBDIR="/usr/share/fusion-linux/fusion-welcome/fusion-welcome-libs"
+STEP="0"
+STEPS=`ls -1 $LIBDIR | wc -l`
+#Intro, Connection Check and Finish not counted as Steps
+STEPS=$((STEPS-3))
+
+# First run
+if [ "$1" = "--firstrun" ]; then
+    if [ -d /home/liveuser ]; then
+        exit 0    
+    fi
+    if [ -e "/home/$USER/.config/fusion-linux/fusion-welcome" ]; then
+        exit 0   
+    fi
+fi
+
+# Create flag
+if [ ! -d "/home/$USER/.config/fusion-linux" ]; then
+    mkdir /home/$USER/.config/fusion-linux
+fi
+if [ ! -f "/home/$USER/.config/fusion-linux/fusion-welcome" ]; then
+    touch /home/$USER/.config/fusion-linux/fusion-welcome
+    echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/fusion-welcome-firstrun.desktop
+fi
+
+
+# Run through steps
+
+. $LIBDIR/intro
+
+. $LIBDIR/check-internet-connection
+
+STEP=$((STEP+1))
+. $LIBDIR/send-smolt-stats
+
+STEP=$((STEP+1))
+. $LIBDIR/yum-update
+
+STEP=$((STEP+1))
+. $LIBDIR/install-skype
+
+STEP=$((STEP+1))
+. $LIBDIR/sudo
+
+STEP=$((STEP+1))
+. $LIBDIR/redshift
+
+STEP=$((STEP+1))
+. $LIBDIR/dropbox
+
+STEP=$((STEP+1))
+. $LIBDIR/wallpaper
+
+#STEP=$((STEP+1))
+#. $LIBDIR/add-user-to-fuse-group
+
+#STEP=$((STEP+1))
+#. $LIBDIR/install-multisession
+
+#STEP=$((STEP+1))
+#. $LIBDIR/devel
+
+if [ "$DEVEL" != true ]; then
+    . $LIBDIR/fini
+    exit 0
+fi
+
+#STEP=$((STEP+1))
+#. $LIBDIR/devel-install-version-control-tools
+
+#STEP=$((STEP+1))
+#. $LIBDIR/devel-install-ssh-server
+
+#STEP=$((STEP+1))
+#. $LIBDIR/devel-install-lamp-stack
+
+#STEP=$((STEP+1))
+#. $LIBDIR/devel-install-packaging-tools
+
+. $LIBDIR/fini
+exit 0
