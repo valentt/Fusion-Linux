@@ -46,6 +46,8 @@ gnome-translate # translation tool, 1.2 M
 #choqok # kde based twitter client, 4.1 M
 #giver # easy local file sharing, 0.3 M + 43M, but has mono as dependency
 
+#arista dependency
+python-gudev
 
 # proprietary bits
 flash-plugin
@@ -455,17 +457,17 @@ cd "$LIVE_ROOT"
 if [ ! -f arista-0.9.6.tar.gz ] # if file already exists no need to download it again
 then
 echo "no file present, downloading Arista Transcoder"
-wget http://programmer-art.org/media/releases/arista-transcoder/arista-0.9.6.tar.gz
+wget http://programmer-art.org/media/releases/arista-transcoder/arista-0.9.7.tar.gz
 fi
 tar xvzf arista-0.9.6.tar.gz
 cd arista-0.9.6
 python setup.py install --root $INSTALL_ROOT
 cd "$LIVE_ROOT"
 
-# Fixes for arista bugs
+# Fixes for arista 0.9.6 bugs
 #sed -i -e 's/\/home\/fusion-linux\/arista-0.9.6/\/usr\/bin\/python/g' "$INSTALL_ROOT/usr/bin/arista-gtk" "$INSTALL_ROOT/usr/bin/arista-transcode"
-sed -i -e 's/#!./#!\/usr\/bin\/python/g' "$INSTALL_ROOT/usr/bin/arista-gtk" "$INSTALL_ROOT/usr/bin/arista-transcode"
-mv "$INSTALL_ROOT/usr/lib/python2.6/site-packages/arista" "$INSTALL_ROOT/usr/lib/python2.7/site-packages/"
+#sed -i -e 's/#!./#!\/usr\/bin\/python/g' "$INSTALL_ROOT/usr/bin/arista-gtk" "$INSTALL_ROOT/usr/bin/arista-transcode"
+#mv "$INSTALL_ROOT/usr/lib/python2.6/site-packages/arista" "$INSTALL_ROOT/usr/lib/python2.7/site-packages/"
 
 
 

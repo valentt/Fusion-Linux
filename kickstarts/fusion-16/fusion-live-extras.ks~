@@ -88,10 +88,10 @@ echo ""
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 
-echo ""
-echo "a sada dbus-launch glib-compile-schemas"
-echo ""
-dbus-launch glib-compile-schemas /usr/share/glib-2.0/schemas/
+#echo ""
+#echo "a sada dbus-launch glib-compile-schemas"
+#echo ""
+#dbus-launch glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 # Gedit with 10 recent files
 # gsettings set org.gnome.gedit.preferences.ui max-recents '13'
