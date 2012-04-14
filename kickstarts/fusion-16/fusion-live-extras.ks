@@ -7,17 +7,22 @@
 part / --size 6000 --fstype ext4
 
 # releasever=16
-# arch=x86_64
-# arch=i386
+# basearch=x86_64
+# basearch=i386
 
 #repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
 #repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/16/Everything/i386/os/
-repo --name=rpmfusion-non-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=i386
-repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/16/i386
+
+# repos that automatically are defined by 16 and $basearch
+repo --name=rpmfusion-non-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-16&arch=$basearch
+repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/16/$basearch
+repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/16/$basearch/
+
+# 32 bit only
+repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/16/
 repo --name=adobe --baseurl=http://linuxdownload.adobe.com/linux/i386/
 repo --name=skype --baseurl=http://download.skype.com/linux/repos/fedora/updates/i586
-repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/16/
-repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/16/i386/
+
 repo --name=playonlinux --baseurl=http://rpm.playonlinux.com/fedora/yum/base
 #repo --name=livna --baseurl=http://ftp-stud.fht-esslingen.de/pub/Mirrors/rpm.livna.org/repo/16/i386/
 
@@ -154,14 +159,14 @@ cat >> /etc/yum.repos.d/fusion.repo << EOF
 
 [fusion]
 name=Few packages that are missing for Fusion Linux (Fedora Remix)
-baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-$releasever/$basearch/
+baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-16/$basearch/
 enabled=1
 skip_if_unavailable=1
 gpgcheck=0
 
 [fusion-source]
 name=Few packages that are missing for Fusion Linux (Fedora Remix) - Source
-baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-$releasever/SRPMS
+baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-16/SRPMS
 enabled=0
 gpgcheck=0
 skip_if_unavailable=1
@@ -170,24 +175,24 @@ EOF
 # Gimp 2.7 repository
 cat >> /etc/yum.repos.d/fedora-gimp-unstable.repo << EOF
 [fedora-gimp-unstable]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/
+name=Unstable development versions of GIMP for Fedora 16 - $basearch
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
 skip_if_unavailable=1
 
 [fedora-gimp-unstable-debuginfo]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Debug
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/debug/
+name=Unstable development versions of GIMP for Fedora 16 - $basearch - Debug
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/$basearch/debug/
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
 skip_if_unavailable=1
 
 [fedora-gimp-unstable-source]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Source
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/src/
+name=Unstable development versions of GIMP for Fedora 16 - $basearch - Source
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/src/
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
@@ -269,14 +274,14 @@ EOF
 cat >> /etc/yum.repos.d/fedora-cinnamon.repo << EOF
 [fedora-cinnamon]
 name=Cinnamon provides core user interface functions for the GNOME 3 desktop
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-$releasever/$basearch/
+baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-16/$basearch/
 enabled=1
 skip_if_unavailable=1
 gpgcheck=0
 
 [fedora-cinnamon-source]
 name=Cinnamon provides core user interface functions for the GNOME 3 desktop - Source
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-$releasever/SRPMS
+baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-16/SRPMS
 enabled=0
 skip_if_unavailable=1
 gpgcheck=0
@@ -285,8 +290,8 @@ EOF
 # Add Parsidora repository
 cat >> /etc/yum.repos.d/parsidora.repo << EOF
 [parsidora]
-name=Parsidora $releasever – $basearch
-baseurl=http://parsidora.sourceforge.net/releases/$releasever/repos/parsidora/$basearch
+name=Parsidora 16 – $basearch
+baseurl=http://parsidora.sourceforge.net/releases/16/repos/parsidora/$basearch
 skip_if_unavailable=1
 gpgcheck=0
 EOF
