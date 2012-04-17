@@ -318,7 +318,7 @@ wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/mas
 wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
 wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
 wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
-
+cp solarized_dark.xml 
 gsettings set org.gnome.gedit.preferences.editor scheme 'solarized_dark'
 cp dircolors.ansi-dark ~/.dircolors
 eval `dircolors ~/.dircolors`
