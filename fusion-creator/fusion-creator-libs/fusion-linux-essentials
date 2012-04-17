@@ -308,6 +308,16 @@ gsettings set org.gnome.desktop.background show-desktop-icons true
 # set Faience-Azur as default icon theme
 gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
+# Solarized colour theme
+mkdir ~/.solarized
+cd ~/.solarized
+wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
+wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
+cp dircolors.ansi-dark ~.dircolors
+eval `dircolors ~/.dircolors`
+cd ~
+
+
 else
 	echo ""
 	echo -e "You can't proceed with out installing Fusion Essentials, exiting."
