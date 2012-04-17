@@ -21,6 +21,7 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
   Hit any key to install Fusion Linux Essentials, or \"s\" to skip..."
 
 
+$DIR='pwd'
 read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
