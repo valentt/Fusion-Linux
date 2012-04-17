@@ -52,7 +52,7 @@ Find Fusion 16 name
 
 Solarized colour theme
  - Solarized - http://ethanschoonover.com/solarized
- - Gnome Terminal - http://www.webupd8.org/2011/04/solarized-must-have-color-paletter-for.html
+ - Gnome Terminal and Gedit - http://www.webupd8.org/2011/04/solarized-must-have-color-paletter-for.html
 
 
 Import GPG keys, example: rpm -import http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/RPM-GPG-KEY-nphilipp
