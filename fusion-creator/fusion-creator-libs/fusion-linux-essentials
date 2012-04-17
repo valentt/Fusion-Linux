@@ -390,6 +390,7 @@ echo ""
 echo "Fortune failed to install"
 fi
 
+cd $DIR
 
 else
 	echo ""
