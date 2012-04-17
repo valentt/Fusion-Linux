@@ -309,12 +309,18 @@ gsettings set org.gnome.desktop.background show-desktop-icons true
 gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
 # Solarized colour theme
+echo ""
+echo -e "Enabling Solarized theme for gnome-terminal"
+echo ""
 mkdir ~/.solarized
 cd ~/.solarized
 wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
 wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
-cp dircolors.ansi-dark ~.dircolors
+cp dircolors.ansi-dark ~/.dircolors
 eval `dircolors ~/.dircolors`
+git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+cd gnome-terminal-colors-solarized
+./set_dark.sh
 cd ~
 
 
