@@ -82,7 +82,7 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 
 # remove this session file from gnome-session package to make cinnamon the default
 # temporary hack till this file is split up from the package
-rm -rf /usr/share/xsessions/gnome.session
+# rm -rf /usr/share/xsessions/gnome.session
 
 # testing new gsetting system scheme
 cat >> /usr/share/glib-2.0/schemas/01-fusion-settings << EOF
