@@ -222,6 +222,7 @@ GoogleRepo
 AdobeRepo
 ChromiumRepo
 SkypeRepo
+GimpRepo
 ParsidoraRepo
 
 if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fusion-google.repo ] && [ -f /etc/yum.repos.d/fusion-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fusion-skype.repo ] && [ -f /etc/yum.repos.d/fusion-fedorautils.repo ]; then
