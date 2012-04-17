@@ -247,7 +247,7 @@ sleep 5
 echo -e "Installing Fedora-utils package"
 yum install -y --nogpgcheck fedorautils
 
-yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift 
+yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod
 
 # tweak swappiness
 echo "" >>/etc/sysctl.conf
@@ -327,8 +327,31 @@ eval `dircolors ~/.dircolors`
 git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
 cd gnome-terminal-colors-solarized
 ./set_dark.sh
-
 cd ~
+
+# Adding Fortune to terminal
+s=`cat ~/bashrc | grep -i "# Display Fortune"`
+if [ -n "$s" ]; then
+echo ""
+echo -e "Fortune already installed"
+echo ""
+else
+cp ~/bashrc ~/bashrc.bak
+cat <<EOF | tee -a ~/bashrc
+# Display Fortune
+if [ "\$PS1" ]; then
+fortune
+fi
+EOF
+fi
+s=`cat ~/bashrc | grep -i "# Display Fortune"`
+if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
+echo ""
+echo "Fortune successfuly installed"
+else
+echo ""
+echo "Fortune failed to install"
+fi
 
 
 else
