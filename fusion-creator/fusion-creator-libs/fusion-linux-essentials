@@ -316,11 +316,13 @@ mkdir ~/.solarized
 cd ~/.solarized
 wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
 wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
+wget https://github.com/mukashi/solarized/raw/c44f11f6312924223a6024d23028cbe257e2b251/gedit-colors-solarized/solarized_dark.xml
 cp dircolors.ansi-dark ~/.dircolors
 eval `dircolors ~/.dircolors`
 git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
 cd gnome-terminal-colors-solarized
 ./set_dark.sh
+c
 cd ~
 
 
