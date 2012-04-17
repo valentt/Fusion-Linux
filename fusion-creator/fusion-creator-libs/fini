@@ -1,0 +1,25 @@
+clear
+
+echo "  -----------------------------[ screen $STEPS of $STEPS ]----------------------------
+
+   _____ ___ _   _ ___ ____  _   _ _____ ____  _ 
+  |  ___|_ _| \ | |_ _/ ___|| | | | ____|  _ \| |
+  | |_   | ||  \| || |\___ \| |_| |  _| | | | | |
+  |  _|  | || |\  || | ___) |  _  | |___| |_| |_|
+  |_|   |___|_| \_|___|____/|_| |_|_____|____/(_)
+
+
+  THANK YOU FOR USING FUSION LINUX! :)
+
+  If you have any questions or feedback, please come and visit us on the web:
+
+  Homepage: http://fusionlinux.org
+    Forums: http://groups.google.com/group/fusionlinux/
+      Blog: http://fusionlinux.org/blog/
+
+  You can always run this wizard again by typing fusion-welcome in terminal
+
+  Hit any key to exit..."
+
+read -n1 a
+clear

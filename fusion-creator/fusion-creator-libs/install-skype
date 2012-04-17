@@ -1,0 +1,45 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  SKYPE
+  ---------------
+  By default, Fusion Linux does not come with Skype support.  We have 
+  contacted Skype and asked for permission to have Skype client isntalled
+  by default but Skype denied our request.
+
+  Would you like to install Skype now?
+
+      yum install skype
+
+  You will be promted for your administrator password, so please
+  have it ready.
+
+  Note: additional packages listed as dependencies may also be installed.
+
+  Hit any key to install Skype, or \"s\" to skip..."
+
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+echo ""
+#Installing Skype"
+echo -e "Installing Skype"
+if [ -e /usr/bin/skype ]; then
+	echo -e "Skype already installed"
+	
+else
+	su - -c '
+	echo ""
+	echo -e "Installing Skype"
+	yum install -y qt.i686 qt-x11.i686 libXv.i686 libXScrnSaver.i686
+	yum localinstall -y --nogpgcheck http://download.skype.com/linux/skype-2.2.0.35-fedora.i586.rpm'
+	if [ -e /usr/bin/skype ]; then
+		echo -e "Skype successfully installed"
+	else
+		echo -e "Skype failed to install"
+	fi
+fi
+fi
+sleep 5

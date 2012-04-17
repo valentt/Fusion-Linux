@@ -1,0 +1,28 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  DROPBOX - ONLINE BACKUP, FILE SYNC AND SHARING MADE EASY
+  --------------------------------------------------------
+
+  Dropbox is the easiest way to store, sync, and, share files online. 
+  There's no complicated interface to learn. Dropbox works seamlessly
+  with your operating system and automatically makes sure your files
+  are up-to-date. Available for Linux, Mac and Windows.
+
+  Homepage: https://www.dropbox.com
+
+  Would like to run Dropbox and automatically start each time you log on?
+
+
+      add dropbox.desktop to your ~/.config/autostart folder ?
+
+
+  Hit any key to add Dropbox to your autostart folder, or \"s\" to skip..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    cp /usr/share/applications/dropbox.desktop ~/.config/autostart
+    dropbox start -i &> /dev/null &
+fi

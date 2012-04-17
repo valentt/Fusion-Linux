@@ -1,0 +1,41 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  FEDORA-UTILS
+  ---------------
+  Fedora-utils is essential part of setting up Fusion Linux,  
+  
+  Fedora Utils lets you install codecs and additional software, 
+  fix problems, tweak and cleanup your system, view system 
+  information and much more with just few clicks.
+
+  Would you like to install Fedora-utils now?
+
+      yum install fedorautils
+
+  You will be promted for your administrator password, so please
+  have it ready.
+
+  Note: additional packages listed as dependencies may also be installed.
+
+  Hit any key to install Fedora-utils, or \"s\" to skip..."
+
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    su - -c 'cat >> /etc/yum.repos.d/fedorautils.repo << EOF
+[fedorautils] 
+name=Fedora Utils
+baseurl=http://master.dl.sourceforge.net/project/fedorautils/
+enabled=1
+metadata_expire=1d
+gpgcheck=0
+EOF
+yum install -y --nogpgcheck fedorautils'
+
+fi
+echo -e "You can't proceed with out installing Fedora-Utils, exiting.
+exit 0

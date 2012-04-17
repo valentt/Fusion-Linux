@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=gnome-terminal -e fusion-creator
+Categories=Application;Preferences;
+Name=Fusion Welcome
+Icon=help-browser
+Name[en_US]=fusion-creator.desktop

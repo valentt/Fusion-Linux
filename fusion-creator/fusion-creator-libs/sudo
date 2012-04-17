@@ -1,0 +1,33 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  SETUP SUDO FOR YOUR USER ACCOUNT
+  ----------------------------
+
+  Some people like to use sudo instead of the root account for doing
+  administrative tasks, especially if you already got used to using
+  sudo on other Linux distros. 
+
+  If you choose to enable sudo you can run commands in terminal with root 
+  privileges using only your personal account password. 
+
+  Would like to enable sudo? If you are uncertain skip this step.
+
+
+      Enable sudo for user \"$USER\" ?
+
+
+  You will be promted for your administrator password, so please
+  have it ready.
+
+  Hit any key to add SUDO support for $USER user, or \"s\" to skip..."
+
+read -n1 a
+a=`echo $a | tr '[A-Z]' '[a-z]'`
+if [ "$a" != "s" ]; then
+    echo ""
+    echo "$USER ALL=(ALL)      NOPASSWD: ALL" > SUDO
+    su -c 'cat SUDO >> /etc/sudoers'
+    rm SUDO
+fi
