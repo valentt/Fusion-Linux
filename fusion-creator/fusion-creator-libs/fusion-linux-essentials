@@ -288,11 +288,11 @@ sleep 5
 echo ""
 echo -e "Fusion Linux Rebranding"
 echo ""
-echo "Fusion Linux release 16 (Creator)" > /etc/fedora-release
+echo "Fusion release 16 (Creator)" > /etc/fedora-release
 echo "cpe:/o:fusionlinux:fusion:16" > /etc/system-release-cpe
-echo "Fusion Linux release 16 (Creator)
+echo "Fusion release 16 (Creator)
 Kernel \r on an \m (\l)" > /etc/issue
-echo "Fusion Linux release 16 (Creator)
+echo "Fusion release 16 (Creator)
 Kernel \r on an \m (\l)" > /etc/issue.net
 
 # Send Smolt profile
