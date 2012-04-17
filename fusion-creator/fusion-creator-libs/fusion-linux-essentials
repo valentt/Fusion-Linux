@@ -247,7 +247,7 @@ sleep 5
 echo -e "Installing Fedora-utils package"
 yum install -y --nogpgcheck fedorautils
 
-yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift
+yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift 
 
 # tweak swappiness
 echo "" >>/etc/sysctl.conf
@@ -310,7 +310,7 @@ gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
 # Solarized colour theme
 echo ""
-echo -e "Enabling Solarized theme for gnome-terminal"
+echo -e "Enabling Solarized theme for Gedit and gnome-terminal"
 echo ""
 mkdir ~/.solarized
 cd ~/.solarized
@@ -318,12 +318,14 @@ wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/mas
 wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
 wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
 wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
+
+gsettings set org.gnome.gedit.preferences.editor scheme 'solarized_dark'
 cp dircolors.ansi-dark ~/.dircolors
 eval `dircolors ~/.dircolors`
 git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
 cd gnome-terminal-colors-solarized
 ./set_dark.sh
-c
+
 cd ~
 
 
