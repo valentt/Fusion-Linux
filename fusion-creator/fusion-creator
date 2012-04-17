@@ -33,10 +33,10 @@ STEPS=$((STEPS-1))
 STEP=$((STEP+1))
 . $LIBDIR/intro
 
-#. $LIBDIR/check-internet-connection
+. $LIBDIR/check-internet-connection
 
-#STEP=$((STEP+1))
-#. $LIBDIR/yum-update
+STEP=$((STEP+1))
+. $LIBDIR/yum-update
 
 #STEP=$((STEP+1))
 #. $LIBDIR/fedora-utils
