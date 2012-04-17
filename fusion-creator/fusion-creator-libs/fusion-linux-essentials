@@ -163,6 +163,41 @@ EOF
 fi
 }
 
+function GimpRepo()
+{
+# Add Gimp Repo
+if [ -f /etc/yum.repos.d/fusion-gimp-unstable.repo ]; then
+echo -e "Google repo already present"
+else
+echo -e "Adding Gimp repo"
+curl -s http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/RPM-GPG-KEY-nphilipp -O
+rpm --import RPM-GPG-KEY-nphilipp
+rm -f RPM-GPG-KEY-nphilipp
+cat <<EOF | tee /etc/yum.repos.d/fusion-gimp-unstable.repo
+[fedora-gimp-unstable]
+name=Unstable development versions of GIMP for Fedora $releasever - $basearch
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+
+[fedora-gimp-unstable-debuginfo]
+name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Debug
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/debug/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+
+[fedora-gimp-unstable-source]
+name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Source
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/src/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
+EOF
+fi
+}
+
 function ParsidoraRepo()
 {
 if [ -f /etc/yum.repos.d/fusion-parsidora.repo ]; then
