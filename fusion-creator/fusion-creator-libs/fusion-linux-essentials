@@ -176,22 +176,22 @@ rpm --import RPM-GPG-KEY-nphilipp
 rm -f RPM-GPG-KEY-nphilipp
 cat <<EOF | tee /etc/yum.repos.d/fusion-gimp-unstable.repo
 [fedora-gimp-unstable]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/
+name=Unstable development versions of GIMP for Fedora \$releasever - \$basearch
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-\$releasever/\$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
 
 [fedora-gimp-unstable-debuginfo]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Debug
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/$basearch/debug/
+name=Unstable development versions of GIMP for Fedora $releasever - \$basearch - Debug
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-\$releasever/\$basearch/debug/
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
 
 [fedora-gimp-unstable-source]
-name=Unstable development versions of GIMP for Fedora $releasever - $basearch - Source
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-$releasever/src/
+name=Unstable development versions of GIMP for Fedora \$releasever - \$basearch - Source
+baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-\$releasever/src/
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
