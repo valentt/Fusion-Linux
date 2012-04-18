@@ -284,7 +284,7 @@ sleep 5
 echo -e "Installing Fedora-utils package"
 yum install -y --nogpgcheck fedorautils
 
-yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod
+yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod wget
 
 # tweak swappiness
 echo "" >>/etc/sysctl.conf
