@@ -168,7 +168,7 @@ function GimpRepo()
 {
 # Add Gimp Repo
 if [ -f /etc/yum.repos.d/fusion-gimp-unstable.repo ]; then
-echo -e "Google repo already present"
+echo -e "Gimp repo already present"
 else
 echo -e "Adding Gimp repo"
 curl -s http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/RPM-GPG-KEY-nphilipp -O
