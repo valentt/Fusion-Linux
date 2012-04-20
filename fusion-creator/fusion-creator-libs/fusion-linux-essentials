@@ -354,7 +354,7 @@ else
 	echo ""
 	echo -e "Installing Universal GNOME 3 theme"
 	cd /tmp/
-	curl -O http://www.deviantart.com/download/271509619/universal_by_nale12-d4hne5v.zip
+	curl -L -O http://www.deviantart.com/download/271509619/universal_by_nale12-d4hne5v.zip
 	unzip universal_by_nale12*
 	mv Universal /usr/share/themes/
 	mv Universal.emerald /usr/share/themes/
@@ -365,7 +365,6 @@ else
 	fi
 fi
 sleep 3
-
 
 # Fusion Linux Rebranding
 echo ""
