@@ -118,6 +118,31 @@ echo -e "Adobe repo already present"
 else
 yum localinstall -y --nogpgcheck http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
 fi
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+fi
+}
+
+function DropboxRepo()
+{
+# Set up Dropbox Repo
+if [ -f /etc/yum.repos.d/fusion-dropbox.repo ]; then
+echo -e "Dropbox repo already present"
+else
+echo -e "Adding Dropbox repo"
+cat <<EOF | tee /etc/yum.repos.d/fusion-dropbox.repo
+[Dropbox]
+name=Dropbox Repository
+baseurl=http://linux.dropbox.com/fedora/16/
+baseurl=http://linux.dropbox.com/fedora/15/
+gpgkey=http://linux.dropbox.com/fedora/rpm-public-key.asc
+skip_if_unavailable=1
+EOF
+rpm --import http://linux.dropbox.com/fedora/rpm-public-key.asc
+if [ -f /etc/yum.repos.d/fusion-dropbox.repo ]; then
+echo -e "Dropbox repo successfuly installed"
+else
+echo -e "Dropbox repo installation failed"
+fi
 fi
 }
 
@@ -225,6 +250,7 @@ ChromiumRepo
 SkypeRepo
 GimpRepo
 ParsidoraRepo
+DropboxRepo
 
 if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fusion-google.repo ] && [ -f /etc/yum.repos.d/fusion-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fusion-skype.repo ] && [ -f /etc/yum.repos.d/fusion-fedorautils.repo ]; then
 echo -e "Additional repos successfuly added"
@@ -242,7 +268,7 @@ yum install -y cinnamon
 
 # Audio and video codecs installation
 echo -e "Installing audio and video codecs"
-yum install -y gnome-mplayer gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-bad-free gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg faac faad2 libdca libmad libmatroska xvidcore vlc
+yum install -y flash-plugin gnome-mplayer gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-bad-free gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg faac faad2 libdca libmad libmatroska xvidcore vlc
 # Install MPlayer Codecs if Architecture is 32-bit
 if [ $(uname -i) = "i386" ]; then
 	if [ -d /usr/local/lib/codecs ]; then
@@ -283,8 +309,9 @@ sleep 5
 
 echo -e "Installing Fedora-utils package"
 yum install -y --nogpgcheck fedorautils
+rm /etc/yum.repos.d/fedorautils.repo
 
-yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod wget
+yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-dropbox nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod wget
 
 # tweak swappiness
 echo "" >>/etc/sysctl.conf

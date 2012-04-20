@@ -24,5 +24,28 @@ read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
     echo ""
-    su - -c 'yum install -y google-earth-stable'
+echo -e "Installing Google Earth"
+
+if [ -f /usr/bin/google-earth ]; then
+echo -e "Google Earth already installed"
+else
+su - -c '
+yum install -y mesa-libGL.i686 bitstream-vera-fonts-common libxml2.i686 gtk2.i686 libSM.i686 qt-x11 redhat-lsb-graphics.i686 redhat-lsb-printing.i686 redhat-lsb.i686
+
+if [ $(uname -i) = "i386" ]; then
+yum localinstall -y --nogpgcheck http://dl.google.com/dl/earth/client/current/google-earth-stable_current_i386.rpm
+elif [ $(uname -i) = "x86_64" ]; then
+yum localinstall -y --nogpgcheck http://dl.google.com/dl/earth/client/current/google-earth-stable_current_x86_64.rpm
+fi
+
+if [ -f /usr/bin/google-earth ]; then
+echo ""
+echo -e "Google Earth successfuly installed."
+else
+echo ""
+echo -e "Google Earth installation failed."
+fi
+'
+fi
+sleep 5
 fi
