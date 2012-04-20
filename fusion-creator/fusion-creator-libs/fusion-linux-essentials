@@ -319,12 +319,11 @@ echo "vm.swappiness=10" >>/etc/sysctl.conf
 echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 
 # Install Faience GNOME 3 icon theme
-echo ""
-echo -e "Installing Faience GNOME 3 icon theme"
-
 if [ -d /usr/share/icons/Faience-Azur ] ; then
 	echo -e "Faience Icons already installed"
 else
+	echo ""
+	echo -e "Installing Faience GNOME 3 icon theme"
 	cd /tmp/
 	mkdir -p faience_icon_theme
 	cd faience_icon_theme
@@ -346,7 +345,27 @@ else
 		echo -e "Faience Icons installation failed"
 	fi
 fi
-sleep 5
+sleep 3
+
+# Install Universal GNOME 3 theme
+if [ -d /usr/share/theme/Universal ] ; then
+	echo -e "Universal theme already installed"
+else
+	echo ""
+	echo -e "Installing Universal GNOME 3 theme"
+	cd /tmp/
+	curl -O http://www.deviantart.com/download/271509619/universal_by_nale12-d4hne5v.zip
+	unzip universal_by_nale12*
+	mv Universal /usr/share/themes/
+	mv Universal.emerald /usr/share/themes/
+	if [ -d /usr/share/theme/Universal ] ; then
+		echo -e "Universal theme installed successfully"
+	else
+		echo -e "Universal theme installation failed"
+	fi
+fi
+sleep 3
+
 
 # Fusion Linux Rebranding
 echo ""
@@ -360,6 +379,8 @@ echo "Fusion release 16 (Creator)
 Kernel \r on an \m (\l)" > /etc/issue.net
 
 # Send Smolt profile
+echo ""
+echo -e "Sending Smolt profile"
 smoltSendProfile -a
 
 '
@@ -368,6 +389,9 @@ gsettings set org.gnome.gedit.preferences.ui max-recents '10'
 
 # show icons on Desktop
 gsettings set org.gnome.desktop.background show-desktop-icons true
+
+# set Universal as default gtk-theme
+gsettings set org.gnome.desktop.interface gtk-theme 'Universal'
 
 # set Faience-Azur as default icon theme
 gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
