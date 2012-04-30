@@ -431,7 +431,7 @@ fortune
 fi
 EOF
 fi
-s=`cat ~/bashrc | grep -i "# Display Fortune"`
+s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
 echo ""
 echo "Fortune successfuly installed"
