@@ -417,14 +417,14 @@ cd gnome-terminal-colors-solarized
 cd ~
 
 # Adding Fortune to terminal
-s=`cat ~/bashrc | grep -i "# Display Fortune"`
+s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ]; then
 echo ""
 echo -e "Fortune already installed"
 echo ""
 else
-cp ~/bashrc ~/bashrc.bak
-cat <<EOF | tee -a ~/bashrc
+cp ~/.bashrc ~/.bashrc.bak
+cat <<EOF | tee -a ~/.bashrc
 # Display Fortune
 if [ "\$PS1" ]; then
 fortune
