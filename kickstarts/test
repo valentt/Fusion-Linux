@@ -4,7 +4,7 @@
 directory=/home/fusion-linux
 
 freespace=`df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'`
-minspace=10
+minspace=5
 enough=`echo $freespace $minspace | awk '{if ($1 > $2) print "yes"; else print "no"}'`
 
 if [ "$enough" = yes ]; then
@@ -14,3 +14,5 @@ else
 	echo -e "\nNot enough free space, you have $freespace GB free, but atleast $minspace GB is needed."
 	exit
 fi
+
+
