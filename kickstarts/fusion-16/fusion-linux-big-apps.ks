@@ -9,6 +9,9 @@
 #gnumeric
 
 # internet apps
+##chromium # 92 M temporary bug - requires libc.so.6(GLIBC_2.15)
+#google-chrome-stable
+#chromium-browser
 thunderbird # 46 M
 
 # graphics and photo apps
