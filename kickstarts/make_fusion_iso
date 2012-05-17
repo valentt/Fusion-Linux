@@ -21,6 +21,7 @@ if [ ! -d $directory ]; then
 		echo -e "\nWhen you change your mind restart the script.\n"
 		exit
 	fi
+fi
 
 # let's check if target directory has enough free space: 
 if [ `df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'` -gt 10 ]; then
