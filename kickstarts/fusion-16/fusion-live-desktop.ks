@@ -11,7 +11,6 @@ part / --size 4096
 @sound-and-video
 @gnome-desktop
 
-
 # FIXME; apparently the glibc maintainers dislike this, but it got put into the
 # desktop image at some point.  We won't touch this one for now.
 nss-mdns
