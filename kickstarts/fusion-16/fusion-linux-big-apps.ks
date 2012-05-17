@@ -29,7 +29,7 @@ inkscape # 36.6 M
 #kipi-plugins
 
 # audio apps
-banshee
+banshee # has mono as dependency, 25 M
 #rhythmbox # audio player, 11 M
 # hydrogen # advanced drum machine for Linux, has java-1.5.0 as dependency (48 M), 9.5 M
 # hydrogen-drumkits # additional drum kit sounds for hydrogen, 20 M
