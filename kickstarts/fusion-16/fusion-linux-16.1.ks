@@ -1,15 +1,6 @@
 # Fusion Linux 16
 # valent.turkovic@gmail.com
 
-%include fusion-live-desktop.ks
-%include fusion-live-extras.ks
-%include fusion-live-minimization.ks
-
-# Fusion big packages
-# If you wish to make a more stream-lined Fusion Linux just don't include this file
-%include fusion-linux-big-apps.ks
-
-
 timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
 
