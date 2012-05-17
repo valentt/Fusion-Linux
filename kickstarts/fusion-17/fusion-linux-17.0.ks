@@ -8,7 +8,7 @@ part / --size 6000 --fstype ext4
 #repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/17/Everything/$basearch/os/
 #repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/17/$basearch/
 repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-17&arch=$basearch
-repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-17&arch=$basearch
+repo --name=rpmfusion-free-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-17&arch=$basearch
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-17/$basearch/
 repo --name=fedora-cinnamon --baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-17/$basearch/
 repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/16/repos/parsidora/$basearch
