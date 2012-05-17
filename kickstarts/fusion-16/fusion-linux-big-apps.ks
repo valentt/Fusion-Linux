@@ -3,6 +3,10 @@
 
 %packages
 
+# office apps
 @office # LiberOffice suite, 417 M
 #abiword
 #gnumeric
+
+# internet apps
+thunderbird # 46 M
