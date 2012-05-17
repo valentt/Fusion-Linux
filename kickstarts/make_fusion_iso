@@ -5,7 +5,7 @@
 
 # become root
 echo -e "\nPlease enter your root password\n:"
-su - -c '# become root
+# su - -c '# become root
 
 # edit this entry to specify your target directory
 directory=/home/fusion-linux2
@@ -45,7 +45,7 @@ unzip master
 
 livecd-creator -v -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Linux-17.0 -c $directory/valentt-Fusion-Linux-*/kickstarts/fusion-17/fusion-linux-17.0.ks
 
-'
+# '
 
 # run your Fusin Linux iso image
 # qemu-kvm -m 768 -cdrom Fusion-Linux-17.0.iso
