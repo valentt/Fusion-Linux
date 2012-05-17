@@ -20,7 +20,6 @@ services --enabled=NetworkManager --disabled=network,sshd
 repo --name=fedora --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-17&arch=$basearch
 repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f17&arch=$basearch
 
-
 %packages
 @base-x
 @base
