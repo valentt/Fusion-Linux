@@ -1,4 +1,4 @@
-# fedora-live-base.ks
+# fusion-live-base.ks
 #
 # Defines the basics for all kickstarts in the fedora-live branch
 # Does not include package selection (other then mandatory)
@@ -17,10 +17,9 @@ xconfig --startxonboot
 part / --size 3072 --fstype ext4
 services --enabled=NetworkManager --disabled=network,sshd
 
-#repo --name=rawhide --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=rawhide&arch=$basearch
 repo --name=fedora --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-17&arch=$basearch
 repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f17&arch=$basearch
-#repo --name=updates-testing --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-testing-f17&arch=$basearch
+
 
 %packages
 @base-x
