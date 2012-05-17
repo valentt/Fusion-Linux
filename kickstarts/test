@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# edit this entry to specify your target directory
+directory=/home/fusion-linux2
+
+# let's check if target directory is present:
+if [ ! -d $directory ]; then
+	echo -e "Directory path to $directory not present, would you like to create it? (y/n): "
+	read -n1 a
+	a=`echo $a | tr '[A-Z]' '[a-z]'`
+	if [ "$a" = "y" ]; then
+		mkdir -p $directory
+	else
+		echo -e "\nWhen you change your mind restart the script.\n"
+		exit
+	fi
