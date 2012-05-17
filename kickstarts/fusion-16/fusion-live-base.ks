@@ -1,4 +1,4 @@
-# fedora-live-base.ks
+# fusion-live-base.ks
 #
 # Defines the basics for all kickstarts in the fedora-live branch
 # Does not include package selection (other then mandatory)
