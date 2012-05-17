@@ -236,36 +236,13 @@ lm_sensors # hardware monitoring tools, 400 k
 # AcetoneISO2 # CD/DVD Image Manipulator, 1.7 M
 # akmod-wl # driver for broadcom wireless cards # no more a separate package?
 # cnetworkmanager # Command Line Interface for NetworkManager - removed?
-
-# minimal development package, 34 M
-make
-binutils
-gcc
-glibc-devel
-glibc-headers
-libgomp
-patch
-kernel-headers
-kernel-devel
-
-
-# Java 1.6 (85 M)
-java-1.6.0-openjdk
-jline
-rhino
-tzdata-java
+#fedora-ksplice # ksplice utility enables you have kernel updates without reboot
+# vim-enhanced # vi is enough for most people, 26M - 65 M with perl dependency
+xorg-x11-apps # xkill app for killing unresponsive apps
 
 # remove Java 1.5 (48 M)
 -@java-1.5.0
 -libgcj
-
-
-wine # 83 M
-xorg-x11-apps # xkill app for killing unresponsive apps
-#playonlinux # Run your Windows applications on Linux easily via wine 6 M
-#fedora-ksplice # ksplice utility enables you have kernel updates without reboot
-# vim-enhanced # vi is enough for most people, 26M - 65 M with perl dependency
-
 
 @croatian-support # this distro has english and croatian support by default
 
