@@ -4,14 +4,15 @@ yum install livecd-tools spin-kickstarts qemu-kvm -y
 
 
 
-qemu-kvm -m 768 -cdrom Fusion-Linux-16.1.iso
+# run your Fusin Linux iso image
+# qemu-kvm -m 768 -cdrom Fusion-Linux-17.0.iso
 
 
 
-Making a 32-bit spin ISO on a 64-bit machine
-https://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD#Making_a_32-bit_spin_ISO_on_a_64-bit_machine
+# Making a 32-bit spin ISO on a 64-bit machine
+# https://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD#Making_a_32-bit_spin_ISO_on_a_64-bit_machine
 
-If you have an x86_64 machine you're building on but you want a 32-bit happy iso image, add the following before your livecd-creator command:
+# If you have an x86_64 machine you're building on but you want a 32-bit happy iso image, add the following before your livecd-creator command:
 
-setarch i686 livecd-creator [...]
+# setarch i686 livecd-creator [...]
 
