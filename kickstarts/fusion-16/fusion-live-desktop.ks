@@ -10,7 +10,7 @@ part / --size 4096
 @graphical-internet
 @sound-and-video
 @gnome-desktop
-@office
+
 
 # FIXME; apparently the glibc maintainers dislike this, but it got put into the
 # desktop image at some point.  We won't touch this one for now.
