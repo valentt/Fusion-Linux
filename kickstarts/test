@@ -9,6 +9,6 @@ if [[ 9 -gt 10 ]]; then
 	echo -e "\nYour chosen target partition has over 10GB of free space, save to continue.\n"
 	sleep 5
 else
-	echo -e "\nNot enough free space, make sure your target partition has over 10GB of free space."
+	echo -e "\nNot enough free space, make sure your target partition has over 10GB of free space.\n"
 	exit
 fi
