@@ -14,3 +14,4 @@ if [ ! -d $directory ]; then
 		echo -e "\nWhen you change your mind restart the script.\n"
 		exit
 	fi
+fi
