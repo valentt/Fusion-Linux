@@ -2,8 +2,9 @@
 
 # edit this entry to specify your target directory
 directory=/home/fusion-linux
+freespace=`df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'`
 
-if [ "`df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'`" -gt "100" ]; then
+if [ "$freespace" -gt "100" ]; then
 	echo -e "\nYour chosen target partition has over 10GB of free space, save to continue.\n"
 	sleep 5
 else
