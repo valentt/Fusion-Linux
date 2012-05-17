@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # edit this entry to specify your target directory
+su - -c '
 directory=/home/fusion-linux
 
 freespace=`df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'`
@@ -14,5 +15,4 @@ else
 	echo -e "\nNot enough free space, you have $freespace GB free, but atleast $minspace GB is needed."
 	exit
 fi
-
-
+'
