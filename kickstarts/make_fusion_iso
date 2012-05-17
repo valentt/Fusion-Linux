@@ -11,7 +11,7 @@ echo -e "\nPlease enter your root password\n:"
 directory=/home/fusion-linux2
 
 # let's check if target directory is present:
-if [ -d $directory ]; then
+if [ ! -d $directory ]; then
 	echo -e "Directory path to $directory not present, would you like to create it? (y/n): "
 	read -n1 a
 	a=`echo $a | tr '[A-Z]' '[a-z]'`
