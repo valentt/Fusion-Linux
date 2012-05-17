@@ -27,3 +27,7 @@ inkscape # 36.6 M
 # inkscape-docs # examples and demos, 37 M
 #hugin # Photo panorama application, 49 M
 #kipi-plugins
+
+# audio apps
+banshee
+#rhythmbox # audio player, 11 M
