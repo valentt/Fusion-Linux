@@ -3,8 +3,8 @@
 # http://fedoraproject.org/wiki/SIGs/Desktop
 # mailto:desktop@lists.fedoraproject.org
 
-%include fedora-live-desktop.ks
-%include fedora-live-minimization.ks
+%include fusion-live-desktop.ks
+%include fusion-live-minimization.ks
 
 %packages
 # First, no office
