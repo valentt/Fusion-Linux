@@ -25,13 +25,16 @@ mkdir -p
 # first install packages
 yum install livecd-tools spin-kickstarts qemu-kvm wget unzip -y
 
-# switch to your target directory
+# switch to your target directory and create work directories
 cd $directory
+mkdir -p $directory/temp
+mkdir -p $directory/yum-cache
 
 # now grab latest Fusion Linux kickstart files
 wget https://github.com/valentt/Fusion-Linux/zipball/master
-unzip 
+unzip master
 
+livecd-creator -v -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Linux-17.0 -c $directory/valentt-Fusion-Linux-*/kickstarts/fusion-17/fusion-linux-17.0.ks
 
 # run your Fusin Linux iso image
 # qemu-kvm -m 768 -cdrom Fusion-Linux-17.0.iso
