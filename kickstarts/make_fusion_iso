@@ -29,7 +29,7 @@ fi
 
 # let's check if target directory has enough free space: 
 freespace=`df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'`
-minspace=10
+minspace=9.7
 enough=`echo $freespace $minspace | awk '{if ($1 > $2) print "yes"; else print "no"}'`
 
 if [ "$enough" = yes ]; then
