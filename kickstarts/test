@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # edit this entry to specify your target directory
-directory=/home/fusion-linux2
+directory=/home/fusion-linux
 
 if [ `df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'` > 10 ]; then
 	echo -e "\nYour chosen target partition has over 10GB of free space, save to continue.\n"
