@@ -17,6 +17,10 @@ if [ ! -d $directory ]; then
 	a=`echo $a | tr '[A-Z]' '[a-z]'`
 	if [ "$a" = "y" ]; then
 		mkdir -p $directory
+		if [ ! -d $directory ]; then
+			echo -e "\n Directory not created, something is wrong. Exiting."
+			exit
+		fi
 	else
 		echo -e "\nWhen you change your mind restart the script.\n"
 		exit
