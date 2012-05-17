@@ -2,21 +2,14 @@
 # valent.turkovic@gmail.com
 # http://fusionlinux.org/blog/
 
-%include fedora-live-desktop.ks
-%include fusion-live-extras.ks
-%include fusion-live-minimization.ks
-
-
-
 timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
 
-repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/$basearch/os/
-repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/$basearch/
-repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/$basearch/
-repo --name=fedora-gimp-unstable --baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/$basearch/
+#repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/17/Everything/$basearch/os/
+#repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/$basearch/
+#repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-16/$basearch/
 
-#repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/$basearch/os/
+repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/$basearch/os/
 #repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/$basearch/os/
 
 
