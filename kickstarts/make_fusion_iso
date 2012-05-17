@@ -58,4 +58,3 @@ livecd-creator -v -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Li
 # Create 32bit image on x86_64 machine, add the following before your livecd-creator command:
 
 # setarch i686 livecd-creator [...]
-
