@@ -1,7 +1,28 @@
+#!/bin/bash
+# Fusion Linux image creator script
+
+# make sure your target partition has atleast 10GB of free space
+
+# edit this entry to specify your target directory
+directory=/home/fusion-linux
+
+# let's check if target directory is present:
+if [ -d $directory ]; then
+	echo "Directory path to $directory not present, would you like to create it? (y/n): "
+	read -n1 a
+	a=`echo $a | tr '[A-Z]' '[a-z]'`
+	if [ "$a" = "y" ]; then
+		
+
+# become root
 su -
+
+mkdir -p
+
+# first install packages
 yum install livecd-tools spin-kickstarts qemu-kvm -y
 
-
+# now grab latest
 
 
 # run your Fusin Linux iso image
