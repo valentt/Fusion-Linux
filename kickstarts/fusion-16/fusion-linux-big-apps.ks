@@ -58,3 +58,14 @@ java-1.6.0-openjdk
 jline
 rhino
 tzdata-java
+
+# minimal development package, 34 M
+make
+binutils
+gcc
+glibc-devel
+glibc-headers
+libgomp
+patch
+kernel-headers
+kernel-devel
