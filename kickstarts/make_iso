@@ -31,8 +31,6 @@ else
 	exit
 fi
 
-
-
 # first install packages
 yum install livecd-tools spin-kickstarts qemu-kvm wget unzip -y
 
