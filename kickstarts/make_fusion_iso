@@ -8,7 +8,7 @@ echo -e "\nPlease enter your root password:\n"
 #su - -c '
 
 # edit this entry to specify your target directory
-directory=/home/fusion-linux
+directory=/home/fusion-linux2
 
 # let's check if target directory is present:
 if [ ! -d $directory ]; then
