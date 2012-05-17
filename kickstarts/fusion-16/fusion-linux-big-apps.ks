@@ -12,6 +12,7 @@
 thunderbird # 46 M
 
 # graphics and photo apps
+blender # 3D modeling, visualization and animation, 24 M
 gimp # most powerful open source image editor 50 M
 # additional GIMP plugins 14 M
 gimp-data-extras
@@ -21,3 +22,7 @@ gimp-resynthesizer
 gimp-lqr-plugin
 GREYCstoration-gimp
 ufraw-gimp
+scribus # 43 M
+inkscape # 36.6 M
+# inkscape-docs # examples and demos, 37 M
+
