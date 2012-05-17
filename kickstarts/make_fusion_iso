@@ -3,8 +3,6 @@
 
 # make sure your target partition has atleast 10GB of free space
 
-
-
 # become root
 echo "\nPlease enter your root password\n"
 su - -c '
