@@ -25,11 +25,14 @@ fi
 
 # let's check if target directory has enough free space: 
 freespace=`df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'`
+minspace=10
+enough=`echo $freespace $minspace | awk '{if ($1 > $2) print "yes"; else print "no"}'`
+
 if [ "$freespace" -gt "100" ]; then
-	echo -e "\nYour chosen target partition has over 10GB of free space, save to continue.\n"
+	echo -e "\nYour chosen target partition has $freespace GB of free space,\n it is safa to continue.\n"
 	sleep 5
 else
-	echo -e "\nNot enough free space, make sure your target partition has over 10GB of free space."
+	echo -e "\nNot enough free space, you have $freespace GB free, but atleast $minspace GB is needed."
 	exit
 fi
 
