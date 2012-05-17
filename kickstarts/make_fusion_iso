@@ -18,7 +18,7 @@ if [ ! -d $directory ]; then
 	if [ "$a" = "y" ]; then
 		mkdir -p $directory
 		if [ ! -d $directory ]; then
-			echo -e "\n Directory not created, something is wrong. Exiting."
+			echo -e "\nDirectory not created, something is wrong. Exiting."
 			exit
 		fi
 	else
