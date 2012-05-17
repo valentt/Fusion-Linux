@@ -12,7 +12,10 @@ if [ -d $directory ]; then
 	read -n1 a
 	a=`echo $a | tr '[A-Z]' '[a-z]'`
 	if [ "$a" = "y" ]; then
-		
+		mkdir -p $directory
+	else
+		exit
+	fi
 
 # become root
 su -
@@ -20,9 +23,14 @@ su -
 mkdir -p
 
 # first install packages
-yum install livecd-tools spin-kickstarts qemu-kvm -y
+yum install livecd-tools spin-kickstarts qemu-kvm wget unzip-y
 
-# now grab latest
+# switch to your target directory
+cd $directory
+
+# now grab latest Fusion Linux kickstart files
+wget https://github.com/valentt/Fusion-Linux/zipball/master
+unzip 
 
 
 # run your Fusin Linux iso image
