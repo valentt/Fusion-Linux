@@ -23,7 +23,7 @@ su -
 mkdir -p
 
 # first install packages
-yum install livecd-tools spin-kickstarts qemu-kvm wget unzip-y
+yum install livecd-tools spin-kickstarts qemu-kvm wget unzip -y
 
 # switch to your target directory
 cd $directory
