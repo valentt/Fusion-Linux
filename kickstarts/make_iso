@@ -6,6 +6,10 @@
 # edit this entry to specify your target directory
 directory=/home/fusion-linux2
 
+# become root
+echo "please enter your root password"
+su - -c '
+
 # let's check if target directory is present and if it has enough free space:
 if [ -d $directory ]; then
 	echo "Directory path to $directory not present, would you like to create it? (y/n): "
@@ -19,8 +23,7 @@ if [ -d $directory ]; then
 else
 	
 
-# become root
-su -
+
 
 # first install packages
 yum install livecd-tools spin-kickstarts qemu-kvm wget unzip -y
@@ -35,6 +38,8 @@ wget https://github.com/valentt/Fusion-Linux/zipball/master
 unzip master
 
 livecd-creator -v -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Linux-17.0 -c $directory/valentt-Fusion-Linux-*/kickstarts/fusion-17/fusion-linux-17.0.ks
+
+'
 
 # run your Fusin Linux iso image
 # qemu-kvm -m 768 -cdrom Fusion-Linux-17.0.iso
