@@ -1,7 +1,7 @@
 # Fusion Linux 16
 # valent.turkovic@gmail.com
 
-%include fedora-live-desktop.ks
+%include fusion-live-desktop.ks
 %include fusion-live-extras.ks
 
 %include fusion-live-minimization.ks
