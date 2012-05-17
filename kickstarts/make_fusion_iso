@@ -55,7 +55,7 @@ livecd-creator -v -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Li
 # Making a 32-bit spin ISO on a 64-bit machine
 # https://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD#Making_a_32-bit_spin_ISO_on_a_64-bit_machine
 
-# If you have an x86_64 machine you're building on but you want a 32-bit happy iso image, add the following before your livecd-creator command:
+# Create 32bit image on x86_64 machine, add the following before your livecd-creator command:
 
 # setarch i686 livecd-creator [...]
 
