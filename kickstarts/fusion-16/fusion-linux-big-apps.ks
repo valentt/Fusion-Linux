@@ -25,4 +25,5 @@ ufraw-gimp
 scribus # 43 M
 inkscape # 36.6 M
 # inkscape-docs # examples and demos, 37 M
-
+#hugin # Photo panorama application, 49 M
+#kipi-plugins
