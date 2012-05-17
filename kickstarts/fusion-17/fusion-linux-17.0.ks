@@ -1,5 +1,6 @@
-# Fusion Linux 16
+# Fusion Linux 17
 # valent.turkovic@gmail.com
+# http://fusionlinux.org/blog/
 
 %include fedora-live-desktop.ks
 %include fusion-live-extras.ks
