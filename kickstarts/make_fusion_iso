@@ -4,7 +4,7 @@
 # make sure your target partition has atleast 10GB of free space
 
 # become root
-echo "\nPlease enter your root password\n"
+echo "Please enter your root password"
 su - -c '
 
 # edit this entry to specify your target directory
@@ -18,16 +18,16 @@ if [ -d $directory ]; then
 	if [ "$a" = "y" ]; then
 		mkdir -p $directory
 	else
-		echo "\nWhen you change your mind restart the script.\n"
+		echo "When you change your mind restart the script."
 		exit
 	fi
 
 # let's check if target directory has enough free space: 
 if [ `df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'` -gt 10 ]; then
-	echo "\nYour chosen target partition has over 10GB of free space, save to continue.\n"
+	echo "Your chosen target partition has over 10GB of free space, save to continue."
 	sleep 5
 else
-	echo "\nNot enough free space, make sure your target partition has over 10GB of free space."
+	echo "Not enough free space, make sure your target partition has over 10GB of free space."
 	exit
 fi
 
