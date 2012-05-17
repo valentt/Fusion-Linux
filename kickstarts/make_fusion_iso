@@ -6,6 +6,7 @@
 # become root
 echo -e "\nPlease enter your root password:\n"
 #su - -c '
+su
 
 # edit this entry to specify your target directory
 directory=/home/fusion-linux2
