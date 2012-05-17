@@ -1,5 +1,6 @@
-# Fusion Linux 16
+# Fusion Linux 17
 # valent.turkovic@gmail.com
+# http://fusionlinux.org/blog/
 
 timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
