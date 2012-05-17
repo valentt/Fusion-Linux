@@ -2,7 +2,7 @@
 # http://fedoraproject.org/wiki/SIGs/Desktop
 # mailto:desktop@lists.fedoraproject.org
 
-%include fedora-live-base.ks
+%include fusion-live-base.ks
 
 part / --size 4096
 
