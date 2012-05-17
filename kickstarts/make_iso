@@ -7,7 +7,7 @@
 directory=/home/fusion-linux2
 
 # become root
-echo "Please enter your root password"
+echo "\nPlease enter your root password\n"
 su - -c '
 
 # let's check if target directory is present and if it has enough free space:
