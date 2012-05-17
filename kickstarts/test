@@ -3,15 +3,10 @@
 # edit this entry to specify your target directory
 directory=/home/fusion-linux2
 
-# let's check if target directory is present:
-if [ ! -d $directory ]; then
-	echo -e "Directory path to $directory not present, would you like to create it? (y/n): "
-	read -n1 a
-	a=`echo $a | tr '[A-Z]' '[a-z]'`
-	if [ "$a" = "y" ]; then
-		mkdir -p $directory
-	else
-		echo -e "\nWhen you change your mind restart the script.\n"
-		exit
-	fi
+if [ `df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'` -gt 10 ]; then
+	echo -e "\nYour chosen target partition has over 10GB of free space, save to continue.\n"
+	sleep 5
+else
+	echo -e "\nNot enough free space, make sure your target partition has over 10GB of free space."
+	exit
 fi
