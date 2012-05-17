@@ -10,7 +10,7 @@ directory=/home/fusion-linux2
 echo "\nPlease enter your root password\n"
 su - -c '
 
-# let's check if target directory is present and if it has enough free space:
+# let's check if target directory is present:
 if [ -d $directory ]; then
 	echo "Directory path to $directory not present, would you like to create it? (y/n): "
 	read -n1 a
@@ -21,8 +21,15 @@ if [ -d $directory ]; then
 		echo "\nWhen you change your mind restart the script.\n"
 		exit
 	fi
+
+# let's check if target directory has enough free space: 
+if [  ]; then
+	echo "\nYour chosen target partition has over 10GB of free space, save to continue.\n"
+	sleep 5
 else
-	
+	echo "\nNot enough free space, make sure your target partition has over 10GB of free space."
+	exit
+fi
 
 
 
