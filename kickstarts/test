@@ -8,7 +8,7 @@ minspace=5
 enough=`echo $freespace $minspace | awk '{if ($1 > $2) print "yes"; else print "no"}'`
 
 if [ "$enough" = yes ]; then
-	echo -e "\nYour chosen target partition has $freespace GB of free space,\n it is safe to continue.\n"
+	echo -e "\nYour chosen target partition has $freespace GB of free space, it is safe to continue.\n"
 	sleep 5
 else
 	echo -e "\nNot enough free space, you have $freespace GB free, but atleast $minspace GB is needed."
