@@ -69,3 +69,7 @@ libgomp
 patch
 kernel-headers
 kernel-devel
+
+wine # 83 M
+#playonlinux # Run your Windows applications on Linux easily via wine 6 M
+
