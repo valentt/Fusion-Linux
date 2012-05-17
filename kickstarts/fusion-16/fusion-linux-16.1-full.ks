@@ -202,13 +202,6 @@ solarwolf # Interesting space arcade game, 4 M
 
 # vegastrike # 3D space action RPG space sim, trading and bounty hunting. Elite and Privateer clone, 739 M
 
-
-# education
-stellarium # Photo-realistic planetarium 40 M
-# celestia # Celestia is a real-time space simulation which lets you experience the universe in three dimensions, 34 M
-# SolarModel # Solar Model provides realtime modeling of the solar system, 7.2 M
-# stars # KStars is a Desktop Planetarium, 25 M
-
 # misc gui and cli tools
 lxrandr # monitor configuration tool, 130 k
 gparted # partition management tool, 3.4 M
