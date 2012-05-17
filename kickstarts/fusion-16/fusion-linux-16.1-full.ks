@@ -28,11 +28,6 @@ repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/16/rep
 %packages
 
 
-@office # LiberOffice suite, 417 M
-#abiword
-#gnumeric
-
-
 # desktop tools and addons
 # avant-window-navigator # great looking navigation panel, 51 M with python dependencies
 # awn-extras-applets # add avant-window-navigator and all extras, 6.7 M
@@ -78,7 +73,6 @@ pan
 ##chromium # 92 M temporary bug - requires libc.so.6(GLIBC_2.15)
 #google-chrome-stable
 #chromium-browser
-thunderbird # 46 M
 hotot # identica and twitter microbloging client, 1 M
 #gwibber # best identica and twitter microbloging client, 9.3 M
 #qwit # best identica and twitter microbloging client,  3 M
@@ -88,38 +82,20 @@ hotot # identica and twitter microbloging client, 1 M
 
 
 # graphics and photo apps
-
-gimp # most powerful open source image editor 50 M
-# additional GIMP plugins 14 M
-gimp-data-extras
-gimp-fourier-plugin
-gimpfx-foundry
-gimp-resynthesizer
-gimp-lqr-plugin
-GREYCstoration-gimp
-ufraw-gimp
 # gloobus-preview # preview and instant access to a variety of file types without the need to open their default applications
 sushi # instant preview of documents, photos, music and video files with press of a SPACE, 500 k
 viewnior # better image viewer than Eye Of Gnome with crop with same slick interface, 450 k
 -eog # Eye Of Gnome is replaced with Viewnior, 5 M
 # shutter # great screen capture app, a bit big, 31 M
 #f-spot # 9 M
-scribus # 43 M
-inkscape # 36.6 M
-# inkscape-docs # examples and demos, 37 M
 mypaint # MyPaint is a fast and easy open-source graphics application for digital painters, 7.3 M
 xournal # application for pdf annotation, notetaking, sketching, keeping a journal using a stylus, 0.6 M
 bitstream-vera-sans-fonts
-blender # 3D modeling, visualization and animation, 24 M
 fotowall
 photoprint
 posterazor
 jhead
 qiv
-#hugin # Photo panorama application, 49 M
-#kipi-plugins
-#-shotwell
-
 
 # codecs
 gstreamer-plugins-ugly
@@ -156,38 +132,20 @@ pavucontrol
 pavumeter
 paprefs
 pulseaudio-module-zeroconf
-#banshee
-#rhythmbox # audio player, 11 M
-# hydrogen # advanced drum machine for Linux, has java-1.5.0 as dependency (48 M), 9.5 M
-# hydrogen-drumkits # additional drum kit sounds for hydrogen, 20 M
-
 
 # video editing apps
-avidemux # video editing app, 25 M
-openshot # premier video editing app for linux desktop, 32 M
 #HandBrake-gui # great DVD transcoding app # removed because it takes over all video extensions
 #pitivi
 #k9copy # k9 uses kdelibs as dependency :(, 14 M
 
 
 # p2p apps
-amule # temporary bug issue - requires libthreadutil.so.2
+amule
 transmission # fabulos and lightweight bittorrent client
 tucan # download manager for file services like megaupload.com, rapidshare.com, mediafire.com, hotfile.com etc, 6 M
 uget # download manager
 #deluge
 #azureus
-
-
-# KDE apps
-kdelibs # base for other KDE apps 63 M
-k3b-extras-freeworld # best CD/DVD/Blu-ray burning app for Linux, 55 M ( + kdelibs + deps 117 M)
-krusader # best file manager, similar to windows commander but more powerful, 22 M
-kdiff3 # Compare + merge 2 or 3 files or directories, 4.3 M
-kdeutils # filelight is obsoleted by kdeutils, filelight visualizes diskspace usage
-kdeedu-marble # Marble is desktop atlas and globe, 22 M
-# kdeutils-filelight # vizualizes used file space
-
 
 # games, cool small ones
 abe
