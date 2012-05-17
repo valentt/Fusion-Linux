@@ -4,7 +4,7 @@
 # make sure your target partition has atleast 10GB of free space
 
 # become root
-echo -e "\nPlease enter your root password\n:"
+echo -e "\nPlease enter your root password:\n"
 #su - -c '
 
 # edit this entry to specify your target directory
