@@ -18,6 +18,7 @@ if [ -d $directory ]; then
 	if [ "$a" = "y" ]; then
 		mkdir -p $directory
 	else
+		echo "\nWhen you change your mind restart the script\n"
 		exit
 	fi
 else
