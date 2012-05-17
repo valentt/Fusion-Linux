@@ -31,3 +31,18 @@ inkscape # 36.6 M
 # audio apps
 banshee
 #rhythmbox # audio player, 11 M
+# hydrogen # advanced drum machine for Linux, has java-1.5.0 as dependency (48 M), 9.5 M
+# hydrogen-drumkits # additional drum kit sounds for hydrogen, 20 M
+
+# video editing apps
+avidemux # video editing app, 25 M
+openshot # premier video editing app for linux desktop, 32 M
+
+# KDE apps
+kdelibs # base for other KDE apps 63 M
+k3b-extras-freeworld # best CD/DVD/Blu-ray burning app for Linux, 55 M ( + kdelibs + deps 117 M)
+krusader # best file manager, similar to windows commander but more powerful, 22 M
+kdiff3 # Compare + merge 2 or 3 files or directories, 4.3 M
+kdeutils # filelight is obsoleted by kdeutils, filelight visualizes diskspace usage
+kdeedu-marble # Marble is desktop atlas and globe, 22 M
+# kdeutils-filelight # vizualizes used file space
