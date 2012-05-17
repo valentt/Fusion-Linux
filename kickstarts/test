@@ -2,9 +2,15 @@
 
 # edit this entry to specify your target directory
 directory=/home/fusion-linux
+
 freespace=`df -h $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'`
-echo $freespace
+minspace=10
+enough=`echo $freespace $minspace | awk '{if ($1 > $2) print "yes"; else print "no"}'`
 
-echo $freespace | awk '{if ($freespace > 10) echo -e "\nYour chosen target partition has over 10GB of free space, save to continue.\n"; else echo -e "\nNot enough free space, make sure your target partition has over 10GB of free space.\n"}'
-
-echo blllleeee
+if [ "$enough" = yes ]; then
+	echo -e "\nYour chosen target partition has $freespace GB of free space,\n it is safe to continue.\n"
+	sleep 5
+else
+	echo -e "\nNot enough free space, you have $freespace GB free, but atleast $minspace GB is needed."
+	exit
+fi
