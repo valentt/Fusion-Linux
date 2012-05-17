@@ -372,10 +372,8 @@ echo -e "Fusion Linux Rebranding"
 echo ""
 echo "Fusion release 16 (Creator)" > /etc/fedora-release
 echo "cpe:/o:fusionlinux:fusion:16" > /etc/system-release-cpe
-echo "Fusion release 16 (Creator)
-Kernel \r on an \m (\l)" > /etc/issue
-echo "Fusion release 16 (Creator)
-Kernel \r on an \m (\l)" > /etc/issue.net
+echo "Fusion release 16 (Creator) Kernel \r on an \m (\l)" > /etc/issue
+echo "Fusion release 16 (Creator) Kernel \r on an \m (\l)" > /etc/issue.net
 
 # Send Smolt profile
 echo ""

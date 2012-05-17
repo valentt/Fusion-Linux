@@ -80,6 +80,17 @@ echo "" >>/etc/sysctl.conf
 echo "vm.swappiness=10" >>/etc/sysctl.conf
 echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 
+# Fusion Linux Rebranding
+echo ""
+echo -e "Fusion Linux Rebranding"
+echo ""
+echo "Fusion release 16 (Creator)" > /etc/fedora-release
+echo "cpe:/o:fusionlinux:fusion:16" > /etc/system-release-cpe
+echo "Fusion release 16 (Creator)
+Kernel \r on an \m (\l)" > /etc/issue
+echo "Fusion release 16 (Creator)
+Kernel \r on an \m (\l)" > /etc/issue.net
+
 # remove this session file from gnome-session package to make cinnamon the default
 # temporary hack till this file is split up from the package
 # rm -rf /usr/share/xsessions/gnome.session
