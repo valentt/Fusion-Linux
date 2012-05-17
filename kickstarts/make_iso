@@ -6,7 +6,7 @@
 # edit this entry to specify your target directory
 directory=/home/fusion-linux
 
-# let's check if target directory is present:
+# let's check if target directory is present and if it has enough free space:
 if [ -d $directory ]; then
 	echo "Directory path to $directory not present, would you like to create it? (y/n): "
 	read -n1 a
@@ -16,11 +16,11 @@ if [ -d $directory ]; then
 	else
 		exit
 	fi
+else
+	
 
 # become root
 su -
-
-mkdir -p
 
 # first install packages
 yum install livecd-tools spin-kickstarts qemu-kvm wget unzip -y
