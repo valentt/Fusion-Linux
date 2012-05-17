@@ -64,9 +64,6 @@ gnome-shell-extension-user-theme
 
 # internet apps
 pan
-##chromium # 92 M temporary bug - requires libc.so.6(GLIBC_2.15)
-#google-chrome-stable
-#chromium-browser
 hotot # identica and twitter microbloging client, 1 M
 #gwibber # best identica and twitter microbloging client, 9.3 M
 #qwit # best identica and twitter microbloging client,  3 M
