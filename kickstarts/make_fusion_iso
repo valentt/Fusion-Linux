@@ -3,12 +3,14 @@
 
 # make sure your target partition has atleast 10GB of free space
 
-# edit this entry to specify your target directory
-directory=/home/fusion-linux2
+
 
 # become root
 echo "\nPlease enter your root password\n"
 su - -c '
+
+# edit this entry to specify your target directory
+directory=/home/fusion-linux2
 
 # let's check if target directory is present:
 if [ -d $directory ]; then
