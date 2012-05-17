@@ -23,7 +23,7 @@ if [ -d $directory ]; then
 	fi
 
 # let's check if target directory has enough free space: 
-if [ 'df $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'' < 10 ]; then
+if [ 'df $directory |grep /dev| awk '{print $4 }'| awk 'sub(".$", "")'' -lt 10 ]; then
 	echo "\nYour chosen target partition has over 10GB of free space, save to continue.\n"
 	sleep 5
 else
