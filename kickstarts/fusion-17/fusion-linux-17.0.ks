@@ -119,7 +119,7 @@ audacious # best simple audio and mp3 player
 audacious-plugins-freeworld* # audacious with plugins 5.3 M
 audacity-freeworld
 picard-freeworld # Audio tagging application using data from the MusicBrainz database, 3.3 M
-padevchooser # pulseaudio tools
+## padevchooser # pulseaudio tools
 pavucontrol
 pavumeter
 paprefs
