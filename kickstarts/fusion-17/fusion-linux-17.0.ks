@@ -107,7 +107,7 @@ npapi-vlc # mozilla vlc plugin, 70 K
 
 # video tools
 ffmpeg
-ffmpeg2theora
+##ffmpeg2theora
 mencoder
 # Arista encoder dependencies, 350 k
 gnome-python2-rsvg
