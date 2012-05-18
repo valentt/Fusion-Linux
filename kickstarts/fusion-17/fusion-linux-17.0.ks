@@ -236,7 +236,7 @@ xorg-x11-apps # xkill app for killing unresponsive apps
 -@java-1.5.0
 -libgcj
 
-@croatian-support # this distro has english and croatian support by default
+## @croatian-support # this distro has english and croatian support by default
 
 # rpmfusion release packages
 rpmfusion-free-release
