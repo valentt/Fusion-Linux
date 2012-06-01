@@ -507,13 +507,11 @@ echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
 
 function Wallpaper()
 {
-	if [ ! -f /usr/share/backgrounds/rei-forever.jpg ] ; then
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o /usr/share/backgrounds/rei-forever.jpg
-		echo ""
-		gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/rei-forever.jpg
-		# old gnome 2, left just as example how it was done before
-		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename $HOME/.local/share/wallpaper/rei-forever/rei-forever.jpg
-	fi
+if [ ! -f /usr/share/backgrounds/rei-forever.jpg ] ; then
+	curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o /usr/share/backgrounds/rei-forever.jpg
+	echo ""
+fi
+	gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/rei-forever.jpg
 fi
 }
 
