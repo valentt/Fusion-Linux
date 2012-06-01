@@ -1,3 +1,112 @@
+#!/bin/bash
+
+DIR=$(pwd)
+export RELEASE=$(awk '{print $3}' /etc/redhat-release)
+PREVIOUS=$(($RELEASE -1))
+
+function SolarizedThemeInstall()
+{
+# Solarized colour theme
+if [ -d ~/.solarized ]; then
+  echo -e "Solarized theme already installed"
+else
+echo ""
+echo -e "Enabling Solarized theme for Gedit and gnome-terminal"
+echo ""
+mkdir ~/.solarized
+cd ~/.solarized
+wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
+wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
+wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
+wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
+mkdir -p ~/.config/gedit/styles/
+cp solarized_light.xml ~/.config/gedit/styles/
+cp solarized_dark.xml ~/.config/gedit/styles/
+gsettings set org.gnome.gedit.preferences.editor scheme 'solarized_dark'
+cp dircolors.ansi-dark ~/.dircolors
+eval `dircolors ~/.dircolors`
+git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+cd gnome-terminal-colors-solarized
+./set_dark.sh
+cd ~
+fi
+}
+
+function SolarizedKonsole()
+{
+if [ -f ~/.kde/share/apps/konsole/SolarizedDark.colorscheme ]; then
+  echo -e "Solarized theme for Konsole already installed"
+else
+mkdir -p ~/.kde/share/apps/konsole/
+curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o ~/.kde/share/apps/konsole/SolarizedDark.colorscheme
+cat <<EOF | tee ~/.kde/share/apps/konsole/Shell.profile
+[Appearance]
+ColorScheme=SolarizedDark
+
+[General]
+Icon=utilities-terminal
+LocalTabTitleFormat=%D : %n
+Name=Shell
+Parent=FALLBACK/
+RemoteTabTitleFormat=(%u) %H
+
+[Terminal Features]
+BidiRenderingEnabled=trues
+EOF
+fi
+}
+
+function GnomeTweaks
+{
+# Gedit with 10 recent files
+gsettings set org.gnome.gedit.preferences.ui max-recents '10'
+
+# show icons on Desktop
+gsettings set org.gnome.desktop.background show-desktop-icons true
+
+# set Universal as default gtk-theme
+gsettings set org.gnome.desktop.interface gtk-theme 'Universal'
+
+# set Faience-Azur as default icon theme
+gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
+}
+
+
+function FortuneInstall()
+{
+# Adding Fortune to terminal
+s=`cat ~/.bashrc | grep -i "# Display Fortune"`
+if [ -n "$s" ]; then
+echo ""
+echo -e "Fortune already installed"
+echo ""
+else
+cp ~/.bashrc ~/.bashrc.bak
+cat <<EOF | tee -a ~/.bashrc
+# Display Fortune
+if [ "\$PS1" ]; then
+fortune
+fi
+EOF
+s=`cat ~/.bashrc | grep -i "# Display Fortune"`
+if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
+echo ""
+echo "Fortune successfuly installed"
+else
+echo ""
+echo "Fortune failed to install"
+fi
+fi
+}
+
+function SmoltSend()
+{
+# Send Smolt profile
+echo ""
+echo -e "Sending Smolt profile"
+smoltSendProfile -a
+}
+
 clear
 
 echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
@@ -21,56 +130,64 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
   Hit any key to install Fusion Linux Essentials, or \"s\" to skip..."
 
 
-DIR=$(pwd)
 read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
     echo ""
     su - -c '# Fusion Linux Essentials
-
-# Adding additional repos
+    
+function RPMFusionRepo()
+{
+# Check for RPM Fusion repos
 echo -e "Adding additional repos"
-if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fusion-google.repo ] && [ -f /etc/yum.repos.d/fusion-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fusion-skype.repo ] && [ -f /etc/yum.repos.d/fusion-fedorautils.repo ]; then
+if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fedora-google.repo ] && [ -f /etc/yum.repos.d/fedora-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fedora-skype.repo ] && [ -f /etc/yum.repos.d/fedorautils.repo ]; then
 echo -e "Repos already added"
 else
 
-function RPMFusionRepo()
-{
-# Set up RPM Fusion
+# Set up RPM Fusion repos
 if [ -f /etc/yum.repos.d/rpmfusion-free.repo ]; then
 echo -e "RPM Fusion free repo already present"
 else
 echo -e "Adding RPM Fusion free repo"
 yum localinstall -y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
 fi
+
 if [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ]; then
 echo -e "RPM Fusion nonfree repo already present"
 else
 echo -e "Adding RPM Fusion nonfree repo"
 yum localinstall -y --nogpgcheck http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
 fi
+
+if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fedora-google.repo ] && [ -f /etc/yum.repos.d/fedora-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fedora-skype.repo ] && [ -f /etc/yum.repos.d/fedora-fedorautils.repo ]; then
+echo -e "Additional repos successfuly added"
+else
+echo -e "Someting failed while adding RPM Fusion repos"
+fi
+
+fi
 }
 
 function CinnamonRepo()
 {
 # Add Cinnamon Repo
-if [ -f /etc/yum.repos.d/fusion-cinnamon.repo ]; then
+if [ -f /etc/yum.repos.d/fedora-cinnamon.repo ]; then
 echo -e "Cinnamon repo already present"
 else
 echo -e "Adding Cinnamon repo"
-curl http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-cinnamon.repo -o /etc/yum.repos.d/fusion-cinnamon.repo
+curl http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-cinnamon.repo -o /etc/yum.repos.d/fedora-cinnamon.repo
 fi
 }
 
 function FedoraUtilsRepo()
 {
 # Add Fedora-Utils Repo
-if [ -f /etc/yum.repos.d/fusion-fedorautils.repo ]; then
+if [ -f /etc/yum.repos.d/fedorautils.repo ]; then
 echo -e "Fedora-Utils repo already present"
 else
 echo -e "Adding Fedora-Utils repo"
 
-cat <<EOF | tee /etc/yum.repos.d/fusion-fedorautils.repo
+cat <<EOF | tee /etc/yum.repos.d/fedorautils.repo
 [fedorautils] 
 name=Fedora Utils
 baseurl=http://master.dl.sourceforge.net/project/fedorautils/
@@ -84,14 +201,14 @@ fi
 function GoogleRepo()
 {
 # Add Google Repo
-if [ -f /etc/yum.repos.d/fusion-google.repo ]; then
+if [ -f /etc/yum.repos.d/fedora-google.repo ]; then
 echo -e "Google repo already present"
 else
 echo -e "Adding Google repo"
 curl -s https://dl-ssl.google.com/linux/linux_signing_key.pub -o linux_signing_key.pub
 rpm --import linux_signing_key.pub
 rm -f linux_signing_key.pub
-cat <<EOF | tee /etc/yum.repos.d/fusion-google.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-google.repo
 [Google]
 name=Google - $(uname -i)
 baseurl=http://dl.google.com/linux/rpm/stable/$(uname -i)
@@ -125,20 +242,21 @@ fi
 function DropboxRepo()
 {
 # Set up Dropbox Repo
-if [ -f /etc/yum.repos.d/fusion-dropbox.repo ]; then
+if [ -f /etc/yum.repos.d/dropbox.repo ]; then
 echo -e "Dropbox repo already present"
 else
 echo -e "Adding Dropbox repo"
-cat <<EOF | tee /etc/yum.repos.d/fusion-dropbox.repo
+cat <<EOF | tee /etc/yum.repos.d/dropbox.repo
 [Dropbox]
 name=Dropbox Repository
+baseurl=http://linux.dropbox.com/fedora/16/
 baseurl=http://linux.dropbox.com/fedora/16/
 baseurl=http://linux.dropbox.com/fedora/15/
 gpgkey=http://linux.dropbox.com/fedora/rpm-public-key.asc
 skip_if_unavailable=1
 EOF
 rpm --import http://linux.dropbox.com/fedora/rpm-public-key.asc
-if [ -f /etc/yum.repos.d/fusion-dropbox.repo ]; then
+if [ -f /etc/yum.repos.d/fedora-dropbox.repo ]; then
 echo -e "Dropbox repo successfuly installed"
 else
 echo -e "Dropbox repo installation failed"
@@ -149,11 +267,11 @@ fi
 function ChromiumRepo()
 {
 # Add Chromium Repo
-if [ -f /etc/yum.repos.d/fusion-chromium-stable.repo ]; then
+if [ -f /etc/yum.repos.d/fedora-chromium-stable.repo ]; then
 echo -e "Chromium repo already present"
 else
 echo -e "Adding Chromium repo"
-cat <<EOF | tee /etc/yum.repos.d/fusion-chromium-stable.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-chromium-stable.repo
 [fusion-chromium-stable]
 name=Builds of the "stable" tag of the Chromium Web Browser
 baseurl=http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-\$releasever/\$basearch/
@@ -174,11 +292,11 @@ fi
 function SkypeRepo()
 {
 # Add Skype Repo
-if [ -f /etc/yum.repos.d/fusion-skype.repo ]; then
+if [ -f /etc/yum.repos.d/fedora-skype.repo ]; then
 echo -e "Skype repo already present"
 else
 echo -e "Adding Skype repo"
-cat <<EOF | tee /etc/yum.repos.d/fusion-skype.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-skype.repo
 [skype]
 name=Skype Repository
 baseurl=http://download.skype.com/linux/repos/fedora/updates/i586/
@@ -192,14 +310,14 @@ fi
 function GimpRepo()
 {
 # Add Gimp Repo
-if [ -f /etc/yum.repos.d/fusion-gimp-unstable.repo ]; then
+if [ -f /etc/yum.repos.d/fedora-gimp-unstable.repo ]; then
 echo -e "Gimp repo already present"
 else
 echo -e "Adding Gimp repo"
 curl -s http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/RPM-GPG-KEY-nphilipp -O
 rpm --import RPM-GPG-KEY-nphilipp
 rm -f RPM-GPG-KEY-nphilipp
-cat <<EOF | tee /etc/yum.repos.d/fusion-gimp-unstable.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-gimp-unstable.repo
 [fedora-gimp-unstable]
 name=Unstable development versions of GIMP for Fedora \$releasever - \$basearch
 baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-\$releasever/\$basearch/
@@ -226,12 +344,12 @@ fi
 
 function ParsidoraRepo()
 {
-if [ -f /etc/yum.repos.d/fusion-parsidora.repo ]; then
-echo -e "Parsidora repo already present"
+if [ -f /etc/yum.repos.d/fedora-parsidora.repo ]; then
+  echo -e "Parsidora repo already present"
 else
 # Add Parsidora Repo
 echo -e "Adding Parsidora repo"
-cat <<EOF | tee /etc/yum.repos.d/fusion-parsidora.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-parsidora.repo
 [parsidora]
 name=Parsidora \$releasever – \$basearch
 baseurl=http://parsidora.sourceforge.net/releases/\$releasever/repos/parsidora/\$basearch
@@ -241,31 +359,19 @@ EOF
 fi
 }
 
-RPMFusionRepo
-CinnamonRepo
-FedoraUtilsRepo
-GoogleRepo
-AdobeRepo
-ChromiumRepo
-SkypeRepo
-GimpRepo
-ParsidoraRepo
-DropboxRepo
-
-if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fusion-google.repo ] && [ -f /etc/yum.repos.d/fusion-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fusion-skype.repo ] && [ -f /etc/yum.repos.d/fusion-fedorautils.repo ]; then
-echo -e "Additional repos successfuly added"
-else
-echo -e "Someting failed while adding additional repos"
-fi
-
-fi
-
-sleep 5
-
+function CinnamonInstall()
+{
 # Cinnamon Desktop Manager
+if [ -f /bin/cinnamon ]; then
+  echo -e "Cinnamon already installed"
+else
 echo -e "Installing Cinnamon Desktop Manager"
 yum install -y cinnamon
+fi
+}
 
+function CodecsInstall()
+{
 # Audio and video codecs installation
 echo -e "Installing audio and video codecs"
 yum install -y flash-plugin gnome-mplayer gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-bad-free gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg faac faad2 libdca libmad libmatroska xvidcore vlc
@@ -292,7 +398,32 @@ else
 fi
 # Remove possible defective thumbnails
 rm -rf "~/.thumbnails/*"
+}
 
+function Gnome3ThemeInstall()
+{
+# Install Universal GNOME 3 theme
+if [ -d /usr/share/themes/Universal ] ; then
+	echo -e "Universal theme already installed"
+else
+	echo ""
+	echo -e "Installing Universal GNOME 3 theme"
+	cd /tmp/
+	curl -L -O http://www.deviantart.com/download/271509619/universal_by_nale12-d4hne5v.zip
+	unzip universal_by_nale12*
+	mv Universal /usr/share/themes/
+	mv Universal.emerald /usr/share/themes/
+	if [ -d /usr/share/theme/Universal ] ; then
+		echo -e "Universal theme installed successfully"
+	else
+		echo -e "Universal theme installation failed"
+	fi
+fi
+sleep 3
+}
+
+function JockeyInstall()
+{
 # Installing Jockey driver installer
 echo -e "Installing Jockey driver installer"
 if [ -e /usr/bin/jockey-gtk ] ; then
@@ -306,18 +437,10 @@ else
 echo -e "Failed to install Jockey driver installer"
 fi
 sleep 5
+}
 
-echo -e "Installing Fedora-utils package"
-yum install -y --nogpgcheck fedorautils
-rm /etc/yum.repos.d/fedorautils.repo
-
-yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-dropbox nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod wget
-
-# tweak swappiness
-echo "" >>/etc/sysctl.conf
-echo "vm.swappiness=10" >>/etc/sysctl.conf
-echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
-
+function FaienceIconsInstall()
+{
 # Install Faience GNOME 3 icon theme
 if [ -d /usr/share/icons/Faience-Azur ] ; then
 	echo -e "Faience Icons already installed"
@@ -346,97 +469,69 @@ else
 	fi
 fi
 sleep 3
+}
 
-# Install Universal GNOME 3 theme
-if [ -d /usr/share/theme/Universal ] ; then
-	echo -e "Universal theme already installed"
+function FedoraUtilsInstall()
+{
+if [ -f /bin/fedorautils ] ; then
+	echo -e "Fedorautils already installed"
 else
-	echo ""
-	echo -e "Installing Universal GNOME 3 theme"
-	cd /tmp/
-	curl -L -O http://www.deviantart.com/download/271509619/universal_by_nale12-d4hne5v.zip
-	unzip universal_by_nale12*
-	mv Universal /usr/share/themes/
-	mv Universal.emerald /usr/share/themes/
-	if [ -d /usr/share/theme/Universal ] ; then
-		echo -e "Universal theme installed successfully"
-	else
-		echo -e "Universal theme installation failed"
-	fi
+echo -e "Installing Fedora-utils package"
+yum install -y --nogpgcheck fedorautils
 fi
-sleep 3
+}
 
-# Fusion Linux Rebranding
-echo ""
-echo -e "Fusion Linux Rebranding"
-echo ""
-echo "Fusion release 16 (Creator)" > /etc/fedora-release
-echo "cpe:/o:fusionlinux:fusion:16" > /etc/system-release-cpe
-echo "Fusion release 16 (Creator) Kernel \r on an \m (\l)" > /etc/issue
-echo "Fusion release 16 (Creator) Kernel \r on an \m (\l)" > /etc/issue.net
+function EssentialPackagesInstall()
+{
+echo -e "Installing essential tools"
+yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-dropbox nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod wget git
+}
 
-# Send Smolt profile
-echo ""
-echo -e "Sending Smolt profile"
-smoltSendProfile -a
+function SwapTweak()
+{
+# tweak swappiness
+echo "" >>/etc/sysctl.conf
+echo "vm.swappiness=10" >>/etc/sysctl.conf
+echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
+}
 
+function FusionRebranding()
+{
+echo -e "Fusion 17 Rebranding"
+echo ""
+echo "Fusion release 17 (Goddess)" > /etc/fedora-release
+echo "cpe:/o:fusionlinux:fusion:17" > /etc/system-release-cpe
+echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue
+echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
+}
+
+RPMFusionRepo
+CinnamonRepo
+FedoraUtilsRepo
+GoogleRepo
+AdobeRepo
+ChromiumRepo
+SkypeRepo
+DropboxRepo
+#GimpRepo
+#ParsidoraRepo
+EssentialPackagesInstall
+CinnamonInstall
+CodecsInstall
+Gnome3ThemeInstall
+#JockeyInstall
+FedoraUtilsInstall
+FaienceIconsInstall
+SwapTweak
+FusionRebranding
+FortuneInstall
 '
-# Gedit with 10 recent files
-gsettings set org.gnome.gedit.preferences.ui max-recents '10'
 
-# show icons on Desktop
-gsettings set org.gnome.desktop.background show-desktop-icons true
-
-# set Universal as default gtk-theme
-gsettings set org.gnome.desktop.interface gtk-theme 'Universal'
-
-# set Faience-Azur as default icon theme
-gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
-
-# Solarized colour theme
-echo ""
-echo -e "Enabling Solarized theme for Gedit and gnome-terminal"
-echo ""
-mkdir ~/.solarized
-cd ~/.solarized
-wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
-wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
-wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
-wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
-mkdir -p ~/.config/gedit/styles/
-cp solarized_light.xml ~/.config/gedit/styles/
-cp solarized_dark.xml ~/.config/gedit/styles/
-gsettings set org.gnome.gedit.preferences.editor scheme 'solarized_dark'
-cp dircolors.ansi-dark ~/.dircolors
-eval `dircolors ~/.dircolors`
-git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
-cd gnome-terminal-colors-solarized
-./set_dark.sh
-cd ~
-
-# Adding Fortune to terminal
-s=`cat ~/.bashrc | grep -i "# Display Fortune"`
-if [ -n "$s" ]; then
-echo ""
-echo -e "Fortune already installed"
-echo ""
-else
-cp ~/.bashrc ~/.bashrc.bak
-cat <<EOF | tee -a ~/.bashrc
-# Display Fortune
-if [ "\$PS1" ]; then
-fortune
-fi
-EOF
-fi
-s=`cat ~/.bashrc | grep -i "# Display Fortune"`
-if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
-echo ""
-echo "Fortune successfuly installed"
-else
-echo ""
-echo "Fortune failed to install"
-fi
+FortuneInstall
+SolarizedThemeInstall
+SolarizedKonsole
+GnomeTweaks
+SmoltSend
 
 cd $DIR
 
