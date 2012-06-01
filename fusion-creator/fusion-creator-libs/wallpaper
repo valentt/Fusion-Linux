@@ -30,8 +30,7 @@ if [ "$a" = "1" ]; then
 	RESOLUTIONX=$(xrandr |grep current| awk '{print $8}')
 	RESOLUTIONY=$(xrandr |grep current| awk '{print $10}')
 	RESOLUTIONY=${RESOLUTIONY:0:4}
-	echo $RESOLUTIONX
-	echo $RESOLUTIONY
+	echo -e "\nYour resolution is $RESOLUTIONX x $RESOLUTIONY\n"
 	if [ "$RESOLUTIONX" = 1366 ] ; then
 		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1366_768.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_1366_768.png
 		gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/fusion_wallpaper_1366_768.png
