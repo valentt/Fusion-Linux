@@ -51,7 +51,7 @@ fi
 
 if [ "$a" = "2" ]; then
     echo ""
-    gconftool-2 --set --type string /desktop/gnome/background/picture_filename $HOME/.local/share/wallpaper/laughlin/default/laughlin.xml
+	gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/default.png
 fi
 
 if [ "$a" = "3" ]; then
