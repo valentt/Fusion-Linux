@@ -27,10 +27,11 @@ if [ "$a" = "1" ]; then
 	echo ""
 	RESOLUTIONX=$(xrandr |grep current| awk '{print $8}')
 	RESOLUTIONY=$(xrandr |grep current| awk '{print $10}')
-	if [ "$RESOLUTIONX" > 500 ] ; then
-		echo "vise"
+	RESOLUTIONY=${RESOLUTIONY:0:4}
+	if [ "$RESOLUTIONX" = 1280 ] ; then
+		echo "tocno"
 	else 
-		echo "v"
+		echo "nije"
 	fi
 	gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
 fi
