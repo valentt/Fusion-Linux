@@ -563,13 +563,13 @@ FaienceIconsInstall
 SwapTweak
 FusionRebranding
 FortuneInstall
-Wallpaper
 '
 
 FortuneInstall
 SolarizedThemeInstall
 SolarizedKonsole
 GnomeTweaks
+Wallpaper
 #SmoltSend
 
 cd $DIR
