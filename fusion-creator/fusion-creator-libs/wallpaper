@@ -23,6 +23,8 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
 read -n1 a
 #a=`echo $a | tr '[:digit:]'`
 
+mkdir -p ~/.local/share/wallpaper
+
 if [ "$a" = "1" ]; then
 	echo ""
 	RESOLUTIONX=$(xrandr |grep current| awk '{print $8}')
@@ -31,34 +33,34 @@ if [ "$a" = "1" ]; then
 	echo $RESOLUTIONX
 	echo $RESOLUTIONY
 	if [ "$RESOLUTIONX" = 1366 ] ; then
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1366_768.png -o /usr/share/backgrounds/fusion_wallpaper_1366_768.png
-		gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/fusion_wallpaper_1366_768.png
+		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1366_768.png -o ~/.local/share/wallpaper/fusion_wallpaper_1366_768.png
+		gsettings set org.gnome.desktop.background picture-uri file://~/.local/share/wallpaper/fusion_wallpaper_1366_768.png
 	elif  [ "$RESOLUTIONX" = 1280 ] && [ "$RESOLUTIONY" = 800 ]; then
 		echo "1280x800"
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_wide_1280_800.png -o /usr/share/backgrounds/fusion_wallpaper_wide_1280_800.png
-		gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/fusion_wallpaper_wide_1280_800.png
-		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
+		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_wide_1280_800.png -o ~/.local/share/wallpaper/fusion_wallpaper_wide_1280_800.png
+		gsettings set org.gnome.desktop.background picture-uri file://~/.local/share/wallpaper/fusion_wallpaper_wide_1280_800.png
+		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename ~/.local/share/wallpaper/fusion-linux/fusion-linux.xml
 	elif  [ "$RESOLUTIONX" = 1280 ] && [ "$RESOLUTIONY" = 1024 ]; then
 		echo "1280x1024"
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1280_1024.png -o /usr/share/backgrounds/fusion_wallpaper_wide_1280_1024.png
-		gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/fusion_wallpaper_wide_1280_1024.png
-		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
+		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1280_1024.png -o ~/.local/share/wallpaper/fusion_wallpaper_wide_1280_1024.png
+		gsettings set org.gnome.desktop.background picture-uri file://~/.local/share/wallpaper/fusion_wallpaper_wide_1280_1024.png
+		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename ~/.local/share/wallpaper/fusion-linux/fusion-linux.xml
 
 	fi
 fi
 
 if [ "$a" = "2" ]; then
     echo ""
-    gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/laughlin/default/laughlin.xml
+    gconftool-2 --set --type string /desktop/gnome/background/picture_filename ~/.local/share/wallpaper/laughlin/default/laughlin.xml
 fi
 
 if [ "$a" = "3" ]; then
 	if [ ! -f /usr/share/wallpapers/rei-forever.jpg ] ; then
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o /usr/share/backgrounds/rei-forever.jpg
+		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o ~/.local/share/wallpaper/rei-forever.jpg
 		echo ""
-		gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/rei-forever.jpg
+		gsettings set org.gnome.desktop.background picture-uri file://~/.local/share/wallpaper/rei-forever.jpg
 		# old gnome 2, left just as example how it was done before
-		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/rei-forever/rei-forever.jpg
+		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename ~/.local/share/wallpaper/rei-forever/rei-forever.jpg
 	fi
 fi
 
