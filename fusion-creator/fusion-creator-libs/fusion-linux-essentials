@@ -539,7 +539,6 @@ if [ ! -f /usr/share/backgrounds/rei-forever.jpg ] ; then
 	echo ""
 fi
 	gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/rei-forever.jpg
-fi
 }
 
 RPMFusionRepo
