@@ -103,6 +103,16 @@ echo -e "Sending Smolt profile"
 smoltSendProfile -a
 }
 
+function Wallpaper()
+{
+if [ ! -f $HOME.local/share/wallpaper/rei-forever.jpg ] ; then
+	mkdir -p $HOME.local/share/wallpaper
+	curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o $HOME.local/share/wallpaper/rei-forever.jpg
+	echo ""
+fi
+gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/rei-forever.jpg
+}
+
 clear
 
 echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
@@ -532,14 +542,6 @@ fi
 fi
 }
 
-function Wallpaper()
-{
-if [ ! -f /usr/share/backgrounds/rei-forever.jpg ] ; then
-	curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o /usr/share/backgrounds/rei-forever.jpg
-	echo ""
-fi
-	gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/rei-forever.jpg
-}
 
 RPMFusionRepo
 CinnamonRepo
