@@ -497,6 +497,8 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 
 function FusionRebranding()
 {
+VER=`awk {print $4}`
+echo $VER
 echo -e "Fusion 17 Rebranding"
 echo ""
 echo "Fusion release 17 (Goddess)" > /etc/fedora-release
