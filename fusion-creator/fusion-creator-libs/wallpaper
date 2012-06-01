@@ -25,11 +25,12 @@ read -n1 a
 
 if [ "$a" = "1" ]; then
 	echo ""
-	RESOLUTION=$(xrandr |grep current| awk '{print $8 }')
-	if [ "$RESOLUTION" > 500 ] ; then
-		echo "manje"
-	else 
+	RESOLUTIONX=$(xrandr |grep current| awk '{print $8 }')
+	RESOLUTIONY=$(xrandr |grep current| awk '{print $10 }')
+	if [ "$RESOLUTIONX" > 500 ] ; then
 		echo "vise"
+	else 
+		echo "v"
 	fi
 	gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
 fi
