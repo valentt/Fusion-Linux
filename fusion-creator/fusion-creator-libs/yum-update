@@ -20,4 +20,5 @@ a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
     echo ""
     su - -c 'yum update -y --skip-broken'
+    sleep 4
 fi
