@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 DIR=$(pwd)
 export RELEASE=$(awk '{print $3}' /etc/redhat-release)
