@@ -59,8 +59,8 @@ STEP=$((STEP+1))
 STEP=$((STEP+1))
 . $LIBDIR/dropbox
 
-#STEP=$((STEP+1))
-#. $LIBDIR/wallpaper
+STEP=$((STEP+1))
+. $LIBDIR/wallpaper
 
 #STEP=$((STEP+1))
 #. $LIBDIR/add-user-to-fuse-group
