@@ -505,6 +505,13 @@ elif [ "$VER" = 17 ] ; then
 	NAME=Goddess
 fi
 
+	echo -e "Fusion $VER Rebranding"
+	echo ""
+	echo "Fusion release $VER ($NAME)" > /etc/fedora-release
+	echo "cpe:/o:fusionlinux:fusion:$VER" > /etc/system-release-cpe
+	echo "Fusion release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue
+	echo "Fusion release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue.net
+
 #	echo -e "Fusion 16 Rebranding"
 #	echo ""
 #	echo "Fusion release 16 (Creation)" > /etc/fedora-release
