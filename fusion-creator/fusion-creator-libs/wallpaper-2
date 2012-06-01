@@ -1,0 +1,43 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  CHOOSE YOUR WALLPAPER
+  ----------------------------
+
+  Wallapaper is usually matter of personal choice, so beside default Fedora
+  wallpaper we would like to offer you our Fusion Linux Wallapaper and also 
+  one which is a surprise ;)
+
+  Which wallpaper would you like to set as your default wallpaper?
+
+  1. Fusion Linux wallpaper
+
+  2. Fedora wallpaper
+
+  3. Special surprise wallpaper 
+
+
+  Hit key 1, 2 or 3 to choose your wallpaper, or any other key to skip..."
+
+read -n1 a
+#a=`echo $a | tr '[:digit:]'`
+
+if [ "$a" = "1" ]; then
+    echo ""
+    gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
+fi
+
+if [ "$a" = "2" ]; then
+    echo ""
+    gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/laughlin/default/laughlin.xml
+fi
+
+if [ "$a" = "3" ]; then
+	if [ ! -f /usr/share/wallpapers/rei-forever.jpg ] ; then
+	curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o /usr/share/wallpapers/rei-forever.jpg
+	echo ""
+	gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/rei-forever/rei-forever.jpg
+fi
+
+
