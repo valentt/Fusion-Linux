@@ -77,9 +77,7 @@ function FortuneInstall()
 # Adding Fortune to terminal
 s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ]; then
-	echo ""
-	echo -e "Fortune already installed"
-	echo ""
+	echo -e "\nFortune already installed\n"
 else
 cp ~/.bashrc ~/.bashrc.bak
 cat <<EOF | tee -a ~/.bashrc
