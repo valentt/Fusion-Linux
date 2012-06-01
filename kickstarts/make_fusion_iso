@@ -3,14 +3,22 @@
 
 # make sure your target partition has atleast 10GB of free space
 
-# become root
-echo -e "\nPlease enter your root password:"
-#su - -c '
-
 # edit this entry to specify your target directory
-directory=/home/fusion-linux
+export directory=/home/fusion-linux
+user=$(whoami)
 
-# let's check if target directory is present:
+if [ "$user" != "root" ]; then
+  echo ""
+  echo "You need to run this script with root privileges"
+  echo ""
+  exit
+else
+
+# become root
+#echo -e "\nPlease enter your root password:"
+#su - -c '# enter root password
+
+echo -e "Let's check that target directory $directory is present."
 if [ ! -d $directory ]; then
 	echo -e "Directory path to $directory not present, would you like to create it? (y/n): "
 	read -n1 a
@@ -25,6 +33,8 @@ if [ ! -d $directory ]; then
 		echo -e "\nWhen you change your mind restart the script.\n"
 		exit
 	fi
+	echo -e "Target directory $directory is present, continuing."
+	sleep 3
 fi
 
 # let's check if target directory has enough free space: 
@@ -34,7 +44,7 @@ enough=`echo $freespace $minspace | awk '{if ($1 > $2) print "yes"; else print "
 
 if [ "$enough" = yes ]; then
 	echo -e "\nYour chosen target partition has $freespace GB of free space, it is safe to continue.\n"
-	sleep 5
+	sleep 1
 else
 	echo -e "\nNot enough free space, you have $freespace GB free, but atleast $minspace GB is needed."
 	exit
@@ -49,8 +59,15 @@ mkdir -p $directory/temp
 mkdir -p $directory/yum-cache
 
 # now grab latest Fusion Linux kickstart files
-wget https://github.com/valentt/Fusion-Linux/zipball/master
-unzip master
+if [ ! -f master ]; then
+  wget https://github.com/valentt/Fusion-Linux/zipball/master
+  unzip master
+else
+  echo ""
+  echo -e "Fusion linux master file already downloaded, delete if you wish to update it."
+  echo ""
+fi
 
-livecd-creator -v -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Linux-17.0 -c $directory/valentt-Fusion-Linux-*/kickstarts/fusion-17/fusion-linux-17.0.ks
+livecd-creator -v -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Linux-17.0 -c $directory/valentt-Fusion-Linux-*/kickstarts/fusion-17/fusion-linux-mini.ks
 #'
+fi
