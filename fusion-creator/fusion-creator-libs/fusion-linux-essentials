@@ -592,7 +592,7 @@ FortuneInstall
 SolarizedThemeInstall
 SolarizedKonsole
 GnomeTweaks
-SmoltSend
+#SmoltSend
 
 cd $DIR
 
