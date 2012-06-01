@@ -24,8 +24,14 @@ read -n1 a
 #a=`echo $a | tr '[:digit:]'`
 
 if [ "$a" = "1" ]; then
-    echo ""
-    gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
+	echo ""
+	RESOLUTION=$(xrandr |grep current| awk '{print $8 }')
+	if [ "$RESOLUTION" < 2000 ] ; then
+		echo "manje"
+	else 
+		echo "vise"
+	fi
+	gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
 fi
 
 if [ "$a" = "2" ]; then
