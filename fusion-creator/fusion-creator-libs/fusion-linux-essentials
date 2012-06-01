@@ -531,8 +531,7 @@ s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
 echo -e "\nFortune successfuly installed\n"
 else
-echo ""
-echo "Fortune failed to install"
+echo -e "\nFortune failed to install\n"
 fi
 fi
 }
