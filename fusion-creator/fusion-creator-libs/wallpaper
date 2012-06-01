@@ -26,7 +26,7 @@ read -n1 a
 if [ "$a" = "1" ]; then
 	echo ""
 	RESOLUTION=$(xrandr |grep current| awk '{print $8 }')
-	if [ "$RESOLUTION" > 2000 ] ; then
+	if [ "$RESOLUTION" > 500 ] ; then
 		echo "manje"
 	else 
 		echo "vise"
