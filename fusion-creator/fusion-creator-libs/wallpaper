@@ -31,7 +31,7 @@ if [ "$a" = "1" ]; then
 	if [ "$RESOLUTIONX" = 1366 ] ; then
 		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1366_768.png -o /usr/share/backgrounds/fusion_wallpaper_1366_768.png
 		gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/fusion_wallpaper_1366_768.png
-	elseif  [ "$RESOLUTIONX" = 1280 ] && [ "$RESOLUTIONY" = 800 ]; then
+	elif  [ "$RESOLUTIONX" = 1280 ] && [ "$RESOLUTIONY" = 800 ]; then
 		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_wide_1280_800.png -o /usr/share/backgrounds/fusion_wallpaper_wide_1280_800.png
 		gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/fusion_wallpaper_wide_1280_800.png
 	fi
