@@ -505,6 +505,33 @@ echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue
 echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
 }
 
+function FortuneInstall()
+{
+# Adding Fortune to terminal
+s=`cat ~/.bashrc | grep -i "# Display Fortune"`
+if [ -n "$s" ]; then
+echo ""
+echo -e "Fortune already installed"
+echo ""
+else
+cp ~/.bashrc ~/.bashrc.bak
+cat <<EOF | tee -a ~/.bashrc
+# Display Fortune
+if [ "\$PS1" ]; then
+fortune
+fi
+EOF
+s=`cat ~/.bashrc | grep -i "# Display Fortune"`
+if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
+echo ""
+echo "Fortune successfuly installed"
+else
+echo ""
+echo "Fortune failed to install"
+fi
+fi
+}
+
 function Wallpaper()
 {
 if [ ! -f /usr/share/backgrounds/rei-forever.jpg ] ; then
@@ -535,6 +562,7 @@ FaienceIconsInstall
 SwapTweak
 FusionRebranding
 FortuneInstall
+Wallpaper
 '
 
 FortuneInstall
