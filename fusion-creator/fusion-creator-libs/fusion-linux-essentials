@@ -500,20 +500,26 @@ function FusionRebranding()
 VER=`cat /etc/redhat-release | awk '{print $3}'`
 echo $VER
 if [ "$VER" = 16 ] ; then 
-	echo -e "Fusion 16 Rebranding"
-	echo ""
-	echo "Fusion release 16 (Creation)" > /etc/fedora-release
-	echo "cpe:/o:fusionlinux:fusion:16" > /etc/system-release-cpe
-	echo "Fusion release 16 (Creation) Kernel \r on an \m (\l)" > /etc/issue
-	echo "Fusion release 16 (Creation) Kernel \r on an \m (\l)" > /etc/issue.net
+	NAME=Creation
 elif [ "$VER" = 17 ] ; then
-	echo -e "Fusion 17 Rebranding"
-	echo ""
-	echo "Fusion release 17 (Goddess)" > /etc/fedora-release
-	echo "cpe:/o:fusionlinux:fusion:17" > /etc/system-release-cpe
-	echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue
-	echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
+	NAME=Goddess
 fi
+
+#	echo -e "Fusion 16 Rebranding"
+#	echo ""
+#	echo "Fusion release 16 (Creation)" > /etc/fedora-release
+#	echo "cpe:/o:fusionlinux:fusion:16" > /etc/system-release-cpe
+#	echo "Fusion release 16 (Creation) Kernel \r on an \m (\l)" > /etc/issue
+#	echo "Fusion release 16 (Creation) Kernel \r on an \m (\l)" > /etc/issue.net
+#elif [ "$VER" = 17 ] ; then
+#	echo -e "Fusion 17 Rebranding"
+#	echo ""
+#	echo "Fusion release 17 (Goddess)" > /etc/fedora-release
+#	echo "cpe:/o:fusionlinux:fusion:17" > /etc/system-release-cpe
+#	echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue
+#	echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
+
+#fi
 }
 
 function FortuneInstall()
