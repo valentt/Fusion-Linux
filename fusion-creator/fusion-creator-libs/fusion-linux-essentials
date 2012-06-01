@@ -493,7 +493,10 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 
 function FusionRebranding()
 {
-#VER=`cat /etc/redhat-release | awk '{print $3}'`
+POS=`expr index "$(cat /etc/redhat-release)" 1`
+REL=`cat /etc/redhat-release`
+VER=${REL:$POS-1:2}
+
 echo $VER
 if [ "$VER" = 16 ] ; then 
 	NAME=Creation
