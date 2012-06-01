@@ -38,6 +38,12 @@ if [ "$a" = "1" ]; then
 		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_wide_1280_800.png -o /usr/share/backgrounds/fusion_wallpaper_wide_1280_800.png
 		gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/fusion_wallpaper_wide_1280_800.png
 		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
+	elif  [ "$RESOLUTIONX" = 1280 ] && [ "$RESOLUTIONY" = 1024 ]; then
+		echo "1280x1024"
+		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1280_1024.png -o /usr/share/backgrounds/fusion_wallpaper_wide_1280_1024.png
+		gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/fusion_wallpaper_wide_1280_1024.png
+		# gconftool-2 --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/fusion-linux/fusion-linux.xml
+
 	fi
 fi
 
