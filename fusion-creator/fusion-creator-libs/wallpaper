@@ -21,7 +21,7 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
   Hit key 1, 2 or 3 to choose your wallpaper, or any other key to skip..."
 
 read -n1 a
-a=`echo $a | tr '[:digit:]'`
+#a=`echo $a | tr '[:digit:]'`
 
 if [ "$a" = "1" ]; then
 	echo ""
