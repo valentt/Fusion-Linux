@@ -570,7 +570,7 @@ SolarizedThemeInstall
 SolarizedKonsole
 GnomeTweaks
 Wallpaper
-#SmoltSend
+SmoltSend
 
 cd $DIR
 
