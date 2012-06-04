@@ -517,6 +517,16 @@ echo "Fusion release $VER ($NAME)" > /etc/fedora-release
 echo "cpe:/o:fusionlinux:fusion:$VER" > /etc/system-release-cpe
 echo "Fusion release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue
 echo "Fusion release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue.net
+
+cat > /etc/os-release << EOF
+NAME=Fusion
+VERSION="$VER ($NAME)"
+ID=fusion
+VERSION_ID=$VER
+PRETTY_NAME="Fusion $VER ($NAME)"
+ANSI_COLOR="0;34"
+CPE_NAME="cpe:/o:fusion:fusion:$VER"
+EOF
 }
 
 function FortuneInstall()
