@@ -198,57 +198,30 @@ rm /usr/share/applications/kde4/kwikdisk.desktop
 # add .repo files for additional repositories
 
 # Fusion Linux repository
-cat >> /etc/yum.repos.d/fusion.repo << EOF
+#cat >> /etc/yum.repos.d/fusion.repo << EOF
 # Place this file in your /etc/yum.repos.d/ directory
 
-[fusion]
-name=Few packages that are missing for Fusion Linux (Fedora Remix)
-baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-16/$basearch/
-enabled=1
-skip_if_unavailable=1
-gpgcheck=0
+#[fusion]
+#name=Few packages that are missing for Fusion Linux (Fedora Remix)
+#baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-16/$basearch/
+#enabled=1
+#skip_if_unavailable=1
+#gpgcheck=0
 
-[fusion-source]
-name=Few packages that are missing for Fusion Linux (Fedora Remix) - Source
-baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-16/SRPMS
-enabled=0
-gpgcheck=0
-skip_if_unavailable=1
-EOF
-
-# Gimp 2.7 repository
-cat >> /etc/yum.repos.d/fedora-gimp-unstable.repo << EOF
-[fedora-gimp-unstable]
-name=Unstable development versions of GIMP for Fedora 16 - $basearch
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/$basearch/
-enabled=1
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
-skip_if_unavailable=1
-
-[fedora-gimp-unstable-debuginfo]
-name=Unstable development versions of GIMP for Fedora 16 - $basearch - Debug
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/$basearch/debug/
-enabled=0
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
-skip_if_unavailable=1
-
-[fedora-gimp-unstable-source]
-name=Unstable development versions of GIMP for Fedora 16 - $basearch - Source
-baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-16/src/
-enabled=0
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-nphilipp
-skip_if_unavailable=1
-EOF
-rpm -import http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/RPM-GPG-KEY-nphilipp
+#[fusion-source]
+#name=Few packages that are missing for Fusion Linux (Fedora Remix) - Source
+#baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-16/SRPMS
+#enabled=0
+#gpgcheck=0
+#skip_if_unavailable=1
+#EOF
 
 # Dropbox repository
 rm /etc/yum.repos.d/dropbox.repo
 cat >> /etc/yum.repos.d/dropbox.repo << EOF
 [Dropbox]
 name=Dropbox Repository
+baseurl=http://linux.dropbox.com/fedora/17/
 baseurl=http://linux.dropbox.com/fedora/16/
 baseurl=http://linux.dropbox.com/fedora/15/
 gpgkey=http://linux.dropbox.com/fedora/rpm-public-key.asc
