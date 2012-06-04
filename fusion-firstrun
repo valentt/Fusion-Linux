@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# First run
+if [ "$1" = "--firstrun" ]; then
+    if [ -d /home/liveuser ]; then
+        exit 0    
+    fi
+    if [ -e "/$HOME/$USER/.config/fusion-linux/fusion-welcome" ]; then
+        exit 0   
+    fi
+fi
+
+
