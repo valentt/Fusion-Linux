@@ -11,10 +11,10 @@ if [ "$1" = "--firstrun" ]; then
 fi
 
 # Create flag
-if [ ! -d "$HOME/.config/fusion-linux" ]; then
-    mkdir $HOME/.config/fusion-linux
+if [ ! -f "$HOME/.config/fusion-firstrun" ]; then
+    touch $HOME/.config/fusion-firstrun
 fi
 if [ ! -f "/home/$USER/.config/fusion-linux/fusion-welcome" ]; then
     touch /home/$USER/.config/fusion-linux/fusion-welcome
-    echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/fusion-welcome-firstrun.desktop
+    echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/fusion-firstrun.desktop
 fi
