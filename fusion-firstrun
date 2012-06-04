@@ -11,7 +11,7 @@ if [ "$1" = "--firstrun" ]; then
 fi
 
 # Create flag
-if [ ! -d "/$HOME/$USER/.config/fusion-linux" ]; then
+if [ ! -d "$HOME/.config/fusion-linux" ]; then
     mkdir /home/$USER/.config/fusion-linux
 fi
 if [ ! -f "/home/$USER/.config/fusion-linux/fusion-welcome" ]; then
