@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# First run
-if [ "$1" = "--firstrun" ]; then
-    if [ -d /home/liveuser ]; then
-        exit 0    
-    fi
-    if [ -e "$HOME/.config/fusion-linux/fusion-welcome" ]; then
-        exit 0   
-    fi
+# Firstrun checks
+if [ -d /home/liveuser ]; then
+exit 0    
 fi
+
+if [ -e "$HOME/.config/fusion-firstrun" ]; then
+exit 0   
+fi
+
 
 # Create flag
 if [ ! -f "$HOME/.config/fusion-firstrun" ]; then
