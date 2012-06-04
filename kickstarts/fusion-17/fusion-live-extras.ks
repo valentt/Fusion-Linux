@@ -89,6 +89,16 @@ echo "cpe:/o:fusionlinux:fusion:17" > /etc/system-release-cpe
 echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue
 echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
 
+cat > /etc/os-release << EOF
+NAME=Fusion
+VERSION="17 (Goddess)"
+ID=fusion
+VERSION_ID=17
+PRETTY_NAME="Fusion 17 (Goddess)"
+ANSI_COLOR="0;34"
+CPE_NAME="cpe:/o:fusion:fusion:17"
+EOF
+
 # remove this session file from gnome-session package to make cinnamon the default
 # temporary hack till this file is split up from the package
 rm -rf /usr/share/xsessions/gnome*
