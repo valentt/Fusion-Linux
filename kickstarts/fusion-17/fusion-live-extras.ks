@@ -298,7 +298,7 @@ gpgcheck=0
 
 [fedora-cinnamon-source]
 name=Cinnamon provides core user interface functions for the GNOME 3 desktop - Source
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-16/SRPMS
+baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-17/SRPMS
 enabled=0
 skip_if_unavailable=1
 gpgcheck=0
