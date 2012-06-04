@@ -102,7 +102,22 @@ EOF
 
 # Solarized theme for gnome-terminal and konsole
 
-
+mkdir ~/.solarized
+cd ~/.solarized
+wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
+wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
+wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
+wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
+mkdir -p ~/.config/gedit/styles/
+cp solarized_light.xml ~/.config/gedit/styles/
+cp solarized_dark.xml ~/.config/gedit/styles/
+gsettings set org.gnome.gedit.preferences.editor scheme 'solarized_dark'
+cp dircolors.ansi-dark ~/.dircolors
+eval `dircolors ~/.dircolors`
+git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+cd gnome-terminal-colors-solarized
+./set_dark.sh
+cd ~
 
 mkdir -p /etc/skel/.kde/share/apps/konsole/
 curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o /etc/skel/.kde/share/apps/konsole/SolarizedDark.colorscheme
@@ -126,21 +141,6 @@ EOF
 # temporary hack till this file is split up from the package
 rm -rf /usr/share/xsessions/gnome*
 
-# testing new gsetting system scheme
-cat >> /usr/share/glib-2.0/schemas/01-fusion-settings << EOF
-[org/gnome/gedit/preferences/ui]
-max-recents=13
-EOF
-echo ""
-echo "obican glib-compile-schemas"
-echo ""
-glib-compile-schemas /usr/share/glib-2.0/schemas/
-
-
-#echo ""
-#echo "a sada dbus-launch glib-compile-schemas"
-#echo ""
-#dbus-launch glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 # Gedit with 10 recent files
 # gsettings set org.gnome.gedit.preferences.ui max-recents '13'
