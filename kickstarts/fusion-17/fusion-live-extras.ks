@@ -99,6 +99,29 @@ ANSI_COLOR="0;34"
 CPE_NAME="cpe:/o:fusion:fusion:17"
 EOF
 
+
+# Solarized theme for gnome-terminal and konsole
+
+
+
+mkdir -p /etc/skel/.kde/share/apps/konsole/
+curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o /etc/skel/.kde/share/apps/konsole/SolarizedDark.colorscheme
+cat <<EOF | tee /etc/skel/.kde/share/apps/konsole/Shell.profile
+[Appearance]
+ColorScheme=SolarizedDark
+
+[General]
+Icon=utilities-terminal
+LocalTabTitleFormat=%D : %n
+Name=Shell
+Parent=FALLBACK/
+RemoteTabTitleFormat=(%u) %H
+
+[Terminal Features]
+BidiRenderingEnabled=trues
+EOF
+
+
 # remove this session file from gnome-session package to make cinnamon the default
 # temporary hack till this file is split up from the package
 rm -rf /usr/share/xsessions/gnome*
