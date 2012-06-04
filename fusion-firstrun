@@ -12,7 +12,7 @@ fi
 
 # Create flag
 if [ ! -d "$HOME/.config/fusion-linux" ]; then
-    mkdir /home/$USER/.config/fusion-linux
+    mkdir $HOME/.config/fusion-linux
 fi
 if [ ! -f "/home/$USER/.config/fusion-linux/fusion-welcome" ]; then
     touch /home/$USER/.config/fusion-linux/fusion-welcome
