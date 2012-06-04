@@ -142,6 +142,8 @@ EOF
 rm -rf /usr/share/xsessions/gnome*
 
 
+# GNOME 3 Tweaks
+
 # Gedit with 10 recent files
 # gsettings set org.gnome.gedit.preferences.ui max-recents '13'
 
