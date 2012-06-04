@@ -4,9 +4,8 @@
 Version=1.0
 Type=Application
 Terminal=false
-Icon[en_GB]=gnome-panel-launcher
 Exec=gnome-terminal -e "fusion-welcome --firstrun"
 Categories=Application;Preferences;
-Name[en_GB]=Fusion Welcome Firstrun
 Name=Fusion Welcome Firstrun
 Icon=help-browser
+Name[en_US]=fusion-firstrun.desktop
