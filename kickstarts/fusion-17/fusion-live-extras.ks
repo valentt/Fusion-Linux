@@ -111,7 +111,9 @@ wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/sola
 mkdir -p ~/.config/gedit/styles/
 cp solarized_light.xml ~/.config/gedit/styles/
 cp solarized_dark.xml ~/.config/gedit/styles/
-gsettings set org.gnome.gedit.preferences.editor scheme 'solarized_dark'
+
+
+
 cp dircolors.ansi-dark ~/.dircolors
 eval `dircolors ~/.dircolors`
 git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
