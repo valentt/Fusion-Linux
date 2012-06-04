@@ -2,11 +2,11 @@
 
 # Firstrun checks
 if [ -d /home/liveuser ]; then
-exit 0    
+    exit 0    
 fi
 
 if [ -e "$HOME/.config/fusion-firstrun" ]; then
-exit 0   
+    exit 0   
 fi
 
 
