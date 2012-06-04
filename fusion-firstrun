@@ -5,9 +5,16 @@ if [ "$1" = "--firstrun" ]; then
     if [ -d /home/liveuser ]; then
         exit 0    
     fi
-    if [ -e "/$HOME/$USER/.config/fusion-linux/fusion-welcome" ]; then
+    if [ -e "$HOME/.config/fusion-linux/fusion-welcome" ]; then
         exit 0   
     fi
 fi
 
-
+# Create flag
+if [ ! -d "/$HOME/$USER/.config/fusion-linux" ]; then
+    mkdir /home/$USER/.config/fusion-linux
+fi
+if [ ! -f "/home/$USER/.config/fusion-linux/fusion-welcome" ]; then
+    touch /home/$USER/.config/fusion-linux/fusion-welcome
+    echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/fusion-welcome-firstrun.desktop
+fi
