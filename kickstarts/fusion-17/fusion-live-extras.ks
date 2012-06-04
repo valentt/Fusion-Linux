@@ -291,7 +291,7 @@ EOF
 cat >> /etc/yum.repos.d/fedora-cinnamon.repo << EOF
 [fedora-cinnamon]
 name=Cinnamon provides core user interface functions for the GNOME 3 desktop
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-16/$basearch/
+baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-17/$basearch/
 enabled=1
 skip_if_unavailable=1
 gpgcheck=0
