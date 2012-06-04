@@ -6,6 +6,6 @@ Type=Application
 Terminal=false
 Exec=gnome-terminal -e "fusion-firstrun"
 Categories=Application;Preferences;
-Name=Fusion Welcome Firstrun
+Name=Fusion Firstrun
 Icon=help-browser
 Name[en_US]=fusion-firstrun.desktop
