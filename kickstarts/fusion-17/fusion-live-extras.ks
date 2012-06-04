@@ -305,13 +305,13 @@ gpgcheck=0
 EOF
 
 # Add Parsidora repository
-cat >> /etc/yum.repos.d/parsidora.repo << EOF
-[parsidora]
-name=Parsidora 16 – $basearch
-baseurl=http://parsidora.sourceforge.net/releases/16/repos/parsidora/$basearch
-skip_if_unavailable=1
-gpgcheck=0
-EOF
+#cat >> /etc/yum.repos.d/parsidora.repo << EOF
+#[parsidora]
+#name=Parsidora 16 – $basearch
+#baseurl=http://parsidora.sourceforge.net/releases/16/repos/parsidora/$basearch
+#skip_if_unavailable=1
+#gpgcheck=0
+#EOF
 
 # install VirtualBox Guest Additions
 #mkdir /tmp/mnt
