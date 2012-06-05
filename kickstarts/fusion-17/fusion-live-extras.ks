@@ -19,7 +19,7 @@ repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/
 repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/17/$basearch/
 
 # 32 bit only
-repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/16/
+repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/17/
 repo --name=adobe --baseurl=http://linuxdownload.adobe.com/linux/i386/
 repo --name=skype --baseurl=http://download.skype.com/linux/repos/fedora/updates/i586
 
