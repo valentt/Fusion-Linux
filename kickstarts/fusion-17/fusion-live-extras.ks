@@ -209,6 +209,9 @@ icon-theme='Faience-Azur'
 [org.gnome.gedit.preferences.ui]
 max-recents=10
 
+[org.gnome.desktop.interface]
+gtk-theme='Universal'
+
 [org.gnome.settings-daemon.peripherals.touchpad]
 tap-to-click=true
 disable-while-typing=true
