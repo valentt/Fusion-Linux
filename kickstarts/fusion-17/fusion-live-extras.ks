@@ -1,7 +1,7 @@
 # Desktop with customizationst to fit in a CD sized image (package removals, etc.)
-# Maintained by the Fedora Desktop SIG:
-# http://fedoraproject.org/wiki/SIGs/Desktop
-# mailto:desktop@lists.fedoraproject.org
+# Maintained by the Fusion Linux
+# http://www.fusionlinux.org
+# mailto:fusionlinux@groups.google.com
 
 # timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
