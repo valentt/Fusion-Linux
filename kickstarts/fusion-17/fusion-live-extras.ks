@@ -168,6 +168,20 @@ offline_mode=false
 EOF
 
 
+# synapse config
+mkdir -p /etc/skel/.config/synapse
+cat >> /etc/skel/.config/synapse/config.json << EOF
+{
+  "ui" : {
+    "global" : {
+      "ui-type" : "default",
+      "show-indicator" : false
+    }
+  }
+}
+EOF
+
+
 # remove this session file from gnome-session package to make cinnamon the default
 # temporary hack till this file is split up from the package
 rm -rf /usr/share/xsessions/gnome*
