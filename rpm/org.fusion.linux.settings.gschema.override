@@ -14,7 +14,7 @@ icon-theme='Faience-Azur'
 
 
 [org.gnome.gedit.preferences.ui]
-max-recents='10'
+max-recents=10
 
 
 [org.gnome.settings-daemon.peripherals.touchpad]
