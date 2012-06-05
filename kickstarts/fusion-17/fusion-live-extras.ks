@@ -240,8 +240,7 @@ cat >> /etc/yum.repos.d/dropbox.repo << EOF
 [Dropbox]
 name=Dropbox Repository
 baseurl=http://linux.dropbox.com/fedora/17/
-baseurl=http://linux.dropbox.com/fedora/16/
-baseurl=http://linux.dropbox.com/fedora/15/
+#baseurl=http://linux.dropbox.com/fedora/16/
 gpgkey=http://linux.dropbox.com/fedora/rpm-public-key.asc
 skip_if_unavailable=1
 EOF
