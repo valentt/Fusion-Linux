@@ -212,6 +212,9 @@ max-recents=10
 [org.gnome.desktop.interface]
 gtk-theme='Universal'
 
+[org.gnome.gedit.preferences.editor]
+scheme='solarized_dark'
+
 [org.gnome.settings-daemon.peripherals.touchpad]
 tap-to-click=true
 disable-while-typing=true
