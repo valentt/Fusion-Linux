@@ -14,8 +14,8 @@ part / --size 6000 --fstype ext4
 #repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/16/Everything/i386/os/
 
 # repos that automatically are defined by 16 and $basearch
-repo --name=rpmfusion-non-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-16&arch=$basearch
-repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/16/$basearch
+repo --name=rpmfusion-non-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-17&arch=$basearch
+repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/17/$basearch
 repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/16/$basearch/
 
 # 32 bit only
