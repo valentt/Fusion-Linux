@@ -12,17 +12,16 @@
 #   GNU General Public License for more details.
 
 # Create flag
-if [ ! -d "/home/$USER/.config/fusion-creator" ]; then
-    mkdir /home/$USER/.config/fusion-creator
+if [ ! -d "/home/$USER/.config/fusion-linux" ]; then
+    mkdir -p /home/$USER/.config/fusion-creator
 fi
-if [ ! -f "/home/$USER/.config/fusion-creator/fusion-welcome" ]; then
-    touch /home/$USER/.config/fusion-linux/fusion-welcome
-    echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/fusion-welcome-firstrun.desktop
+if [ ! -f "/home/$USER/.config/fusion-linux/fusion-creator" ]; then
+    touch /home/$USER/.config/fusion-linux/fusion-creator
+    echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/fusion-creator.desktop
 fi
 
 # Vars
-LIBDIR="./fusion-creator-libs"
-#LIBDIR="/usr/share/fusion-linux/fusion-welcome/fusion-welcome-libs"
+LIBDIR="/usr/share/fusion-linux/fusion-creator/fusion-creator-libs"
 STEP="0"
 STEPS=`ls -1 $LIBDIR | wc -l`
 #Internet connection not counted as step, so -1
