@@ -155,6 +155,22 @@ rm -rf /usr/share/xsessions/gnome*
 # set Faience-Azur as default icon theme
 # gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
+cat >> /usr/share/glib-2.0/schemas/org.fusion.linux.settings.gschema.override << EOF
+[org.gnome.desktop.background]
+#picture-uri='file:///usr/share/backgrounds/fusion/fusion-linux.xml'
+show-desktop-icons=true
+
+[org.gnome.desktop.interface]
+icon-theme='Faience-Azur'
+
+[org.gnome.gedit.preferences.ui]
+max-recents=10
+
+[org.gnome.settings-daemon.peripherals.touchpad]
+tap-to-click=true
+disable-while-typing=true
+EOF
+
 # tweak bash terminal and add fortune
 cat >> /etc/skel/.bashrc << EOF
 
