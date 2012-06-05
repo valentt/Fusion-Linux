@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Fusion Creator
+Version=1.0
+Type=Application
+Exec=fusion-creator
+Terminal=True
+Categories=Application;Preferences;
+Icon=help-browser
