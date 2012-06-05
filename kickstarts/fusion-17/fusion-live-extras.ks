@@ -221,7 +221,6 @@ disable-while-typing=true
 EOF
 
 # Put Install icon on desktop
-mkdir -p /etc/skel/Desktop/
 cp /usr/share/applications/liveinst.desktop /etc/skel/Desktop/
 
 # tweak bash terminal and add fortune
