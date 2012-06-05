@@ -111,9 +111,6 @@ wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/sola
 mkdir -p ~/.config/gedit/styles/
 cp solarized_light.xml ~/.config/gedit/styles/
 cp solarized_dark.xml ~/.config/gedit/styles/
-
-
-
 cp dircolors.ansi-dark ~/.dircolors
 eval `dircolors ~/.dircolors`
 git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
@@ -136,6 +133,38 @@ RemoteTabTitleFormat=(%u) %H
 
 [Terminal Features]
 BidiRenderingEnabled=trues
+EOF
+
+
+# clipit config
+mkdir -p /etc/skel/.config/clipit
+cat >> /etc/skel/.config/clipit/clipitrc << EOF
+
+[rc]
+use_copy=true
+use_primary=false
+synchronize=false
+automatic_paste=false
+show_indexes=false
+save_uris=true
+use_rmb_menu=false
+save_history=true
+history_limit=99
+items_menu=30
+statics_show=true
+statics_items=10
+hyperlinks_only=false
+confirm_clear=false
+single_line=true
+reverse_history=false
+item_length=50
+ellipsize=2
+history_key=<Ctrl><Alt>H
+actions_key=<Ctrl><Alt>A
+menu_key=<Ctrl><Alt>P
+search_key=<Ctrl><Alt>F
+offline_key=<Ctrl><Alt>O
+offline_mode=false
 EOF
 
 
