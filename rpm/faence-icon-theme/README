@@ -1,0 +1,15 @@
+Please follow the instructions to build the RPM
+
+1) Download faience icon theme from http://tiheum.deviantart.com/art/Faience-icon-theme-255099649
+
+2) Extract the folders Faience, Faience-Azur and Faience-Ocre to a folder named "faience-icon-theme-0.3"
+
+3) Compress the folder "faience-icon-theme-0.3" to "faience-icon-theme-0.3.tar.gz"
+
+4) Place it in the "SOURCES" directory inside the "rpmbuild" directory
+
+5) Place the "faience-icon-theme.spec" file in the "SPECS" directory inside the "rpmbuild" directory
+
+6) Run "rpmbuild -ba faience-icon-theme.spec"
+
+7) Done!
