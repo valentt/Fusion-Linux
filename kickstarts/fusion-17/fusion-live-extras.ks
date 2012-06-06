@@ -481,7 +481,7 @@ cp -fR Faience-Azur/ "$INSTALL_ROOT/etc/skel/.icons/"
 cp -fR Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
 cp -fR Faience-Claire/ "$INSTALL_ROOT/etc/skel/.icons/"
 cd "$LIVE_ROOT"
-echo -e "\nFaience icons finished."
+echo -e "\nFaience icons install finished."
 
 
 # Solarized theme for gnome-terminal and konsole
