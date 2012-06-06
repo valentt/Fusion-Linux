@@ -471,6 +471,7 @@ INSTALL_ROOT=$(pwd)
 echo $INSTALL_ROOT
 
 # Download Faience GNOME 3 icon theme
+echo -e "\nInstalling Faience icons"
 cd "$LIVE_ROOT"
 mkdir -p faience_icon_theme
 cd faience_icon_theme
