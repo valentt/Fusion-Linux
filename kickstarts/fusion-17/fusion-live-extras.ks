@@ -460,7 +460,9 @@ echo -e "\nInstall root directory - $INSTALL_ROOT"
 # Download Faience GNOME 3 icon theme
 echo -e "\nInstalling Faience icons"
 cd "$LIVE_ROOT"
-mkdir -p faience_icon_theme
+if [ ! -d faience_icon_theme ] ; then
+  mkdir -p faience_icon_theme
+fi
 cd faience_icon_theme
 if [ ! -f faience_icon_theme_by_tiheum-d47vo5d.zip ] ; then
   wget http://www.deviantart.com/download/255099649/faience_icon_theme_by_tiheum-d47vo5d.zip
