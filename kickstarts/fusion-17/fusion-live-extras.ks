@@ -473,6 +473,7 @@ tar xf Faience-Azur.tar.gz
 tar xf Faience-Ocre.tar.gz
 tar xf Faience-Claire.tar.gz
 mkdir -p "$INSTALL_ROOT/etc/skel/.icons/"
+echo -e "\nCopy Faience icons to skel directory."
 cp -fR Faience/ "$INSTALL_ROOT/etc/skel/.icons/"
 cp -fR Faience-Azur/ "$INSTALL_ROOT/etc/skel/.icons/"
 cp -fR Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
