@@ -33,7 +33,7 @@ repo --name=playonlinux --baseurl=http://rpm.playonlinux.com/fedora/yum/base
 # eyecandy
 #desktop-backgrounds-basic
 ##faenza-fusion-icon-theme # Fusion Linux icon theme
-##faenza-icon-theme
+faenza-icon-theme
 
 #fusion linux repo
 #mintmenu
