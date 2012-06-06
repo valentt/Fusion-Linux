@@ -496,7 +496,7 @@ cd "$LIVE_ROOT"
 
 
 # Demo video and audio files
-#echo "Examples creation folder"
+#echo -e "\n Create examples folder"
 #cd "$LIVE_ROOT"
 #mkdir -p Examples/Videos
 #cd Examples/Videos
@@ -524,13 +524,13 @@ cd "$LIVE_ROOT"
 
 
 # Make Multimedia Examples folder show on desktop
-echo "Make Multimedia Examples folder show on desktop"
-cd "$LIVE_ROOT"
-mkdir -p "$INSTALL_ROOT/etc/skel/Desktop/"
-ls -al "$INSTALL_ROOT/etc/skel" # remove after testing
-cp -fR Examples/ "$INSTALL_ROOT/etc/skel/Desktop/" # copy sub directories and all files
-#cp "$LIVE_ROOT/Examples/" "$INSTALL_ROOT/etc/skel/Desktop/" -R
-echo "Make Multimedia Examples folder show on desktop end"
+#echo "Make Multimedia Examples folder show on desktop"
+#cd "$LIVE_ROOT"
+#mkdir -p "$INSTALL_ROOT/etc/skel/Desktop/"
+#ls -al "$INSTALL_ROOT/etc/skel" # remove after testing
+#cp -fR Examples/ "$INSTALL_ROOT/etc/skel/Desktop/" # copy sub directories and all files
+##cp "$LIVE_ROOT/Examples/" "$INSTALL_ROOT/etc/skel/Desktop/" -R
+#echo "Make Multimedia Examples folder show on desktop end"
 
 
 # Download and install latest Broadom b43 driver into /lib/firmware/b43
