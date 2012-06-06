@@ -201,9 +201,13 @@ tap-to-click=true
 disable-while-typing=true
 EOF
 
+
+cat >> /etc/rc.d/init.d/livesys << EOF
 # Put Install icon on desktop
-mkdir -p /etc/skel/Desktop/
-cp /usr/share/applications/anaconda.desktop /etc/skel/Desktop/
+#mkdir -p /etc/skel/Desktop/
+#cp /usr/share/applications/anaconda.desktop /etc/skel/Desktop/
+cp /usr/share/applications/anaconda.desktop /home/liveuser/Desktop/
+FOE
 
 # tweak bash terminal and add fortune
 cat >> /etc/skel/.bashrc << EOF
