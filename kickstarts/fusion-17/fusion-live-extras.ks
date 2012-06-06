@@ -484,15 +484,15 @@ wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/mas
 wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
 wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
 wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
-mkdir -p ~/.config/gedit/styles/
-cp solarized_light.xml ~/.config/gedit/styles/
-cp solarized_dark.xml ~/.config/gedit/styles/
-cp dircolors.ansi-dark ~/.dircolors
-eval `dircolors ~/.dircolors`
+mkdir -p "$INSTALL_ROOT/etc/skel/.config/gedit/styles/"
+cp solarized_light.xml "$INSTALL_ROOT/etc/skel/.config/gedit/styles/"
+cp solarized_dark.xml "$INSTALL_ROOT/etc/skel/.config/gedit/styles/"
+cp dircolors.ansi-dark "$INSTALL_ROOT/etc/skel/.dircolors"
+eval `dircolors "$INSTALL_ROOT/etc/skel/.dircolors"`
 git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
 cd gnome-terminal-colors-solarized
 ./set_dark.sh
-cd ~
+cd "$LIVE_ROOT"
 
 
 # Demo video and audio files
