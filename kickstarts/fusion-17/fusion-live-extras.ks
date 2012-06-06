@@ -470,7 +470,7 @@ cp -fR Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
 cp -fR Faience-Claire/ "$INSTALL_ROOT/etc/skel/.icons/"
 
 
-# Solarized theme for gnome-terminal
+# Solarized theme for gnome-terminal and konsole
 echo -e "\nSolarized gnome-terminal theme"
 mkdir -p "$INSTALL_ROOT/etc/skel/.solarized/"
 cd "$INSTALL_ROOT/etc/skel/.solarized/"
@@ -488,6 +488,7 @@ cd gnome-terminal-colors-solarized
 # ./set_dark.sh
 cd "$LIVE_ROOT"
 
+# Solarized Konsole
 mkdir -p "$INSTALL_ROOT/etc/skel/.kde/share/apps/konsole/"
 curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o "$INSTALL_ROOT/etc/skel/.kde/share/apps/konsole/SolarizedDark.colorscheme"
 cat <<EOF | tee "$INSTALL_ROOT/etc/skel/.kde/share/apps/konsole/Shell.profile"
