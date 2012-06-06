@@ -113,23 +113,6 @@ gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults
 gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t string /apps/gnome-terminal/profiles/Default/foreground_color #838394949696 >/dev/null
 gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t string /apps/gnome-terminal/profiles/Default/bold_color #9393a1a1a1a1 >/dev/null
 
-mkdir -p /etc/skel/.kde/share/apps/konsole/
-curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o /etc/skel/.kde/share/apps/konsole/SolarizedDark.colorscheme
-cat <<EOF | tee /etc/skel/.kde/share/apps/konsole/Shell.profile
-[Appearance]
-ColorScheme=SolarizedDark
-
-[General]
-Icon=utilities-terminal
-LocalTabTitleFormat=%D : %n
-Name=Shell
-Parent=FALLBACK/
-RemoteTabTitleFormat=(%u) %H
-
-[Terminal Features]
-BidiRenderingEnabled=trues
-EOF
-
 
 # clipit config
 mkdir -p /etc/skel/.config/clipit
@@ -502,8 +485,26 @@ cp dircolors.ansi-dark "$INSTALL_ROOT/etc/skel/.dircolors"
 eval `dircolors "$INSTALL_ROOT/etc/skel/.dircolors"`
 git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
 cd gnome-terminal-colors-solarized
-./set_dark.sh
+# ./set_dark.sh
 cd "$LIVE_ROOT"
+
+mkdir -p "$INSTALL_ROOT/etc/skel/.kde/share/apps/konsole/"
+curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o "$INSTALL_ROOT/etc/skel/.kde/share/apps/konsole/SolarizedDark.colorscheme"
+cat <<EOF | tee "$INSTALL_ROOT/etc/skel/.kde/share/apps/konsole/Shell.profile"
+[Appearance]
+ColorScheme=SolarizedDark
+
+[General]
+Icon=utilities-terminal
+LocalTabTitleFormat=%D : %n
+Name=Shell
+Parent=FALLBACK/
+RemoteTabTitleFormat=(%u) %H
+
+[Terminal Features]
+BidiRenderingEnabled=trues
+EOF
+
 
 
 # Demo video and audio files
