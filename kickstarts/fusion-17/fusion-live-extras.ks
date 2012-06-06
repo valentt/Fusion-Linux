@@ -454,7 +454,8 @@ LIVE_ROOT="/home/fusion-linux"
 cd /home/fusion-linux/temp/imgcreate-*
 cd install_root
 INSTALL_ROOT=$(pwd)
-echo $INSTALL_ROOT
+echo -e "\nBegin --nochroot"
+echo -e "\nInstall root directory - $INSTALL_ROOT"
 
 # Download Faience GNOME 3 icon theme
 echo -e "\nInstalling Faience icons"
