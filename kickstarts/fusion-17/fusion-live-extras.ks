@@ -102,22 +102,6 @@ EOF
 
 # Solarized theme for gnome-terminal and konsole
 
-mkdir ~/.solarized
-cd ~/.solarized
-wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
-wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
-wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
-wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
-mkdir -p ~/.config/gedit/styles/
-cp solarized_light.xml ~/.config/gedit/styles/
-cp solarized_dark.xml ~/.config/gedit/styles/
-cp dircolors.ansi-dark ~/.dircolors
-eval `dircolors ~/.dircolors`
-git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
-cd gnome-terminal-colors-solarized
-./set_dark.sh
-cd ~
-
 mkdir -p /etc/skel/.kde/share/apps/konsole/
 curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o /etc/skel/.kde/share/apps/konsole/SolarizedDark.colorscheme
 cat <<EOF | tee /etc/skel/.kde/share/apps/konsole/Shell.profile
@@ -490,6 +474,26 @@ cp -fR Faience/ "$INSTALL_ROOT/etc/skel/.icons/"
 cp -fR Faience-Azur/ "$INSTALL_ROOT/etc/skel/.icons/"
 cp -fR Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
 cp -fR Faience-Claire/ "$INSTALL_ROOT/etc/skel/.icons/"
+
+
+# Solarized theme for gnome-terminal
+echo -e "\nSolarized gnome-terminal theme"
+mkdir -p "$INSTALL_ROOT/etc/skel/.solarized/"
+cd "$INSTALL_ROOT/etc/skel/.solarized/"
+wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
+wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
+wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
+wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
+mkdir -p ~/.config/gedit/styles/
+cp solarized_light.xml ~/.config/gedit/styles/
+cp solarized_dark.xml ~/.config/gedit/styles/
+cp dircolors.ansi-dark ~/.dircolors
+eval `dircolors ~/.dircolors`
+git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+cd gnome-terminal-colors-solarized
+./set_dark.sh
+cd ~
+
 
 # Demo video and audio files
 #echo "Examples creation folder"
