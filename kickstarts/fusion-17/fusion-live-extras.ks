@@ -450,7 +450,7 @@ EOF
 
 # Define variables where config files are located ($LIVE_ROOT) 
 # and which directory is used for building iso ($INSTALL_ROOT)
-LIVE_ROOT="/home/fusion-linux/"
+LIVE_ROOT="/home/fusion-linux"
 cd /home/fusion-linux/temp/imgcreate-*
 cd install_root
 INSTALL_ROOT=$(pwd)
