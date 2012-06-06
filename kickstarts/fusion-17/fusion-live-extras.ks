@@ -536,7 +536,7 @@ cd "$LIVE_ROOT"
 # Download and install latest Broadom b43 driver into /lib/firmware/b43
 echo "Download and install latest Broadom b43 driver"
 cd "$LIVE_ROOT"
-#wgect http://downloads.openwrt.org/sources/broadcom-wl-4.80.53.0.tar.bz2
+#wget http://downloads.openwrt.org/sources/broadcom-wl-4.80.53.0.tar.bz2
 #mkdir "$INSTALL_ROOT/extra/broadcom-firmware" -p
 #cd "$INSTALL_ROOT/extra/broadcom-firmware"
 if [ ! -f broadcom-wl-4.150.10.5.tar.bz2 ] # if file already exists no need to download it again
@@ -547,10 +547,10 @@ else
   echo -e "\nBroadcom firmware already present"
 fi
 tar xjf broadcom-wl-4.150.10.5.tar.bz2
-cd broadcom-wl-4.150.10.5/driver
+# cd broadcom-wl-4.150.10.5/driver
 #b43-fwcutter -w /lib/firmware/ wl_apsta_mimo.o
-b43-fwcutter -w "$INSTALL_ROOT/lib/firmware/" wl_apsta_mimo.o
-cd "$LIVE_ROOT"
+b43-fwcutter -w "$INSTALL_ROOT/lib/firmware/" broadcom-wl-4.150.10.5/driver/wl_apsta_mimo.o
+# cd "$LIVE_ROOT"
 echo "Download and install latest Broadom b43 driver end"
 
 
