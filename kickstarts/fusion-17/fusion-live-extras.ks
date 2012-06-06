@@ -478,7 +478,7 @@ cd faience_icon_theme
 if [ ! -f faience_icon_theme_by_tiheum-d47vo5d.zip ] ; then
   wget http://www.deviantart.com/download/255099649/faience_icon_theme_by_tiheum-d47vo5d.zip
 else
-  echo -e "\nFaience icons already present."
+  echo -e "\nFaience icons already downloaded."
 fi
 unzip -o faience_icon_theme_by_tiheum-d47vo5d.zip
 tar xf Faience.tar.gz
