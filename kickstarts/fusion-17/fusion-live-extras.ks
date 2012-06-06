@@ -556,7 +556,7 @@ echo "Download and install latest Broadom b43 driver end"
 
 # Download and Install Arista Transcoder, 7 M
 cd "$LIVE_ROOT"
-if [ ! -f arista-0.9.6.tar.gz ] # if file already exists no need to download it again
+if [ ! -f arista-0.9.7.tar.gz ] # if file already exists no need to download it again
 then
   echo "Arista installer not present, downloading..."
   wget http://programmer-art.org/media/releases/arista-transcoder/arista-0.9.7.tar.gz
