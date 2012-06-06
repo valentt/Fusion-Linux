@@ -474,7 +474,9 @@ echo $INSTALL_ROOT
 cd "$LIVE_ROOT"
 mkdir -p faience_icon_theme
 cd faience_icon_theme
-wget http://www.deviantart.com/download/255099649/faience_icon_theme_by_tiheum-d47vo5d.zip
+if [ ! -f faience_icon_theme_by_tiheum-d47vo5d.zip ] ; then
+  wget http://www.deviantart.com/download/255099649/faience_icon_theme_by_tiheum-d47vo5d.zip
+fi
 unzip -o faience_icon_theme_by_tiheum-d47vo5d.zip
 tar xf Faience.tar.gz
 tar xf Faience-Azur.tar.gz
