@@ -535,7 +535,7 @@ cd "$LIVE_ROOT"
 #cd "$INSTALL_ROOT/extra/broadcom-firmware"
 if [ ! -f broadcom-wl-4.150.10.5.tar.bz2 ] # if file already exists no need to download it again
 then
-echo "no file present, downloading broadcom firmware"
+echo -e "\nBroadcom firmware not present, downloading..."
 wget http://mirror2.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2
 fi
 tar xjf broadcom-wl-4.150.10.5.tar.bz2
