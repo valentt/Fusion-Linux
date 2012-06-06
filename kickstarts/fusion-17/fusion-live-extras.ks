@@ -535,8 +535,8 @@ cd "$LIVE_ROOT"
 #cd "$INSTALL_ROOT/extra/broadcom-firmware"
 if [ ! -f broadcom-wl-4.150.10.5.tar.bz2 ] # if file already exists no need to download it again
 then
-echo -e "\nBroadcom firmware not present, downloading..."
-wget http://mirror2.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2
+  echo -e "\nBroadcom firmware not present, downloading..."
+  wget http://mirror2.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2
 fi
 tar xjf broadcom-wl-4.150.10.5.tar.bz2
 cd broadcom-wl-4.150.10.5/driver
@@ -550,8 +550,8 @@ echo "Download and install latest Broadom b43 driver end"
 cd "$LIVE_ROOT"
 if [ ! -f arista-0.9.6.tar.gz ] # if file already exists no need to download it again
 then
-echo "no file present, downloading Arista Transcoder"
-wget http://programmer-art.org/media/releases/arista-transcoder/arista-0.9.7.tar.gz
+  echo "Arista installer not present, downloading..."
+  wget http://programmer-art.org/media/releases/arista-transcoder/arista-0.9.7.tar.gz
 fi
 tar xvzf arista-0.9.6.tar.gz
 cd arista-0.9.6
