@@ -563,8 +563,8 @@ then
 else
   echo -e "\nArista installer already downloaded"
 fi
-tar xvzf arista-0.9.6.tar.gz
-cd arista-0.9.6
+tar xvzf arista-0.9.7.tar.gz
+cd arista-0.9.7
 python setup.py install --root $INSTALL_ROOT
 cd "$LIVE_ROOT"
 
