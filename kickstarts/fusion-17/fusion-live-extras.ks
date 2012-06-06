@@ -6,7 +6,7 @@
 # timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
 
-# releasever=16
+# releasever=17
 # basearch=x86_64
 # basearch=i386
 
