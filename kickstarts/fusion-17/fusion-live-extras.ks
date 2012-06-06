@@ -548,7 +548,6 @@ else
 fi
 tar xjf broadcom-wl-4.150.10.5.tar.bz2
 # cd broadcom-wl-4.150.10.5/driver
-#b43-fwcutter -w /lib/firmware/ wl_apsta_mimo.o
 b43-fwcutter -w "$INSTALL_ROOT/lib/firmware/" broadcom-wl-4.150.10.5/driver/wl_apsta_mimo.o
 # cd "$LIVE_ROOT"
 echo "Download and install latest Broadom b43 driver end"
