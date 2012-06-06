@@ -557,7 +557,7 @@ then
   echo "Arista installer not present, downloading..."
   wget http://programmer-art.org/media/releases/arista-transcoder/arista-0.9.7.tar.gz
 else
-  echo -e "\nArista installer already present"
+  echo -e "\nArista installer already downloaded"
 fi
 tar xvzf arista-0.9.6.tar.gz
 cd arista-0.9.6
