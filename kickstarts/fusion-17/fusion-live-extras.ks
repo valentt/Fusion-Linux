@@ -35,12 +35,15 @@ repo --name=playonlinux --baseurl=http://rpm.playonlinux.com/fedora/yum/base
 ##faenza-fusion-icon-theme # Fusion Linux icon theme
 faenza-icon-theme
 
+# tools
+xterm
+git
+
 #fusion linux repo
 #mintmenu
 #dockbarx
 #python-imaging # python module needed for dockbarx, 0.4 M
 #autoplus
-xterm
 #fusion-linux-14 # package with setting for look & feel of Fusion GNOME desktop
 #teamviewer6 # best remote desktop for Linux and other platforms, 84 M
 
