@@ -477,6 +477,8 @@ mkdir -p faience_icon_theme
 cd faience_icon_theme
 if [ ! -f faience_icon_theme_by_tiheum-d47vo5d.zip ] ; then
   wget http://www.deviantart.com/download/255099649/faience_icon_theme_by_tiheum-d47vo5d.zip
+else
+  echo -e "\nFaience icons already present."
 fi
 unzip -o faience_icon_theme_by_tiheum-d47vo5d.zip
 tar xf Faience.tar.gz
@@ -537,6 +539,8 @@ if [ ! -f broadcom-wl-4.150.10.5.tar.bz2 ] # if file already exists no need to d
 then
   echo -e "\nBroadcom firmware not present, downloading..."
   wget http://mirror2.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2
+else
+  echo -e "\nBroadcom firmware already present"
 fi
 tar xjf broadcom-wl-4.150.10.5.tar.bz2
 cd broadcom-wl-4.150.10.5/driver
@@ -552,6 +556,8 @@ if [ ! -f arista-0.9.6.tar.gz ] # if file already exists no need to download it 
 then
   echo "Arista installer not present, downloading..."
   wget http://programmer-art.org/media/releases/arista-transcoder/arista-0.9.7.tar.gz
+else
+  echo -e "\nArista installer already present"
 fi
 tar xvzf arista-0.9.6.tar.gz
 cd arista-0.9.6
