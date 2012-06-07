@@ -20,7 +20,7 @@ else
 
 echo -e "Let's check that target directory $directory is present."
 if [ ! -d $directory ]; then
-	echo -e "Directory path to $directory not present, would you like to create it? (y/n): "
+	echo -e "\nDirectory path to $directory not present, would you like to create it? (y/n): \n"
 	read -n1 a
 	a=`echo $a | tr '[A-Z]' '[a-z]'`
 	if [ "$a" = "y" ]; then
@@ -34,6 +34,7 @@ if [ ! -d $directory ]; then
 		exit
 	fi
 	echo -e "Target directory $directory is present, continuing."
+	cd $directory
 	sleep 3
 fi
 
