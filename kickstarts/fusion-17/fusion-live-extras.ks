@@ -506,7 +506,7 @@ fi
 if [ ! -f rei-forever.jpg ] ; then
   curl https://github.com/valentt/Fusion-Linux-Extras/raw/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -O
 else
-cp rei-forever.jpg "$INSTALL_ROOT/usr/share/backgrounds/"
+  cp rei-forever.jpg "$INSTALL_ROOT/usr/share/backgrounds/"
 fi
 
 
