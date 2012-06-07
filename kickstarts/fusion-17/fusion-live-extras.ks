@@ -181,7 +181,7 @@ rm -rf /usr/share/xsessions/gnome*
 
 cat >> /usr/share/glib-2.0/schemas/org.fusion.linux.settings.gschema.override << EOF
 [org.gnome.desktop.background]
-#picture-uri='file:///usr/share/backgrounds/fusion/fusion-linux.xml'
+picture-uri='file:///usr/share/backgrounds/rei-forever.jpg'
 show-desktop-icons=true
 
 [org.gnome.desktop.interface]
