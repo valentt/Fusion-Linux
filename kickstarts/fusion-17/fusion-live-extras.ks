@@ -476,10 +476,10 @@ tar xf Faience-Ocre.tar.gz
 tar xf Faience-Claire.tar.gz
 mkdir -p "$INSTALL_ROOT/etc/skel/.icons/"
 echo -e "\nCopy Faience icons to skel directory."
-cp -fR Faience/ "$INSTALL_ROOT/etc/skel/.icons/"
-cp -fR Faience-Azur/ "$INSTALL_ROOT/etc/skel/.icons/"
-cp -fR Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
-cp -fR Faience-Claire/ "$INSTALL_ROOT/etc/skel/.icons/"
+mv Faience/ "$INSTALL_ROOT/etc/skel/.icons/"
+mv Faience-Azur/ "$INSTALL_ROOT/etc/skel/.icons/"
+mv Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
+mv Faience-Claire/ "$INSTALL_ROOT/etc/skel/.icons/"
 cd "$LIVE_ROOT"
 echo -e "\nFaience icons install finished."
 
@@ -494,7 +494,7 @@ else
 fi
 
 unzip universal_by_nale12*
-cp Universal "$INSTALL_ROOT/usr/share/themes/"
+mv Universal "$INSTALL_ROOT/usr/share/themes/"
 mv Universal.emerald "$INSTALL_ROOT/usr/share/themes/"
 
 if [ -d "$INSTALL_ROOT/usr/share/theme/Universal" ] ; then
