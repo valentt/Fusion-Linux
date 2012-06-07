@@ -601,6 +601,8 @@ fi
 tar xjf broadcom-wl-4.150.10.5.tar.bz2
 # cd broadcom-wl-4.150.10.5/driver
 b43-fwcutter -w "$INSTALL_ROOT/lib/firmware/" broadcom-wl-4.150.10.5/driver/wl_apsta_mimo.o
+cd ../../
+rm -Rf broadcom-wl-4.150.10.5/
 # cd "$LIVE_ROOT"
 echo -e "\nDownload and install latest Broadom b43 firmware end"
 
@@ -617,6 +619,8 @@ fi
 tar xvzf arista-0.9.7.tar.gz
 cd arista-0.9.7
 python setup.py install --root $INSTALL_ROOT
+cd ..
+rm -Rf arista-0.9.7/
 cd "$LIVE_ROOT"
 
 # Fixes for arista 0.9.6 bugs
