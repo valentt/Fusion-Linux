@@ -604,7 +604,7 @@ b43-fwcutter -w "$INSTALL_ROOT/lib/firmware/" broadcom-wl-4.150.10.5/driver/wl_a
 cd ../../
 rm -Rf broadcom-wl-4.150.10.5/
 # cd "$LIVE_ROOT"
-echo -e "\nDownload and install latest Broadom b43 firmware end"
+echo -e "\nDownload and install latest Broadom b43 firmware finished"
 
 
 # Download and Install Arista Transcoder, 7 M
