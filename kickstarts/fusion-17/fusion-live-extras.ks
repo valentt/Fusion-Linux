@@ -497,9 +497,9 @@ unzip universal_by_nale12*
 mv Universal "$INSTALL_ROOT/usr/share/themes/"
 mv Universal.emerald "$INSTALL_ROOT/usr/share/themes/"
 if [ -d "$INSTALL_ROOT/usr/share/theme/Universal" ] ; then
-  echo -e "Universal theme installed successfully"
+  echo -e "Universal theme installed successfully\n"
 else
-  echo -e "Universal theme installation failed"
+  echo -e "Universal theme installation failed\n"
 fi
 
 
