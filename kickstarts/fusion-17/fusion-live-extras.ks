@@ -485,6 +485,8 @@ echo -e "\nFaience icons install finished."
 
 
 # Universal GNOME 3 Theme
+echo -e "\nBegining of installation - Universal GNOME 3 Theme"
+cd "$LIVE_ROOT"
 if [ -f universal_by_nale12-d4hne5v.zip ] ; then
   echo -e "\nUniversal theme already downloaded"
 else
