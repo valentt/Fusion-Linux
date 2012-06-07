@@ -484,6 +484,27 @@ cd "$LIVE_ROOT"
 echo -e "\nFaience icons install finished."
 
 
+# Universal GNOME 3 Theme
+if [ ! -f universal_by_nale12-d4hne5v.zip ] ; then
+  echo -e "\nUniversal theme already downloaded"
+else
+  echo -e "\nDownloading Universal GNOME 3 theme"
+  cd "$LIVE_ROOT"
+  curl -L -O http://www.deviantart.com/download/271509619/universal_by_nale12-d4hne5v.zip
+fi
+
+unzip universal_by_nale12*
+cp Universal "$INSTALL_ROOT/usr/share/themes/"
+mv Universal.emerald "$INSTALL_ROOT/usr/share/themes/"
+
+if [ -d "$INSTALL_ROOT/usr/share/theme/Universal" ] ; then
+  echo -e "Universal theme installed successfully"
+else
+  echo -e "Universal theme installation failed"
+fi
+
+
+
 # Solarized theme for gnome-terminal and konsole
 echo -e "\nSolarized gnome-terminal theme"
 mkdir -p "$INSTALL_ROOT/etc/skel/.solarized/"
