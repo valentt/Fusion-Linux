@@ -492,17 +492,14 @@ else
   cd "$LIVE_ROOT"
   curl -L -O http://www.deviantart.com/download/271509619/universal_by_nale12-d4hne5v.zip
 fi
-
 unzip universal_by_nale12*
 mv Universal "$INSTALL_ROOT/usr/share/themes/"
 mv Universal.emerald "$INSTALL_ROOT/usr/share/themes/"
-
 if [ -d "$INSTALL_ROOT/usr/share/theme/Universal" ] ; then
   echo -e "Universal theme installed successfully"
 else
   echo -e "Universal theme installation failed"
 fi
-
 
 
 # Solarized theme for gnome-terminal and konsole
