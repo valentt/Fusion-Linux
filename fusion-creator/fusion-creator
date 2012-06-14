@@ -21,7 +21,8 @@ if [ ! -f "/home/$USER/.config/fusion-linux/fusion-creator" ]; then
 fi
 
 # Vars
-LIBDIR="/usr/share/fusion-linux/fusion-creator/fusion-creator-libs"
+# LIBDIR="/usr/share/fusion-linux/fusion-creator/fusion-creator-libs"
+LIBDIR="./fusion-creator-libs"
 STEP="0"
 STEPS=`ls -1 $LIBDIR | wc -l`
 #Internet connection not counted as step, so -1
