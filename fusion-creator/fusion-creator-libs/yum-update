@@ -19,6 +19,7 @@ read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
     echo ""
-    su - -c 'yum update -y --skip-broken'
+    # su - -c 'yum update -y --skip-broken'
+    pkcon update -y
     sleep 4
 fi
