@@ -113,6 +113,12 @@ fi
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/rei-forever.jpg
 }
 
+function solarized-xterm()
+{
+curl -o .Xresources https://raw.github.com/altercation/solarized/c350650cb74eed91895272d4b9d0fde8a335d223/xresources-colors-solarized/Xresources
+xrdb -merge .Xresources
+}
+
 clear
 
 echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
