@@ -37,7 +37,6 @@ echo -e "\nInstalling Skype"
     else
       echo -e "\nSkype failed to install"
     fi
-    '
-  fi
+  fi'
 fi
 sleep 5
