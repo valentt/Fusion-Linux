@@ -25,7 +25,7 @@ a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
   echo -e "\nInstalling Skype"
   if [ -e /usr/bin/skype ]; then
-      echo -e "\nSkype already installed"
+    echo -e "\nSkype already installed"
   else
     su - -c '
     echo -e "\n	Installing Skype"
