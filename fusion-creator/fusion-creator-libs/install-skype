@@ -28,8 +28,7 @@ echo -e "\nInstalling Skype"
     echo -e "\nSkype already installed"
   else
     su - -c '
-    echo ""
-    echo -e "Installing Skype"
+    echo -e "\nInstalling Skype"
     yum install -y qt.i686 qt-x11.i686 libXv.i686 libXScrnSaver.i686
     # yum localinstall -y --nogpgcheck http://download.skype.com/linux/skype-2.2.0.35-fedora.i586.rpm'
     yum localinstall -y --nogpgcheck http://download.skype.com/linux/skype-4.0.0.7-fedora.i586.rpm'
