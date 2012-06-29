@@ -38,7 +38,7 @@ else
   if [ -e /usr/bin/skype ]; then
     echo -e "\nSkype successfully installed"
   else
-    echo -e "\nSkype failed to install"
+    echo -e "\n	Skype failed to install"
   fi
 fi
 fi
