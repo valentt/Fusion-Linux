@@ -110,7 +110,7 @@ if [ ! -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
   curl -o $HOME/.local/share/wallpaper/rei-forever.jpg https://github.com/valentt/Fusion-Linux-Extras/raw/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg 
   echo ""
 fi
-if [ ! -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
+if [ -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
   gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/rei-forever.jpg
 fi
 }
