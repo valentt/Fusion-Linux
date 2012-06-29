@@ -31,12 +31,12 @@ echo -e "\nInstalling Skype"
     echo -e "\n	Installing Skype"
     yum install -y qt.i686 qt-x11.i686 libXv.i686 libXScrnSaver.i686
     # yum localinstall -y --nogpgcheck http://download.skype.com/linux/skype-2.2.0.35-fedora.i586.rpm'
-    yum localinstall -y --nogpgcheck http://download.skype.com/linux/skype-4.0.0.7-fedora.i586.rpm
+    yum localinstall -y --nogpgcheck http://download.skype.com/linux/skype-4.0.0.7-fedora.i586.rpm'
     if [ -e /usr/bin/skype ]; then
       echo -e "\nSkype successfully installed"
     else
       echo -e "\nSkype failed to install"
     fi
-  fi'
+  fi
 fi
 sleep 5
