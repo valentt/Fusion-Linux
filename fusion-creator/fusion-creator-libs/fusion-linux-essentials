@@ -111,7 +111,7 @@ if [ ! -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
   echo ""
 fi
 if [ -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
-  gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/rei-forever.jpg
+  gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/rei-forever.jpg
 fi
 }
 
