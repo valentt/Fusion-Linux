@@ -263,10 +263,11 @@ echo -e "Adding Dropbox repo"
 cat <<EOF | tee /etc/yum.repos.d/dropbox.repo
 [Dropbox]
 name=Dropbox Repository
-baseurl=http://linux.dropbox.com/fedora/16/
+baseurl=http://linux.dropbox.com/fedora/17/
 baseurl=http://linux.dropbox.com/fedora/16/
 baseurl=http://linux.dropbox.com/fedora/15/
 gpgkey=http://linux.dropbox.com/fedora/rpm-public-key.asc
+gpgcheck=0
 skip_if_unavailable=1
 EOF
 rpm --import http://linux.dropbox.com/fedora/rpm-public-key.asc
