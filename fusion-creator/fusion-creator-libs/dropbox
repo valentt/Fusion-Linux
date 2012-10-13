@@ -26,6 +26,6 @@ if [ "$a" != "s" ]; then
     if [ ! -d  ~/.config/autostart ]; then
        mkdir -p ~/.config/autostart
     fi
-    cp /usr/share/applications/dropbox.desktop ~/.config/autostart/
+    cp /usr/share/applications/dropbox.desktop ~/.config/autostart/dropbox.desktop
     dropbox start -i &> /dev/null &
 fi
