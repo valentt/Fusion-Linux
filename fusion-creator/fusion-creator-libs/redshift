@@ -26,6 +26,9 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
 read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
-    cp /usr/share/applications/gtk-redshift.desktop ~/.config/autostart
+  if [ ! -d  ~/.config/autostart ]; then
+       mkdir -p ~/.config/autostart
+  fi
+    cp /usr/share/applications/gtk-redshift.desktop ~/.config/autostart/gtk-redshift.desktop
     gtk-redshift &> /dev/null &
 fi
