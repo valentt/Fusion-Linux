@@ -174,7 +174,7 @@ solarwolf # Interesting space arcade game, 4 M
 # nexuiz # first person 3D shooter, 853 M
 # tremulous # first person multiplayer aliens VS humans 3D shooter, 4/5, 100 M
 # alienarena # first person 3D shooter, 852 M
-# openarena # first person 3D shooter, 
+# openarena # first person 3D shooter, 327 M
 # worldofpadman # cartoon character first person 3D shooter - multiplayer only, 5/5, 3 M + 605 M
 
 # RPG and real-time strategy games
