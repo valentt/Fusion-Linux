@@ -489,7 +489,7 @@ fi
 # Wallpaper
 echo -e "\nBegin wallpaper installation"
 if [ ! -f rei-forever.jpg ] ; then
-  curl https://github.com/valentt/Fusion-Linux-Extras/raw/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -O
+  curl https://raw.github.com/valentt/Fusion-Linux-Extras/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -O
 else
   cp rei-forever.jpg "$INSTALL_ROOT/usr/share/backgrounds/"
 fi
