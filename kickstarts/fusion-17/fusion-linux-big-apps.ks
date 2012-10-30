@@ -9,7 +9,7 @@
 #gnumeric
 
 # internet apps
-#chromium # 92 M
+chromium # 92 M
 #google-chrome-stable
 #chromium-browser
 thunderbird # 46 M
