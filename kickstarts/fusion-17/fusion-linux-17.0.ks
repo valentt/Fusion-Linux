@@ -65,7 +65,7 @@ gnome-shell-extension-user-theme
 
 # internet apps
 pan
-hotot # identica and twitter microbloging client, 1 M
+hotot # identica and twitter microbloging client, 1 M, but has big dependency - webkitgtk (36 M) used by gimp and midori
 #gwibber # best identica and twitter microbloging client, 9.3 M
 #qwit # best identica and twitter microbloging client,  3 M
 #midori
