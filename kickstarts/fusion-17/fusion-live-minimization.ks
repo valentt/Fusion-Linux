@@ -12,7 +12,8 @@
 abiword
 gnumeric
 
-
+# remove some big packages
+-hotot # identica and twitter microbloging client, 1 M, but has big dependency - webkitgtk (36 M) used by gimp and midori
 
 # Drop the Java plugin
 -icedtea-web
