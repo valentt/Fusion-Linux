@@ -342,23 +342,6 @@ gpgcheck=1
 skip_if_unavailable=1
 EOF
 
-# Add Cinnamon repository
-cat >> /etc/yum.repos.d/fedora-cinnamon.repo << EOF
-[fedora-cinnamon]
-name=Cinnamon provides core user interface functions for the GNOME 3 desktop
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-17/$basearch/
-enabled=1
-skip_if_unavailable=1
-gpgcheck=0
-
-[fedora-cinnamon-source]
-name=Cinnamon provides core user interface functions for the GNOME 3 desktop - Source
-baseurl=http://repos.fedorapeople.org/repos/leigh123linux/cinnamon/fedora-17/SRPMS
-enabled=0
-skip_if_unavailable=1
-gpgcheck=0
-EOF
-
 # Add Parsidora repository
 #cat >> /etc/yum.repos.d/parsidora.repo << EOF
 #[parsidora]
