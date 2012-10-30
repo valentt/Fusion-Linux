@@ -36,6 +36,7 @@ repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?rep
 -evolution # thunderbird is much better email client, 45 M
 -cjkuni* # Chinese fonts, 20M
 -wqy* # Chinese fonts, 16 M
+-nhn* # Chinese fonts, 12 M
 
 # Explicitly specified here:
 # <notting> walters: because otherwise dependency loops cause yum issues.
