@@ -9,7 +9,7 @@
 #gnumeric
 
 # internet apps
-##chromium # 92 M temporary bug - requires libc.so.6(GLIBC_2.15)
+#chromium # 92 M
 #google-chrome-stable
 #chromium-browser
 thunderbird # 46 M
