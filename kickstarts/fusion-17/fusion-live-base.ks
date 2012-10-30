@@ -35,7 +35,7 @@ repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?rep
 -ibus-pinyin* # remove Pinying input support
 -ibus-hangul* # remove Hangul input support
 -libpinyin* # remove Chinese Pinyin input support, 32M
--libhangul #
+-libhangul* #
 -evolution # thunderbird is much better email client, 45 M
 -cjkuni* # Chinese fonts, 20M
 -wqy* # Chinese fonts, 16 M
