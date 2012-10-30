@@ -14,7 +14,10 @@ chromium # 92 M
 #chromium-browser
 thunderbird # 46 M
 
-# graphics and photo apps
+# Fusion Linux Creative Suite
+mypaint # MyPaint is a fast and easy open-source graphics application for digital painters, 50 M
+scribus # 43 M
+inkscape # 36.6 M
 blender # 3D modeling, visualization and animation, 24 M
 gimp # most powerful open source image editor 50 M
 # additional GIMP plugins 14 M
@@ -25,8 +28,7 @@ gimp-resynthesizer
 gimp-lqr-plugin
 GREYCstoration-gimp
 ufraw-gimp
-scribus # 43 M
-inkscape # 36.6 M
+
 # inkscape-docs # examples and demos, 37 M
 #hugin # Photo panorama application, 49 M
 #kipi-plugins
