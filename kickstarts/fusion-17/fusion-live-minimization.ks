@@ -12,9 +12,11 @@
 abiword
 gnumeric
 
+
+
 # Drop the Java plugin
 -icedtea-web
-##-java-1.6.0-openjdk
+-java-1.7.0-openjdk
 
 # Drop things that pull in perl
 -linux-atm
@@ -77,7 +79,6 @@ gnumeric
 -autofs
 # smartcards won't really work on the livecd.
 -coolkey
--wget
 
 # qlogic firmwares
 -ql2100-firmware
