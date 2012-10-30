@@ -15,7 +15,7 @@ gnumeric
 # remove some big packages
 -hotot # identica and twitter microbloging client, 1 M, but has big dependency - webkitgtk (36 M) used by gimp and midori
 -webkitgtk
--libpinyin* # remove Chinese Pinyin input support, 32M
+
 
 # Orca, accessibility support, for spins that don't target blind people
 -orca # voice reader for bling people, 33 M
