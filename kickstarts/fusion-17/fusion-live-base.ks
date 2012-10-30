@@ -26,13 +26,14 @@ repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?rep
 @core
 @fonts
 @input-methods
-# use a small pinyin db for live
--ibus-pinyin-db-open-phrase
--ibus-pinyin-db-android
 @admin-tools
 @dial-up
 @hardware-support
 @printing
+
+# remove unnecessary packages
+-ibus-pinyin-db-open-phrase
+-evolution # 45 M
 
 # Explicitly specified here:
 # <notting> walters: because otherwise dependency loops cause yum issues.
