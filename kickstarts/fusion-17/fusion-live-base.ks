@@ -28,7 +28,7 @@ repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?rep
 @input-methods
 # use a small pinyin db for live
 -ibus-pinyin-db-open-phrase
-ibus-pinyin-db-android
+-ibus-pinyin-db-android
 @admin-tools
 @dial-up
 @hardware-support
