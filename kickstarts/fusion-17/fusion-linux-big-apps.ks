@@ -5,8 +5,8 @@
 
 # office apps
 @office # LiberOffice suite, 417 M
-#abiword
-#gnumeric
+-abiword
+-gnumeric
 
 # internet apps
 chromium # 92 M
