@@ -58,8 +58,8 @@ stellarium # Photo-realistic planetarium 40 M
 # SolarModel # Solar Model provides realtime modeling of the solar system, 7.2 M
 # stars # KStars is a Desktop Planetarium, 25 M
 
-# Java 1.6 (85 M)
-java-1.6.0-openjdk
+# Java 1.7 (85 M)
+java-1.7.0-openjdk
 jline
 rhino
 tzdata-java
