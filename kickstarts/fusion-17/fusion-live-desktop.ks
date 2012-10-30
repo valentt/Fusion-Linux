@@ -34,6 +34,7 @@ nss-mdns
 -cjkuni* # Chinese fonts, 20M
 -wqy* # Chinese fonts, 16 M
 -nhn* # Korean fonts, 12 M
+-gnome-games # Lame Gnome games, 15M
 
 %end
 
