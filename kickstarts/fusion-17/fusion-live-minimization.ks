@@ -3,9 +3,14 @@
 
 %packages
 
-# First, no office
+# First, no LibreOffice
+-@office
 -libreoffice-*
 -planner
+
+# small office
+abiword
+gnumeric
 
 # Drop the Java plugin
 -icedtea-web
