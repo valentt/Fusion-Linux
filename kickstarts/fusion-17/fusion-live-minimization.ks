@@ -17,6 +17,9 @@ gnumeric
 -webkitgtk
 -libpinyin* # remove Chinese Pinyin input support, 32M
 
+# Orca, accessibility support, for spins that don't target blind people
+-orca # voice reader for bling people, 33 M
+
 # Drop the Java plugin
 -icedtea-web
 -java-1.7.0-openjdk
