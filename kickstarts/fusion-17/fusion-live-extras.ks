@@ -447,12 +447,12 @@ if [ ! -d faience_icon_theme ] ; then
   mkdir -p faience_icon_theme
 fi
 cd faience_icon_theme
-if [ ! -f faience_icon_theme_by_tiheum-d47vo5d.zip ] ; then
-  wget http://www.deviantart.com/download/255099649/faience_icon_theme_by_tiheum-d47vo5d.zip
+if [ ! -f faience-icon-theme_0.5.zip ] ; then
+  wget http://dl.dropbox.com/u/9966975/faience-icon-theme_0.5.zip
 else
   echo -e "\nFaience icons already downloaded.\n"
 fi
-unzip -o faience_icon_theme_by_tiheum-d47vo5d.zip
+unzip -o faience-icon-theme_0.5.zip
 tar xf Faience.tar.gz
 tar xf Faience-Azur.tar.gz
 tar xf Faience-Ocre.tar.gz
