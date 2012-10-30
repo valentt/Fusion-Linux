@@ -32,11 +32,14 @@ repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?rep
 @printing
 
 # remove unnecessary packages
--ibus-pinyin-db-open-phrase
+-ibus-pinyin*
+-ibus-hangul*
+-libpinyin* # remove Chinese Pinyin input support, 32M
+-libhangul #
 -evolution # thunderbird is much better email client, 45 M
 -cjkuni* # Chinese fonts, 20M
 -wqy* # Chinese fonts, 16 M
--nhn* # Chinese fonts, 12 M
+-nhn* # Korean fonts, 12 M
 
 # Explicitly specified here:
 # <notting> walters: because otherwise dependency loops cause yum issues.
