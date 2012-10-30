@@ -16,6 +16,18 @@ gnumeric
 -hotot # identica and twitter microbloging client, 1 M, but has big dependency - webkitgtk (36 M) used by gimp and midori
 -webkitgtk
 
+# remove unnecessary packages
+-ibus-pinyin* # remove Chinese Pinying input support
+-ibus-hangul* # remove Chinese Hangul input support
+-ibus-chewing* # 5M
+-libpinyin* # remove Chinese Pinyin input support, 32M
+-libhangul* #
+-anthy* # Japanese input, 26 M
+-evolution # thunderbird is much better email client, 45 M
+-cjkuni* # Chinese fonts, 20M
+-wqy* # Chinese fonts, 16 M
+-nhn* # Korean fonts, 12 M
+-gnome-games # Lame Gnome games, 15M
 
 # Orca, accessibility support, for spins that don't target blind people
 -orca # voice reader for bling people, 33 M
