@@ -33,7 +33,7 @@ repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?rep
 
 # remove unnecessary packages
 -ibus-pinyin-db-open-phrase
--evolution # 45 M
+-evolution # thunderbird is much better email client, 45 M
 
 # Explicitly specified here:
 # <notting> walters: because otherwise dependency loops cause yum issues.
