@@ -346,7 +346,7 @@ EOF
 
 # Add Adobe Flash plugin repo
 rpm --import https://dl.dropbox.com/u/184632/RPM-GPG-KEY-adobe-linux
-cat <<EOF | tee -a /etc/yum.repos.d/adobe-linux.repo
+cat <<EOF | tee /etc/yum.repos.d/adobe-linux.repo
 [adobe-linux]
 name=Adobe Systems Incorporated
 baseurl=http://linuxdownload.adobe.com/linux/$basearch
