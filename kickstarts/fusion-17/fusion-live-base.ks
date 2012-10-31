@@ -52,6 +52,8 @@ efibootmgr
 # fpaste is very useful for debugging and very small
 fpaste
 
+-evolution
+
 %end
 
 %post
