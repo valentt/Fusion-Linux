@@ -69,9 +69,7 @@ rpmfusion-nonfree-release
 gstreamer-plugins-bad-nonfree
 unrar
 
-
 #VirtualBox-4.1
-
 
 %end
 
