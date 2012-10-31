@@ -56,7 +56,7 @@ if [ -f /usr/share/applications/liveinst.desktop ]; then
   cp /usr/share/applications/anaconda.desktop /home/liveuser/Desktop/
   cat >> /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override << FOE
 [org.gnome.shell]
-favorite-apps=['firefox.desktop', 'evolution.desktop', 'empathy.desktop', 'rhythmbox.desktop', 'shotwell.desktop', 'openoffice.org-writer.desktop', 'nautilus.desktop', 'anaconda.desktop']
+favorite-apps=['firefox.desktop', 'empathy.desktop', 'rhythmbox.desktop', 'shotwell.desktop', 'openoffice.org-writer.desktop', 'nautilus.desktop', 'anaconda.desktop']
 FOE
 
 fi
