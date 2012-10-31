@@ -319,7 +319,8 @@ skip_if_unavailable=1
 EOF
 
 # Google Earth repo
-cat >> /etc/yum.repos.d/google-earth.repo << EOF
+# cat >> /etc/yum.repos.d/google-earth.repo << EOF
+cat <<EOF | tee -a /etc/yum.repos.d/google-earth.repo
 [google-earth]
 name=google-earth
 baseurl=http://dl.google.com/linux/earth/rpm/stable/$basearch
