@@ -464,20 +464,23 @@ if [ ! -f faience-icon-theme_0.5.zip ] ; then
 else
   echo -e "\nFaience icons already downloaded.\n"
 fi
-unzip -o faience-icon-theme_0.5.zip
-tar xf Faience.tar.gz
-tar xf Faience-Azur.tar.gz
-tar xf Faience-Ocre.tar.gz
-tar xf Faience-Claire.tar.gz
-mkdir -p "$INSTALL_ROOT/etc/skel/.icons/"
-echo -e "\nCopy Faience icons to skel directory."
-mv Faience/ "$INSTALL_ROOT/etc/skel/.icons/"
-mv Faience-Azur/ "$INSTALL_ROOT/etc/skel/.icons/"
-mv Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
-mv Faience-Claire/ "$INSTALL_ROOT/etc/skel/.icons/"
-cd "$LIVE_ROOT"
-echo -e "\nFaience icons install finished."
-
+if [ -f faience-icon-theme_0.5.zip ] ; then
+  unzip -o faience-icon-theme_0.5.zip
+  tar xf Faience.tar.gz
+  tar xf Faience-Azur.tar.gz
+  tar xf Faience-Ocre.tar.gz
+  tar xf Faience-Claire.tar.gz
+  mkdir -p "$INSTALL_ROOT/etc/skel/.icons/"
+  echo -e "\nCopy Faience icons to skel directory."
+  mv Faience/ "$INSTALL_ROOT/etc/skel/.icons/"
+  mv Faience-Azur/ "$INSTALL_ROOT/etc/skel/.icons/"
+  mv Faience-Ocre/ "$INSTALL_ROOT/etc/skel/.icons/"
+  mv Faience-Claire/ "$INSTALL_ROOT/etc/skel/.icons/"
+  cd "$LIVE_ROOT"
+  echo -e "\nFaience icons install finished."
+else
+    echo -e "\nFaience icons download failed.\n"
+fi
 
 # Universal GNOME 3 Theme
 echo -e "\nBegining of installation - Universal GNOME 3 Theme"
