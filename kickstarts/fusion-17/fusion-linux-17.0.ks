@@ -238,7 +238,8 @@ lm_sensors # hardware monitoring tools, 400 k
 # akmod-wl # driver for broadcom wireless cards # no more a separate package?
 # cnetworkmanager # Command Line Interface for NetworkManager - removed?
 #fedora-ksplice # ksplice utility enables you have kernel updates without reboot
-# vim-enhanced # vi is enough for most people, 26M - 65 M with perl dependency
+vim-minimal # 400k
+# vim-enhanced # vi is enough for most people, 26M - 65M with perl dependency
 xorg-x11-apps # xkill app for killing unresponsive apps
 
 # remove Java 1.5 (48 M)
