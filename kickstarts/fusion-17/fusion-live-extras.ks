@@ -296,39 +296,30 @@ EOF
 # install Google repository (Picasa, Google Chrome Browser ...)
 wget https://dl-ssl.google.com/linux/linux_signing_key.pub
 rpm --import linux_signing_key.pub
-#cat >> /etc/yum.repos.d/google.repo << EOF
-cat <<EOF | tee /etc/yum.repos.d/google.repo
-[google]
+echo '[google]
 name=Google - i386
 baseurl=http://dl.google.com/linux/rpm/stable/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
-skip_if_unavailable=1
-EOF
+skip_if_unavailable=1' > /etc/yum.repos.d/google.repo
 
 # Google Chrome repo
-# cat >> /etc/yum.repos.d/google-chrome.repo << EOF
-cat <<EOF | tee /etc/yum.repos.d/google-chrome.repo
-[google-chrome]
+echo '[google-chrome]
 name=google-chrome
 baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
 enabled=1
 gpgcheck=1
-skip_if_unavailable=1
-EOF
+skip_if_unavailable=1' > /etc/yum.repos.d/google-chrome.repo
 
 # Google Earth repo
-# cat >> /etc/yum.repos.d/google-earth.repo << EOF
-cat <<EOF | tee /etc/yum.repos.d/google-earth.repo
-[google-earth]
+echo '[google-earth]
 name=google-earth
 baseurl=http://dl.google.com/linux/earth/rpm/stable/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
-skip_if_unavailable=1
-EOF
+skip_if_unavailable=1' > /etc/yum.repos.d/google-earth.repo
 
 # Add Skype repository
 gpg --keyserver pgp.mit.edu --recv-keys 0xD66B746E
@@ -346,14 +337,13 @@ EOF
 
 # Add Adobe Flash plugin repo
 rpm --import https://dl.dropbox.com/u/184632/RPM-GPG-KEY-adobe-linux
-cat <<EOF | tee /etc/yum.repos.d/adobe-linux.repo
-[adobe-linux]
+echo '[adobe-linux]
 name=Adobe Systems Incorporated
 baseurl=http://linuxdownload.adobe.com/linux/$basearch
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
-EOF
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux' > /etc/yum.repos.d/adobe-linux.repo
+
 
 # Add Parsidora repository
 #cat >> /etc/yum.repos.d/parsidora.repo << EOF
