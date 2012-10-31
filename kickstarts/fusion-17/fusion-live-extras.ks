@@ -430,7 +430,6 @@ cat >> /etc/skel/.gimp-2.7/sessionrc << EOF
 # end of sessionrc
 EOF
 
-
 %end
 
 
