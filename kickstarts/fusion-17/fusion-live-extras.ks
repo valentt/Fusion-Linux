@@ -207,6 +207,7 @@ cat >> /etc/rc.d/init.d/livesys << EOF
 #mkdir -p /etc/skel/Desktop/
 #cp /usr/share/applications/anaconda.desktop /etc/skel/Desktop/
 cp /usr/share/applications/anaconda.desktop /home/liveuser/Desktop/
+cp /usr/share/applications/liveinst.desktop /home/liveuser/Desktop/
 EOF
 
 # tweak bash terminal and add fortune
