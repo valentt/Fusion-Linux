@@ -221,7 +221,7 @@ EOF
 mkdir -p /etc/skel/.config/autostart
 
 # enable clipit clipboard manager autostart
-cp /usr/share/applications/clipit.desktop /etc/skel/.config/autostart/
+# cp /usr/share/applications/clipit.desktop /etc/skel/.config/autostart/
 
 # add synapse to autostart directory
 cp /usr/share/applications/synapse.desktop /etc/skel/.config/autostart/
