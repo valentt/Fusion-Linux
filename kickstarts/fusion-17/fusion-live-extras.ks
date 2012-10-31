@@ -297,7 +297,7 @@ EOF
 wget https://dl-ssl.google.com/linux/linux_signing_key.pub
 rpm --import linux_signing_key.pub
 #cat >> /etc/yum.repos.d/google.repo << EOF
-cat <<EOF | tee -a /etc/yum.repos.d/google.repo
+cat <<EOF | tee /etc/yum.repos.d/google.repo
 [google]
 name=Google - i386
 baseurl=http://dl.google.com/linux/rpm/stable/$basearch
@@ -309,7 +309,7 @@ EOF
 
 # Google Chrome repo
 # cat >> /etc/yum.repos.d/google-chrome.repo << EOF
-cat <<EOF | tee -a /etc/yum.repos.d/google-chrome.repo
+cat <<EOF | tee /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome
 baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
@@ -320,7 +320,7 @@ EOF
 
 # Google Earth repo
 # cat >> /etc/yum.repos.d/google-earth.repo << EOF
-cat <<EOF | tee -a /etc/yum.repos.d/google-earth.repo
+cat <<EOF | tee /etc/yum.repos.d/google-earth.repo
 [google-earth]
 name=google-earth
 baseurl=http://dl.google.com/linux/earth/rpm/stable/$basearch
