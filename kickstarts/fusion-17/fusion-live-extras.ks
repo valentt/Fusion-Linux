@@ -342,6 +342,7 @@ name=Adobe Systems Incorporated
 baseurl=http://linuxdownload.adobe.com/linux/$basearch
 enabled=1
 gpgcheck=1
+skip_if_unavailable=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux' > /etc/yum.repos.d/adobe-linux.repo
 
 
