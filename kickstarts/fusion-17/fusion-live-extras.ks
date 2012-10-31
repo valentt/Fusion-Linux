@@ -296,7 +296,8 @@ EOF
 # install Google repository (Picasa, Google Chrome Browser ...)
 wget https://dl-ssl.google.com/linux/linux_signing_key.pub
 rpm --import linux_signing_key.pub
-cat >> /etc/yum.repos.d/google.repo << EOF
+#cat >> /etc/yum.repos.d/google.repo << EOF
+cat <<EOF | tee -a /etc/yum.repos.d/google.repo
 [google]
 name=Google - i386
 baseurl=http://dl.google.com/linux/rpm/stable/$basearch
@@ -307,7 +308,8 @@ skip_if_unavailable=1
 EOF
 
 # Google Chrome repo
-cat >> /etc/yum.repos.d/google-chrome.repo << EOF
+# cat >> /etc/yum.repos.d/google-chrome.repo << EOF
+cat <<EOF | tee -a /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome
 baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
