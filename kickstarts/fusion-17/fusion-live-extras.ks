@@ -344,6 +344,16 @@ gpgcheck=1
 skip_if_unavailable=1
 EOF
 
+# Add Adobe Flash plugin repo
+cat <<EOF | tee -a /etc/yum.repos.d/adobe-linux.repo
+[adobe-linux]
+name=Adobe Systems Incorporated
+baseurl=http://linuxdownload.adobe.com/linux/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+EOF
+
 # Add Parsidora repository
 #cat >> /etc/yum.repos.d/parsidora.repo << EOF
 #[parsidora]
