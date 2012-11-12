@@ -75,6 +75,7 @@ gnome-shell-extension-user-theme
 
 # internet apps
 uget # download manager
+aria2 # addon for uget, High speed download utility with resuming and segmented downloading
 #pan
 hotot # identica and twitter microbloging client, 1 M, but has big dependency - webkitgtk (36 M) used by gimp and midori
 #gwibber # best identica and twitter microbloging client, 9.3 M
