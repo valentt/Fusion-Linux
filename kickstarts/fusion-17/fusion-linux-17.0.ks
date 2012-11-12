@@ -74,6 +74,7 @@ gnome-shell-extension-righthotcorner
 gnome-shell-extension-user-theme
 
 # internet apps
+uget # download manager
 #pan
 hotot # identica and twitter microbloging client, 1 M, but has big dependency - webkitgtk (36 M) used by gimp and midori
 #gwibber # best identica and twitter microbloging client, 9.3 M
@@ -143,7 +144,6 @@ pulseaudio-module-zeroconf
 amule
 transmission # fabulos and lightweight bittorrent client
 tucan # download manager for file services like megaupload.com, rapidshare.com, mediafire.com, hotfile.com etc, 6 M
-uget # download manager
 #deluge
 #azureus
 
