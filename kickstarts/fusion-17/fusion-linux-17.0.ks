@@ -242,6 +242,7 @@ lm_sensors # hardware monitoring tools, 400 k
 vim-minimal # 400k
 # vim-enhanced # vi is enough for most people, 26M - 65M with perl dependency
 xorg-x11-apps # xkill app for killing unresponsive apps
+policycoreutils-gui # selinux gui management tool, 1.6 M
 
 # remove Java 1.5 (48 M)
 -@java-1.5.0
