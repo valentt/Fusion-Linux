@@ -256,9 +256,9 @@ fi
 function DropboxRepo()
 {
 # Set up Dropbox Repo
-if [ -f /etc/yum.repos.d/dropbox.repo ]; then
-echo -e "Dropbox repo already present"
-else
+#if [ -f /etc/yum.repos.d/dropbox.repo ]; then
+#echo -e "Dropbox repo already present"
+#else
 echo -e "Adding Dropbox repo"
 cat <<EOF | tee /etc/yum.repos.d/dropbox.repo
 [Dropbox]
@@ -607,6 +607,7 @@ DropboxRepo
 #GimpRepo
 #ParsidoraRepo
 EssentialPackagesInstall
+DropboxRepo
 CinnamonInstall
 CodecsInstall
 Gnome3ThemeInstall
