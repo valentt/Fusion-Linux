@@ -107,7 +107,7 @@ function Wallpaper()
 {
 if [ ! -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
   mkdir -p $HOME/.local/share/wallpaper
-  curl -o $HOME/.local/share/wallpaper/rei-forever.jpg https://github.com/valentt/Fusion-Linux-Extras/raw/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg 
+  wget https://github.com/valentt/Fusion-Linux-Extras/raw/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -O $HOME/.local/share/wallpaper/rei-forever.jpg  
   echo ""
 fi
 if [ -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
