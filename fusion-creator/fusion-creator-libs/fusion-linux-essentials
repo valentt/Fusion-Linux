@@ -610,7 +610,7 @@ Gnome3ThemeInstall
 FedoraUtilsInstall
 FaienceIconsInstall
 SwapTweak
-FusionRebranding
+#FusionRebranding # needs Fusion 18 stuff
 FortuneInstall
 FusionPolicyKit
 '
