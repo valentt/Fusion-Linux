@@ -520,6 +520,8 @@ if [ "$VER" = 16 ] ; then
 	NAME=Creation
 elif [ "$VER" = 17 ] ; then
 	NAME=Goddess
+elif [ "$VER" = 18 ] ; then
+	NAME=Goddess
 fi
 echo -e "\nFusion $VER Rebranding\n"
 echo "Fusion release $VER ($NAME)" > /etc/fedora-release
