@@ -38,7 +38,7 @@ repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/17/rep
 # avant-window-navigator # great looking navigation panel, 51 M with python dependencies
 # awn-extras-applets # add avant-window-navigator and all extras, 6.7 M
 cinnamon
-jockey-gtk # Jockey driver manager
+jockey-gtk # Jockey driver manager, from Parsidora repo
 gtk-redshift # adjust colour temperature of you screen according to time of day, might help your eyes hurt less if you work at night, 350 kB
 ailurus # GNOME tweak app, 1.8 M
 gnome-tweak-tool # GNOME 3 tweak tool, 123 K
