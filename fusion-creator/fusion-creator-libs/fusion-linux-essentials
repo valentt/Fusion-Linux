@@ -625,7 +625,7 @@ SolarizedKonsole
 GnomeTweaks
 Wallpaper
 SolarizedXterm
-SmoltSend
+#SmoltSend
 
 cd $DIR
 
