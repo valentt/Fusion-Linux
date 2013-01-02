@@ -10,7 +10,7 @@ part / --size 6000 --fstype ext4
 repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-18&arch=$basearch
 repo --name=rpmfusion-free-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-18&arch=$basearch
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-18/$basearch/
-repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/16/repos/parsidora/$basearch
+repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/17/repos/parsidora/$basearch
 
 #repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/development/17/$basearch/os/
 #repo --name=rpmfusion-nonfree --baseurl=http://download1.rpmfusion.org/nonfree/fedora/development/$basearch/os/
