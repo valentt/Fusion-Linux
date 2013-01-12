@@ -95,14 +95,6 @@ fi
 fi
 }
 
-function SmoltSend()
-{
-# Send Smolt profile
-echo ""
-echo -e "Sending Smolt profile"
-smoltSendProfile -a
-}
-
 function Wallpaper()
 {
 if [ ! -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
@@ -624,7 +616,6 @@ SolarizedKonsole
 GnomeTweaks
 Wallpaper
 SolarizedXterm
-#SmoltSend
 
 cd $DIR
 
