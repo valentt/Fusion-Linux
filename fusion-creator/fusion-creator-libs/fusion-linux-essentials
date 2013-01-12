@@ -442,14 +442,14 @@ function JockeyInstall()
 # Installing Jockey driver installer
 echo -e "Installing Jockey driver installer"
 if [ -e /usr/bin/jockey-gtk ] ; then
-echo -e "Jockey Driver Installer already installed"
+  echo -e "Jockey Driver Installer already installed"
 else
-yum -y --enablerepo=parsidora install jockey-selinux jockey-gtk
+  yum -y --enablerepo=parsidora install jockey-selinux jockey-gtk
 fi
 if [ -e /usr/bin/jockey-gtk ] ; then
-echo -e "Successful installation of Jockey driver installer"
+  echo -e "Successful installation of Jockey driver installer"
 else
-echo -e "Failed to install Jockey driver installer"
+  echo -e "Failed to install Jockey driver installer"
 fi
 sleep 5
 }
@@ -491,8 +491,8 @@ function FedoraUtilsInstall()
 if [ -f /bin/fedorautils ] ; then
 	echo -e "Fedorautils already installed"
 else
-echo -e "Installing Fedora-utils package"
-yum install -y --nogpgcheck fedorautils
+  echo -e "Installing Fedora-utils package"
+  yum install -y --nogpgcheck fedorautils
 fi
 }
 
@@ -512,9 +512,10 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 
 function FusionRebranding()
 {
+DIST=Fusion
 POS=`expr index "$(cat /etc/redhat-release)" 1`
 REL=`cat /etc/redhat-release`
-VER=${REL:$POS-1:2}
+VER=$(awk '{print $3}' /etc/redhat-release)
 
 if [ "$VER" = 16 ] ; then 
 	NAME=Creation
@@ -524,17 +525,16 @@ elif [ "$VER" = 18 ] ; then
 	NAME=Goddess
 fi
 echo -e "\nFusion $VER Rebranding\n"
-echo "Fusion release $VER ($NAME)" > /etc/fedora-release
+echo "$DIST release $VER ($NAME)" > /etc/fedora-release
 echo "cpe:/o:fusionlinux:fusion:$VER" > /etc/system-release-cpe
-echo "Fusion release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue
-echo "Fusion release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue.net
+echo "$DIST release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue
+echo "$DIST release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue.net
 
 cat > /etc/os-release << EOF
-NAME=Fusion
 VERSION="$VER ($NAME)"
 ID=fusion
 VERSION_ID=$VER
-PRETTY_NAME="Fusion $VER ($NAME)"
+PRETTY_NAME="$DIST $VER ($NAME)"
 ANSI_COLOR="0;34"
 CPE_NAME="cpe:/o:fusion:fusion:$VER"
 EOF
