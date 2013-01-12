@@ -1,8 +1,8 @@
 
 
 DIR=$(pwd)
-export RELEASE=$(awk '{print $3}' /etc/redhat-release)
-PREVIOUS=$(($RELEASE -1))
+export VER=$(awk '{print $3}' /etc/redhat-release)
+PREVIOUS=$(($VER -1))
 
 function SolarizedThemeInstall()
 {
