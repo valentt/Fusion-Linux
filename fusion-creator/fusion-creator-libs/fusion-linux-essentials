@@ -276,7 +276,7 @@ echo -e "Dropbox repo successfuly installed"
 else
 echo -e "Dropbox repo installation failed"
 fi
-fi
+#fi
 }
 
 function ChromiumRepo()
