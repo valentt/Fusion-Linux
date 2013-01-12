@@ -140,8 +140,7 @@ read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
 echo ""
-su - -c '# Fusion Linux Essentials
-function RPMFusionRepo()
+su - -c 'function RPMFusionRepo()
 {
 # Check for RPM Fusion repos
 echo -e "Adding additional repos"
