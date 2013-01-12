@@ -147,37 +147,37 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
 read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
-    echo ""
-    su - -c '# Fusion Linux Essentials
-    
+echo ""
+su - -c '# Fusion Linux Essentials
+
 function RPMFusionRepo()
 {
 # Check for RPM Fusion repos
 echo -e "Adding additional repos"
 if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fedora-google.repo ] && [ -f /etc/yum.repos.d/fedora-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fedora-skype.repo ] && [ -f /etc/yum.repos.d/fedorautils.repo ]; then
-echo -e "Repos already added"
+  echo -e "Repos already added"
 else
 
 # Set up RPM Fusion repos
-if [ -f /etc/yum.repos.d/rpmfusion-free.repo ]; then
-echo -e "RPM Fusion free repo already present"
-else
-echo -e "Adding RPM Fusion free repo"
-yum localinstall -y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
-fi
+  if [ -f /etc/yum.repos.d/rpmfusion-free.repo ]; then
+    echo -e "RPM Fusion free repo already present"
+  else
+    echo -e "Adding RPM Fusion free repo"
+   yum localinstall -y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+  fi
 
-if [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ]; then
-echo -e "RPM Fusion nonfree repo already present"
-else
-echo -e "Adding RPM Fusion nonfree repo"
-yum localinstall -y --nogpgcheck http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
-fi
+  if [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ]; then
+    echo -e "RPM Fusion nonfree repo already present"
+  else
+    echo -e "Adding RPM Fusion nonfree repo"
+    yum localinstall -y --nogpgcheck http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+  fi
 
-if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fedora-google.repo ] && [ -f /etc/yum.repos.d/fedora-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fedora-skype.repo ] && [ -f /etc/yum.repos.d/fedora-fedorautils.repo ]; then
-echo -e "Additional repos successfuly added"
-else
-echo -e "Someting failed while adding RPM Fusion repos"
-fi
+  if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fedora-google.repo ] && [ -f /etc/yum.repos.d/fedora-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fedora-skype.repo ] && [ -f /etc/yum.repos.d/fedora-fedorautils.repo ]; then
+    echo -e "Additional repos successfuly added"
+  else
+    echo -e "Someting failed while adding RPM Fusion repos"
+  fi
 
 fi
 }
