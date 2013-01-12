@@ -264,9 +264,9 @@ skip_if_unavailable=1
 EOF
 rpm --import http://linux.dropbox.com/fedora/rpm-public-key.asc
 if [ -f /etc/yum.repos.d/fedora-dropbox.repo ]; then
-echo -e "Dropbox repo successfuly installed"
+  echo -e "Dropbox repo successfuly installed"
 else
-echo -e "Dropbox repo installation failed"
+  echo -e "Dropbox repo installation failed"
 fi
 #fi
 }
@@ -410,7 +410,7 @@ rm -rf "~/.thumbnails/*"
 function Gnome3ThemeInstall()
 {
 # Install Universal GNOME 3 theme
-if [ -d /usr/share/themes/Universal ] ; then
+if [ -d /usr/share/themes/Universal ]; then
 	echo -e "Universal theme already installed"
 else
 	echo ""
@@ -420,7 +420,7 @@ else
 	unzip universal_by_nale12*
 	mv Universal /usr/share/themes/
 	mv Universal.emerald /usr/share/themes/
-	if [ -d /usr/share/theme/Universal ] ; then
+	if [ -d /usr/share/theme/Universal ]; then
 		echo -e "Universal theme installed successfully"
 	else
 		echo -e "Universal theme installation failed"
@@ -433,12 +433,12 @@ function JockeyInstall()
 {
 # Installing Jockey driver installer
 echo -e "Installing Jockey driver installer"
-if [ -e /usr/bin/jockey-gtk ] ; then
+if [ -e /usr/bin/jockey-gtk ]; then
   echo -e "Jockey Driver Installer already installed"
 else
   yum -y --enablerepo=parsidora install jockey-selinux jockey-gtk
 fi
-if [ -e /usr/bin/jockey-gtk ] ; then
+if [ -e /usr/bin/jockey-gtk ]; then
   echo -e "Successful installation of Jockey driver installer"
 else
   echo -e "Failed to install Jockey driver installer"
@@ -449,7 +449,7 @@ sleep 5
 function FaienceIconsInstall()
 {
 # Install Faience GNOME 3 icon theme
-if [ -d /usr/share/icons/Faience-Azur ] ; then
+if [ -d /usr/share/icons/Faience-Azur ]; then
 	echo -e "Faience Icons already installed"
 else
 	echo ""
@@ -469,7 +469,7 @@ else
 	cp -fR Faience-Claire/ "/usr/share/icons/"
 	cd /tmp/
 	rm -Rf /tmp/faience_icon_theme
-	if [ -d /usr/share/icons/Faience-Azur ] ; then
+	if [ -d /usr/share/icons/Faience-Azur ]; then
 		echo -e "Faience Installed successfully"
 	else
 		echo -e "Faience Icons installation failed"
@@ -480,7 +480,7 @@ sleep 3
 
 function FedoraUtilsInstall()
 {
-if [ -f /bin/fedorautils ] ; then
+if [ -f /bin/fedorautils ]; then
   echo -e "Fedorautils already installed"
 else
   echo -e "Installing Fedora-utils package"
@@ -583,6 +583,7 @@ ResultActive=yes
 EOF
 }
 
+VER=$(awk '{print $3}' /etc/redhat-release)
 
 RPMFusionRepo
 if [ "$VER" = 17 ]; then 
