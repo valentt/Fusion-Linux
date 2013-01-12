@@ -118,7 +118,7 @@ clear
 echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
 
   FUSION LINUX ESSENTIALS
-  ---------------
+  -----------------------
   Fusion Linux is made by selecting best packages from Fedora and 
   RPMFusion repositories, and using Cinnamon instead of GNOME 3.
 
@@ -141,7 +141,6 @@ a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
 echo ""
 su - -c '# Fusion Linux Essentials
-
 function RPMFusionRepo()
 {
 # Check for RPM Fusion repos
