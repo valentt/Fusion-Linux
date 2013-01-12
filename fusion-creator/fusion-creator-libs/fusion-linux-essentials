@@ -595,9 +595,9 @@ EOF
 
 
 RPMFusionRepo
-#if [ "$VER" = 17 ]; then 
-#CinnamonRepo
-#fi
+if [ "$VER" = 17 ]; then 
+  CinnamonRepo
+fi
 FedoraUtilsRepo
 GoogleRepo
 AdobeRepo
