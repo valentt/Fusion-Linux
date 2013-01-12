@@ -372,8 +372,8 @@ function CinnamonInstall()
 if [ -f /bin/cinnamon ]; then
   echo -e "Cinnamon already installed"
 else
-echo -e "Installing Cinnamon Desktop Manager"
-yum install -y cinnamon
+  echo -e "Installing Cinnamon Desktop Manager"
+  yum install -y cinnamon
 fi
 }
 
@@ -481,7 +481,7 @@ sleep 3
 function FedoraUtilsInstall()
 {
 if [ -f /bin/fedorautils ] ; then
-	echo -e "Fedorautils already installed"
+  echo -e "Fedorautils already installed"
 else
   echo -e "Installing Fedora-utils package"
   yum install -y --nogpgcheck fedorautils
@@ -535,7 +535,7 @@ function FortuneInstall()
 # Adding Fortune to terminal
 s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ]; then
-	echo -e "\nFortune for root already installed\n"
+  echo -e "\nFortune for root already installed\n"
 else
 cp ~/.bashrc ~/.bashrc.bak
 cat <<EOF | tee -a ~/.bashrc
@@ -546,9 +546,9 @@ fi
 EOF
 s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
-echo -e "\nFortune successfuly installed\n"
+  echo -e "\nFortune successfuly installed\n"
 else
-echo -e "\nFortune for root failed to install\n"
+  echo -e "\nFortune for root failed to install\n"
 fi
 fi
 }
