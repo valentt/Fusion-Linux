@@ -630,7 +630,8 @@ cd $DIR
 
 else
 	echo ""
-	echo -e "You can't proceed without installing Fusion Essentials, exiting."
+	echo -e "Without this option there is no reason so continue."
+	echo -e "You can't proceed without enabling Fusion Essentials, exiting."
 	echo ""
 	sleep 5
 	exit 0
