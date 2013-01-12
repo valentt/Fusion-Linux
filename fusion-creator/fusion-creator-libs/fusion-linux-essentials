@@ -513,8 +513,6 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 function FusionRebranding()
 {
 DIST=Fusion
-POS=`expr index "$(cat /etc/redhat-release)" 1`
-REL=`cat /etc/redhat-release`
 VER=$(awk '{print $3}' /etc/redhat-release)
 
 if [ "$VER" = 16 ] ; then 
