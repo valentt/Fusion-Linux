@@ -595,7 +595,7 @@ EOF
 
 
 RPMFusionRepo
-if [ "$VER" = 17 ] ; then 
+if [ "$VER" = 17 ]; then 
 CinnamonRepo
 fi
 FedoraUtilsRepo
