@@ -1,8 +1,8 @@
-
+# Fusion Linux essentials script
 
 DIR=$(pwd)
-export VER=$(awk '{print $3}' /etc/redhat-release)
-PREVIOUS=$(($VER -1))
+# export RELEASE=$(awk '{print $3}' /etc/redhat-release)
+# PREVIOUS=$(($RELEASE -1))
 
 function SolarizedThemeInstall()
 {
@@ -39,7 +39,7 @@ if [ -f ~/.kde/share/apps/konsole/SolarizedDark.colorscheme ]; then
 else
 mkdir -p ~/.kde/share/apps/konsole/
 curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o ~/.kde/share/apps/konsole/SolarizedDark.colorscheme
-cat <<EOF | tee ~/.kde/share/apps/konsole/Shell.profile
+cat <<EOF | tee ~/.kde/share/apps/konsole/Shell.profile > null
 [Appearance]
 ColorScheme=SolarizedDark
 
@@ -80,7 +80,7 @@ if [ -n "$s" ]; then
 	echo -e "\nFortune already installed\n"
 else
 cp ~/.bashrc ~/.bashrc.bak
-cat <<EOF | tee -a ~/.bashrc
+cat <<EOF | tee -a ~/.bashrc > null
 # Display Fortune
 if [ "\$PS1" ]; then
 fortune
@@ -88,21 +88,22 @@ fi
 EOF
 s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
-echo -e "\nFortune successfuly installed\n"
+  echo -e "\nFortune successfuly installed\n"
 else
-echo -e "\nFortune failed to install\n"
+  echo -e "\nFortune failed to install\n"
+  sleep 2
 fi
 fi
 }
 
 function Wallpaper()
 {
-if [ ! -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
+if [ ! -f $HOME/.local/share/wallpaper/rei-forever.jpg ]; then
   mkdir -p $HOME/.local/share/wallpaper
   wget https://github.com/valentt/Fusion-Linux-Extras/raw/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -O $HOME/.local/share/wallpaper/rei-forever.jpg
   echo ""
 fi
-if [ -f $HOME/.local/share/wallpaper/rei-forever.jpg ] ; then
+if [ -f $HOME/.local/share/wallpaper/rei-forever.jpg ]; then
   gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/rei-forever.jpg
 fi
 }
@@ -139,13 +140,15 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
 read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
-echo ""
-su - -c 'function RPMFusionRepo()
+    echo ""
+    su - -c '# Fusion Linux Essentials
+    
+function RPMFusionRepo()
 {
 # Check for RPM Fusion repos
 echo -e "Adding additional repos"
 if [ -f /etc/yum.repos.d/rpmfusion-free.repo ] && [ -f /etc/yum.repos.d/rpmfusion-nonfree.repo ] && [ -f /etc/yum.repos.d/fedora-google.repo ] && [ -f /etc/yum.repos.d/fedora-chromium-stable.repo ] && [ -f /etc/yum.repos.d/fedora-skype.repo ] && [ -f /etc/yum.repos.d/fedorautils.repo ]; then
-  echo -e "Repos already added"
+echo -e "Repos already added"
 else
 
 # Set up RPM Fusion repos
@@ -167,10 +170,12 @@ else
     echo -e "Additional repos successfuly added"
   else
     echo -e "Someting failed while adding RPM Fusion repos"
+    sleep 2
   fi
 
 fi
 }
+
 
 function CinnamonRepo()
 {
@@ -191,7 +196,7 @@ echo -e "Fedora-Utils repo already present"
 else
 echo -e "Adding Fedora-Utils repo"
 
-cat <<EOF | tee /etc/yum.repos.d/fedorautils.repo
+cat <<EOF | tee /etc/yum.repos.d/fedorautils.repo > null
 [fedorautils] 
 name=Fedora Utils
 baseurl=http://master.dl.sourceforge.net/project/fedorautils/
@@ -212,7 +217,7 @@ echo -e "Adding Google repo"
 curl -s https://dl-ssl.google.com/linux/linux_signing_key.pub -o linux_signing_key.pub
 rpm --import linux_signing_key.pub
 rm -f linux_signing_key.pub
-cat <<EOF | tee /etc/yum.repos.d/fedora-google.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-google.repo > null
 [Google]
 name=Google - $(uname -i)
 baseurl=http://dl.google.com/linux/rpm/stable/$(uname -i)
@@ -250,7 +255,7 @@ function DropboxRepo()
 #echo -e "Dropbox repo already present"
 #else
 echo -e "Adding Dropbox repo"
-cat <<EOF | tee /etc/yum.repos.d/dropbox.repo
+cat <<EOF | tee /etc/yum.repos.d/dropbox.repo > null
 [Dropbox]
 name=Dropbox Repository
 baseurl=http://linux.dropbox.com/fedora/18/
@@ -261,10 +266,11 @@ gpgcheck=0
 skip_if_unavailable=1
 EOF
 rpm --import http://linux.dropbox.com/fedora/rpm-public-key.asc
-if [ -f /etc/yum.repos.d/fedora-dropbox.repo ]; then
+if [ -f /etc/yum.repos.d/dropbox.repo ]; then
   echo -e "Dropbox repo successfuly installed"
-else
+  else
   echo -e "Dropbox repo installation failed"
+  sleep 2
 fi
 #fi
 }
@@ -276,7 +282,7 @@ if [ -f /etc/yum.repos.d/fedora-chromium-stable.repo ]; then
 echo -e "Chromium repo already present"
 else
 echo -e "Adding Chromium repo"
-cat <<EOF | tee /etc/yum.repos.d/fedora-chromium-stable.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-chromium-stable.repo > null
 [fusion-chromium-stable]
 name=Builds of the "stable" tag of the Chromium Web Browser
 baseurl=http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-\$releasever/\$basearch/
@@ -301,7 +307,7 @@ if [ -f /etc/yum.repos.d/fedora-skype.repo ]; then
 echo -e "Skype repo already present"
 else
 echo -e "Adding Skype repo"
-cat <<EOF | tee /etc/yum.repos.d/fedora-skype.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-skype.repo  > null
 [skype]
 name=Skype Repository
 baseurl=http://download.skype.com/linux/repos/fedora/updates/i586/
@@ -322,7 +328,7 @@ echo -e "Adding Gimp repo"
 curl -s http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/RPM-GPG-KEY-nphilipp -O
 rpm --import RPM-GPG-KEY-nphilipp
 rm -f RPM-GPG-KEY-nphilipp
-cat <<EOF | tee /etc/yum.repos.d/fedora-gimp-unstable.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-gimp-unstable.repo > null
 [fedora-gimp-unstable]
 name=Unstable development versions of GIMP for Fedora \$releasever - \$basearch
 baseurl=http://repos.fedorapeople.org/repos/nphilipp/gimp-unstable/fedora-\$releasever/\$basearch/
@@ -354,7 +360,7 @@ if [ -f /etc/yum.repos.d/fedora-parsidora.repo ]; then
 else
 # Add Parsidora Repo
 echo -e "Adding Parsidora repo"
-cat <<EOF | tee /etc/yum.repos.d/fedora-parsidora.repo
+cat <<EOF | tee /etc/yum.repos.d/fedora-parsidora.repo > null
 [parsidora]
 name=Parsidora \$releasever – \$basearch
 baseurl=http://parsidora.sourceforge.net/releases/\$releasever/repos/parsidora/\$basearch
@@ -370,8 +376,8 @@ function CinnamonInstall()
 if [ -f /bin/cinnamon ]; then
   echo -e "Cinnamon already installed"
 else
-  echo -e "Installing Cinnamon Desktop Manager"
-  yum install -y cinnamon
+echo -e "Installing Cinnamon Desktop Manager"
+yum install -y cinnamon
 fi
 }
 
@@ -396,6 +402,7 @@ if [ $(uname -i) = "i386" ]; then
 			echo -e "MPlayer codecs successfuly installed"
 		else
 			echo -e "MPlayer codecs installation failed"
+			sleep 2
 		fi
 	fi
 else
@@ -422,6 +429,7 @@ else
 		echo -e "Universal theme installed successfully"
 	else
 		echo -e "Universal theme installation failed"
+		sleep 2
 	fi
 fi
 sleep 3
@@ -432,14 +440,15 @@ function JockeyInstall()
 # Installing Jockey driver installer
 echo -e "Installing Jockey driver installer"
 if [ -e /usr/bin/jockey-gtk ]; then
-  echo -e "Jockey Driver Installer already installed"
+echo -e "Jockey Driver Installer already installed"
 else
-  yum -y --enablerepo=parsidora install jockey-selinux jockey-gtk
+yum -y --enablerepo=parsidora install jockey-selinux jockey-gtk
 fi
 if [ -e /usr/bin/jockey-gtk ]; then
   echo -e "Successful installation of Jockey driver installer"
 else
   echo -e "Failed to install Jockey driver installer"
+  sleep 2
 fi
 sleep 5
 }
@@ -471,6 +480,7 @@ else
 		echo -e "Faience Installed successfully"
 	else
 		echo -e "Faience Icons installation failed"
+		sleep 2
 	fi
 fi
 sleep 3
@@ -479,10 +489,10 @@ sleep 3
 function FedoraUtilsInstall()
 {
 if [ -f /bin/fedorautils ]; then
-  echo -e "Fedorautils already installed"
+	echo -e "Fedorautils already installed"
 else
-  echo -e "Installing Fedora-utils package"
-  yum install -y --nogpgcheck fedorautils
+echo -e "Installing Fedora-utils package"
+yum install -y --nogpgcheck fedorautils
 fi
 }
 
@@ -502,29 +512,32 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 
 function FusionRebranding()
 {
-DIST=Fusion
-VER=$(awk '{print $3}' /etc/redhat-release)
+VER=`cat /etc/redhat-release|cut -d " " -f 3`
+DISTRO=Fusion
+ID=fusion
 
-if [ "$VER" = 16 ] ; then 
+
+if [ "$VER" = 16 ]; then 
 	NAME=Creation
-elif [ "$VER" = 17 ] ; then
+elif [ "$VER" = 17 ]; then
 	NAME=Goddess
-elif [ "$VER" = 18 ] ; then
+elif [ "$VER" = 18 ]; then
 	NAME=Goddess
 fi
 echo -e "\nFusion $VER Rebranding\n"
-echo "$DIST release $VER ($NAME)" > /etc/fedora-release
+echo "$DISTRO release $VER ($NAME)" > /etc/fedora-release
 echo "cpe:/o:fusionlinux:fusion:$VER" > /etc/system-release-cpe
-echo "$DIST release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue
-echo "$DIST release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue.net
+echo "$DISTRO release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue
+echo "$DISTRO release $VER ($NAME) Kernel \r on an \m (\l)" > /etc/issue.net
 
 cat > /etc/os-release << EOF
-VERSION="$VER ($NAME)"
-ID=fusion
+NAME=$DISTRO
+VERSION="$VER ($DISTRO)"
+ID=$ID
 VERSION_ID=$VER
-PRETTY_NAME="$DIST $VER ($NAME)"
+PRETTY_NAME="$DISTRO $VER ($NAME)"
 ANSI_COLOR="0;34"
-CPE_NAME="cpe:/o:fusion:fusion:$VER"
+CPE_NAME="cpe:/o:$ID:$ID:$VER"
 EOF
 }
 
@@ -533,10 +546,10 @@ function FortuneInstall()
 # Adding Fortune to terminal
 s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ]; then
-  echo -e "\nFortune for root already installed\n"
+	echo -e "\nFortune for root already installed\n"
 else
 cp ~/.bashrc ~/.bashrc.bak
-cat <<EOF | tee -a ~/.bashrc
+cat <<EOF | tee -a ~/.bashrc > null
 # Display Fortune
 if [ "\$PS1" ]; then
 fortune
@@ -544,9 +557,10 @@ fi
 EOF
 s=`cat ~/.bashrc | grep -i "# Display Fortune"`
 if [ -n "$s" ] && [ -e /usr/bin/fortune ]; then
-  echo -e "\nFortune successfuly installed\n"
+  echo -e "\nFortune for root successfuly installed\n"
 else
   echo -e "\nFortune for root failed to install\n"
+  sleep 2
 fi
 fi
 }
@@ -581,11 +595,10 @@ ResultActive=yes
 EOF
 }
 
-VER=$(awk '{print $3}' /etc/redhat-release)
 
 RPMFusionRepo
 if [ "$VER" = 17 ]; then 
-  CinnamonRepo
+CinnamonRepo
 fi
 FedoraUtilsRepo
 GoogleRepo
@@ -624,4 +637,6 @@ else
 	echo -e "You can't proceed without enabling Fusion Essentials, exiting."
 	echo ""
 	sleep 3	exit 0
+
 fi
+

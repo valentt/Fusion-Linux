@@ -26,7 +26,7 @@ read -n1 a
 a=`echo $a | tr '[A-Z]' '[a-z]'`
 if [ "$a" != "s" ]; then
     echo ""
-    su - -c 'cat >> /etc/yum.repos.d/fedorautils.repo << EOF
+    sudo bash -c 'cat >> /etc/yum.repos.d/fedorautils.repo << EOF
 [fedorautils] 
 name=Fedora Utils
 baseurl=http://master.dl.sourceforge.net/project/fedorautils/
