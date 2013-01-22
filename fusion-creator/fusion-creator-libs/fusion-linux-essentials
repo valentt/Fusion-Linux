@@ -28,7 +28,7 @@ eval `dircolors ~/.dircolors`
 curl -L https://github.com/sigurdga/gnome-terminal-colors-solarized/archive/master.zip -o gnome-terminal-colors-solarized.zip
 unzip gnome-terminal-colors-solarized.zip
 rm gnome-terminal-colors-solarized.zip
-cd gnome-terminal-colors-solarized
+cd gnome-terminal-colors-solarized-master
 ./set_dark.sh
 cd ~
 fi
