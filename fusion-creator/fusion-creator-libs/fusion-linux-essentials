@@ -373,13 +373,16 @@ function CinnamonInstall()
 if [ -f /bin/cinnamon ]; then
   echo -e "Cinnamon already installed"
 else
-echo -e "Installing Cinnamon Desktop Manager"
-yum install -y cinnamon
-  if [ -f /bin/cinnamon ]; then
-    echo -e "Cinnamon successfu installed"
-  else
-    echo -e "Installing Cinnamon Desktop Manager"
-  fi
+  echo -e "Installing Cinnamon Desktop Manager"
+  yum install -y cinnamon
+  mv /usr/share/xsessions/gnome.desktop /usr/share/xsessions/gnome.desktop.tmp
+  mv /usr/share/xsessions/cinnamon.desktop /usr/share/xsessions/gnome.desktop
+  mv /usr/share/xsessions/gnome.desktop.tmp /usr/share/xsessions/cinnamon.desktop
+    if [ -f /bin/cinnamon ]; then
+      echo -e "Cinnamon successfu installed"
+    else
+      echo -e "Installing Cinnamon Desktop Manager"
+    fi
 fi
 }
 
