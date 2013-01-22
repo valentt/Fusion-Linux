@@ -482,6 +482,9 @@ gsettings set org.gnome.desktop.interface gtk-theme 'MediterraneanNight'
 # set Faience-Azur as default icon theme
 gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 
+# make Cinnamon as default session
+gsettings set org.gnome.desktop.session session-name cinnamon
+
 sleep 3
 }
 
