@@ -447,7 +447,7 @@ else
 	cd /tmp/
 	curl -L https://github.com/valentt/Fusion-Linux/raw/master/themes/Dust-blue-metacity.tar.gz -o Dust-blue-metacity.tar.gz
 	tar xvzf Dust-blue-metacity.tar.gz
-	rm Dust-blue-metacity.tar.gz
+	rm -f Dust-blue-metacity.tar.gz
 	mv Dust\ blue\ metacity/ /usr/share/themes/DustBlue
 	if [ -d /usr/share/theme/DustBlue ]; then
 		echo -e "\nDustBlue metacity theme installed successfully"
@@ -466,7 +466,7 @@ else
 	cd /tmp/
 	curl -L https://github.com/valentt/Fusion-Linux/raw/master/themes/MediterraneanNight-1.16.1.tar.gz -o MediterraneanNight-1.16.1.tar.gz
 	tar xvzf MediterraneanNight-1.16.1.tar.gz
-	rm MediterraneanNight-1.16.1.tar.gz
+	rm -f MediterraneanNight-1.16.1.tar.gz
 	mv Mediterranean* /usr/share/themes/
 		if [ -d /usr/share/theme/MediterraneanNight ]; then
 		echo -e "\nMediterraneanNight theme installed successfully"
