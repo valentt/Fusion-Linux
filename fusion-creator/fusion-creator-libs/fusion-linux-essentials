@@ -25,7 +25,9 @@ cp solarized_dark.xml ~/.config/gedit/styles/
 gsettings set org.gnome.gedit.preferences.editor scheme 'solarized_dark'
 cp dircolors.ansi-dark ~/.dircolors
 eval `dircolors ~/.dircolors`
-git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+curl -L https://github.com/sigurdga/gnome-terminal-colors-solarized/archive/master.zip -o gnome-terminal-colors-solarized.zip
+unzip gnome-terminal-colors-solarized.zip
+rm gnome-terminal-colors-solarized.zip
 cd gnome-terminal-colors-solarized
 ./set_dark.sh
 cd ~
@@ -523,6 +525,34 @@ else
 		sleep 2
 	fi
 fi
+
+# Install DustBlue metacity theme
+if [ -d /usr/share/themes/DustBlue ]; then
+	echo -e "DustBlue metacity theme already installed"
+else
+	echo ""
+	echo -e "Installing DustBlue metacity theme"
+	cd /tmp/
+	curl -L -O https://github.com/valentt/Fusion-Linux/raw/master/themes/Dust-blue-metacity.tar.gz
+	tar xvzf Dust-blue-metacity.tar.gz
+	rm Dust-blue-metacity.tar.gz
+	mv Dust\ blue\ metacity/ /usr/share/themes/DustBlue
+	if [ -d /usr/share/theme/DustBlue ]; then
+		echo -e "DustBlue metacity theme installed successfully"
+	else
+		echo -e "DustBlue metacity theme installation failed"
+		sleep 2
+	fi
+fi
+
+https://github.com/valentt/Fusion-Linux/raw/master/themes/Dust-blue-metacity.tar.gz
+
+# set Universal as default gtk-theme
+gsettings set org.gnome.desktop.interface gtk-theme 'Universal'
+
+# set Faience-Azur as default icon theme
+gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
+
 sleep 3
 }
 
@@ -539,7 +569,7 @@ fi
 function EssentialPackagesInstall()
 {
 echo -e "Installing essential tools"
-yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-dropbox nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod wget git xterm
+yum install -y ailurus gnome-tweak-tool hardinfo clipit synapse beesu nautilus-dropbox nautilus-beesu-manager gnote gconf-editor dconf-editor gtk-redshift fortune-mod wget xterm yum-plugin-remove-with-leaves
 }
 
 function SwapTweak()
