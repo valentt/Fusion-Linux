@@ -19,9 +19,9 @@ wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/mas
 wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
 wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_dark.xml
 wget https://github.com/mukashi/solarized/raw/master/gedit-colors-solarized/solarized_light.xml
-mkdir -p ~/.config/gedit/styles/
-cp solarized_light.xml ~/.config/gedit/styles/
-cp solarized_dark.xml ~/.config/gedit/styles/
+mkdir -p ~/.local/share/gtksourceview-3.0/styles/
+cp solarized_light.xml ~/.local/share/gtksourceview-3.0/styles/
+cp solarized_dark.xml ~/.local/share/gtksourceview-3.0/styles/
 gsettings set org.gnome.gedit.preferences.editor scheme 'solarized_dark'
 cp dircolors.ansi-dark ~/.dircolors
 eval `dircolors ~/.dircolors`
@@ -97,7 +97,7 @@ function Wallpaper()
 {
 if [ ! -f $HOME/.local/share/wallpaper/rei-forever.jpg ]; then
   mkdir -p $HOME/.local/share/wallpaper
-  wget https://github.com/valentt/Fusion-Linux-Extras/raw/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -O $HOME/.local/share/wallpaper/rei-forever.jpg
+  curl -L https://github.com/valentt/Fusion-Linux-Extras/raw/master/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o $HOME/.local/share/wallpaper/rei-forever.jpg
   echo ""
 fi
 if [ -f $HOME/.local/share/wallpaper/rei-forever.jpg ]; then
@@ -107,7 +107,7 @@ fi
 
 function SolarizedXterm()
 {
-curl -o .Xresources https://raw.github.com/altercation/solarized/c350650cb74eed91895272d4b9d0fde8a335d223/xresources-colors-solarized/Xresources
+curl -L https://raw.github.com/altercation/solarized/c350650cb74eed91895272d4b9d0fde8a335d223/xresources-colors-solarized/Xresources -o .Xresources
 xrdb -merge .Xresources
 }
 
@@ -375,6 +375,10 @@ if [ -f /bin/cinnamon ]; then
 else
 echo -e "Installing Cinnamon Desktop Manager"
 yum install -y cinnamon
+  if [ -f /bin/cinnamon ]; then
+    echo -e "Cinnamon successfu installed"
+  else
+  echo -e "Installing Cinnamon Desktop Manager"
 fi
 }
 
