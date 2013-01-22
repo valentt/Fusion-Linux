@@ -40,7 +40,7 @@ if [ -f ~/.kde/share/apps/konsole/SolarizedDark.colorscheme ]; then
   echo -e "Solarized theme for Konsole already installed"
 else
 mkdir -p ~/.kde/share/apps/konsole/
-curl https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o ~/.kde/share/apps/konsole/SolarizedDark.colorscheme
+curl -L https://raw.github.com/phiggins/konsole-colors-solarized/master/Solarized%20Dark.colorscheme -o ~/.kde/share/apps/konsole/SolarizedDark.colorscheme
 cat <<EOF | tee ~/.kde/share/apps/konsole/Shell.profile > null
 [Appearance]
 ColorScheme=SolarizedDark
