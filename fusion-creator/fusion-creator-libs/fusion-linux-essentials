@@ -66,6 +66,15 @@ gsettings set org.gnome.gedit.preferences.ui max-recents '10'
 # show icons on Desktop
 gsettings set org.gnome.desktop.background show-desktop-icons true
 
+# set Universal as default gtk-theme
+gsettings set org.gnome.desktop.interface gtk-theme 'MediterraneanNight'
+
+# set Faience-Azur as default icon theme
+gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
+
+# make Cinnamon as default session
+gsettings set org.gnome.desktop.session session-name cinnamon
+
 }
 
 
@@ -475,15 +484,6 @@ else
 	    sleep 2
 	fi
 fi
-
-# set Universal as default gtk-theme
-gsettings set org.gnome.desktop.interface gtk-theme 'MediterraneanNight'
-
-# set Faience-Azur as default icon theme
-gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
-
-# make Cinnamon as default session
-gsettings set org.gnome.desktop.session session-name cinnamon
 
 sleep 3
 }
