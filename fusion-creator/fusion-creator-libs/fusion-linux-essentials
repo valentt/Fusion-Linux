@@ -378,7 +378,8 @@ yum install -y cinnamon
   if [ -f /bin/cinnamon ]; then
     echo -e "Cinnamon successfu installed"
   else
-  echo -e "Installing Cinnamon Desktop Manager"
+    echo -e "Installing Cinnamon Desktop Manager"
+  fi
 fi
 }
 
