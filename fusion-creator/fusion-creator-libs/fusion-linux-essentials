@@ -64,11 +64,6 @@ gsettings set org.gnome.gedit.preferences.ui max-recents '10'
 # show icons on Desktop
 gsettings set org.gnome.desktop.background show-desktop-icons true
 
-# set Universal as default gtk-theme
-gsettings set org.gnome.desktop.interface gtk-theme 'Universal'
-
-# set Faience-Azur as default icon theme
-gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
 }
 
 
@@ -412,26 +407,71 @@ fi
 rm -rf "~/.thumbnails/*"
 }
 
-function Gnome3ThemeInstall()
+function FusionDesign()
 {
-# Install Universal GNOME 3 theme
+# Install Universal theme
 if [ -d /usr/share/themes/Universal ]; then
 	echo -e "Universal theme already installed"
 else
 	echo ""
-	echo -e "Installing Universal GNOME 3 theme"
+	echo -e "\nInstalling Universal theme"
 	cd /tmp/
 	curl -L -O http://www.deviantart.com/download/271509619/universal_by_nale12-d4hne5v.zip
 	unzip universal_by_nale12*
 	mv Universal /usr/share/themes/
 	mv Universal.emerald /usr/share/themes/
 	if [ -d /usr/share/theme/Universal ]; then
-		echo -e "Universal theme installed successfully"
+		echo -e "\nUniversal theme installed successfully"
 	else
-		echo -e "Universal theme installation failed"
+		echo -e "\nUniversal theme installation failed"
 		sleep 2
 	fi
 fi
+
+# Install DustBlue metacity theme
+if [ -d /usr/share/themes/DustBlue ]; then
+	echo -e "DustBlue metacity theme already installed"
+else
+	echo ""
+	echo -e "\nInstalling DustBlue metacity theme"
+	cd /tmp/
+	curl -L -O https://github.com/valentt/Fusion-Linux/raw/master/themes/Dust-blue-metacity.tar.gz
+	tar xvzf Dust-blue-metacity.tar.gz
+	rm Dust-blue-metacity.tar.gz
+	mv Dust\ blue\ metacity/ /usr/share/themes/DustBlue
+	if [ -d /usr/share/theme/DustBlue ]; then
+		echo -e "\nDustBlue metacity theme installed successfully"
+	else
+		echo -e "DustBlue metacity theme installation failed"
+		sleep 2
+	fi
+fi
+
+# Install MediterraneanNight theme
+if [ -d /usr/share/themes/MediterraneanNight ]; then
+	echo -e "MediterraneanNight theme already installed"
+else
+	echo ""
+	echo -e "\nInstalling MediterraneanNight theme"
+	cd /tmp/
+	curl -L -O https://github.com/valentt/Fusion-Linux/raw/master/themes/MediterraneanNight-1.16.1.tar.gz
+	tar xvzf MediterraneanNight-1.16.1.tar.gz
+	rm MediterraneanNight-1.16.1.tar.gz
+	mv Mediterranean* /usr/share/themes/
+		if [ -d /usr/share/theme/MediterraneanNight ]; then
+		echo -e "\nMediterraneanNight theme installed successfully"
+	else
+		echo -e "\nMediterraneanNight theme installation failed"
+		sleep 2
+	fi
+fi
+
+# set Universal as default gtk-theme
+gsettings set org.gnome.desktop.interface gtk-theme 'MediterraneanNight'
+
+# set Faience-Azur as default icon theme
+gsettings set org.gnome.desktop.interface icon-theme 'Faience-Azur'
+
 sleep 3
 }
 
@@ -612,7 +652,7 @@ EssentialPackagesInstall
 DropboxRepo
 CinnamonInstall
 CodecsInstall
-Gnome3ThemeInstall
+FusionDesign
 #JockeyInstall
 FedoraUtilsInstall
 FaienceIconsInstall
@@ -639,4 +679,3 @@ else
 	sleep 3	exit 0
 
 fi
-
