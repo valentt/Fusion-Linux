@@ -32,16 +32,16 @@ if [ "$a" = "1" ]; then
 	RESOLUTIONY=${RESOLUTIONY:0:4}
 	echo -e "\nYour resolution is $RESOLUTIONX x $RESOLUTIONY\n, dowloading appropriate wallpaper size"
 	if [ "$RESOLUTIONX" = 1366 ] ; then
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1366_768.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_1366_768.png
+		curl -L https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1366_768.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_1366_768.png
 		gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/fusion_wallpaper_1366_768.png
 	elif  [ "$RESOLUTIONX" = 1280 ] && [ "$RESOLUTIONY" = 800 ]; then
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_wide_1280_800.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_800.png
+		curl -L https://github.com/valentt/Fusion-Linux-Extras/raw/ab68c243e3cf482dfb6e266be55a312badf5646f/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_wide_1280_800.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_800.png
 		gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_800.png
 	elif  [ "$RESOLUTIONX" = 1280 ] && [ "$RESOLUTIONY" = 1024 ]; then
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1280_1024.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_1024.png
+		curl -L https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1280_1024.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_1024.png
 		gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_1024.png
 	else
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1280_1024.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_1024.png
+		curl -L https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/fusion_wallpaper_1280_1024.png -o $HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_1024.png
 		gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/fusion_wallpaper_wide_1280_1024.png
 
 	fi
@@ -54,7 +54,7 @@ fi
 
 if [ "$a" = "3" ]; then
 	if [ ! -f /usr/share/wallpapers/rei-forever.jpg ] ; then
-		curl https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o $HOME/.local/share/wallpaper/rei-forever.jpg
+		curl -L https://github.com/valentt/Fusion-Linux-Extras/raw/1b18f7bbb25277cd631cba74d6054a081b4b61b5/Fusion%20Linux%20Artwork/wallpaper/rei-forever.jpg -o $HOME/.local/share/wallpaper/rei-forever.jpg
 		echo ""
 		gsettings set org.gnome.desktop.background picture-uri file://$HOME/.local/share/wallpaper/rei-forever.jpg
 		# old gnome 2, left just as example how it was done before
