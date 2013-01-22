@@ -442,7 +442,7 @@ else
 	echo ""
 	echo -e "\nInstalling DustBlue metacity theme"
 	cd /tmp/
-	curl -L -O https://github.com/valentt/Fusion-Linux/raw/master/themes/Dust-blue-metacity.tar.gz
+	curl -L https://github.com/valentt/Fusion-Linux/raw/master/themes/Dust-blue-metacity.tar.gz -o Dust-blue-metacity.tar.gz
 	tar xvzf Dust-blue-metacity.tar.gz
 	rm Dust-blue-metacity.tar.gz
 	mv Dust\ blue\ metacity/ /usr/share/themes/DustBlue
@@ -461,7 +461,7 @@ else
 	echo ""
 	echo -e "\nInstalling MediterraneanNight theme"
 	cd /tmp/
-	curl -L -O https://github.com/valentt/Fusion-Linux/raw/master/themes/MediterraneanNight-1.16.1.tar.gz
+	curl -L https://github.com/valentt/Fusion-Linux/raw/master/themes/MediterraneanNight-1.16.1.tar.gz -o MediterraneanNight-1.16.1.tar.gz
 	tar xvzf MediterraneanNight-1.16.1.tar.gz
 	rm MediterraneanNight-1.16.1.tar.gz
 	mv Mediterranean* /usr/share/themes/
