@@ -468,11 +468,11 @@ else
 	tar xvzf MediterraneanNight-1.16.1.tar.gz
 	rm -f MediterraneanNight-1.16.1.tar.gz
 	mv Mediterranean* /usr/share/themes/
-		if [ -d /usr/share/theme/MediterraneanNight ]; then
-		echo -e "\nMediterraneanNight theme installed successfully"
-	else
-		echo -e "\nMediterraneanNight theme installation failed"
-		sleep 2
+	if [ -d /usr/share/theme/MediterraneanNight ]; then
+	  echo -e "\nMediterraneanNight theme installed successfully"
+	  else
+            echo -e "\nMediterraneanNight theme installation failed"
+	    sleep 2
 	fi
 fi
 
