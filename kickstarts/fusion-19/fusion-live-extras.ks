@@ -80,17 +80,17 @@ echo "vm.vfs_cache_pressure = 50" >>/etc/sysctl.conf
 echo ""
 echo -e "Fusion Linux Rebranding"
 echo ""
-echo "Fusion release 17 (Goddess)" > /etc/fedora-release
+echo "Fusion release 19 (Goddess)" > /etc/fedora-release
 echo "cpe:/o:fusionlinux:fusion:17" > /etc/system-release-cpe
-echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue
-echo "Fusion release 17 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
+echo "Fusion release 19 (Goddess) Kernel \r on an \m (\l)" > /etc/issue
+echo "Fusion release 19 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
 
 cat > /etc/os-release << EOF
 NAME=Fusion
 VERSION="17 (Goddess)"
 ID=fusion
 VERSION_ID=17
-PRETTY_NAME="Fusion 17 (Goddess)"
+PRETTY_NAME="Fusion 19 (Goddess)"
 ANSI_COLOR="0;34"
 CPE_NAME="cpe:/o:fusion:fusion:17"
 EOF
