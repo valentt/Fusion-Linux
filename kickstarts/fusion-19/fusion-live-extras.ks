@@ -9,10 +9,9 @@ part / --size 6000 --fstype ext4
 #repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
 #repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/17/Everything/i386/os/
 
-# repos that automatically are defined by 17 and $basearch
-repo --name=rpmfusion-non-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-17&arch=$basearch
-repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/17/$basearch
-repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/17/$basearch/
+repo --name=rpmfusion-non-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
+repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/$releasever/$basearch
+repo --name=virtualbox --baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/$releasever/$basearch/
 
 # 32 bit only
 repo --name=dropbox --baseurl=http://linux.dropbox.com/fedora/17/
