@@ -6,10 +6,6 @@
 # timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
 
-# releasever=17
-# basearch=x86_64
-# basearch=i386
-
 #repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
 #repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/17/Everything/i386/os/
 
