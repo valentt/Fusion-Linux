@@ -92,7 +92,7 @@ ID=fusion
 VERSION_ID=17
 PRETTY_NAME="Fusion 19 (Goddess)"
 ANSI_COLOR="0;34"
-CPE_NAME="cpe:/o:fusion:fusion:17"
+CPE_NAME="cpe:/o:fusion:fusion:19"
 EOF
 
 
