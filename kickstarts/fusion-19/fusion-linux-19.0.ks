@@ -1,4 +1,4 @@
-# Fusion Linux 18
+# Fusion Linux 19
 # valent.turkovic@gmail.com
 # http://fusionlinux.org/blog/
 
