@@ -69,6 +69,6 @@ else
   echo ""
 fi
 
-livecd-creator -v --logfile=fusion-livecd-creator.log -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Linux-17.0-mini-64bit -c $directory/valentt-Fusion-Linux-*/kickstarts/fusion-17/fusion-linux-mini.ks
+livecd-creator -v --logfile=fusion-livecd-creator.log -t $directory/temp/ --cache=$directory/yum-cache/ -f Fusion-Linux-17.0-mini-64bit -c $directory/valentt-Fusion-Linux-*/kickstarts/fusion-19/fusion-linux-mini.ks --releasever=19
 #'
 fi
