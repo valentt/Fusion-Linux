@@ -6,8 +6,8 @@
 # timezone Europe/Zagreb
 part / --size 6000 --fstype ext4
 
-#repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-15/i386/
-#repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/17/Everything/i386/os/
+#repo --name=fusion --baseurl=http://iso.linux.hr/fusion-linux/fusion-repo/fusion-$releasever/i386/
+#repo --name=rpmfusion-non-free --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/$releasever/Everything/i386/os/
 
 repo --name=rpmfusion-non-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/$releasever/$basearch
