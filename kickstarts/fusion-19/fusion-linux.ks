@@ -9,7 +9,7 @@ repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?
 repo --name=rpmfusion-free-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-$releasever/$basearch/
 repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/18/repos/parsidora/$basearch
-repo --name=zhonghuaren http://download.opensuse.org/repositories/home%3A/zhonghuaren/Fedora_$releasever/
+repo --name=rpm-sphere http://download.opensuse.org/repositories/home%3A/zhonghuaren/Fedora_$releasever/
 
 %packages
 
@@ -25,6 +25,9 @@ repo --name=zhonghuaren http://download.opensuse.org/repositories/home%3A/zhongh
 -wqy* # Chinese fonts, 16 M
 -nhn* # Korean fonts, 12 M
 -gnome-games # Lame Gnome games, 15M
+
+#repos
+rpmsphere-release
 
 # desktop tools and addons
 # avant-window-navigator # great looking navigation panel, 51 M with python dependencies
