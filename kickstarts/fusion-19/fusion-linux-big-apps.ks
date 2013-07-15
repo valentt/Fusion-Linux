@@ -51,6 +51,7 @@ kdiff3 # Compare + merge 2 or 3 files or directories, 4.3 M
 kdeutils # filelight is obsoleted by kdeutils, filelight visualizes diskspace usage
 kdeedu-marble # Marble is desktop atlas and globe, 22 M
 # kdeutils-filelight # vizualizes used file space
+yakuake
 
 # education
 stellarium # Photo-realistic planetarium 40 M
