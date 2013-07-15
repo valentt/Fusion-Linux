@@ -87,9 +87,9 @@ echo "Fusion release 19 (Goddess) Kernel \r on an \m (\l)" > /etc/issue.net
 
 cat > /etc/os-release << EOF
 NAME=Fusion
-VERSION="17 (Goddess)"
+VERSION="19 (Goddess)"
 ID=fusion
-VERSION_ID=17
+VERSION_ID=19
 PRETTY_NAME="Fusion 19 (Goddess)"
 ANSI_COLOR="0;34"
 CPE_NAME="cpe:/o:fusion:fusion:19"
