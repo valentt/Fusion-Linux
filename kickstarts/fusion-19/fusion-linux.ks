@@ -206,7 +206,7 @@ liveusb-creator
 sshfs # mount remote ssh folders, pure awesomeness ;)
 powertop
 conky
-ntfs-config # GUI for easy NTFS mounting and configuration, 500 kB
+##ntfs-config # GUI for easy NTFS mounting and configuration, 500 kB
 htop
 atop
 testdisk
