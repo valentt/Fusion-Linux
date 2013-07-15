@@ -133,7 +133,7 @@ pulseaudio-module-zeroconf
 # p2p apps
 amule
 transmission # fabulos and lightweight bittorrent client
-tucan # download manager for file services like megaupload.com, rapidshare.com, mediafire.com, hotfile.com etc, 6 M
+##tucan # download manager for file services like megaupload.com, rapidshare.com, mediafire.com, hotfile.com etc, 6 M
 #deluge
 #azureus
 
