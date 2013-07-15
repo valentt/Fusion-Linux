@@ -1,0 +1,159 @@
+#!/bin/bash
+
+TOPDIR=/var/tmp
+
+STATEFILE=$TOPDIR/nightlylivecdstatefile
+# WARNING: MirrorManager must always give this mirror to the host running this script
+STATEPATH=http://infrastructure.fedoraproject.org/pub/fedora/linux/development/13/x86_64/os/repodata/repomd.xml
+
+getdatehash() {
+     DUMP=$(wget --no-cache -S $1 -O /dev/null 2>&1)
+     echo "$DUMP" | grep -q "HTTP/1.1 200 OK"
+     if [ $? -eq 0 ]; then
+         DATE=$(echo "$DUMP"|grep '^  Last-Modified'|sha1sum |awk {'print $1'})
+     else
+         echo "ERROR: $STATEPATH failed."
+         exit 1
+     fi
+}
+getdatehash $STATEPATH
+
+if [ -f $STATEFILE ]; then
+     OLDDATE=$(cat $STATEFILE)
+     if [ "$OLDDATE" == "$DATE" ]; then
+         # No change, exit
+         exit 0
+     fi
+fi
+
+# Save date hash
+echo "$DATE" > $STATEFILE
+echo "Saving date hash: $DATE"
+
+# Check for running livecd-creator and abort if it is running
+if ps -ef |grep -v grep |grep -q livecd-creator; then
+     echo "ERROR: Another livecd-creator is still running.  Aborting."
+     exit 255
+fi
+
+if [ ! -d $TOPDIR/spin-kickstarts/ ]; then
+     cd $TOPDIR
+     git clone http://git.fedorahosted.org/git/spin-kickstarts.git
+fi
+
+# pull any git updates to kickstarts
+
+cd $TOPDIR/spin-kickstarts/
+git reset --hard
+git pull
+
+if [ ! -d $TOPDIR/nightly-composes ]; then
+	mkdir -p $TOPDIR/nightly-composes
+fi
+
+DATE=`date +%Y%m%d.%H`
+
+# remove the previous days compose
+find $TOPDIR/nightly-composes/ -name '*.iso' -exec rm -f '{}' \;
+
+# loop though the valid spins
+for i in `echo desktop design-suite xfce broffice.org kde electronic-lab games lxde soas security`
+do
+
+   cd $TOPDIR/nightly-composes/
+
+   echo $i
+
+   if [ ! -d $TOPDIR/nightly-composes/$i ]; then
+  	mkdir -p $TOPDIR/nightly-composes/$i
+   fi
+   if [ ! -d $TOPDIR/nightly-composes/$i/logs ]; then
+  	mkdir -p $TOPDIR/nightly-composes/$i/logs
+	touch $TOPDIR/nightly-composes/$i/logs/SIZEHISTORY-i386
+	touch $TOPDIR/nightly-composes/$i/logs/SIZEHISTORY-x86_64
+   fi
+
+   cd $i
+
+   # compose f13 not rawhide for now.
+   sed -i 's/rawhide/fedora-13/g' $TOPDIR/spin-kickstarts/*.ks
+
+   # debrand
+   # Note this is not needed for 'official' test spins
+   #sed -i 's/^-fedora-logos/fedora-logos/' $TOPDIR/spin-kickstarts/fedora-livecd-$i.ks
+   #sed -i 's/^generic-logos//' $TOPDIR/spin-kickstarts/fedora-livecd-$i.ks
+
+   echo "INFO: $i i386 live image compose starting"
+   setarch i386 livecd-creator -c $TOPDIR/spin-kickstarts/fedora-live*-$i.ks -f $i-i386-$DATE > logs/$DATE-i386.log 2>&1
+   if [ $? -ne 0 ]; then
+        echo "ERROR: $i i386 live image failed to compose on $DATE"
+	mv logs/$DATE-i386.log logs/$DATE-FAILED-i386.log
+   else
+        du $TOPDIR/nightly-composes/$i/$i-i386-$DATE.iso >> logs/SIZEHISTORY-i386
+        tail -2 logs/SIZEHISTORY-i386
+	rm -f CHECKSUM-i386
+	sha256sum $i-i386-$DATE.iso > CHECKSUM-i386
+        cat CHECKSUM-i386
+        echo "INFO: $i i386 live image compose finished OK"
+   fi
+
+   echo "INFO: $i x86_64 live image compose starting"
+   # Need to shorten the electronic-lab label to the 32 char limit
+   if [ "$i" = "electronic-lab" ]; then
+	livecd-creator -c $TOPDIR/spin-kickstarts/fedora-live*-$i.ks -f e-lab-x86_64-$DATE    > logs/$DATE-x86_64.log 2>&1
+   else
+   	livecd-creator -c $TOPDIR/spin-kickstarts/fedora-live*-$i.ks -f $i-x86_64-$DATE    > logs/$DATE-x86_64.log 2>&1
+   fi
+   if [ $? -ne 0 ]; then
+        echo "ERROR: $i x86_64 live image failed to compose on $DATE"
+	mv logs/$DATE-x86_64.log logs/$DATE-FAILED-x86_64.log
+   else
+        if [ "$i" = "electronic-lab" ]; then
+             du $TOPDIR/nightly-composes/$i/e-lab-x86_64-$DATE.iso >> logs/SIZEHISTORY-x86_64
+             tail -2 logs/SIZEHISTORY-x86_64
+	     rm -f CHECKSUM-x86_64
+	     sha256sum e-lab-x86_64-$DATE.iso > CHECKSUM-x86_64
+             cat CHECKSUM-x86_64
+        else
+             du $TOPDIR/nightly-composes/$i/$i-x86_64-$DATE.iso >> logs/SIZEHISTORY-x86_64
+             tail -2 logs/SIZEHISTORY-x86_64
+	     rm -f CHECKSUM-x86_64
+	     sha256sum $i-x86_64-$DATE.iso > CHECKSUM-x86_64
+             cat CHECKSUM-x86_64
+        fi
+        echo "INFO: $i x86_64 live image compose finished OK"
+   fi
+
+   # remove old resize image
+   #rm -f /tmp/resize-image-*
+done
+
+# do aos spin
+echo "INFO: aos i386 live image compose starting"
+cd $TOPDIR/nightly-composes/aos/
+setarch i386 livecd-creator -c $TOPDIR/spin-kickstarts/fedora-aos.ks -f aos-i386-$DATE > logs/$DATE-i386.log 2>&1
+if [ $? -ne 0 ]; then
+        echo "ERROR: aos i386 live image failed to compose on $DATE"
+	mv logs/$DATE-i386.log logs/$DATE-FAILED-i386.log
+else
+        du $TOPDIR/nightly-composes/aos/aos-i386-$DATE.iso >> logs/SIZEHISTORY-i386
+        tail -2 logs/SIZEHISTORY-i386
+	rm -f CHECKSUM-i386
+	sha256sum aos-i386-$DATE.iso > CHECKSUM-i386
+	cat CHECKSUM-i386
+        echo "INFO: aos i386 live image compose finished OK"
+fi
+
+echo "INFO: aos x86_64 live image compose starting"
+livecd-creator -c $TOPDIR/spin-kickstarts/fedora-aos.ks -f aos-x86_64-$DATE    > logs/$DATE-x86_64.log 2>&1
+if [ $? -ne 0 ]; then
+        echo "ERROR: aos x86_64 live image failed to compose on $DATE"
+	mv logs/$DATE-x86_64.log logs/$DATE-FAILED-x86_64.log
+else
+        du $TOPDIR/nightly-composes/aos/aos-x86_64-$DATE.iso >> logs/SIZEHISTORY-x86_64
+        tail -2 logs/SIZEHISTORY-x86_64 
+	rm -f CHECKSUM-x86_64
+	sha256sum aos-x86_64-$DATE.iso > CHECKSUM-x86_64
+        cat CHECKSUM-x86_64
+        echo "INFO: aos x86_64 live image compose finished OK"
+fi

@@ -1,0 +1,15 @@
+== NOTICE ==
+
+These kickstarts are localized versions of the custom or official Fedora
+Spins.
+
+Kickstarts in this directory need to %include ../*.ks, or ../custom/*.ks
+
+Note: when composing localized kickstarts on Fedora 17 and later, you must
+use yum-langpacks to ensure you get the proper packages. To do so:
+
+1) Use livecd-tools-17.9/18.4 or later
+2) Have yum-langpacks installed, and configured for the language you're
+composing (either in /etc/yum/pluginconf.d/langpacks.conf or via
+$LANG/$LANGUAGE)
+3) Use the '-p' option to livecd-creator to enable plugins.

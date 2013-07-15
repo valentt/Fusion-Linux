@@ -1,0 +1,23 @@
+The master branch is where development takes place:
+ - it may contain kickstart files that are broken, or
+ - spin concepts that are in the process of being
+   approved by the Board (trademark approval), or
+ - spin concepts that are in the process of being
+   approved by the Spins SIG
+
+The release specific branches contain spin concepts that:
+ - are approved (both by Board and Spin SIG)
+ - maintained for the remainder of the release cycle
+
+git clone ssh://git.fedorahosted.org/git/spin-kickstarts.git spin-kickstarts
+cd spin-kickstarts
+# If you need a specific branch other than master:
+git checkout BRANCHNAME
+# No tag has been added yet tag HEAD with
+git tag VERSION
+git push --tags
+make
+# Publish the released tar ball
+make publish
+# Clean up the generated files:
+make clean

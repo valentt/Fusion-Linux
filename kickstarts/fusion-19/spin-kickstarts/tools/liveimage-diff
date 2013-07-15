@@ -1,0 +1,91 @@
+#!/usr/bin/python
+# Given as input two live images, print out differences in their RPM content.
+#
+# Licensed under the new-BSD license (http://www.opensource.org/licenses/bsd-license.php)
+# Copyright (C) 2010 Red Hat, Inc.
+# Written by Colin Walters <walters@verbum.org>
+
+import os
+import sys
+import tempfile
+import subprocess
+import getopt
+
+
+def usage(ecode):
+    print "Usage: %s img1.iso img2.iso" % (sys.argv[0], )
+    print "Print differences between two live images"
+    sys.exit(ecode)
+
+def main():
+    try:
+        opts,args = getopt.getopt(sys.argv[1:], 'h', ['help', 'debug'])
+    except getopt.GetoptError, e:
+        usage(1)
+        
+    version = None
+    debug = False
+    for o,a in opts:
+        if o in ('-h', '--help'):
+            usage(0)
+        elif o in ('--debug', ):
+            debug = True
+        
+    if len(args) != 2:
+        usage(1)
+    original = args[0]
+    new = args[1]    
+
+    mount_temp = tempfile.mkdtemp()
+
+    (fd, original_rpmdata) = tempfile.mkstemp()
+    subprocess.check_call(['../livecd/tools/liveimage-mount', '--mount-hacks', '--chroot',
+                           original, mount_temp, 'rpm', '-qa', '--queryformat="%{NAME} %{SIZE}\n'],
+                           stdout=fd, stderr=sys.stderr)
+    os.close(fd)
+    (fd, new_rpmdata) = tempfile.mkstemp()
+    subprocess.check_call(['../livecd/tools/liveimage-mount', '--mount-hacks', '--chroot',
+                           new, mount_temp, 'rpm', '-qa', '--queryformat="%{NAME} %{SIZE}\n'],
+                           stdout=fd, stderr=sys.stderr)
+    os.close(fd)
+    
+    os.rmdir(mount_temp)
+    
+    original_rpms = {}
+    new_rpms = {}
+    
+    def read_rpmdata(filename, data):
+        f = open(filename)
+        for line in f:
+            line = line.strip()
+            if not line: break
+            (rpm, size) = line.split(' ', 1)
+            data[rpm] = int(size)
+        f.close()
+    read_rpmdata(original_rpmdata, original_rpms)
+    read_rpmdata(new_rpmdata, new_rpms)
+
+    original_set = set(original_rpms)
+    new_set = set(new_rpms)
+    intersection = original_set.intersection(new_set)
+    intersection_deltas = {}
+    for rpm in intersection:
+        delta = new_rpms[rpm] - original_rpms[rpm]
+        if delta != 0:
+            intersection_deltas[rpm] = delta
+    
+    added_set = new_set - original_set
+    removed_set = original_set - new_set
+    for rpm in sorted(added_set, lambda a,b: cmp(new_rpms[a], new_rpms[b])):
+        print '+ %s %d' % (rpm, new_rpms[rpm])
+    for rpm in sorted(removed_set, lambda a,b: cmp(original_rpms[a], original_rpms[b])):
+        print '- %s %d' % (rpm, original_rpms[rpm])
+        
+    for rpm in sorted(intersection_deltas, lambda a,b: cmp(intersection_deltas[a], intersection_deltas[b])):
+        print '= %s %d' % (rpm, intersection_deltas[rpm])
+ 
+    sys.exit(0)
+
+if __name__ == '__main__':
+    main()
+
