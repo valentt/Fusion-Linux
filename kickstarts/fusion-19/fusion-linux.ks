@@ -99,7 +99,7 @@ gstreamer-plugins-bad
 #gstreamer-plugins-bad-extras
 
 # video media players
-vlc # video player that plays all video codecs, 11 M
+vlc # video player that plays all video codecs, 41/134 M
 npapi-vlc # mozilla vlc plugin, 70 K
 # Miro # InternetTV player, 16 M - missing package?
 #-gnome-mplayer
