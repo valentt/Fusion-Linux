@@ -5,5 +5,5 @@
 %include fedora-live-mate-compiz.ks
 
 %packages
-@Cinnamon Desktop
+@cinnamon
 %end
