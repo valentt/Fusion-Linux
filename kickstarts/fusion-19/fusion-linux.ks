@@ -58,7 +58,6 @@ xchat # gui IRC chat client
 gnome-shell-extension-alternate-tab
 gnome-shell-extension-alternative-status-menu
 gnome-shell-extension-cpu-temperature
-gnome-shell-extension-icon-manager
 gnome-shell-extension-mediaplayers
 gnome-shell-extension-righthotcorner
 gnome-shell-extension-user-theme
