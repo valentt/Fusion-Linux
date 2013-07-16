@@ -9,7 +9,7 @@ repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?
 repo --name=rpmfusion-free-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
 repo --name=fedora-chromium --baseurl=http://repos.fedorapeople.org/repos/spot/chromium/fedora-$releasever/$basearch/
 repo --name=parsidora --baseurl=http://parsidora.sourceforge.net/releases/18/repos/parsidora/$basearch
-repo --name=rpmsphere http://download.opensuse.org/repositories/home:/zhonghuaren/Fedora_$releasever/
+repo --name=rpmsphere --baseurl=http://download.opensuse.org/repositories/home:/zhonghuaren/Fedora_$releasever/
 
 %packages
 
