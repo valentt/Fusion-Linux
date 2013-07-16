@@ -3,7 +3,7 @@
 # http://fusionlinux.org/blog/
 
 timezone Europe/Zagreb
-part / --size 8000 --fstype ext4
+part / --size 9192 --fstype ext4
 
 repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-free-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
