@@ -72,3 +72,5 @@ cat >> /usr/share/glib-2.0/schemas/org.gnome.settings-daemon.plugins.updates.gsc
 active=true
 auto-download-updates=false
 FOE
+
+%end
