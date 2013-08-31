@@ -142,6 +142,7 @@ transmission # fabulos and lightweight bittorrent client
 #azureus
 
 # games, cool small ones
+steam # Steam client, 33/110 M
 abe
 frozen-bubble
 alienblaster
